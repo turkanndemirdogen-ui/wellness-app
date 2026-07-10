@@ -12,14 +12,23 @@
 - Spec paketi: 5 sekme + hook-sentez + haftalık-bakış + illüstrasyon + karar günlüğü + ARCH
 
 ## 🔧 CLAUDE CODE TARAFI (build)
-- [ ] Base faz: vektör store, operasyonel şema, RAG ingest pipeline, app shell
+
+### ✅ Base — Adım 1-4 TAMAMLANDI (bu oturum · commit d727ffb)
+- [x] Operasyonel + içerik/RAG şeması (0001-0002); RLS + fail-closed görünürlük
+- [x] RAG ingest + embedding: 420 vault_chunks / 44 kaynak — canlı DB'de aranabilir (0004)
+- [x] Seed: 37 bitki · 12 quiz · 40 engine kuralı — idempotent (0003/0006)
+- [x] İki-mod retrieval + ROL DUVARI: `match_chunks_user` (yalnız authenticated) · `match_chunks_agent` (yalnız service_role) — sızıntı testi 11/11 (0005)
+- [x] Engine eşleştirme (ilişkisel, RAG-dışı): `match_engine_rules` (tetik→kural)
+- [x] content upsert: `derived_content_cache` (idempotent)
+
+- [ ] Base faz: vektör store ✅ · operasyonel şema ✅ · RAG ingest ✅ · retrieval+duvar ✅ (Adım 1-4) — **app shell → Faz 6 (kapsam dışı)**
 - [ ] OpenAI API anahtarı ($5/ay limit) — ilk embedding anında
 - [ ] Supabase URL + anahtarları .env (zip'te YOK, olması gereken)
 - [ ] Swiss Ephemeris fizibilite (K4-3=b): lisans (AGPL vs ticari) + Deno/WASM port + natal/transit POC
-- [ ] İçerik-yenileme komutu (content/*.json idempotent upsert)
+- [x] İçerik-yenileme komutu (content/*.json idempotent upsert) — ✅ Adım 4 (seed/engine üreticiler + push-chunks upsert)
 - [ ] Söz seçim mantığı (90-gün tekrar-yok kuralı) + havuz 92→120
 - [ ] İllüstrasyon: LoRA eğitimi (ComfyUI/GPU) + Köhler's gravür seti + programatik silüet
-- [ ] Motor eşleştirme motoru (hesap→tetik→kural)
+- [ ] Motor eşleştirme motoru (hesap→tetik→kural) — tetik→kural ✅ Adım 4 (`match_engine_rules`); **hesap (natal/transit) → Faz 5**
 
 ## ⚠ TÜRKAN TEYİT/KARAR (yayın öncesi — güvenlik & dürüstlük kritik)
 - [ ] **TR POLİSAJ (tek redaktör turu):** tüm kullanıcı metinleri — AI-çeviri tınısını doğal Türkçeye çek (build sonrası tek dokunuş, kararlaştırıldı). En yüksek öncelik.

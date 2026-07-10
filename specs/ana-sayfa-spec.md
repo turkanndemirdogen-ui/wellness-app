@@ -136,7 +136,7 @@ acik_kararlar: []
 
 ## 6. Navigasyon haritası
 
-Sekme yapısı kilitli (Ana Sayfa · Sohbet · Keşif · Bahçe). Ana Sayfa çıkış köprüleri:
+Sekme yapısı kilitli (Ana Sayfa · Keşif · Bahçe · Sohbet). Ana Sayfa çıkış köprüleri:
 B2 → Keşif · B3 → Bahçe (herb_detail) · B4 → modül ekranları (**AS-1**) · B5 → kaydet/paylaş · B6 → koşula göre hedef.
 
 **AS-1 (KARAR — hub-and-spoke, 2026-07-05):** Modül tam ekranları (mood, journal, reminders, döngü, skincare, Akış) Ana Sayfa'dan açılan stack alt-ekranlardır. Sekmeler saf tematik kalır; bildirimler ilgili modüle doğrudan deep-link verir (yol kısaltma). Kanıt modülleri sembolik sekmelere taşınmaz — iki-akış ayrımı navigasyonda da korunur.

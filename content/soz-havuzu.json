@@ -1,0 +1,838 @@
+{
+  "_meta": {
+    "belge": "soz-havuzu",
+    "surum": "v0.3-DERIN-GENIS",
+    "tarih": "2026-07-05",
+    "karar": "Revizyon (Türkan, 5 Tem): derinlik talebi. Yol = kamu malı ustalar (orijinal telif dışı, KENDİ çevirimiz) + özgün-derin satırlar. Ekranda atıf YOK (proje kuralı: kaynak atfı ekranda görünmez); her satırın iç kaydında eser referansı VAR. Modern telifli kitaplar (kişisel gelişim/roman) KAPSAM DIŞI — telif + intihal + marka riski.",
+    "dogrulama": "Yalnız eser içinde varlığından emin olunan satırlar alındı; meşhur ama doğrulanamayan atıflar (ör. 'yara-ışık', 'ne olursan ol gel' tartışmalı aidiyet, Elif Şafak romanı kaynaklı 'Şems'in 40 kuralı') BİLİNÇLİ DIŞARIDA.",
+    "durum": "TASLAK-ONAYLI: build için kullanılabilir; yayın öncesi TR polisajı launch-checklist maddesi.",
+    "temalar": [
+      "sukunet",
+      "cesaret",
+      "dongu",
+      "birakma",
+      "baslangic",
+      "sabir",
+      "sefkat",
+      "denge",
+      "donusum",
+      "varolus",
+      "sevgi"
+    ],
+    "arsiv": "v0.1 (düz seri) → arsiv/soz-havuzu-v0.1-duz.json",
+    "son_guncelleme": "2026-07-05: +57 söz (kurallar dosyasına uygun: kamu malı kendi-çeviri + özgün). 'yara-ışık' gibi aidiyeti tartışmalı satırlar özgüne çevrildi."
+  },
+  "sozler": [
+    {
+      "id": "soz_001",
+      "tema": "varolus",
+      "metin": "Dinle neyi; ayrılıklardan nasıl söz ediyor.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Mevlânâ, Mesnevî I, açılış beyti (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_002",
+      "tema": "sevgi",
+      "metin": "Gönüldaşlık, dildaşlıktan daha yakındır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Mevlânâ, Mesnevî I (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_003",
+      "tema": "baslangic",
+      "metin": "Dünle beraber gitti, düne ait ne varsa; şimdi yeni şeyler söylemenin vaktidir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Mevlânâ, Dîvân-ı Kebîr geleneği (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_004",
+      "tema": "varolus",
+      "metin": "Herkes kendi zannınca dost oldu bana; içimdeki sırrı arayan olmadı.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Mevlânâ, Mesnevî I, 6. beyit (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_005",
+      "tema": "varolus",
+      "metin": "Bir ben vardır bende, benden içeri.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Yunus Emre, Dîvân"
+      }
+    },
+    {
+      "id": "soz_006",
+      "tema": "varolus",
+      "metin": "İlim ilim bilmektir; ilim kendin bilmektir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Yunus Emre, Dîvân"
+      }
+    },
+    {
+      "id": "soz_007",
+      "tema": "denge",
+      "metin": "Ne varlığa sevinirim, ne yokluğa yerinirim.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Yunus Emre, Dîvân"
+      }
+    },
+    {
+      "id": "soz_008",
+      "tema": "sevgi",
+      "metin": "Sevelim, sevilelim; bu dünya kimseye kalmaz.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Yunus Emre, Dîvân"
+      }
+    },
+    {
+      "id": "soz_009",
+      "tema": "varolus",
+      "metin": "Bu geliş nereden, bu gidiş nereye — soran olmadı bize.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Ömer Hayyam, rubâî geleneği (nüsha farkları var; kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_010",
+      "tema": "donusum",
+      "metin": "İnsanı öldürmeyen şey, onu güçlendirir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Nietzsche, Putların Alacakaranlığı, Özdeyişler 8 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_011",
+      "tema": "donusum",
+      "metin": "İnsan, dans eden bir yıldız doğurabilmek için içinde kaos taşımalı.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Nietzsche, Böyle Buyurdu Zerdüşt, Önsöz (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_012",
+      "tema": "cesaret",
+      "metin": "Neden yaşadığını bilen, hemen her nasıla katlanır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Nietzsche, Putların Alacakaranlığı (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_013",
+      "tema": "varolus",
+      "metin": "Uçuruma uzun bakarsan, uçurum da sana bakar.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Nietzsche, İyinin ve Kötünün Ötesinde §146 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_014",
+      "tema": "sukunet",
+      "metin": "Ruh, zamanla düşüncelerinin rengini alır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Marcus Aurelius, Düşünceler V.16 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_015",
+      "tema": "donusum",
+      "metin": "Yola çıkan engel, yolun kendisi olur.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Marcus Aurelius, Düşünceler V.20 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_016",
+      "tema": "sukunet",
+      "metin": "Elinden alınabilecek tek zaman şimdidir; yaşadığın da yalnız odur.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Marcus Aurelius, Düşünceler II.14 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_017",
+      "tema": "cesaret",
+      "metin": "İşler zor olduğu için cesaret edemeyiz sanırız; oysa cesaret etmediğimiz için zordur.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Seneca, Mektuplar 104 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_018",
+      "tema": "sabir",
+      "metin": "Yaşamayı öğrenmek, bir ömür sürer.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Seneca, Hayatın Kısalığı Üzerine (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_019",
+      "tema": "denge",
+      "metin": "Bizi sarsan şeyler değil; onlara dair yargılarımızdır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Epiktetos, Enkheiridion 5 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_020",
+      "tema": "sabir",
+      "metin": "Dünyada sudan yumuşağı yoktur; ama katıyı aşındıran da odur.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Lao Tzu, Tao Te Ching 78 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_021",
+      "tema": "varolus",
+      "metin": "Başkalarını tanıyan bilgili; kendini tanıyan bilgedir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Lao Tzu, Tao Te Ching 33 (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_022",
+      "tema": "donusum",
+      "metin": "Acı, anlayışını saran kabuğun kırılmasıdır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Halil Cibran, Ermiş — Acı Üzerine (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_023",
+      "tema": "denge",
+      "metin": "Neşen, maskesinden arınmış hüznündür.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Halil Cibran, Ermiş — Sevinç ve Hüzün (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_024",
+      "tema": "dongu",
+      "metin": "Ağaçlar, toprağın gökyüzüne yazdığı şiirlerdir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Halil Cibran, Kum ve Köpük (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_025",
+      "tema": "dongu",
+      "metin": "Bulutlar artık hayatıma renk katmak için geliyor; yağmur taşımak için değil.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_026",
+      "tema": "sukunet",
+      "metin": "Kelebek ayları değil, anları sayar; ve zamanı ona yeter.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      }
+    },
+    {
+      "id": "soz_027",
+      "tema": "donusum",
+      "metin": "Kök, karanlığı sorun etmez; oradan beslenir.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "id": "soz_028",
+      "tema": "sabir",
+      "metin": "Bazı kapılar itilerek değil, beklenerek açılır.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "id": "soz_029",
+      "tema": "sukunet",
+      "metin": "Sessizlik boş değildir; toprağın altındaki kış gibi çalışır.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "id": "soz_030",
+      "tema": "donusum",
+      "metin": "İnsan bazen yıkıldığı yerde değil, taşındığı yerde iyileşir.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "id": "soz_031",
+      "tema": "dongu",
+      "metin": "Solmak, çiçeğin toprağa verdiği sözdür.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "id": "soz_032",
+      "tema": "varolus",
+      "metin": "Karanlık, yıldızın rakibi değil; zeminidir.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "id": "soz_033",
+      "tema": "sabir",
+      "metin": "Beklemek de bir eylemdir; tohum bunu bilir.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "id": "soz_034",
+      "tema": "cesaret",
+      "metin": "Fırtına diner; geriye hangi köklerin tuttuğu kalır.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "id": "soz_035",
+      "tema": "sevgi",
+      "metin": "İnsan en çok, olduğu gibi görüldüğü yerde çiçek açar.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      }
+    },
+    {
+      "tema": "sukunet",
+      "metin": "Balık suskun, hayvan gürültücü, kuş şarkıcıdır; insan ise üçünü de içinde taşır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_036"
+    },
+    {
+      "tema": "dongu",
+      "metin": "Yıldızlar, ateşböceği sandıkları için gülmez.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_037"
+    },
+    {
+      "tema": "birakma",
+      "metin": "Suyun taşı aşındırması gücüyle değil, sürekliliğiyledir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_038"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Yanlışa kapıyı kapatırsan, hakikat de dışarıda kalır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_039"
+    },
+    {
+      "tema": "sefkat",
+      "metin": "Küçük çiçek toprağa düşer, ama yıldıza uzanmaktan vazgeçmez.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_040"
+    },
+    {
+      "tema": "baslangic",
+      "metin": "Gölge, ışığın yanında yürür ama onu asla yakalayamaz.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_041"
+    },
+    {
+      "tema": "denge",
+      "metin": "Geceyi seven, sabahı da içinde taşır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_042"
+    },
+    {
+      "tema": "dongu",
+      "metin": "Yaprak sevince dal olur; dal sevince çiçek açar.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_043"
+    },
+    {
+      "tema": "sabir",
+      "metin": "Ağaç, arzusunu köküne fısıldar; kök sessizce büyür.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_044"
+    },
+    {
+      "tema": "varolus",
+      "metin": "En büyük gerçek, en sade sözcüklerle söylenir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Tagor, Avare Kuşlar (kendi çeviri)"
+      },
+      "id": "soz_045"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Ben bir yolcuyum ve bir denizciyim; her gün ruhumda yeni bir kıyı keşfederim.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Cibran, Kum ve Köpük (kendi çeviri)"
+      },
+      "id": "soz_046"
+    },
+    {
+      "tema": "sefkat",
+      "metin": "Sana ait olan, seni çağırdığında geri gelir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Cibran, Kum ve Köpük (kendi çeviri)"
+      },
+      "id": "soz_047"
+    },
+    {
+      "tema": "birakma",
+      "metin": "Ağaçlar rüzgâra kapılsın diye değil, dans etsin diye eğilir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Cibran, Kum ve Köpük (kendi çeviri)"
+      },
+      "id": "soz_048"
+    },
+    {
+      "tema": "denge",
+      "metin": "Ancak çok üzülen, çok sevinebilir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Cibran, Ermiş — Sevinç ve Hüzün (kendi çeviri)"
+      },
+      "id": "soz_049"
+    },
+    {
+      "tema": "sevgi",
+      "metin": "Sevgi, kendinden başka bir şey vermez ve kendinden başka bir şey almaz.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Cibran, Ermiş — Sevgi (kendi çeviri)"
+      },
+      "id": "soz_050"
+    },
+    {
+      "tema": "baslangic",
+      "metin": "Dün bugünün anısı, yarın ise bugünün rüyasıdır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Cibran, Kum ve Köpük (kendi çeviri)"
+      },
+      "id": "soz_051"
+    },
+    {
+      "tema": "donusum",
+      "metin": "Kalbin sırlarını, gözyaşların açığa çıkarır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Cibran, Kum ve Köpük (kendi çeviri)"
+      },
+      "id": "soz_052"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Gerçeğe giden yollar, insan sayısı kadar çoktur.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Cibran, Kum ve Köpük (kendi çeviri)"
+      },
+      "id": "soz_053"
+    },
+    {
+      "tema": "sukunet",
+      "metin": "Dış olaylar canını sıkıyorsa, seni sıkan olay değil, ona verdiğin yargıdır; ve bu yargıyı her an değiştirebilirsin.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Marcus Aurelius, Düşünceler VIII (kendi çeviri)"
+      },
+      "id": "soz_054"
+    },
+    {
+      "tema": "baslangic",
+      "metin": "Her sabah kendine söyle: bugün nankör, kaba ya da bencil insanlarla karşılaşacağım; yine de içimdeki iyilik onlara benzemeyecek.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Marcus Aurelius, Düşünceler II.1 (kendi çeviri)"
+      },
+      "id": "soz_055"
+    },
+    {
+      "tema": "sabir",
+      "metin": "Mükemmel olmayı bekleme; küçük ilerlemeyi küçümseme.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Marcus Aurelius, Düşünceler (kendi çeviri)"
+      },
+      "id": "soz_056"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Yakında her şeyi unutacaksın, her şey de seni unutacak; bu yüzden şimdiyi nazikçe yaşa.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Marcus Aurelius, Düşünceler VII.21 (kendi çeviri)"
+      },
+      "id": "soz_057"
+    },
+    {
+      "tema": "denge",
+      "metin": "Sadeliğe dön; öfkeyi bırakan, kaybettiğini değil, kazandığı huzuru görür.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Marcus Aurelius, Düşünceler (kendi çeviri)"
+      },
+      "id": "soz_058"
+    },
+    {
+      "tema": "baslangic",
+      "metin": "Her yeni başlangıç, bir başka başlangıcın sonundan doğar.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Seneca, Mektuplar (kendi çeviri)"
+      },
+      "id": "soz_059"
+    },
+    {
+      "tema": "sabir",
+      "metin": "Nereye gideceğini bilmeyene hiçbir rüzgâr yardım etmez.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Seneca, Mektuplar 71 (kendi çeviri)"
+      },
+      "id": "soz_060"
+    },
+    {
+      "tema": "sukunet",
+      "metin": "Fırtınada dümeni bırakan değil, ona sıkı tutunan denizci limana varır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Seneca, Mektuplar (kendi çeviri)"
+      },
+      "id": "soz_061"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Yaşadığımız kısa değil; çoğunu boşa harcadığımız için kısa sanırız.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Seneca, Hayatın Kısalığı Üzerine (kendi çeviri)"
+      },
+      "id": "soz_062"
+    },
+    {
+      "tema": "denge",
+      "metin": "Elinde olanı iste, olmayanı bırak; huzur bu ayrımda saklıdır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Epiktetos, Enkheiridion (kendi çeviri)"
+      },
+      "id": "soz_063"
+    },
+    {
+      "tema": "cesaret",
+      "metin": "Zorluk seni gösterir; güç bir engelle karşılaşana dek uykudadır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Epiktetos geleneği (kendi çeviri)"
+      },
+      "id": "soz_064"
+    },
+    {
+      "tema": "sabir",
+      "metin": "Bir şeyi yapabilmeyi istiyorsan, önce o şeyi seven biri ol.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Epiktetos, Enkheiridion (kendi çeviri)"
+      },
+      "id": "soz_065"
+    },
+    {
+      "tema": "baslangic",
+      "metin": "Bin millik yolculuk, tek bir adımla başlar.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Lao Tzu, Tao Te Ching 64 (kendi çeviri)"
+      },
+      "id": "soz_066"
+    },
+    {
+      "tema": "birakma",
+      "metin": "Dolu olmak için önce boşalmayı bil; eğrilen ağaç kırılmaz.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Lao Tzu, Tao Te Ching 22 (kendi çeviri)"
+      },
+      "id": "soz_067"
+    },
+    {
+      "tema": "sukunet",
+      "metin": "Durgun su berraklaşır; bekleyebilen, bulanıklığın dibe çökmesini görür.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Lao Tzu, Tao Te Ching 15 (kendi çeviri)"
+      },
+      "id": "soz_068"
+    },
+    {
+      "tema": "denge",
+      "metin": "Zorlayan iz bırakır, akan yol açar.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Lao Tzu, Tao Te Ching (kendi çeviri)"
+      },
+      "id": "soz_069"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Ne kadar bilirsen bil, söylediklerin karşındakinin anladığı kadardır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Mevlânâ, Mesnevî geleneği (kendi çeviri)"
+      },
+      "id": "soz_070"
+    },
+    {
+      "tema": "donusum",
+      "metin": "Yara, ışığın değil sabrın girdiği yerdir; her kabuk bir olgunlaşmadır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "özgün — meşhur 'yara-ışık' sözünün aidiyeti tartışmalı olduğu için ONUN YERİNE özgün yazıldı"
+      },
+      "id": "soz_071"
+    },
+    {
+      "tema": "sevgi",
+      "metin": "Aynı dili konuşanlar değil, aynı duyguyu paylaşanlar anlaşır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Mevlânâ, Mesnevî geleneği (kendi çeviri)"
+      },
+      "id": "soz_072"
+    },
+    {
+      "tema": "baslangic",
+      "metin": "Dün dünde kaldı; bugün yeni şeyler söylemek gerek.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Mevlânâ, Dîvân-ı Kebîr geleneği (kendi çeviri)"
+      },
+      "id": "soz_073"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Sabır acıdır ama meyvesi tatlıdır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Yunus Emre / genel gelenek (kendi çeviri)"
+      },
+      "id": "soz_074"
+    },
+    {
+      "tema": "cesaret",
+      "metin": "Bir hedefi olan, en zor yollara bile 'evet' diyebilir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Nietzsche geleneği (kendi çeviri)"
+      },
+      "id": "soz_075"
+    },
+    {
+      "tema": "donusum",
+      "metin": "Yılan derisini değiştiremezse ölür; fikirlerini değiştiremeyen zihin de öyle.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Nietzsche, Tan Kızıllığı (kendi çeviri)"
+      },
+      "id": "soz_076"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Kendi yolunu arayan, onu kimsede bulamaz; çünkü o yol sadece yürüyerek açılır.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Nietzsche geleneği (kendi çeviri)"
+      },
+      "id": "soz_077"
+    },
+    {
+      "tema": "sabir",
+      "metin": "Çözülmemiş her şeye karşı sabırlı ol; soruların kendisini yaşamayı dene.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Rilke, Genç Bir Şaire Mektuplar (kendi çeviri)"
+      },
+      "id": "soz_078"
+    },
+    {
+      "tema": "donusum",
+      "metin": "Belki içimizdeki tüm ejderhalar, bir kez olsun cesaret ve güzellik görmeyi bekleyen prenseslerdir.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Rilke, Genç Bir Şaire Mektuplar (kendi çeviri)"
+      },
+      "id": "soz_079"
+    },
+    {
+      "tema": "baslangic",
+      "metin": "Geleceğin içine doğ; onu şimdiden yaşamaya çalışmadan, sabırla taşı.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Rilke, Genç Bir Şaire Mektuplar (kendi çeviri)"
+      },
+      "id": "soz_080"
+    },
+    {
+      "tema": "cesaret",
+      "metin": "Umut, ruhta tüneyen tüylü bir şeydir; sözsüz bir ezgi söyler, hiç durmadan.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Emily Dickinson, 'Hope is the thing with feathers' (kendi çeviri)"
+      },
+      "id": "soz_081"
+    },
+    {
+      "tema": "sukunet",
+      "metin": "Bir yüreği kırılmaktan alıkoyabilirsem, boşuna yaşamamış olurum.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Emily Dickinson (kendi çeviri)"
+      },
+      "id": "soz_082"
+    },
+    {
+      "tema": "varolus",
+      "metin": "Hayatımın çoğunu, başıma hiç gelmeyen felaketlerin korkusuyla geçirdim.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Montaigne, Denemeler (kendi çeviri)"
+      },
+      "id": "soz_083"
+    },
+    {
+      "tema": "sefkat",
+      "metin": "İnsanlar birbirinin uzuvları gibidir; biri incindiğinde ötekiler de huzur bulamaz.",
+      "ic_kaynak": {
+        "tip": "pd",
+        "eser": "Sâdî, Gülistan (kendi çeviri)"
+      },
+      "id": "soz_084"
+    },
+    {
+      "tema": "donusum",
+      "metin": "Kırılan değil, yeniden dizilen güçlüdür.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      },
+      "id": "soz_085"
+    },
+    {
+      "tema": "sabir",
+      "metin": "Tohum, çürüdüğünü sanırken filizlenir.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      },
+      "id": "soz_086"
+    },
+    {
+      "tema": "birakma",
+      "metin": "Nehir hiçbir taşı taşımaz; yine de hepsini yerinden oynatır.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      },
+      "id": "soz_087"
+    },
+    {
+      "tema": "sukunet",
+      "metin": "Sessizlik boşluk değil; en dolu odaların akustiğidir.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      },
+      "id": "soz_088"
+    },
+    {
+      "tema": "dongu",
+      "metin": "Solmak bir veda değil, toprağa verilen bir sözdür.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      },
+      "id": "soz_089"
+    },
+    {
+      "tema": "baslangic",
+      "metin": "Her şafak, geceden özür dilemez; sadece başlar.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      },
+      "id": "soz_090"
+    },
+    {
+      "tema": "sefkat",
+      "metin": "Kendine sorduğun nazik soru, çoğu zaman en doğru cevaptır.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      },
+      "id": "soz_091"
+    },
+    {
+      "tema": "cesaret",
+      "metin": "Kök, karanlığı sorgulamaz; oradan beslenmeyi seçer.",
+      "ic_kaynak": {
+        "tip": "ozgun"
+      },
+      "id": "soz_092"
+    }
+  ]
+}

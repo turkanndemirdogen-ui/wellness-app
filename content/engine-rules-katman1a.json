@@ -1,0 +1,268 @@
+{
+  "_meta": {
+    "belge": "engine-rules-katman1a",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "kararlar": {
+      "K4-1": "b iki katman",
+      "K4-2": "b varyantlı (user_text_variants — şema genişletmesi)",
+      "K4-3": "b Swiss Ephemeris (kendi hesap; AstroAPI stack'ten çıktı)"
+    },
+    "not": "Katman-1a orb'dan bağımsızdır (Ay'ın burcu). Katman-1b (Ay açıları) ve Katman-2 (yavaş transitler) K4-4 orb kararını bekliyor. TASLAK-ONAYLI; TR polisaj launch checklist.",
+    "ton": "davetkar, kader dilsiz, emir yok; marka kuralları"
+  },
+  "rules": [
+    {
+      "rule_id": "k1a_ay_koc",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "koc",
+        "house_modifier": null
+      },
+      "theme_internal": "baslangic_enerji",
+      "user_text_variants": [
+        "Ay bugün Koç'ta — bir şeye başlamak için bahane aramaya gerek yok. En küçük ilk adım bile bugünün ruhuna uyar.",
+        "Koç Ay'ı sabırsız değil, taze demektir. Bugün enerjini tek bir işe yöneltmek, ona dağıtmaktan iyi gelebilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_boga",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "boga",
+        "house_modifier": null
+      },
+      "theme_internal": "yavaslik_duyular",
+      "user_text_variants": [
+        "Ay bugün Boğa'da — acele etmeyen bir gün. Duyularına, yavaş bir kahvaltıya, dokunduğun şeylerin dokusuna alan açabilirsin.",
+        "Boğa Ay'ı köklenmeyi sever. Bugün az ama sağlam; telaş yerine tat almak gündemde olabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_ikizler",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "ikizler",
+        "house_modifier": null
+      },
+      "theme_internal": "merak_iletisim",
+      "user_text_variants": [
+        "Ay bugün İkizler'de — zihnin hafif ve meraklı olabilir. Kısa sohbetler, notlar, küçük sorular güne iyi oturur.",
+        "İkizler Ay'ında dağınıklık kusur değil, tarama biçimidir. Bugün derin dalış yerine geniş bakış işe yarayabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_yengec",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "yengec",
+        "house_modifier": null
+      },
+      "theme_internal": "ic_dunya_bakim",
+      "user_text_variants": [
+        "Ay bugün kendi burcu Yengeç'te — iç dünyana ve sana iyi gelen alışkanlıklara alan açabilirsin. Büyük kararlardan çok küçük bakımların günü.",
+        "Yengeç Ay'ı eve dönmek gibidir. Bugün kendine bir yuva hissi kurmak — bir köşe, bir fincan, bir sessizlik — yeterli olabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_aslan",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "aslan",
+        "house_modifier": null
+      },
+      "theme_internal": "gorunurluk_oyun",
+      "user_text_variants": [
+        "Ay bugün Aslan'da — biraz görünmek, biraz oynamak iyi gelebilir. Yaptığın şeyi saklamak zorunda değilsin.",
+        "Aslan Ay'ı içindeki çocuğa alan ister. Bugün ciddi işlerin arasına küçük bir keyif sıkıştırmak günü yumuşatabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_basak",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "basak",
+        "house_modifier": null
+      },
+      "theme_internal": "duzen_kucuk_isler",
+      "user_text_variants": [
+        "Ay bugün Başak'ta — küçük düzenlemelerin günü. Tek bir çekmece, tek bir liste; hepsi bu kadar.",
+        "Başak Ay'ı mükemmellik değil, özen demektir. Bugün bir şeyi 'yeterince iyi' bırakabilmek de bir beceri."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_terazi",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "terazi",
+        "house_modifier": null
+      },
+      "theme_internal": "denge_iliski",
+      "user_text_variants": [
+        "Ay bugün Terazi'de — dengeye ve ilişkilere dikkat kayabilir. Bir konuşmayı yumuşatmak için uygun bir gün olabilir.",
+        "Terazi Ay'ında karar zorlaşabilir; sorun değil. Bugün tartmak da bir ilerleme biçimi."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_akrep",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "akrep",
+        "house_modifier": null
+      },
+      "theme_internal": "derinlik_donusum",
+      "user_text_variants": [
+        "Ay bugün Akrep'te — yüzeyde kalmak zor olabilir. Derinde ne olduğuna nazikçe bakmak için uygun bir gün; acele cevap gerekmiyor.",
+        "Akrep Ay'ı yoğunluğu büyütebilir. Duygu güçlüyse, onu hemen çözmek yerine sadece adlandırmak bugün yeterli olabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_yay",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "yay",
+        "house_modifier": null
+      },
+      "theme_internal": "genisleme_anlam",
+      "user_text_variants": [
+        "Ay bugün Yay'da — ufuk açık. Küçük bir plan, yeni bir fikir ya da uzaktaki bir hayale bakmak güne iyi gelebilir.",
+        "Yay Ay'ı 'neden' sorusunu sever. Bugün yaptığın işin anlamını hatırlamak, işin kendisini de hafifletebilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_oglak",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "oglak",
+        "house_modifier": null
+      },
+      "theme_internal": "yapi_sorumluluk",
+      "user_text_variants": [
+        "Ay bugün Oğlak'ta — yapı kurmanın günü. Bir işi bitirmek, bir sınırı netleştirmek bugün doğal akar.",
+        "Bugün küçük ve sağlam bir adım, büyük plandan daha değerli olabilir. Oğlak Ay'ı yapı kurmayı sever."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_kova",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "kova",
+        "house_modifier": null
+      },
+      "theme_internal": "yenilik_topluluk",
+      "user_text_variants": [
+        "Ay bugün Kova'da — alışılmışın biraz dışına çıkmak iyi gelebilir. Farklı bir yol, farklı bir fikir; denemesi serbest.",
+        "Kova Ay'ı mesafeden bakmayı bilir. Bugün bir konuya kuşbakışı bakmak, içinde boğulmaktan iyi olabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1a_ay_balik",
+      "katman": "1a",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": null,
+        "natal_target": null,
+        "sign_modifier": "balik",
+        "house_modifier": null
+      },
+      "theme_internal": "sezgi_akis",
+      "user_text_variants": [
+        "Ay bugün Balık'ta — sınırlar yumuşayabilir, sezgi öne çıkabilir. Programı biraz gevşetmek güne uyum sağlar.",
+        "Balık Ay'ında netlik beklemek yorucu olabilir. Bugün akışa küçük bir alan bırakmak yeterli."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 10,
+      "source_chunk_refs": []
+    }
+  ]
+}

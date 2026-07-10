@@ -1,0 +1,116 @@
+{
+  "_meta": {
+    "belge": "cip-turetme-kurallari",
+    "surum": "v1.0",
+    "tarih": "2026-07-05",
+    "karar": "P3=b: burç ekseni saf türetim; bitki.burc alanı motor tablodan kaldırıldı. Bu dosya kesif-spec kalem 6'yı (çip türetme kural tablosu) kapatır.",
+    "notlar": [
+      "Yönetici gezegen tablosu KLASİK gelenektir (Akrep→Mars, Kova→Satürn, Balık→Jüpiter); modern dış gezegen ataması bilinçli kullanılmadı — 46 kaynak klasik gelenek.",
+      "Melothesia (burç→beden) klasik standarttır; kaynaklarda mevcut, satır-satır teyit seri üretimde.",
+      "sozluk_bolge=null → bizim 12'lik beden sözlüğünde birebir karşılık yok; klasik_bolge bilgisi korunur, çip çözümlemede atlanır."
+    ]
+  },
+  "burc_gezegen": {
+    "koc": "mars",
+    "boga": "venus",
+    "ikizler": "merkur",
+    "yengec": "ay",
+    "aslan": "gunes",
+    "basak": "merkur",
+    "terazi": "venus",
+    "akrep": "mars",
+    "yay": "jupiter",
+    "oglak": "saturn",
+    "kova": "saturn",
+    "balik": "jupiter"
+  },
+  "burc_beden": [
+    {
+      "burc": "koc",
+      "klasik_bolge": "baş, yüz",
+      "sozluk_bolge": [
+        "bas",
+        "goz"
+      ]
+    },
+    {
+      "burc": "boga",
+      "klasik_bolge": "boyun, boğaz",
+      "sozluk_bolge": [
+        "bogaz"
+      ]
+    },
+    {
+      "burc": "ikizler",
+      "klasik_bolge": "omuzlar, kollar, akciğerler",
+      "sozluk_bolge": [
+        "gogus-nefes"
+      ]
+    },
+    {
+      "burc": "yengec",
+      "klasik_bolge": "göğüs, mide",
+      "sozluk_bolge": [
+        "mide-sindirim"
+      ]
+    },
+    {
+      "burc": "aslan",
+      "klasik_bolge": "kalp, sırt",
+      "sozluk_bolge": [
+        "kalp-dolasim"
+      ]
+    },
+    {
+      "burc": "basak",
+      "klasik_bolge": "bağırsaklar, sindirim",
+      "sozluk_bolge": [
+        "mide-sindirim"
+      ]
+    },
+    {
+      "burc": "terazi",
+      "klasik_bolge": "böbrekler, bel",
+      "sozluk_bolge": [
+        "bobrek-mesane"
+      ]
+    },
+    {
+      "burc": "akrep",
+      "klasik_bolge": "üreme organları",
+      "sozluk_bolge": [
+        "ureme-dongu"
+      ]
+    },
+    {
+      "burc": "yay",
+      "klasik_bolge": "kalçalar, uyluklar",
+      "sozluk_bolge": [
+        "kas-eklem"
+      ]
+    },
+    {
+      "burc": "oglak",
+      "klasik_bolge": "dizler, kemikler, deri",
+      "sozluk_bolge": [
+        "kas-eklem",
+        "deri"
+      ]
+    },
+    {
+      "burc": "kova",
+      "klasik_bolge": "baldırlar, bilekler",
+      "sozluk_bolge": [
+        "kas-eklem"
+      ]
+    },
+    {
+      "burc": "balik",
+      "klasik_bolge": "ayaklar",
+      "sozluk_bolge": [
+        "kas-eklem"
+      ]
+    }
+  ],
+  "cip_cozumleme": "Keşif'te burç çipi seçilince: sonuç = (gezegen_birincil == burc_gezegen[burc] olan bitkiler) BİRLEŞİM (beden_bolgeleri kesişim burc_beden[burc].sozluk_bolge olan bitkiler). Sıralama: iki kuralı da sağlayanlar üstte. LLM yok, saf kural."
+}

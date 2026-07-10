@@ -1,0 +1,288 @@
+{
+  "_meta": {
+    "belge": "quiz-ay2-tanrica",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "hassasiyet": "Güçlendirici çerçeve; 'kalıp değil ayna' açılışı Ay 1 ile ortak. Mitoloji kamu malı; Bolen metni KOPYALANMADI, kavramlar özgün yazıldı. Etiket: sembolik · eğlence amaçlı.",
+    "puanlama": "Ay 1 ile aynı: p +2, s +1; Baskın + Yükselen.",
+    "gating": "Free: baskın/yükselen + kisa. Pro: derin_ek (gölge daveti) + astro overlay.",
+    "sinerji": "Tanrıça→bitki köprüsü (Artemis→söğüt, Athena→ceviz, Hestia→biberiye, Hera→ıhlamur, Demeter→rezene, Persephone→menekşe [mitolojik doğru: Persephone menekşe toplarken], Afrodit→gül [klasik]).",
+    "durum": "TASLAK-ONAYLI; TR polisaj launch checklist."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — hepsi sende var. Bugün hangisi tahtta, ona bakıyoruz.",
+  "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir} Yükselen {B} ise sahneye kendi rengini katıyor.",
+  "arketipler": {
+    "artemis": {
+      "ad": "Artemis",
+      "tek_satir": "Kendi ormanının kraliçesi; yönünü yıldızlardan değil, içinden alırsın.",
+      "kisa": "Artemis enerjisi bağımsızlıktır — yalnızlık değil, öz-yeterlilik. Kendi patikanı açar, kendi ritminde yürürsün.",
+      "derin_ek": "Gölge daveti: hedefe kilitlenmek bazen yol arkadaşlarını görmeyi unutturur; ara sıra kampı paylaşmak avı küçültmez.",
+      "bitki": "sogut",
+      "paylasim": "Baskın tanrıçam: Artemis — patikamı kendim açarım."
+    },
+    "athena": {
+      "ad": "Athena",
+      "tek_satir": "Zihnin zırhı ve zeytin dalı; stratejin şefkatle keskin.",
+      "kisa": "Athena enerjisi berrak akıldır — kaosun ortasında plan görebilen göz. Bilgin, senin süsün değil aracın.",
+      "derin_ek": "Gölge daveti: her şeyi çözmek zorunda değilsin; bazen kalbin de söz alsın.",
+      "bitki": "ceviz",
+      "paylasim": "Baskın tanrıçam: Athena — aklım pusulam."
+    },
+    "hestia": {
+      "ad": "Hestia",
+      "tek_satir": "Ocağın sessiz alevi; huzur senin doğal halin.",
+      "kisa": "Hestia enerjisi merkezde kalabilmektir — dış dünya ne kadar hızlansa da için sıcak ve sabit yanar.",
+      "derin_ek": "Gölge daveti: iç dünyan güvenli; ama kapıyı ara sıra aralamak onu bozmaz.",
+      "bitki": "biberiye",
+      "paylasim": "Baskın tanrıçam: Hestia — huzurum içeriden."
+    },
+    "hera": {
+      "ad": "Hera",
+      "tek_satir": "Bağın mimarı; sadakatin bir zincir değil, seçilmiş bir taç.",
+      "kisa": "Hera enerjisi derin bağlılıktır — ortaklığa, söze, birlikte kurulan hayata verdiğin ağırlık senin gücün.",
+      "derin_ek": "Gölge daveti: ilişkiye verdiğin emeği kendine de ver; taç önce kendi başında durmalı.",
+      "bitki": "ihlamur",
+      "paylasim": "Baskın tanrıçam: Hera — bağlarım bilinçli seçimim."
+    },
+    "demeter": {
+      "ad": "Demeter",
+      "tek_satir": "Besleyen toprak; büyüttüğün her şey senin imzan.",
+      "kisa": "Demeter enerjisi büyütmektir — insan, bitki, fikir fark etmez; elinin değdiği serpilir.",
+      "derin_ek": "Gölge daveti: hasat mevsiminde kendi tabağını da doldur; besleyenin de beslenmeye hakkı var.",
+      "bitki": "rezene",
+      "paylasim": "Baskın tanrıçam: Demeter — büyütmek benim dilim."
+    },
+    "persephone": {
+      "ad": "Persephone",
+      "tek_satir": "İki dünyanın kızı; karanlığı da baharı da tanırsın.",
+      "kisa": "Persephone enerjisi dönüşümdür — inişleri yok saymaz, onlardan baharla dönersin. Derinlik seni korkutmaz.",
+      "derin_ek": "Gölge daveti: derinlik senin evin; ama yüzeyin çiçekleri de senin. İkisi arasında köprü kur.",
+      "bitki": "menekse",
+      "paylasim": "Baskın tanrıçam: Persephone — her kışım bir baharla biter."
+    },
+    "afrodit": {
+      "ad": "Afrodit",
+      "tek_satir": "Deniz köpüğünden doğan; güzellik senin dilin, yaratmak nefesin.",
+      "kisa": "Afrodit enerjisi hayat sevincidir — güzelliği tüketmez, üretirsin; temas ettiğin şey canlanır.",
+      "derin_ek": "Gölge daveti: sevilmek için parlamana gerek yok; olduğun ışık yeter.",
+      "bitki": "gul",
+      "paylasim": "Baskın tanrıçam: Afrodit — güzellik benim dilim."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "İdeal tatilin?",
+      "secenekler": [
+        {
+          "metin": "Tek başıma dağda kamp",
+          "p": "artemis"
+        },
+        {
+          "metin": "Müze ve mimari turu",
+          "p": "afrodit"
+        },
+        {
+          "metin": "Evden hiç çıkmadığım bir spa haftası",
+          "p": "hestia"
+        },
+        {
+          "metin": "Sevdiğimle özel bir kaçamak",
+          "p": "hera",
+          "s": "afrodit"
+        }
+      ]
+    },
+    {
+      "soru": "Arkadaş grubundaki rolün?",
+      "secenekler": [
+        {
+          "metin": "Planı kuran stratejist",
+          "p": "hera"
+        },
+        {
+          "metin": "Herkesi doyuran, kollayan",
+          "p": "demeter"
+        },
+        {
+          "metin": "Kriz anında sakin liman",
+          "p": "hestia"
+        },
+        {
+          "metin": "Gruba hayat ve yeni insan katan",
+          "p": "afrodit"
+        }
+      ]
+    },
+    {
+      "soru": "Bir süper güç seç:",
+      "secenekler": [
+        {
+          "metin": "Olacakları önceden sezmek",
+          "p": "persephone"
+        },
+        {
+          "metin": "Her tartışmayı kazanmak",
+          "p": "athena"
+        },
+        {
+          "metin": "Dokunduğum bitkiyi büyütmek",
+          "p": "demeter"
+        },
+        {
+          "metin": "Görünmeden ormanda kaybolmak",
+          "p": "artemis"
+        }
+      ]
+    },
+    {
+      "soru": "Zor bir karar anında ilk hamlen?",
+      "secenekler": [
+        {
+          "metin": "Artı-eksi listesi çıkarırım",
+          "p": "athena"
+        },
+        {
+          "metin": "İçime çekilir, işareti beklerim",
+          "p": "persephone"
+        },
+        {
+          "metin": "Güvendiğim kişiyle konuşurum",
+          "p": "hera"
+        },
+        {
+          "metin": "Yürüyüşe çıkarım, yol gösterir",
+          "p": "artemis"
+        }
+      ]
+    },
+    {
+      "soru": "Evindeki favori köşen?",
+      "secenekler": [
+        {
+          "metin": "Mutfak — ocağın başı",
+          "p": "hestia",
+          "s": "demeter"
+        },
+        {
+          "metin": "Çalışma masam",
+          "p": "athena"
+        },
+        {
+          "metin": "Balkon, bitkilerimin yanı",
+          "p": "demeter"
+        },
+        {
+          "metin": "Loş, yumuşak inziva köşem",
+          "p": "persephone"
+        }
+      ]
+    },
+    {
+      "soru": "Bir ilişkide seni en çok ne besler?",
+      "secenekler": [
+        {
+          "metin": "Derin, sarsılmaz sadakat",
+          "p": "hera"
+        },
+        {
+          "metin": "Tutku ve oyunbaz yakınlık",
+          "p": "afrodit"
+        },
+        {
+          "metin": "Birlikte susabilmek",
+          "p": "hestia"
+        },
+        {
+          "metin": "Kişisel alanıma saygı",
+          "p": "artemis"
+        }
+      ]
+    },
+    {
+      "soru": "Hafta sonu sabahın?",
+      "secenekler": [
+        {
+          "metin": "Erken doğa koşusu",
+          "p": "artemis"
+        },
+        {
+          "metin": "Sevdiklerimle uzun kahvaltı",
+          "p": "demeter",
+          "s": "hera"
+        },
+        {
+          "metin": "Tek başıma kitap ve kahve",
+          "p": "hestia"
+        },
+        {
+          "metin": "Atölye, boya, yaratıcı dağınıklık",
+          "p": "afrodit",
+          "s": "athena"
+        }
+      ]
+    },
+    {
+      "soru": "İnsanlar sana en çok ne için gelir?",
+      "secenekler": [
+        {
+          "metin": "Akıl danışmaya",
+          "p": "athena"
+        },
+        {
+          "metin": "Dertleşmeye, şefkate",
+          "p": "demeter"
+        },
+        {
+          "metin": "Moral ve hayat enerjisi almaya",
+          "p": "afrodit"
+        },
+        {
+          "metin": "Sır emanet etmeye",
+          "p": "persephone"
+        }
+      ]
+    },
+    {
+      "soru": "Dönüşüm senin için nasıl olur?",
+      "secenekler": [
+        {
+          "metin": "Her kışım bir baharla biter",
+          "p": "persephone"
+        },
+        {
+          "metin": "Hedef koyar, adım adım dönüşürüm",
+          "p": "athena"
+        },
+        {
+          "metin": "Sevgiyle, ilişki içinde yumuşayarak",
+          "p": "hera"
+        },
+        {
+          "metin": "Ellerimi toprağa sokunca",
+          "p": "demeter"
+        }
+      ]
+    },
+    {
+      "soru": "Gece göğünde seni ne çağırır?",
+      "secenekler": [
+        {
+          "metin": "İnce hilal",
+          "p": "artemis"
+        },
+        {
+          "metin": "Dolunayın sakladığı sır",
+          "p": "persephone"
+        },
+        {
+          "metin": "Yıldız haritasının düzeni",
+          "p": "athena"
+        },
+        {
+          "metin": "Ay ışığının denizdeki yolu",
+          "p": "afrodit"
+        }
+      ]
+    }
+  ]
+}

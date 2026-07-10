@@ -1,0 +1,271 @@
+{
+  "_meta": {
+    "belge": "motor-tablo-parti3",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "kapsam": "Parti 3: +6 bitki. D politikası (Türkan onayı): 3 vault-içi + 3 vault-dışı-etiketli. Şişirme yerine az+temiz.",
+    "D2.5_politika": "kaynak_tipi ∈ {vault-ici, vault-ici-zayif, klasik-gelenek-vault-disi}. Vault-dışı: agent_derin_kullanim=false (yalnız koleksiyon kartı; agent derin-anlatıda kullanmaz) + terfi_durumu='bekliyor' (fabrika raporu üretince vault-içi terfi). İkinci güvenlik süzgeci: vault-dışı bitkiler Claude'un klasik bilgisiyle toksisite elemesinden geçti; toksik alkaloid taşıyanlar (ökseotu/kırlangıçotu/yüksükotu) bilinçle dışarıda.",
+    "veto_durumu": "AÇIK: söğüt=Ay · fesleğen=Mars · meşe=Satürn(vs Jüpiter) · aslanpençesi=Venüs onayları. Net: nilüfer, sığırkuyruğu.",
+    "uyarilar": [
+      "vault-dışı 3 bitkinin güvenlik verisi de vault-dışı → 'bağımsız doğrulama' damgalı",
+      "atamalar veto kapanana dek FİNAL DEĞİL"
+    ],
+    "mevsim_notu": "mevsim alanları mevsim-haritasi.json ile senkronlandı (parlama modeli). Otorite: mevsim-haritasi.json."
+  },
+  "bitkiler": [
+    {
+      "herb_id": "nilufer",
+      "names": {
+        "tr": "Nilüfer",
+        "en": "Water Lily",
+        "la": "Nymphaea alba"
+      },
+      "gezegen_birincil": "ay",
+      "gezegen_ikincil": [],
+      "celiski_notu": null,
+      "kaynak_tipi": "vault-ici",
+      "terfi_durumu": null,
+      "agent_derin_kullanim": true,
+      "beden_bolgeleri": [
+        "sinir-uyku",
+        "ureme-dongu"
+      ],
+      "tat": [
+        "tatlımsı",
+        "sulu"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "nemlendirici",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 3,
+      "source_note": "Ay 3, tek yönlü; klasik su-Ay bitkisi kimliğiyle birebir. Ay rafını güçlendirir.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "sogut",
+      "names": {
+        "tr": "Söğüt",
+        "en": "Willow",
+        "la": "Salix alba"
+      },
+      "gezegen_birincil": "ay",
+      "gezegen_ikincil": [],
+      "celiski_notu": "Vault sinyali çok zayıf (1 kaynak); atama klasik gelenek (willow=Ay, su kıyısı ağacı) + tek kaynak uyumuyla. Zayıf-vault-içi.",
+      "kaynak_tipi": "vault-ici-zayif",
+      "terfi_durumu": null,
+      "agent_derin_kullanim": false,
+      "beden_bolgeleri": [
+        "kas-eklem",
+        "sinir-uyku"
+      ],
+      "tat": [
+        "acı",
+        "buruk"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "nemlendirici",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok; salisilat duyarlılığı literatürde bilinir, vault'ta kayıt YOK — Türkan kararı."
+      },
+      "kaynak_sayisi": 1,
+      "source_note": "Ay rafını 4→5 yapan aday; sinyal zayıf, kimlik güçlü.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "feslegen",
+      "names": {
+        "tr": "Fesleğen",
+        "en": "Basil",
+        "la": "Ocimum basilicum"
+      },
+      "gezegen_birincil": "mars",
+      "gezegen_ikincil": [
+        "merkur"
+      ],
+      "celiski_notu": "Vault sinyali pratikte yok (1/1); klasik Culpeper basil=Mars kanonu + keskin-aromatik kimlik → Mars. Merkür ikincil (aromatik-zihinsel). Zayıf-vault-içi, veto açık.",
+      "kaynak_tipi": "vault-ici-zayif",
+      "terfi_durumu": null,
+      "agent_derin_kullanim": false,
+      "beden_bolgeleri": [
+        "sinir-uyku",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "keskin",
+        "aromatik"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 3,
+      "source_note": "Klasik Mars kanonu.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "sigirkuyrugu",
+      "names": {
+        "tr": "Sığırkuyruğu",
+        "en": "Mullein",
+        "la": "Verbascum thapsus"
+      },
+      "gezegen_birincil": "saturn",
+      "gezegen_ikincil": [],
+      "celiski_notu": "Klasik gelenek ataması (vault taramasında yok). Verbascum=Satürn geleneksel kanon; uzun dik saplı, gri-tüylü yapısı saturnien imzayla uyumlu.",
+      "kaynak_tipi": "klasik-gelenek-vault-disi",
+      "terfi_durumu": "bekliyor",
+      "agent_derin_kullanim": false,
+      "beden_bolgeleri": [
+        "gogus-nefes"
+      ],
+      "tat": [
+        "acımsı",
+        "yumuşak"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "nemlendirici",
+        "durum": "klasik-gelenek"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "contraindications.json KAPSAMI DIŞI (vault-dışı bitki). Toksik alkaloid içermeyen, geleneksel güvenli bitki olarak seçildi; tüyleri mekanik tahriş yapabilir. Yayın öncesi bağımsız güvenlik doğrulaması önerilir (launch checklist)."
+      },
+      "kaynak_sayisi": 0,
+      "source_note": "Satürn rafını güçlendiren vault-dışı klasik. Fabrika raporu üretince vault-içi terfi eder.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "mese",
+      "names": {
+        "tr": "Meşe",
+        "en": "Oak",
+        "la": "Quercus robur"
+      },
+      "gezegen_birincil": "saturn",
+      "gezegen_ikincil": [
+        "gunes"
+      ],
+      "celiski_notu": "Klasik gelenek ataması (vault-dışı). Meşe/Quercus geleneksel olarak Jüpiter'e de Satürn'e de yazılır; sert kabuk, uzun ömür ve dayanıklılık imzasıyla Satürn seçildi, Güneş (kraliyet/güç) ikincil.",
+      "kaynak_tipi": "klasik-gelenek-vault-disi",
+      "terfi_durumu": "bekliyor",
+      "agent_derin_kullanim": false,
+      "beden_bolgeleri": [
+        "deri",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "buruk"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "kurutucu",
+        "durum": "klasik-gelenek"
+      },
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "contraindications.json KAPSAMI DIŞI. Yüksek tanen içeriği; geleneksel olarak dış/yüzeysel kullanım. Toksik alkaloid yok. Bağımsız güvenlik doğrulaması önerilir (launch checklist)."
+      },
+      "kaynak_sayisi": 0,
+      "source_note": "Satürn rafı; vault-dışı klasik, terfi bekliyor.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "aslanpencesi",
+      "names": {
+        "tr": "Aslanpençesi",
+        "en": "Lady's Mantle",
+        "la": "Alchemilla vulgaris"
+      },
+      "gezegen_birincil": "venus",
+      "gezegen_ikincil": [
+        "ay"
+      ],
+      "celiski_notu": "Klasik gelenek ataması (vault-dışı). Alchemilla geleneksel olarak Venüs'e yazılır ('kadın otu'); yaprağında toplanan çiy damlası simya-Ay imgesiyle ikincil Ay.",
+      "kaynak_tipi": "klasik-gelenek-vault-disi",
+      "terfi_durumu": "bekliyor",
+      "agent_derin_kullanim": false,
+      "beden_bolgeleri": [
+        "ureme-dongu"
+      ],
+      "tat": [
+        "buruk"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "kurutucu",
+        "durum": "klasik-gelenek"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "gebelikte geleneksel temkin (doğrulanmadı)",
+        "not": "contraindications.json KAPSAMI DIŞI. Geleneksel kadın-sağlığı bitkisi; gebelikte temkin geleneği vardır. Toksik alkaloid yok. Bağımsız güvenlik + gebelik doğrulaması önerilir (launch checklist)."
+      },
+      "kaynak_sayisi": 0,
+      "source_note": "Venüs rafı; vault-dışı klasik, terfi bekliyor. Döngü modülüyle bağı güçlü.",
+      "mevsim_tipi": "botanik"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "belge": "bitki-kartlari-parti3",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "ton_sablonu": "papatya (onaylı)",
+    "durum": "TASLAK-ONAYLI; yayın öncesi TR polisajı launch checklist.",
+    "dil_notu": "Vault-dışı bitkiler (sığırkuyruğu, meşe, aslanpençesi) 'klasik gelenekte anılır' çerçevesi kullanır — 'kaynaklarımızda' DEĞİL (D2.5 dürüst ayrım). Güvenlik notu olan kartlarda ritüel sonunda nazik hatırlatma."
+  },
+  "kartlar": [
+    {
+      "herb_id": "nilufer",
+      "tek_satir": "Ay'ın su aynası; derinden yükselip yüzeyde açan çiçek.",
+      "story_narrative": "Nilüfer, klasik gelenekte Ay'ın bitkileri arasında sayılır — köklerini suyun dibindeki karanlığa salar, çiçeğini yüzeyin ışığına açar. İki dünyayı aynı sapta birleştirir.\n\nEski kültürlerde saflığın ve sükûnetin imgesi olmuş; durgun suların üzerinde açan bu çiçek, derinlikten güzelliğe uzanan sessiz bir yolculuğu anlatır.",
+      "ritual": "Bugün derinde hissettiğin bir şeyin yüzeye çıkmasına izin ver — bir cümle yaz, bir nefes bırak. Nilüfer gibi: dipten gelen de ışığa açılabilir."
+    },
+    {
+      "herb_id": "sogut",
+      "tek_satir": "Suya eğilen sabır; esneyerek dayanan ağaç.",
+      "story_narrative": "Söğüt, klasik gelenekte Ay'a ve suyun kıyısına ait bir ağaç olarak anılır. Dalları yere eğilir ama kırılmaz; rüzgârda direnmek yerine onunla birlikte salınır.\n\nEski kültürde yasın ve şefkatin ağacı olmuş; eğilebilmenin de bir güç olduğunu, akıp geçene direnmemenin bilgeliğini hatırlatır.",
+      "ritual": "Bugün direndiğin bir şeyi düşün. Söğüdün dallarını hayal et: eğilmek teslim olmak değil, kırılmamanın yoludur. Bir an için gevşemeyi dene."
+    },
+    {
+      "herb_id": "feslegen",
+      "tek_satir": "Mars'ın yeşil kıvılcımı; sofrayı ve zihni canlandıran koku.",
+      "story_narrative": "Fesleğen, klasik bitki geleneğinde Mars'ın canlı bitkileri arasında anılır — keskin, sıcak ve uyandırıcı kokusuyla. Küçük yapraklarında beklenmedik bir yoğunluk taşır.\n\nEski kültürlerde hem koruma hem canlanma imgesiyle geçer; bazı geleneklerde eşiklere, pencerelere konan bir bereket ve neşe bitkisi olmuştur.",
+      "ritual": "Bir fesleğen yaprağını koklamayı hayal et — ya da mutfağındaysa kokla. O tazelikle güne küçük bir canlılık çağır: bugün neyi biraz daha isteyerek yapabilirim?"
+    },
+    {
+      "herb_id": "sigirkuyrugu",
+      "tek_satir": "Satürn'ün sessiz meşalesi; dik durmayı bilen bitki.",
+      "story_narrative": "Sığırkuyruğu, klasik gelenekte Satürn'ün bitkileri arasında sayılır — uzun, dik sapıyla tarlaların sessiz bekçisi gibidir. Yumuşak, tüylü yaprakları serte karşı yumuşaklığı temsil eder.\n\nEski kültürde sapları bir zamanlar meşale olarak kullanılmış; karanlıkta yol gösteren, sabırla yükselen bir bitki olarak hikâyelere girmiştir.",
+      "ritual": "Bugün sabırla ilerlediğin uzun bir işi düşün. Sığırkuyruğunun dik sapını hatırla: yavaş yükselen de göğe uzanır. (Bu bitkinin detayında güvenlik notu vardır.)"
+    },
+    {
+      "herb_id": "mese",
+      "tek_satir": "Zamanın omurgası; yüzyıllara kök salan sabır.",
+      "story_narrative": "Meşe, klasik gelenekte gücün ve dayanıklılığın ağacı olarak anılır — kimi zaman Satürn'ün sabrına, kimi zaman Güneş'in ihtişamına yazılır. Yavaş büyür ama yüzyıllar taşır.\n\nEski kültürlerde kutsal sayılmış, altında toplanılan ve söz verilen bir ağaç olmuş; sağlamlığın ve zamanın biriktirdiği değerin sembolü haline gelmiştir.",
+      "ritual": "Uzun vadede kök saldığın bir şeyi düşün — bir ilişki, bir beceri, bir alışkanlık. Meşe gibi: acele etmeyen, ama kalıcı olan. (Bu bitkinin detayında güvenlik notu vardır.)"
+    },
+    {
+      "herb_id": "aslanpencesi",
+      "tek_satir": "Yaprağında çiy toplayan simyacı; Venüs'ün nazik eli.",
+      "story_narrative": "Aslanpençesi, klasik gelenekte Venüs'e yazılan narin bir bitkidir; yelpaze biçimli yaprakları sabah çiy damlalarını inci gibi toplar. Bu özelliği, eski simyacılar için değerli bir imge olmuştur.\n\nGeleneksel kültürde şefkat ve döngülerle ilişkilendirilmiş; sadeliğin içinde saklı bir zarafeti temsil eder.",
+      "ritual": "Sabah, bir yaprağın üzerindeki çiy damlasını — gerçek ya da hayalî — bir an seyret. Küçük şeylerin güzelliğini toplamak da bir bakım biçimidir. (Bu bitkinin detayında güvenlik notu vardır.)"
+    }
+  ]
+}

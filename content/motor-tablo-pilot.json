@@ -1,0 +1,531 @@
+{
+  "_meta": {
+    "belge": "motor-tablo-pilot",
+    "surum": "v0.3-PILOT",
+    "tarih": "2026-07-05",
+    "kapsam": "12 bitkilik pilot; şema kilidi + raf atama örüntüsü. Seri üretim bunu genişletir.",
+    "kararlar": {
+      "P1": "gezegen çelişkisi = çoğunluk + celiski_notu + veto listesi",
+      "P2": "birincil raf = botanik kimlik (ham frekans değil; ilişkisel geçiş → celiski_notu)",
+      "P3": "burç ekseni = saf türetim (bitki.burc alanı kaldırıldı; bkz. cip-turetme-kurallari.json)",
+      "veto_kapanis": "2026-07-05: adaçayı=Jüpiter · nane=Merkür · papatya=Ay · melisa=Merkür · kantaron kozmik_olay=gündönümü — 12 atama FİNAL"
+    },
+    "uyarilar": [
+      "gezegen atamaları 12 pilot bitki için FİNAL (veto masası 5 Tem kapandı); celiski_notu alanları tarihsel gerekçe kaydıdır.",
+      "mevsim[] alanı 46 astrolojik kaynakta YOK; genel bahçıvanlık bilgisiyle geçici — botanik kaynak doğrulaması şart (durum: dogrulanamadi_vault_disi).",
+      "enerjetik/tat/beden alanları yalnız kaynakta görünürse dolduruldu; kalan = provisional/dogrulanamadi.",
+      "T-listesinde bulunmayan bitki app_safe=true ama 'listede yok ≠ sıfır risk'."
+    ],
+    "sema_alanlari": [
+      "herb_id",
+      "names",
+      "gezegen_birincil",
+      "gezegen_ikincil",
+      "celiski_notu",
+      "beden_bolgeleri",
+      "tat",
+      "enerjetik",
+      "mevsim",
+      "mevsim_durum",
+      "kozmik_olay",
+      "guvenlik",
+      "kaynak_sayisi",
+      "source_note"
+    ],
+    "mevsim_notu": "mevsim alanları mevsim-haritasi.json ile senkronlandı (parlama modeli). Otorite: mevsim-haritasi.json."
+  },
+  "acilis_bitkisi": "papatya",
+  "bitkiler": [
+    {
+      "herb_id": "papatya",
+      "names": {
+        "tr": "Papatya",
+        "en": "Chamomile",
+        "la": "Matricaria chamomilla"
+      },
+      "gezegen_birincil": "ay",
+      "gezegen_ikincil": [
+        "mars"
+      ],
+      "celiski_notu": "Kaynaklarda Ay ve Mars eşit sıklıkta (9=9). Mars, papatyanın 'Marsik ısı/öfkeyi serinleten karşıt-bitki' olarak anıldığı ilişkisel bağlamdan gelir — kimlik değil. Botanik kimlik (yatıştırma, uyku, sindirim) Ay'a ait → birincil Ay.",
+      "beden_bolgeleri": [
+        "mide-sindirim",
+        "sinir-uyku"
+      ],
+      "tat": [
+        "acımsı-tatlı"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "provisional",
+        "durum": "kaynakta serinletici geçiyor; nem ekseni dogrulanamadi"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "T-listesinde yok; doğrulanmadı",
+        "not": "contraindications.json'da papatya kaydı yok. Bilinen papatya-ragweed (Asteraceae) alerji notu vault'ta YOK — eklenmesi Türkan kararı."
+      },
+      "kaynak_sayisi": 17,
+      "source_note": "Ay grubu (duygu/sıvı/üreme) ve Mars serinletici bağlamı birden çok kaynakta.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "rezene",
+      "names": {
+        "tr": "Rezene",
+        "en": "Fennel",
+        "la": "Foeniculum vulgare"
+      },
+      "gezegen_birincil": "merkur",
+      "gezegen_ikincil": [
+        "ay",
+        "venus"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "mide-sindirim",
+        "gogus-nefes"
+      ],
+      "tat": [
+        "tatlımsı"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı-hafif",
+        "nem": "provisional",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "yaz",
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 18,
+      "source_note": "Merkür (iletişim/sinir/sindirim) grubunda net; en yüksek frekans (17 Merkür).",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "zencefil",
+      "names": {
+        "tr": "Zencefil",
+        "en": "Ginger",
+        "la": "Zingiber officinale"
+      },
+      "gezegen_birincil": "mars",
+      "gezegen_ikincil": [
+        "saturn"
+      ],
+      "celiski_notu": "Mars (13) ≈ Satürn (12). Satürn, zencefilin 'soğuk-nemli/balgama karşı ısıtıcı' olarak anıldığı ilişkisel bağlamdan gelir. Kimlik (ısı, dolaşım, inflamasyon) Mars → birincil Mars.",
+      "beden_bolgeleri": [
+        "mide-sindirim",
+        "kalp-dolasim"
+      ],
+      "tat": [
+        "keskin"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "kaynakta 'kurutucu-ısıtıcı' açıkça geçiyor"
+      },
+      "mevsim": [
+        "her-mevsim"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok; bilinen antikoagülan etkileşimi vault'ta YOK — Türkan kararı."
+      },
+      "kaynak_sayisi": 18,
+      "source_note": "Mars (enerji/inflamasyon/kas) ve Satürn karşıt-ısıtıcı bağlamı.",
+      "mevsim_tipi": "geleneksel-sembolik"
+    },
+    {
+      "herb_id": "karahindiba",
+      "names": {
+        "tr": "Karahindiba",
+        "en": "Dandelion",
+        "la": "Taraxacum officinale"
+      },
+      "gezegen_birincil": "jupiter",
+      "gezegen_ikincil": [
+        "saturn"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "karaciger",
+        "bobrek-mesane"
+      ],
+      "tat": [
+        "acı"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "provisional",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 16,
+      "source_note": "Jüpiter (karaciğer/kan/genişleme/metabolizma) grubunda net (13).",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "nane",
+      "names": {
+        "tr": "Nane",
+        "en": "Peppermint",
+        "la": "Mentha piperita"
+      },
+      "gezegen_birincil": "merkur",
+      "gezegen_ikincil": [
+        "mars"
+      ],
+      "celiski_notu": "⚠ KIRILGAN: ham frekans Mars'ta yüksek (20) ama kaynaklar naneyi sinir-sistemi/solunum için açıkça Merkür grubuna yazıyor ('İletişim, sinir sistemi, akciğer: Nane, lavanta, rezene'). Keskin tat Mars niteliği → ikincil. Botanik terapötik kimlik (nöral/solunum = Merküryen sistemler) → birincil Merkür. Alternatif okuma Mars; Türkan vetosu için işaretli.",
+      "beden_bolgeleri": [
+        "sinir-uyku",
+        "gogus-nefes",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "keskin",
+        "serinletici-aromatik"
+      ],
+      "enerjetik": {
+        "isi": "serinletici (mentol paradoksu)",
+        "nem": "provisional",
+        "durum": "kaynakta serinletici bağlam"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 16,
+      "source_note": "Mars 20 / Merkür 12; atama kimlik yorumuyla Merkür.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "biberiye",
+      "names": {
+        "tr": "Biberiye",
+        "en": "Rosemary",
+        "la": "Rosmarinus officinalis"
+      },
+      "gezegen_birincil": "gunes",
+      "gezegen_ikincil": [
+        "saturn",
+        "mars"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "kalp-dolasim",
+        "sinir-uyku"
+      ],
+      "tat": [
+        "keskin",
+        "aromatik-buruk"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional; kaynak bağlamı ısıtıcı"
+      },
+      "mevsim": [
+        "her-mevsim"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 15,
+      "source_note": "Güneş (vitalite/kalp/hafıza) baskın (19).",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "isirgan",
+      "names": {
+        "tr": "Isırgan",
+        "en": "Nettle",
+        "la": "Urtica dioica"
+      },
+      "gezegen_birincil": "mars",
+      "gezegen_ikincil": [
+        "saturn"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "kalp-dolasim",
+        "kas-eklem"
+      ],
+      "tat": [
+        "buruk",
+        "mineralli"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "kurutucu",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 15,
+      "source_note": "Mars (demir/kan/uyarıcı/dikenli) kimlik — ilişkisel değil, öz nitelik.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "melisa",
+      "names": {
+        "tr": "Melisa (Oğulotu)",
+        "en": "Lemon Balm",
+        "la": "Melissa officinalis"
+      },
+      "gezegen_birincil": "merkur",
+      "gezegen_ikincil": [
+        "ay"
+      ],
+      "celiski_notu": "Merkür (17) baskın ama Ay eşleşmesi güçlü (duygu/su grubu). Merkür = sinir/zihinsel akış kimliği birincil; Ay = duygusal yatıştırma güçlü ikincil. Sınır bitkisi; Türkan isterse Ay'a çevirebilir.",
+      "beden_bolgeleri": [
+        "sinir-uyku",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "tatlımsı",
+        "aromatik"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "provisional",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 14,
+      "source_note": "Merkür (sinir) + Ay (duygu/su) çift güçlü; kimlik yorumu Merkür.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "lavanta",
+      "names": {
+        "tr": "Lavanta",
+        "en": "Lavender",
+        "la": "Lavandula angustifolia"
+      },
+      "gezegen_birincil": "merkur",
+      "gezegen_ikincil": [
+        "saturn"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "sinir-uyku",
+        "gogus-nefes"
+      ],
+      "tat": [
+        "aromatik-buruk"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "provisional",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 13,
+      "source_note": "Merkür (sinir/solunum) baskın (23).",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "adacayi",
+      "names": {
+        "tr": "Adaçayı",
+        "en": "Sage",
+        "la": "Salvia officinalis"
+      },
+      "gezegen_birincil": "jupiter",
+      "gezegen_ikincil": [
+        "merkur",
+        "gunes"
+      ],
+      "celiski_notu": "⚠ EN KIRILGAN ATAMA: kaynaklar üçe bölünmüş (Jüpiter karaciğer-kan / Merkür solunum-sinir / Güneş kalp). Jüpiter'e 'karaciğer-kan temizleyici, fazlalık giderici' bağlamıyla hafif üstünlük verildi ama zayıf. Türkan önceliğle karar vermeli.",
+      "beden_bolgeleri": [
+        "gogus-nefes",
+        "karaciger"
+      ],
+      "tat": [
+        "acı",
+        "aromatik-buruk"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz",
+        "kis"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": "T3_CAUTION",
+        "uyari_chip": "Tujon/kamfor içerir; gebelikte kontrendike (EMA). Mutfak miktarı ayrı değerlendirilir.",
+        "gebelik": "yasak (contraindications.json)",
+        "not": "contraindications.json 'sage' T3 kaydıyla eşleşti. Etkileşim: antikonvülzan, sedatif, antidiyabetik. Kart detay yüzünde uyarı çipi ZORUNLU."
+      },
+      "kaynak_sayisi": 13,
+      "source_note": "Dağınık; Jüpiter geçici birincil.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "atkuyrugu",
+      "names": {
+        "tr": "Atkuyruğu (Kırkkilit)",
+        "en": "Horsetail",
+        "la": "Equisetum arvense"
+      },
+      "gezegen_birincil": "saturn",
+      "gezegen_ikincil": [],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "kas-eklem",
+        "bobrek-mesane"
+      ],
+      "tat": [
+        "mineralli",
+        "buruk"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "kurutucu",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok; Satürn rafının pilotta tek güçlü temsili."
+      },
+      "kaynak_sayisi": 9,
+      "source_note": "Satürn (kemik/mineral/silika/yapı) baskın (13) — saturnien kimlik net.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "sari_kantaron",
+      "names": {
+        "tr": "Sarı Kantaron",
+        "en": "St John's Wort",
+        "la": "Hypericum perforatum"
+      },
+      "gezegen_birincil": "gunes",
+      "gezegen_ikincil": [
+        "saturn"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "sinir-uyku",
+        "deri"
+      ],
+      "tat": [
+        "buruk",
+        "acımsı"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "provisional",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": "gundonumu",
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": "T2_INTERACTION",
+        "uyari_chip": "Güçlü ilaç etkileşimi: doğum kontrol hapının etkisini düşürür; SSRI ile ciddi risk. İlaç kullanıyorsan bir uzmana danış.",
+        "gebelik": "yasak (contraindications.json)",
+        "not": "contraindications.json 'st_johns_wort' T2 kaydıyla eşleşti. Etkileşim listesi: doğum kontrol, SSRI, warfarin, siklosporin, digoksin, HIV antiretroviral, triptan. Kart detay yüzünde uyarı çipi ZORUNLU. Motor kuralı: ilaç kullanana önerme."
+      },
+      "kaynak_sayisi": 9,
+      "source_note": "Güneş (ışık/'güneş otu') baskın (13). Gündönümü çiçeklenmesi → ilk kozmik_olay kart adayı.",
+      "mevsim_tipi": "botanik"
+    }
+  ]
+}

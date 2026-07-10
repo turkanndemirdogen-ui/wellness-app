@@ -1,0 +1,15 @@
+# Node
+node_modules/
+
+# Secrets — .env repo köküne girmez (mobile/.env de ayrıca yok sayılır)
+.env
+.env*.local
+
+# Üretilmiş / geçici
+*.log
+.DS_Store
+
+# Build çıktıları (elle üretilen anlık paketler; repoya girmez)
+wellness-app-BUILD-*.zip
+
+# Mobil uygulamanın kendi .gitignore'u mobile/ içinde

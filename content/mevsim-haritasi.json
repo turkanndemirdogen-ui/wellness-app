@@ -1,0 +1,317 @@
+{
+  "_meta": {
+    "belge": "mevsim-haritasi",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "cerceve": "C hibrit iki-katman + PARLAMA modeli (R1.2 revize). mevsim = 'mevcudiyet/toplanabilirlik ve parlama penceresi' (çiçeklenme değil); Türkiye/Anadolu iklimi.",
+    "model": "Parlama: her bitki her zaman toplanabilir; mevsim yalnız o dönem 'mevsim konuğu' olarak PARLAYAN bitkileri belirler. Kıtlık YOK. (Kozmik katman ayrı: gerçek nadir.)",
+    "durum_TUM": "taslak-claude-genel-botanik → Türkan botanik-referans teyidi bekliyor (1+2 sentez kararı). Teyit sonrası mevsim_durum=dogrulandi-turkan.",
+    "tip_dagilim": "34 botanik + 2 geleneksel-sembolik (zencefil, tarçın tropik) + biberiye botanik-herdem. Sembolik olanlar damgalı+gerekçeli."
+  },
+  "bitkiler": {
+    "papatya": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "rezene": {
+      "mevsim": [
+        "yaz",
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "tohum sonbahar",
+      "mevsim_durum": "taslak-claude"
+    },
+    "zencefil": {
+      "mevsim": [
+        "her-mevsim"
+      ],
+      "mevsim_tipi": "geleneksel-sembolik",
+      "gerekce": "tropik rizom; kültürel kış ısıtıcısı vurgusu",
+      "mevsim_durum": "taslak-claude"
+    },
+    "karahindiba": {
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "nane": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "biberiye": {
+      "mevsim": [
+        "her-mevsim"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "herdem yeşil",
+      "mevsim_durum": "taslak-claude"
+    },
+    "isirgan": {
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "taze sürgün",
+      "mevsim_durum": "taslak-claude"
+    },
+    "melisa": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "lavanta": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "adacayi": {
+      "mevsim": [
+        "yaz",
+        "kis"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "yaprak herdem yeşil; kış boğaz-çayı geleneği",
+      "mevsim_durum": "taslak-claude"
+    },
+    "atkuyrugu": {
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "sürgün",
+      "mevsim_durum": "taslak-claude"
+    },
+    "sari_kantaron": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "gündönümü kozmik ayrı katman",
+      "mevsim_durum": "taslak-claude"
+    },
+    "aynisefa": {
+      "mevsim": [
+        "yaz",
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "uzun çiçeklenme",
+      "mevsim_durum": "taslak-claude"
+    },
+    "kekik": {
+      "mevsim": [
+        "yaz",
+        "kis"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "herdem yeşil; kış çayı geleneği",
+      "mevsim_durum": "taslak-claude"
+    },
+    "hatmi": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "civanpercemi": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "sarimsak": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "hasat",
+      "mevsim_durum": "taslak-claude"
+    },
+    "menekse": {
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "erken ilkbahar",
+      "mevsim_durum": "taslak-claude"
+    },
+    "ihlamur": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "çiçek yaz (kış çayı = kullanım, toplama yaz)",
+      "mevsim_durum": "taslak-claude"
+    },
+    "maydanoz": {
+      "mevsim": [
+        "ilkbahar",
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "iki yıllık",
+      "mevsim_durum": "taslak-claude"
+    },
+    "anason": {
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "tohum",
+      "mevsim_durum": "taslak-claude"
+    },
+    "gul": {
+      "mevsim": [
+        "ilkbahar",
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "devedikeni": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "kediotu": {
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "kök hasadı",
+      "mevsim_durum": "taslak-claude"
+    },
+    "hindiba": {
+      "mevsim": [
+        "yaz",
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "tarcin": {
+      "mevsim": [
+        "her-mevsim"
+      ],
+      "mevsim_tipi": "geleneksel-sembolik",
+      "gerekce": "tropik kabuk; kültürel kış baharatı vurgusu",
+      "mevsim_durum": "taslak-claude"
+    },
+    "marul": {
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "serin mevsim",
+      "mevsim_durum": "taslak-claude"
+    },
+    "ceviz": {
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "hasat",
+      "mevsim_durum": "taslak-claude"
+    },
+    "murver": {
+      "mevsim": [
+        "ilkbahar",
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "çiçek ilkbahar / meyve sonbahar",
+      "mevsim_durum": "taslak-claude"
+    },
+    "serbetciotu": {
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "koni hasadı",
+      "mevsim_durum": "taslak-claude"
+    },
+    "ebegumeci": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "nilufer": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "sogut": {
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "feslegen": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "sıcak sever",
+      "mevsim_durum": "taslak-claude"
+    },
+    "sigirkuyrugu": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    },
+    "mese": {
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "palamut",
+      "mevsim_durum": "taslak-claude"
+    },
+    "aslanpencesi": {
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_tipi": "botanik",
+      "gerekce": "",
+      "mevsim_durum": "taslak-claude"
+    }
+  }
+}

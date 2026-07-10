@@ -1,0 +1,237 @@
+{
+  "_meta": {
+    "puanlama": "p +2, s +1; Baskın+Yükselen.",
+    "durum": "TASLAK-ONAYLI; TR polisaj checklist.",
+    "belge": "quiz-ay12-degerler",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "KATMAN": "A-BİLİM (yumuşak). Schwartz Temel İnsani Değerler kuramından ESİNLENMİŞTİR. Klinik/doğrulanmış envanter DEĞİL; sembolik yıl-kapanışı yansıtması.",
+    "ic_kaynak": "Schwartz değerler dairesi (genel akademik çerçeve); 7 değere sadeleştirildi, metinler özgün. 'Esinlenen' ibaresi zorunlu.",
+    "yil_kapanisi": "12. ay = yıl kapanışı teması: 'gelecek yıl neye alan açacaksın'. Rotasyonun finali; bir sonraki yıla köprü.",
+    "gating": "Free: baskın/yükselen değer+kisa. Pro: derin_ek (bu yıla soru) + astro overlay + yıllık değer-yolculuğu özeti.",
+    "hassasiyet": "Değerler hiyerarşik/yargısal DEĞİL sunulur (hiçbir değer 'daha iyi'). 'Kalıp değil ayna.' Etiket: sembolik · eğlence amaçlı."
+  },
+  "acilis_metni": "Yıl kapanıyor. Bu bir test değil, bir ayna — pusulanın gelecek yıl nereyi gösterdiğine bakıyoruz.",
+  "sonuc_sablonu": "Pusulan: {A} · Yükselen: {B} — {A_tek_satir}",
+  "arketipler": {
+    "ozgurluk": {
+      "ad": "Özgürlük",
+      "tek_satir": "Kendi yolunu çizmek senin için her şeyden değerli.",
+      "kisa": "Özerklik ve özgür seçim senin pusulan — bağımsızlık, kendi kararların, sınırsızlık. Gelecek yıl kendine daha çok alan açmak isteyebilirsin.",
+      "derin_ek": "Bu yıla soru: özgürlüğü bağlardan kaçış olarak mı, kendini gerçekleştirme olarak mı yaşıyorsun?",
+      "paylasim": "Değerim: Özgürlük — kendi yolumu çizerim."
+    },
+    "baglilik": {
+      "ad": "Bağlılık",
+      "tek_satir": "Sevdiklerinle derin bağlar senin en büyük zenginliğin.",
+      "kisa": "Yakınlık ve aidiyet senin pusulan — aile, dostluk, sadakat. Gelecek yıl bağlarını beslemeye alan açabilirsin.",
+      "derin_ek": "Bu yıla soru: bağlarına verdiğin emeği kendine de veriyor musun?",
+      "paylasim": "Değerim: Bağlılık — bağlarım zenginliğim."
+    },
+    "basari": {
+      "ad": "Başarı",
+      "tek_satir": "Bir şeyi ustalıkla yapmak ve iz bırakmak seni ateşler.",
+      "kisa": "Yetkinlik ve etki senin pusulan — hedefler, ustalık, katkı. Gelecek yıl anlamlı bir başarıya yönelmek isteyebilirsin.",
+      "derin_ek": "Bu yıla soru: başarıyı dışarının onayı için mi, kendi tatmin in için mi arıyorsun?",
+      "paylasim": "Değerim: Başarı — iz bırakmak isterim."
+    },
+    "huzur": {
+      "ad": "Huzur",
+      "tek_satir": "İç denge ve sükûnet senin için en yüksek değer.",
+      "kisa": "Denge ve dinginlik senin pusulan — sadelik, iç barış, uyum. Gelecek yıl huzuru koruyan sınırlar kurmak isteyebilirsin.",
+      "derin_ek": "Bu yıla soru: huzur bir kaçış mı, yoksa bilinçli bir seçim mi senin için?",
+      "paylasim": "Değerim: Huzur — iç dengem pusulam."
+    },
+    "merak": {
+      "ad": "Merak",
+      "tek_satir": "Öğrenmek, keşfetmek, büyümek seni canlı tutar.",
+      "kisa": "Gelişim ve keşif senin pusulan — öğrenme, yeni deneyim, bilgelik. Gelecek yıl merakını besleyecek yollar arayabilirsin.",
+      "derin_ek": "Bu yıla soru: öğrendiklerini yaşamına da katıyor musun, yoksa sadece biriktiriyor musun?",
+      "paylasim": "Değerim: Merak — öğrenmek beni canlı tutar."
+    },
+    "sefkat_d": {
+      "ad": "Şefkat",
+      "tek_satir": "Dünyaya ve insanlara iyilik katmak senin misyonun.",
+      "kisa": "İyilik ve katkı senin pusulan — yardım, adalet, merhamet. Gelecek yıl şefkatini somut bir yola dökmek isteyebilirsin.",
+      "derin_ek": "Bu yıla soru: dünyaya verdiğin şefkatin bir damlasını kendine ayırıyor musun?",
+      "paylasim": "Değerim: Şefkat — iyilik katmak misyonum."
+    },
+    "yaraticilik_d": {
+      "ad": "Yaratıcılık",
+      "tek_satir": "Var olmayanı hayal edip yaratmak senin özün.",
+      "kisa": "İfade ve özgünlük senin pusulan — sanat, vizyon, üretim. Gelecek yıl yaratıcı sesini daha çok duyurmak isteyebilirsin.",
+      "derin_ek": "Bu yıla soru: yaratma dürtünü erteliyor musun, yoksa ona yer açıyor musun?",
+      "paylasim": "Değerim: Yaratıcılık — hayal edip yaratırım."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Gelecek yıl için en çok neyi diliyorsun?",
+      "secenekler": [
+        {
+          "metin": "Daha çok özgürlük ve alan",
+          "p": "ozgurluk"
+        },
+        {
+          "metin": "Daha derin bağlar",
+          "p": "baglilik"
+        },
+        {
+          "metin": "Anlamlı bir başarı",
+          "p": "basari"
+        },
+        {
+          "metin": "Daha çok iç huzur",
+          "p": "huzur"
+        }
+      ]
+    },
+    {
+      "soru": "Seni gerçekten mutlu eden?",
+      "secenekler": [
+        {
+          "metin": "Yeni şeyler öğrenmek",
+          "p": "merak"
+        },
+        {
+          "metin": "Birine iyilik yapmak",
+          "p": "sefkat_d"
+        },
+        {
+          "metin": "Bir şey yaratmak",
+          "p": "yaraticilik_d"
+        },
+        {
+          "metin": "Sevdiklerimle olmak",
+          "p": "baglilik"
+        }
+      ]
+    },
+    {
+      "soru": "Bir kararı neye göre verirsin?",
+      "secenekler": [
+        {
+          "metin": "Bana özgürlük veriyor mu?",
+          "p": "ozgurluk"
+        },
+        {
+          "metin": "İlişkilerime iyi geliyor mu?",
+          "p": "baglilik"
+        },
+        {
+          "metin": "Beni ilerletiyor mu?",
+          "p": "basari"
+        },
+        {
+          "metin": "Huzurumu koruyor mu?",
+          "p": "huzur"
+        }
+      ]
+    },
+    {
+      "soru": "Zamanını en çok neye ayırmak istersin?",
+      "secenekler": [
+        {
+          "metin": "Keşfe, öğrenmeye",
+          "p": "merak"
+        },
+        {
+          "metin": "Yardıma, katkıya",
+          "p": "sefkat_d"
+        },
+        {
+          "metin": "Yaratmaya",
+          "p": "yaraticilik_d"
+        },
+        {
+          "metin": "Dinginliğe",
+          "p": "huzur"
+        }
+      ]
+    },
+    {
+      "soru": "Seni en çok ne tatmin eder?",
+      "secenekler": [
+        {
+          "metin": "Kendi kararlarımı vermek",
+          "p": "ozgurluk"
+        },
+        {
+          "metin": "Bir şeyi ustalıkla bitirmek",
+          "p": "basari"
+        },
+        {
+          "metin": "Birinin hayatına dokunmak",
+          "p": "sefkat_d"
+        },
+        {
+          "metin": "Yeni bir şey kavramak",
+          "p": "merak"
+        }
+      ]
+    },
+    {
+      "soru": "Hayatında olmazsa olmaz?",
+      "secenekler": [
+        {
+          "metin": "Bağımsızlığım",
+          "p": "ozgurluk"
+        },
+        {
+          "metin": "Sevdiklerim",
+          "p": "baglilik"
+        },
+        {
+          "metin": "İç huzurum",
+          "p": "huzur"
+        },
+        {
+          "metin": "Yaratma alanım",
+          "p": "yaraticilik_d"
+        }
+      ]
+    },
+    {
+      "soru": "Bir yıl sonra kendine ne demek istersin?",
+      "secenekler": [
+        {
+          "metin": "'Daha özgürüm'",
+          "p": "ozgurluk"
+        },
+        {
+          "metin": "'Daha bağlıyım'",
+          "p": "baglilik"
+        },
+        {
+          "metin": "'Daha başarılıyım'",
+          "p": "basari"
+        },
+        {
+          "metin": "'Daha huzurluyum'",
+          "p": "huzur"
+        }
+      ]
+    },
+    {
+      "soru": "Dünyaya ne bırakmak istersin?",
+      "secenekler": [
+        {
+          "metin": "İyilik ve şefkat",
+          "p": "sefkat_d"
+        },
+        {
+          "metin": "Bir eser, bir iz",
+          "p": "yaraticilik_d"
+        },
+        {
+          "metin": "Bilgi ve ilham",
+          "p": "merak"
+        },
+        {
+          "metin": "Sevgi ve bağ",
+          "p": "baglilik"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "belge": "engine-config",
+    "surum": "v1.0",
+    "tarih": "2026-07-05",
+    "karar": "K4-4 (Türkan onayı): 5 majör açı; sert=90/180, yumuşak=60/120; kavuşum kalitesi transit gezegene göre; orb Ay ±3°, diğer ±2°. Not: transit orbları için evrensel standart yok; bu değerler motorun tanımıdır, testle ince ayar yapılabilir."
+  },
+  "aspects_deg": [
+    0,
+    60,
+    90,
+    120,
+    180
+  ],
+  "quality_map": {
+    "90": "sert",
+    "180": "sert",
+    "60": "yumusak",
+    "120": "yumusak"
+  },
+  "conjunction_quality_by_transit": {
+    "venus": "yumusak",
+    "jupiter": "yumusak",
+    "mars": "sert",
+    "saturn": "sert",
+    "ay": "yumusak",
+    "merkur": "yumusak",
+    "gunes": "yumusak"
+  },
+  "orb_deg": {
+    "ay": 3.0,
+    "default": 2.0
+  },
+  "natal_targets_v1": [
+    "gunes",
+    "ay",
+    "asc",
+    "merkur",
+    "venus"
+  ],
+  "transit_sets": {
+    "katman1": [
+      "ay"
+    ],
+    "katman2": [
+      "saturn",
+      "jupiter",
+      "mars"
+    ]
+  },
+  "priority_rule": "Yüksek priority kazanır: katman2=30 > katman1b=20 > katman1a=10. Eşitlikte sert > yumuşak. Kullanıcı günde tek birleşik mesaj görür."
+}

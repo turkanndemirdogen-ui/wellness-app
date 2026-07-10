@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "surum": "1.0",
+    "section": "journal",
+    "source_trust_tier": "dogrulanmis_cekirdek",
+    "display_language": "tr",
+    "framing": "Kanıt-temelli yansıtıcı günlük + şükran. Terapi değildir. İki mod: şükran (sağlam, düşük risk) ve yansıtıcı/ifade edici yazma (faydalı ama uyarılı).",
+    "free_preview_fields": [
+      "modes.ad",
+      "prompts (şükran)"
+    ],
+    "pro_only_fields": [
+      "modes (tam derinlik)",
+      "prompts (yansıtıcı/perspektif)",
+      "practice_rules",
+      "kişisel prompt analizi"
+    ],
+    "not": "Astro-context (sembolik): günlük transit/Ay teması bir prompt TOHUMU olabilir — kanıt akışından ayrı, 'bugünün sembolik teması' etiketiyle. Çapraz: mood (yazı↔ruh hali), reminders (günlük hatırlatma)."
+  },
+  "evidence_levels": {
+    "strong": "güçlü (pozitif psikoloji/klinik)",
+    "moderate": "orta (küçük-orta etki)",
+    "limited": "sınırlı"
+  },
+  "modes": [
+    {
+      "id": "gratitude",
+      "ad": "Şükran Günlüğü",
+      "ne": "İyi giden / minnettar olunan şeyleri yazmak; iyi oluşu artırır.",
+      "nasil": "Kısa, somut, samimi — 3 şey veya bir an.",
+      "sure": "3–5 dk",
+      "evidence_level": "strong",
+      "not": "Sağlam pozitif-psikoloji kanıtı; düşük risk. Mekanik tekrar yerine somut/yeni anlar daha etkili.",
+      "evidence_urls": [
+        "https://www.simplypsychology.com/articles/journaling-for-mental-health"
+      ]
+    },
+    {
+      "id": "reflective",
+      "ad": "Yansıtıcı / İfade Edici Yazma",
+      "ne": "En derin düşünce ve duyguları, zorlayıcı bir deneyim üzerine yazmak (Pennebaker).",
+      "nasil": "Dil bilgisini dert etme, akışına bırak; anlam-yapımına doğru hareket et.",
+      "sure": "15–20 dk",
+      "evidence_level": "moderate",
+      "not": "DİKKAT: geçici olarak sıkıntı artırabilir (özellikle travma); aynı hikâyeyi aynı şekilde tekrarlamak = ruminasyon, faydasız. Perspektif kaydır.",
+      "evidence_urls": [
+        "https://www.va.gov/WHOLEHEALTHLIBRARY/docs/Therapeutic-Journaling.pdf",
+        "https://www.apa.org/news/podcasts/speaking-of-psychology/expressive-writing"
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "kategori": "sukran",
+      "prompt": "Bugün minnettar olduğun 3 şey neydi?"
+    },
+    {
+      "kategori": "sukran",
+      "prompt": "Bugün iyi giden küçük bir an."
+    },
+    {
+      "kategori": "sukran",
+      "prompt": "Bugün sana destek olan / iyi hissettiren biri."
+    },
+    {
+      "kategori": "sukran",
+      "prompt": "Kendinde takdir ettiğin bir şey."
+    },
+    {
+      "kategori": "yansitici",
+      "prompt": "Zihnini meşgul eden bir şeyi olduğu gibi yaz — dil bilgisini dert etme."
+    },
+    {
+      "kategori": "yansitici",
+      "prompt": "Bugün seni en çok etkileyen olay ve hissettirdikleri."
+    },
+    {
+      "kategori": "anlam_yapimi",
+      "prompt": "Bu deneyimden ne öğrendin ya da ne fark ettin?"
+    },
+    {
+      "kategori": "perspektif_kaydirma",
+      "prompt": "Bu durum bir başkasının gözünden nasıl görünürdü?"
+    },
+    {
+      "kategori": "perspektif_kaydirma",
+      "prompt": "Bir yıl sonra buna nasıl bakardın?"
+    },
+    {
+      "kategori": "perspektif_kaydirma",
+      "prompt": "Geçmişte benzer bir şeyi nasıl atlattın?"
+    }
+  ],
+  "practice_rules": {
+    "sure": "15–20 dk en kanıtlı aralık; daha uzun daha iyi DEĞİL.",
+    "siklik": "Kısa-günlük seanslar, seyrek-uzun seanslardan daha iyi sonuç verir.",
+    "bicim": "Dil bilgisi/üslup önemli değil; süreklilik önemli (defter/app fark etmez).",
+    "anti_ruminasyon": "Aynı içeriği aynı şekilde tekrarlama ruminasyon işaretidir → perspektif-kaydırma promptuna yönlendir."
+  },
+  "safety": {
+    "framing": "Günlük, öz-farkındalık ve iyi oluş içindir; terapi/tedavi DEĞİLDİR. Uygulama insan/profesyonel desteğin yerini almaz.",
+    "gecici_sikinti": "İfade edici yazma kısa vadede sıkıntıyı artırabilir (özellikle travma) ama haftalar içinde fayda gelebilir. Kullanıcıya bunu nazikçe hatırlat; zorlama.",
+    "ruminasyon": "Yazı daha aktive ederek aynı döngüde dönüyorsa: perspektif-kaydırma/anlam-yapımı promptuna geç; ısrar etme.",
+    "travma": "Ciddi travma için günlük TEK BAŞINA değil, profesyonel destekle birlikte güvenli. Yerine koymaz.",
+    "kriz": "Kriz/intihar/kendine zarar sinyalinde: tanı yok, klinik değerlendirme sorusu yok; sıcak dille endişe + bölgeye uygun GÜNCEL kriz kaynağı (app config). Yöntem adı verme. (mood modülü güvenlik bloğuyla ortak)",
+    "yonlendirme": "Süreklilik gösteren distres → ruh sağlığı desteğine yönlendir. Aşırı bağlılığı teşvik etme."
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "_meta": {
+    "belge": "quiz-ay5-bitki",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "ozel_sinerji": "EN GÜÇLÜ HERBARYUM CROSS-SELL AYI. Arketip = bitkinin kendisi; sonuç doğrudan koleksiyondaki bir kart. Sonuç ekranı → 'Ruh bitkin: X' → o kart herbaryumda KALICI 'ruh bitkin' rozeti + parlama kazanır (tekrar-değeri + koleksiyon bağı). Diğer aylardan farkı: bitki köprüsü ayrı bir bitkiye DEĞİL, sonucun kendisine gider.",
+    "secim_mantigi": "37 havuzdan klasik 7 gezegeni tam temsil eden 7 bitki (motor tabloyla %100 tutarlı: papatya=Ay, biberiye=Güneş, lavanta=Merkür, gül=Venüs, ısırgan=Mars, karahindiba=Jüpiter, atkuyruğu=Satürn). Veto-açık. v2 genişleme adayı: element bazlı ikinci 7'li.",
+    "hassasiyet": "'Kalıp değil ayna' açılışı ortak. Bitki karakterleri sembolik (geleneksel enerji); doz/tüketim/tıbbi iddia YOK. Etiket: sembolik · eğlence amaçlı.",
+    "puanlama": "p +2, s +1; Baskın (=ruh bitkin) + Yükselen. Eşitlikte son soru tercihi.",
+    "gating": "Free: ruh bitkin + kisa + koleksiyon rozeti. Pro: derin_ek (gölge daveti) + astro overlay + o bitkinin gezegen-günü içeriği.",
+    "durum": "TASLAK-ONAYLI; TR polisaj launch checklist."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — hepsi sende var. Bugün hangi bitki sende en çok konuşuyor, ona bakıyoruz.",
+  "sonuc_sablonu": "Ruh bitkin: {A} {A_glif} · Yükselen: {B} — {A_tek_satir} Yükselen {B} enerjisi de sana eşlik ediyor. (Bu kart artık bahçende özel parlıyor.)",
+  "arketipler": {
+    "papatya": {
+      "ad": "Papatya",
+      "glif": "☾ Ay",
+      "tek_satir": "Sen sakin bir sığınaksın; telaşın ortasında insanların nefes aldığı yer.",
+      "kisa": "Papatya ruhu yatıştırmaktır — gösterişsiz ama vazgeçilmez. İnsanlar yanında yavaşlar, güvenir. Gücün yumuşaklığında.",
+      "derin_ek": "Gölge daveti: herkesi sakinleştirirken kendi fırtınanı bastırma; senin de dalgalanmaya hakkın var.",
+      "paylasim": "Ruh bitkim: Papatya — sakin bir sığınağım."
+    },
+    "biberiye": {
+      "ad": "Biberiye",
+      "glif": "☉ Güneş",
+      "tek_satir": "Sen canlı bir hafızasın; sadakatin ve ışığın yıllara direnir.",
+      "kisa": "Biberiye ruhu diri kalmaktır — kışın bile yeşil. Hatırlarsın, sadıksın, kolay kolay solmazsın. Kokun bile iz bırakır.",
+      "derin_ek": "Gölge daveti: her şeyi hatırlamak bazen ağırdır; bazı şeyleri bırakmak da bir tazelenme.",
+      "paylasim": "Ruh bitkim: Biberiye — ışığım kışın bile yeşil."
+    },
+    "lavanta": {
+      "ad": "Lavanta",
+      "glif": "☿ Merkür",
+      "tek_satir": "Sen bir akşam huzurusun; kalabalık zihinleri durultursun.",
+      "kisa": "Lavanta ruhu berraklıktır — telaşlı bir günün sonunda gözün dinlendiği yer. Sakinleştirir, düzenler, ferahlatırsın.",
+      "derin_ek": "Gölge daveti: herkesin huzuru olurken kendi kokunu unutma; sana da dinlenmek düşer.",
+      "paylasim": "Ruh bitkim: Lavanta — kalabalığı durultan huzur."
+    },
+    "gul": {
+      "ad": "Gül",
+      "glif": "♀ Venüs",
+      "tek_satir": "Sen hem açık hem sınırlısın; güzelliğin dikeniyle birlikte gelir.",
+      "kisa": "Gül ruhu zarafet ve öz-değerdir — kalbin açık ama sınırların net. Sevmeyi de korunmayı da aynı anda bilirsin.",
+      "derin_ek": "Gölge daveti: dikenlerin seni korur ama bazen yaklaşmak isteyeni de uzaklaştırır; güvendiğinde açılmak cesarettir.",
+      "paylasim": "Ruh bitkim: Gül — kalbim açık, sınırım net."
+    },
+    "isirgan": {
+      "ad": "Isırgan",
+      "glif": "♂ Mars",
+      "tek_satir": "Sen sahici bir güçsün; dokunulmayı beklemez, mesafeni hissettirirsin.",
+      "kisa": "Isırgan ruhu sınır ve sahiciliktir — yaklaşana mesafesini gösterir ama tanıyana en besleyici yeşilliktir. Yumuşamadan koruyabilirsin.",
+      "derin_ek": "Gölge daveti: sürekli kalkan olmak yorar; doğru ellerde dikensiz de kalabilirsin.",
+      "paylasim": "Ruh bitkim: Isırgan — sahiciliğim pazarlık kabul etmez."
+    },
+    "karahindiba": {
+      "ad": "Karahindiba",
+      "glif": "♃ Jüpiter",
+      "tek_satir": "Sen özgür bir dileksin; tutunmayı değil, rüzgâra bırakmayı bilirsin.",
+      "kisa": "Karahindiba ruhu özgürlük ve cömertliktir — biriktirmez, dağıtırsın. Nereye düşsen kök salar, her yerde çiçek açarsın.",
+      "derin_ek": "Gölge daveti: hep akıp gitmek güzeldir; ama bazen bir yere kök salmak da özgürlüğün parçası.",
+      "paylasim": "Ruh bitkim: Karahindiba — dileğimi rüzgâra bırakırım."
+    },
+    "atkuyrugu": {
+      "ad": "Atkuyruğu",
+      "glif": "♄ Satürn",
+      "tek_satir": "Sen kadim bir omurgasın; yavaş büyür, sağlam durursun.",
+      "kisa": "Atkuyruğu ruhu sabır ve yapıdır — milyonlarca yıldır ayakta. Gösteriş değil, dayanıklılık. Fırtınada bükülür ama kırılmazsın.",
+      "derin_ek": "Gölge daveti: sağlam olmak zorunda değilsin her an; bazen eğilmek de gücün bir hali.",
+      "paylasim": "Ruh bitkim: Atkuyruğu — yavaş büyüyen, sağlam duran."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Bir arkadaşın kriz anında seni arar. İlk tepkin?",
+      "secenekler": [
+        {
+          "metin": "Sakinleştiririm, 'nefes al, buradayım' derim",
+          "p": "papatya"
+        },
+        {
+          "metin": "Dinler, net bir çözüm planı çıkarırım",
+          "p": "lavanta",
+          "s": "atkuyrugu"
+        },
+        {
+          "metin": "'Yanındayım, kimse sana dokunamaz' derim",
+          "p": "isirgan"
+        },
+        {
+          "metin": "Perspektif veririm: 'bu da geçer, büyük resme bak'",
+          "p": "karahindiba"
+        }
+      ]
+    },
+    {
+      "soru": "İdeal bir gün sonu?",
+      "secenekler": [
+        {
+          "metin": "Sıcak banyo, loş ışık, sessizlik",
+          "p": "lavanta"
+        },
+        {
+          "metin": "Sevdiklerimle, kahkahayla dolu bir sofra",
+          "p": "biberiye"
+        },
+        {
+          "metin": "Doğada tek başıma bir yürüyüş",
+          "p": "isirgan",
+          "s": "karahindiba"
+        },
+        {
+          "metin": "Mum, günlük, kendimle baş başa",
+          "p": "papatya"
+        }
+      ]
+    },
+    {
+      "soru": "İnsanlar seni ilk tanıdığında ne hisseder?",
+      "secenekler": [
+        {
+          "metin": "Ferahlık, huzur",
+          "p": "lavanta"
+        },
+        {
+          "metin": "Sıcaklık, güven",
+          "p": "biberiye"
+        },
+        {
+          "metin": "Merak — 'seni çözemedim'",
+          "p": "gul"
+        },
+        {
+          "metin": "Saygılı mesafe",
+          "p": "isirgan"
+        }
+      ]
+    },
+    {
+      "soru": "Sınır koyman gerektiğinde?",
+      "secenekler": [
+        {
+          "metin": "Nazikçe ama net söylerim",
+          "p": "gul"
+        },
+        {
+          "metin": "Açıkça, tereddütsüz",
+          "p": "isirgan"
+        },
+        {
+          "metin": "Sessizce geri çekilirim",
+          "p": "papatya"
+        },
+        {
+          "metin": "Esnerim ama kırılmam",
+          "p": "atkuyrugu"
+        }
+      ]
+    },
+    {
+      "soru": "Hangi ev köşesi seninle özdeş?",
+      "secenekler": [
+        {
+          "metin": "Bitkilerle dolu ferah balkon",
+          "p": "karahindiba"
+        },
+        {
+          "metin": "Kitaplı, sakin okuma köşesi",
+          "p": "atkuyrugu"
+        },
+        {
+          "metin": "Işıklı, canlı mutfak",
+          "p": "biberiye"
+        },
+        {
+          "metin": "Yumuşak, loş dinlenme köşesi",
+          "p": "papatya",
+          "s": "lavanta"
+        }
+      ]
+    },
+    {
+      "soru": "Bir hayalin nasıl gerçeğe döner?",
+      "secenekler": [
+        {
+          "metin": "Sabırla, adım adım, yıllara yayarak",
+          "p": "atkuyrugu"
+        },
+        {
+          "metin": "Bırakırım, doğru zamanda kendi gelir",
+          "p": "karahindiba"
+        },
+        {
+          "metin": "Kalbimin sesini takip ederek",
+          "p": "gul"
+        },
+        {
+          "metin": "İnatla, kışın bile vazgeçmeyerek",
+          "p": "biberiye"
+        }
+      ]
+    },
+    {
+      "soru": "Zor bir duyguyla nasıl baş edersin?",
+      "secenekler": [
+        {
+          "metin": "Kendime yumuşak davranır, geçmesini beklerim",
+          "p": "papatya"
+        },
+        {
+          "metin": "Düşünceyi yazıya döker, durultur um",
+          "p": "lavanta"
+        },
+        {
+          "metin": "Doğaya çıkar, toprakta boşaltırım",
+          "p": "isirgan"
+        },
+        {
+          "metin": "Büyük resme bakar, hafiflerim",
+          "p": "karahindiba"
+        }
+      ]
+    },
+    {
+      "soru": "Seni en iyi anlatan söz?",
+      "secenekler": [
+        {
+          "metin": "'Yavaş büyüyen, sağlam durur'",
+          "p": "atkuyrugu"
+        },
+        {
+          "metin": "'Kışın bile yeşil kalırım'",
+          "p": "biberiye"
+        },
+        {
+          "metin": "'Açığım ama sınırlıyım'",
+          "p": "gul"
+        },
+        {
+          "metin": "'Telaşı yavaşlatırım'",
+          "p": "papatya"
+        }
+      ]
+    },
+    {
+      "soru": "Bir grupta seni nerede buluruz?",
+      "secenekler": [
+        {
+          "metin": "Ortamı yatıştıran, herkesi rahat ettiren",
+          "p": "lavanta"
+        },
+        {
+          "metin": "Enerji veren, hikâye anlatan",
+          "p": "biberiye"
+        },
+        {
+          "metin": "Kenarda, gözlemleyen, seçici",
+          "p": "gul"
+        },
+        {
+          "metin": "Kendi köşesinde, bağımsız",
+          "p": "isirgan",
+          "s": "karahindiba"
+        }
+      ]
+    },
+    {
+      "soru": "Gece göğünde seni ne çağırır?",
+      "secenekler": [
+        {
+          "metin": "Ayın yumuşak ışığı",
+          "p": "papatya"
+        },
+        {
+          "metin": "Sabırla dönen takımyıldızlar",
+          "p": "atkuyrugu"
+        },
+        {
+          "metin": "Rüzgârda savrulan bulutlar",
+          "p": "karahindiba"
+        },
+        {
+          "metin": "Günbatımının son turuncusu",
+          "p": "biberiye"
+        }
+      ]
+    }
+  ]
+}

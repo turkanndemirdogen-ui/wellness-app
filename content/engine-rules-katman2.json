@@ -1,0 +1,389 @@
+{
+  "_meta": {
+    "belge": "engine-rules-katman2",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "not": "Dönemsel transitler (Satürn/Jüpiter/Mars × sert-yumuşak × Güneş/Ay/Asc); orb ±2°. 18 kural × 2 varyant.",
+    "ton": "davetkar, kader dilsiz, emir yok; TASLAK-ONAYLI, TR polisaj launch checklist"
+  },
+  "rules": [
+    {
+      "rule_id": "k2_saturn_sert_gunes",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "saturn",
+        "aspect_quality": "sert",
+        "natal_target": "gunes",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "saturn_sert_gunes",
+      "user_text_variants": [
+        "Satürn bu dönem Güneş'inle zorlayıcı bir açıda — enerji kısıtlı, sorumluluk belirgin hissedilebilir. Bu bir eksiklik değil; az ama sağlam adım kurma daveti.",
+        "Bu dönem her şey biraz ağır akıyorsa, dönem 'neyi gerçekten taşımak istiyorum' sorusunu büyütüyor olabilir. Cevap sadeleştirir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_saturn_sert_ay",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "saturn",
+        "aspect_quality": "sert",
+        "natal_target": "ay",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "saturn_sert_ay",
+      "user_text_variants": [
+        "Satürn bu dönem Ay'ını sıkıştırabilir — duygular kısılmış, içe çekilme artmış olabilir. İhtiyacını küçümsememek önemli; destek istemek de olgunluğun parçası.",
+        "Bu dönem içsel hava serin olabilir. Sıcak tutan küçük rutinler kurmak iyi gelir; mevsimler geçicidir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_saturn_sert_asc",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "saturn",
+        "aspect_quality": "sert",
+        "natal_target": "asc",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "saturn_sert_asc",
+      "user_text_variants": [
+        "Satürn bu dönem yükselenine yaslanıyor — sorumluluklar görünür, oyun alanı dar hissedilebilir. Sınır çizmek bu dönemin doğal ödevi olabilir.",
+        "Bu dönem 'hayır' demeyi öğreten dönemlerden olabilir. Her hayır, gerçek bir evete alan açar."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_saturn_yum_gunes",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "saturn",
+        "aspect_quality": "yumusak",
+        "natal_target": "gunes",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "saturn_yumusak_gunes",
+      "user_text_variants": [
+        "Satürn bu dönem Güneş'ini destekliyor — emek karşılık buluyor, yapı kurmak kolaylaşıyor. Uzun vadeli bir işe temel atmak için sağlam bir dönem.",
+        "Bu dönem disiplin zorlama değil, doğal ritim gibi gelebilir. Küçük düzenli adımlar sessizce birikiyor."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_saturn_yum_ay",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "saturn",
+        "aspect_quality": "yumusak",
+        "natal_target": "ay",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "saturn_yumusak_ay",
+      "user_text_variants": [
+        "Satürn bu dönem Ay'ına sakin bir zemin veriyor — duygusal istikrar kurmak kolaylaşıyor. İyi gelen rutinleri kalıcılaştırma dönemi.",
+        "Bu dönem iç dünya sağlam zeminde. Bir alışkanlığı kökleştirmek için uygun bir hava var."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_saturn_yum_asc",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "saturn",
+        "aspect_quality": "yumusak",
+        "natal_target": "asc",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "saturn_yumusak_asc",
+      "user_text_variants": [
+        "Satürn bu dönem yükselenini destekliyor — duruş netleşiyor, güven veren bir olgunluk yansıyor olabilir. Uzun vadeli bir söz için uygun zemin.",
+        "Bu dönem 'kim olduğun' sorusu sadeleşiyor olabilir. Az söz, net duruş dönemi."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_jupiter_sert_gunes",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "jupiter",
+        "aspect_quality": "sert",
+        "natal_target": "gunes",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "jupiter_sert_gunes",
+      "user_text_variants": [
+        "Jüpiter bu dönem Güneş'inle gergin — iştah büyüyor, abartı çekici gelebilir. Büyümek güzel; ölçüyü koyan yine sensin.",
+        "Bu dönem 'daha fazlası' sesi yüksek olabilir. Genişlemeden önce sormak iyi gelir: neye evet diyorum, neden?"
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_jupiter_sert_ay",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "jupiter",
+        "aspect_quality": "sert",
+        "natal_target": "ay",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "jupiter_sert_ay",
+      "user_text_variants": [
+        "Jüpiter bu dönem Ay'ını büyütebilir — duygular geniş, tepkiler bol gelebilir. Cömertlik güzel; taşma sınırını belirlemek sende.",
+        "Bu dönem hisler geniş ekranda oynayabilir. Büyük duygu, büyük karar gerektirmez."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_jupiter_sert_asc",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "jupiter",
+        "aspect_quality": "sert",
+        "natal_target": "asc",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "jupiter_sert_asc",
+      "user_text_variants": [
+        "Jüpiter bu dönem yükseleninle çekişiyor — vaat etmek kolay, yetişmek zor olabilir. Sözü küçük tutup yapmak, sonra büyütmek iyi bir sıra.",
+        "Bu dönem görünürlük artabilir ama dağınık büyüme yorar. Tek alan seçip orada genişlemek daha iyi gelebilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_jupiter_yum_gunes",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "jupiter",
+        "aspect_quality": "yumusak",
+        "natal_target": "gunes",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "jupiter_yumusak_gunes",
+      "user_text_variants": [
+        "Jüpiter bu dönem Güneş'ini büyütüyor — fırsatlar, iyimserlik ve alan genişliyor olabilir. Kapıyı çalmak için iyi bir dönem.",
+        "Bu dönem rüzgâr arkandan esiyor olabilir. Bir adım büyüğünü denemek için doğal bir destek var."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_jupiter_yum_ay",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "jupiter",
+        "aspect_quality": "yumusak",
+        "natal_target": "ay",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "jupiter_yumusak_ay",
+      "user_text_variants": [
+        "Jüpiter bu dönem Ay'ını besliyor — iç dünya cömert, şükran kolay. İyi hissettiren şeyleri çoğaltma dönemi olabilir.",
+        "Bu dönem duygusal bir bereket havası olabilir; paylaştıkça büyüyen türden."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_jupiter_yum_asc",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "jupiter",
+        "aspect_quality": "yumusak",
+        "natal_target": "asc",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "jupiter_yumusak_asc",
+      "user_text_variants": [
+        "Jüpiter bu dönem yükselenini parlatıyor — insanların sana yaklaşması kolaylaşabilir, kapılar aralanabilir. Görünür olmak bu dönem daha az enerji ister.",
+        "Bu dönem temas bereketli: yeni insanlar, yeni alanlar. Davetlere açık kalmak iyi gelebilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_mars_sert_gunes",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "mars",
+        "aspect_quality": "sert",
+        "natal_target": "gunes",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "mars_sert_gunes",
+      "user_text_variants": [
+        "Mars bu dönem Güneş'inle sürtüşüyor — sabırsızlık ve kıvılcım artabilir. Enerjiyi kavgaya değil harekete yatırmak dönemi hafifletir.",
+        "Bu dönem fitil kısa olabilir. Tepkiden önce bir nefes; sonra istersen yine söylersin."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_mars_sert_ay",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "mars",
+        "aspect_quality": "sert",
+        "natal_target": "ay",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "mars_sert_ay",
+      "user_text_variants": [
+        "Mars bu dönem Ay'ını dürtüyor — duygular çabuk alevlenebilir. Bedeni yormak zihni yatıştırır; yürüyüş iyi bir supap olabilir.",
+        "Bu dönem içeride kaynama olabilir. Duyguyu bastırmak yerine ona hareketle çıkış vermek iyi gelir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_mars_sert_asc",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "mars",
+        "aspect_quality": "sert",
+        "natal_target": "asc",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "mars_sert_asc",
+      "user_text_variants": [
+        "Mars bu dönem yükselenini kışkırtıyor — girişkenlik artar, sivrilik de artabilir. Cesaret güzel; tonu ayarlamak sende.",
+        "Bu dönem 'hemen şimdi' hissi güçlü olabilir. Gerçek aciliyeti histen ayırmak günü sadeleştirir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_mars_yum_gunes",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "mars",
+        "aspect_quality": "yumusak",
+        "natal_target": "gunes",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "mars_yumusak_gunes",
+      "user_text_variants": [
+        "Mars bu dönem Güneş'ine güç veriyor — enerji, odak ve cesaret elinin altında olabilir. Fiziksel bir hedef için verimli dönem.",
+        "Bu dönem motor sende. Başlatmakta zorlandığın işe şimdi omuz vermek kolaylaşır."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_mars_yum_ay",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "mars",
+        "aspect_quality": "yumusak",
+        "natal_target": "ay",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "mars_yumusak_ay",
+      "user_text_variants": [
+        "Mars bu dönem Ay'ını canlandırıyor — duygusal cesaret artıyor; içini söylemek kolaylaşabilir. Bedenin de söz ister: hareket iyi gelir.",
+        "Bu dönem his ile eylem barışık. 'Canım istiyor'u küçümsememek, onu sağlıklı bir harekete çevirmek yeterli."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k2_mars_yum_asc",
+      "katman": "2",
+      "trigger": {
+        "transit_planet": "mars",
+        "aspect_quality": "yumusak",
+        "natal_target": "asc",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "mars_yumusak_asc",
+      "user_text_variants": [
+        "Mars bu dönem yükselenine ivme veriyor — girişkenlik doğal akıyor olabilir. İlk adımı atmak için zemin uygun.",
+        "Bu dönem duruşta diri bir enerji var. Sporun, yürüyüşün, dik duruşun dönemi olabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 30,
+      "source_chunk_refs": []
+    }
+  ]
+}

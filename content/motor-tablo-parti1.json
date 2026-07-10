@@ -1,0 +1,424 @@
+{
+  "_meta": {
+    "belge": "motor-tablo-parti1",
+    "surum": "v0.2",
+    "tarih": "2026-07-05",
+    "kapsam": "Parti 1: +10 bitki. Pilot şemasıyla (v0.3) birebir; P1/P2/P3 kuralları geçerli. Hedef: Venüs rafı (0→4) ve Ay rafı (1→2) boşluklarını kapatmak.",
+    "veto_durumu": "KAPANDI (5 Tem): kekik=Merkür · maydanoz=Merkür · ıhlamur=Ay · gül=Venüs onaylandı. 10 atama FİNAL.",
+    "uyarilar": [
+      "mevsim alanı vault-dışı geçici (pilot ile aynı)",
+      "atamalar FİNAL; celiski_notu alanları tarihsel gerekçe kaydıdır"
+    ],
+    "mevsim_notu": "mevsim alanları mevsim-haritasi.json ile senkronlandı (parlama modeli). Otorite: mevsim-haritasi.json."
+  },
+  "bitkiler": [
+    {
+      "herb_id": "aynisefa",
+      "names": {
+        "tr": "Aynısefa",
+        "en": "Calendula",
+        "la": "Calendula officinalis"
+      },
+      "gezegen_birincil": "gunes",
+      "gezegen_ikincil": [
+        "mars"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "deri"
+      ],
+      "tat": [
+        "acımsı"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz",
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 16,
+      "source_note": "Güneş çok net (17); klasik calendula=Güneş kimliğiyle birebir.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "kekik",
+      "names": {
+        "tr": "Kekik",
+        "en": "Thyme",
+        "la": "Thymus vulgaris"
+      },
+      "gezegen_birincil": "merkur",
+      "gezegen_ikincil": [
+        "venus",
+        "jupiter"
+      ],
+      "celiski_notu": "⚠ EN KIRILGAN: klasik Culpeper geleneği kekiği Venüs'e yazar; taramamızda Venüs sinyali hiç çıkmadı (Merkür 5 / Jüpiter 4 / Ay 4). Solunum-uyarıcı kimlikle Merkür verildi — VETO öncelikli.",
+      "beden_bolgeleri": [
+        "gogus-nefes"
+      ],
+      "tat": [
+        "keskin"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz",
+        "kis"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 9,
+      "source_note": "Sinyal dağınık; kimlik yorumu Merkür.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "hatmi",
+      "names": {
+        "tr": "Hatmi",
+        "en": "Marshmallow",
+        "la": "Althaea officinalis"
+      },
+      "gezegen_birincil": "venus",
+      "gezegen_ikincil": [
+        "ay"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "gogus-nefes",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "tatlımsı"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "nemlendirici",
+        "durum": "provisional; klasik mukilaj kimliği"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 9,
+      "source_note": "Venüs 9 net (klasik mallow=Venüs); Ay güçlü ikincil (nemlendirici).",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "civanpercemi",
+      "names": {
+        "tr": "Civanperçemi",
+        "en": "Yarrow",
+        "la": "Achillea millefolium"
+      },
+      "gezegen_birincil": "venus",
+      "gezegen_ikincil": [
+        "mars"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "kalp-dolasim",
+        "deri"
+      ],
+      "tat": [
+        "buruk",
+        "acı"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok; bazı literatürde gebelik uyarısı anılır, vault'ta kayıt YOK — eklenmesi Türkan kararı."
+      },
+      "kaynak_sayisi": 8,
+      "source_note": "Venüs önde (4), klasik yarrow=Venüs; Mars savaşçı-yara bağlamı ikincil.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "sarimsak",
+      "names": {
+        "tr": "Sarımsak",
+        "en": "Garlic",
+        "la": "Allium sativum"
+      },
+      "gezegen_birincil": "mars",
+      "gezegen_ikincil": [
+        "saturn"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "kalp-dolasim",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "keskin"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok; bilinen antikoagülan etkileşimi vault'ta YOK — Türkan kararı (zencefil notuyla aynı durum)."
+      },
+      "kaynak_sayisi": 8,
+      "source_note": "Mars 9, net.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "menekse",
+      "names": {
+        "tr": "Menekşe",
+        "en": "Violet",
+        "la": "Viola odorata"
+      },
+      "gezegen_birincil": "venus",
+      "gezegen_ikincil": [
+        "saturn"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "gogus-nefes",
+        "deri"
+      ],
+      "tat": [
+        "tatlımsı"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "nemlendirici",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 7,
+      "source_note": "Venüs 6, klasik violet=Venüs ile uyumlu.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "ihlamur",
+      "names": {
+        "tr": "Ihlamur",
+        "en": "Linden",
+        "la": "Tilia cordata"
+      },
+      "gezegen_birincil": "ay",
+      "gezegen_ikincil": [
+        "jupiter",
+        "venus"
+      ],
+      "celiski_notu": "Bazı geleneklerde Jüpiter/Venüs'e yazılır; kaynak sinyalimiz Ay önde (6) ve yatıştırıcı-uyku kimliği Ay'la uyumlu → birincil Ay. Ay rafını güçlendiren atama; veto açık.",
+      "beden_bolgeleri": [
+        "sinir-uyku",
+        "gogus-nefes"
+      ],
+      "tat": [
+        "tatlımsı"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "nemlendirici",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 6,
+      "source_note": "Ay 6 / Satürn 3 / Merkür 2.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "maydanoz",
+      "names": {
+        "tr": "Maydanoz",
+        "en": "Parsley",
+        "la": "Petroselinum crispum"
+      },
+      "gezegen_birincil": "merkur",
+      "gezegen_ikincil": [
+        "venus"
+      ],
+      "celiski_notu": "⚠ KIRILGAN: sinyal zayıf ve Venüs önde çıktı (3'e 1); klasik gelenek maydanozu Merkür'e yazar — kimlik kararıyla Merkür verildi, veto açık.",
+      "beden_bolgeleri": [
+        "bobrek-mesane",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "keskin",
+        "yeşil-acımsı"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "ilkbahar",
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok; yüksek miktarda gebelik uyarısı literatürde bilinir, vault'ta kayıt YOK — eklenmesi Türkan kararı."
+      },
+      "kaynak_sayisi": 6,
+      "source_note": "Düşük sinyal; kimlik yorumu.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "anason",
+      "names": {
+        "tr": "Anason",
+        "en": "Anise",
+        "la": "Pimpinella anisum"
+      },
+      "gezegen_birincil": "merkur",
+      "gezegen_ikincil": [
+        "ay"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "mide-sindirim",
+        "gogus-nefes"
+      ],
+      "tat": [
+        "tatlımsı",
+        "keskin"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 5,
+      "source_note": "Merkür 8, net-ish; rezeneyle aynı aile-kimlik.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "gul",
+      "names": {
+        "tr": "Gül",
+        "en": "Rose",
+        "la": "Rosa damascena"
+      },
+      "gezegen_birincil": "venus",
+      "gezegen_ikincil": [
+        "ay"
+      ],
+      "celiski_notu": "Dar arama kalıbı kullanıldı (kelime gürültüsü nedeniyle) → frekans temkinli okunmalı. Kimlik tartışmasız Venüs (evrensel klasik); onay için işaretli.",
+      "beden_bolgeleri": [
+        "kalp-dolasim",
+        "deri"
+      ],
+      "tat": [
+        "buruk",
+        "tatlımsı"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "provisional",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "ilkbahar",
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 3,
+      "source_note": "Dar pattern 3 kaynak; Venüs=Mars=3 eşit, kimlik Venüs.",
+      "mevsim_tipi": "botanik"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "_meta": {
+    "puanlama": "p +2, s +1; Baskın+Yükselen.",
+    "durum": "TASLAK-ONAYLI; TR polisaj checklist.",
+    "belge": "quiz-ay8-ickahraman",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "KATMAN": "A-BİLİM (yumuşak). Jung'un arketip kuramından ESİNLENMİŞTİR. Kavramlar (arketip, gölge) kamu malı/genel kültür; klinik test değil, sembolik öz-yansıtma.",
+    "ic_kaynak": "Jungian arketipler + popüler '12 arketip' geleneği (Pearson/Mark & Pearson çerçevesi genel kültür). 12'den 7 seçildi (mobil + marka uyumu); metinler özgün. 'Esinlenen' ibaresi zorunlu.",
+    "gating": "Free: baskın/yükselen+kisa. Pro: derin_ek (gölge çalışması) + astro overlay + yıl haritası.",
+    "hassasiyet": "'Gölge daveti' yapıcı çerçevede (patoloji değil, bütünleşme). 'Kalıp değil ayna.' Etiket: sembolik · eğlence amaçlı."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — bu kahramanların hepsi sende yaşar. Bugün hangisi öne çıkıyor, ona bakıyoruz.",
+  "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir}",
+  "arketipler": {
+    "masum": {
+      "ad": "Masum",
+      "tek_satir": "İyimserliğin ve saflığın gücün; dünyaya umutla bakarsın.",
+      "kisa": "Masum arketipi güven ve umuttur — iyiyi görme, sadelik, inanç. Karmaşayı değil huzuru ararsın.",
+      "derin_ek": "Gölge daveti: dünyanın gölgelerini de görmek saflığı yok etmez, olgunlaştırır.",
+      "paylasim": "İç kahramanım: Masum — umutla bakarım."
+    },
+    "kasif": {
+      "ad": "Kâşif",
+      "tek_satir": "Özgürlük ve keşif seni çağırır; sınırlar sana dar gelir.",
+      "kisa": "Kâşif arketipi özgürlük ve otantikliktir — yeni ufuklar, kendi yolu, bağımsızlık. Rutin seni boğar.",
+      "derin_ek": "Gölge daveti: sürekli aramak bazen huzursuzluktur; bazı yerler kalmaya değer.",
+      "paylasim": "İç kahramanım: Kâşif — ufuk beni çağırır."
+    },
+    "bilge": {
+      "ad": "Bilge",
+      "tek_satir": "Hakikat ve anlayış peşindesin; bilgi senin ışığın.",
+      "kisa": "Bilge arketipi bilgelik ve hakikattir — anlama, öğrenme, derinlik. Yüzeysel değil, öze inersin.",
+      "derin_ek": "Gölge daveti: her şeyi anlamak zorunda değilsin; bazen yaşamak, bilmekten öğretir.",
+      "paylasim": "İç kahramanım: Bilge — hakikat ışığım."
+    },
+    "yaratici": {
+      "ad": "Yaratıcı",
+      "tek_satir": "Hayal gücün ve ifaden gücün; zihnindekini var edersin.",
+      "kisa": "Yaratıcı arketipi hayal ve ifadedir — özgünlük, vizyon, üretim. Var olmayanı hayal eder, gerçeğe dökersin.",
+      "derin_ek": "Gölge daveti: mükemmeliyet bazen üretimi durdurur; 'yeterince iyi' de bir sanat.",
+      "paylasim": "İç kahramanım: Yaratıcı — hayalimi var ederim."
+    },
+    "sefkatli": {
+      "ad": "Şefkatli",
+      "tek_satir": "Bakım ve koruma senin doğan; sevginle sararsın.",
+      "kisa": "Şefkatli arketipi bakım ve cömertliktir — koruma, besleme, fedakârlık. Başkalarının iyiliği seni motive eder.",
+      "derin_ek": "Gölge daveti: herkese bakarken kendini ihmal etme; senin de bakıma hakkın var.",
+      "paylasim": "İç kahramanım: Şefkatli — sevgiyle sararım."
+    },
+    "asik": {
+      "ad": "Âşık",
+      "tek_satir": "Tutku ve bağ senin dilin; güzellik ve yakınlık peşindesin.",
+      "kisa": "Âşık arketipi tutku ve bağlanmadır — yakınlık, güzellik, adanmışlık. Derin bağlar ve estetik seni canlandırır.",
+      "derin_ek": "Gölge daveti: sevgide kendini kaybetme; bütün kalırken bağ kurmak mümkün.",
+      "paylasim": "İç kahramanım: Âşık — bağ benim dilim."
+    },
+    "sihirbaz": {
+      "ad": "Sihirbaz",
+      "tek_satir": "Dönüşüm ve vizyon senin gücün; gerçekliği değiştirebilirsin.",
+      "kisa": "Sihirbaz arketipi dönüşüm ve farkındalıktır — değişim yaratma, görünmeyeni okuma, iyileştirme. Katalizörsün.",
+      "derin_ek": "Gölge daveti: her şeyi dönüştürmek zorunda değilsin; bazı şeyler olduğu gibi güzel.",
+      "paylasim": "İç kahramanım: Sihirbaz — dönüşümün katalizörü."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Seni en çok ne motive eder?",
+      "secenekler": [
+        {
+          "metin": "Özgürlük ve keşif",
+          "p": "kasif"
+        },
+        {
+          "metin": "Anlamak ve öğrenmek",
+          "p": "masum",
+          "s": "bilge"
+        },
+        {
+          "metin": "Yaratmak, ifade etmek",
+          "p": "yaratici"
+        },
+        {
+          "metin": "Başkalarına bakmak",
+          "p": "sefkatli"
+        }
+      ]
+    },
+    {
+      "soru": "Dünyaya bakışın?",
+      "secenekler": [
+        {
+          "metin": "Temelde iyi ve umut dolu",
+          "p": "masum"
+        },
+        {
+          "metin": "Keşfedilecek bir macera",
+          "p": "kasif"
+        },
+        {
+          "metin": "Çözülecek bir bilmece",
+          "p": "asik",
+          "s": "bilge"
+        },
+        {
+          "metin": "Güzelleştirilecek bir tuval",
+          "p": "yaratici"
+        }
+      ]
+    },
+    {
+      "soru": "İnsanlar sana ne için gelir?",
+      "secenekler": [
+        {
+          "metin": "Bilgeliğe, tavsiyeye",
+          "p": "bilge"
+        },
+        {
+          "metin": "Şefkate, desteğe",
+          "p": "sefkatli"
+        },
+        {
+          "metin": "İlhama, yaratıcılığa",
+          "p": "yaratici"
+        },
+        {
+          "metin": "Dönüşüme, yeni bakışa",
+          "p": "sihirbaz"
+        }
+      ]
+    },
+    {
+      "soru": "Bir ilişkide en çok ne ararsın?",
+      "secenekler": [
+        {
+          "metin": "Derin tutku ve bağ",
+          "p": "asik"
+        },
+        {
+          "metin": "Özgürlük ve alan",
+          "p": "kasif"
+        },
+        {
+          "metin": "Güven ve sadakat",
+          "p": "sefkatli"
+        },
+        {
+          "metin": "Birlikte büyüme",
+          "p": "sihirbaz"
+        }
+      ]
+    },
+    {
+      "soru": "Boş zamanında?",
+      "secenekler": [
+        {
+          "metin": "Yeni yerler keşfederim",
+          "p": "kasif"
+        },
+        {
+          "metin": "Okur, araştırırım",
+          "p": "bilge"
+        },
+        {
+          "metin": "Bir şey yaratırım",
+          "p": "yaratici"
+        },
+        {
+          "metin": "Sevdiklerimle ilgilenirim",
+          "p": "sefkatli"
+        }
+      ]
+    },
+    {
+      "soru": "Zorlukta gücün nereden gelir?",
+      "secenekler": [
+        {
+          "metin": "İnancım ve umudum",
+          "p": "masum"
+        },
+        {
+          "metin": "Bilgim ve mantığım",
+          "p": "bilge"
+        },
+        {
+          "metin": "Sevgim ve bağlarım",
+          "p": "asik"
+        },
+        {
+          "metin": "Dönüştürme yeteneğim",
+          "p": "sihirbaz"
+        }
+      ]
+    },
+    {
+      "soru": "Seni en iyi anlatan?",
+      "secenekler": [
+        {
+          "metin": "'Dünya güzel bir yer'",
+          "p": "masum"
+        },
+        {
+          "metin": "'Daha fazlası var'",
+          "p": "kasif"
+        },
+        {
+          "metin": "'Anlamak istiyorum'",
+          "p": "bilge"
+        },
+        {
+          "metin": "'Değiştirebilirim'",
+          "p": "sihirbaz"
+        }
+      ]
+    },
+    {
+      "soru": "Hayatta en çok ne yaratmak istersin?",
+      "secenekler": [
+        {
+          "metin": "Güzellik ve sanat",
+          "p": "yaratici"
+        },
+        {
+          "metin": "Bağ ve sevgi",
+          "p": "asik"
+        },
+        {
+          "metin": "Bilgi ve anlayış",
+          "p": "bilge"
+        },
+        {
+          "metin": "Dönüşüm ve iyileşme",
+          "p": "sihirbaz"
+        }
+      ]
+    }
+  ]
+}

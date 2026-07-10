@@ -1,0 +1,1902 @@
+{
+  "meta": {
+    "version": "2.1",
+    "section": "skincare",
+    "source_trust_tier": "dogrulanmis_cekirdek",
+    "framing": "Kanıt-temelli dermatoloji bilgisi; tıbbi tavsiye değildir. Cilt sorunu/gebelik/ilaç durumunda dermatoloğa danışın.",
+    "last_updated": "2026-06-14",
+    "ingredient_count": 41,
+    "display_language": "tr",
+    "note": "Tüm görünür metin Türkçe. names.en / names.la yalnızca iç eşleştirme aliası — app'te gösterilmez.",
+    "tiers": {
+      "free": "Statik genel bilgi: free_preview_fields alt kümesi gösterilir; kişiselleştirme yok.",
+      "pro": "Tüm alanlar + chatbot kişisel analiz/öneri wrap'i (kullanıcı profili + natal harita ile)."
+    },
+    "free_preview_fields": [
+      "names",
+      "category",
+      "treats",
+      "usage",
+      "pregnancy"
+    ],
+    "pro_only_fields": [
+      "mechanism",
+      "concentration",
+      "skin_types",
+      "pairs_well_with",
+      "do_not_mix",
+      "timeline",
+      "what_to_expect",
+      "application_order",
+      "note",
+      "evidence_urls"
+    ]
+  },
+  "evidence_levels": {
+    "strong": "güçlü (klinik kanıt)",
+    "moderate": "orta",
+    "limited": "sınırlı / kozmetik"
+  },
+  "skin_concerns": {
+    "acne": "Akne / sivilce",
+    "hyperpigmentation": "Leke / koyu ton",
+    "aging": "Yaşlanma / ince çizgi",
+    "redness": "Kızarıklık / rozasea",
+    "dryness": "Kuruluk / nem kaybı",
+    "oiliness": "Yağlılık",
+    "sensitivity": "Hassasiyet",
+    "barrier": "Bariyer hasarı",
+    "sun_protection": "Güneş koruma",
+    "pores": "Gözenek görünümü",
+    "eczema": "Egzama / hassas bariyer"
+  },
+  "routine_rules": [
+    "Sabah: antioksidan (C vit) → nemlendirici → SPF (son adım, şart).",
+    "Gece: aktif (retinoid VEYA asit, ikisini aynı anda değil) → nemlendirici.",
+    "Yeni aktifi yavaş başlat; aynı anda birden çok peeling kullanma (bariyer hasarı).",
+    "Fototoksik/UV-duyarlılaştıran aktif (retinoid, AHA, BHA) → gece + ertesi gün SPF.",
+    "Gebelik/emzirme profilinde 'avoid' aktifler gizlenir, 'caution' uyarı ile gösterilir."
+  ],
+  "ingredients": [
+    {
+      "id": "retinoids",
+      "names": {
+        "tr": [
+          "retinoidler",
+          "retinol",
+          "tretinoin",
+          "adapalen"
+        ],
+        "en": [
+          "retinoids",
+          "retinol"
+        ]
+      },
+      "category": "hücre yenileme / anti-aging",
+      "treats": [
+        "aging",
+        "acne",
+        "hyperpigmentation"
+      ],
+      "evidence_level": "strong",
+      "usage": "Yalnız gece; yavaş başla (haftada 2 → her gece)",
+      "pregnancy": {
+        "status": "avoid",
+        "text": "Gebelik/emzirmede KAÇIN — A vitamini türevi, teratojenik (oral retinoidlerle doğum kusurları). Alternatif: bakuchiol."
+      },
+      "photosensitivity": {
+        "status": "barrier",
+        "text": "Bariyeri inceltir → güneşe karşı kırılganlık artar (klinik 'fototoksite' tartışmalı). Gece kullan + ertesi gün SPF."
+      },
+      "do_not_mix": [
+        "aha",
+        "bha",
+        "benzoyl_peroxide",
+        "vitamin_c"
+      ],
+      "note": "Süperstar anti-aging/akne aktifi; güçlü, tek başına kullan.",
+      "evidence_urls": [
+        "https://www.skincancer.org/blog/when-beauty-products-cause-sun-sensitivity/",
+        "https://www.paulaschoice.com/expert-advice/skincare-advice/skin-care-how-tos/skincare-during-pregnancy.html"
+      ],
+      "mechanism": "Hücre yenilenmesini hızlandırır, kolajen üretimini uyarır, keratinizasyonu düzenler.",
+      "concentration": "Retinol %0.3–1; reçeteli tretinoin %0.025–0.1. Düşük dozdan başla.",
+      "skin_types": [
+        "normal",
+        "yağlı",
+        "karma"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid",
+        "ceramides"
+      ],
+      "timeline": "Akne 8–12 hafta; kırışıklık 3–6 ay.",
+      "what_to_expect": "İlk 2–6 hafta 'retinizasyon': kızarıklık, pullanma, kuruluk; purging olabilir.",
+      "application_order": "serum (nemlendiriciden önce)"
+    },
+    {
+      "id": "bakuchiol",
+      "names": {
+        "tr": [
+          "bakuchiol"
+        ],
+        "en": [
+          "bakuchiol"
+        ]
+      },
+      "category": "bitkisel retinol alternatifi",
+      "treats": [
+        "aging",
+        "sensitivity"
+      ],
+      "evidence_level": "moderate",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelik-güvenli retinol alternatifi (bitkisel)."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "Retinoidlere benzer fayda, daha nazik; kanıt orta.",
+      "evidence_urls": [
+        "https://www.thebump.com/a/safe-skincare-products-during-pregnancy"
+      ],
+      "mechanism": "Retinol benzeri hücre sinyali + antioksidan etki; kolajen desteği.",
+      "concentration": "%0.5–2.",
+      "skin_types": [
+        "hepsi",
+        "hassas"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid",
+        "vitamin_c"
+      ],
+      "timeline": "8–12 hafta.",
+      "what_to_expect": "Nazik; retinoide göre çok az tahriş.",
+      "application_order": "serum"
+    },
+    {
+      "id": "niacinamide",
+      "names": {
+        "tr": [
+          "niasinamid",
+          "B3 vitamini"
+        ],
+        "en": [
+          "niacinamide",
+          "vitamin B3"
+        ]
+      },
+      "category": "bariyer / ton / yağ dengesi",
+      "treats": [
+        "redness",
+        "oiliness",
+        "hyperpigmentation",
+        "barrier",
+        "sensitivity"
+      ],
+      "evidence_level": "strong",
+      "usage": "Sabah veya gece; çoğu aktifle uyumlu",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli; anti-inflamatuar akne bakımı."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "Çok yönlü; bariyeri güçlendirir, kızarıklık/gözenek görünümünü azaltır.",
+      "evidence_urls": [],
+      "mechanism": "Bariyer lipid sentezini artırır, sebumu dengeler, anti-inflamatuar, melanozom transferini azaltır.",
+      "concentration": "%2–5 (çok yüksek doz tahriş edebilir).",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "hyaluronic_acid",
+        "retinoids",
+        "mineral_spf",
+        "azelaic_acid"
+      ],
+      "timeline": "4–8 hafta.",
+      "what_to_expect": "Genelde iyi tolere edilir.",
+      "application_order": "serum"
+    },
+    {
+      "id": "vitamin_c",
+      "names": {
+        "tr": [
+          "C vitamini",
+          "L-askorbik asit"
+        ],
+        "en": [
+          "vitamin C",
+          "L-ascorbic acid"
+        ]
+      },
+      "category": "antioksidan / aydınlatıcı",
+      "treats": [
+        "hyperpigmentation",
+        "aging"
+      ],
+      "evidence_level": "strong",
+      "usage": "Sabah (SPF ile); asidik ortamda çalışır",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil; UV korumasını destekler."
+      },
+      "do_not_mix": [
+        "benzoyl_peroxide",
+        "aha",
+        "bha",
+        "retinoids"
+      ],
+      "note": "Sabah antioksidan; benzoil peroksit ile aynı anda kullanma (okside eder).",
+      "evidence_urls": [],
+      "mechanism": "Antioksidan; kolajen sentezi kofaktörü; tirozinazı inhibe ederek aydınlatır.",
+      "concentration": "L-askorbik %10–20, pH<3.5.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "mineral_spf",
+        "hyaluronic_acid",
+        "peptides"
+      ],
+      "timeline": "4–12 hafta.",
+      "what_to_expect": "İlk kullanımda hafif karıncalanma olabilir.",
+      "application_order": "sabah serum (SPF'ten önce)"
+    },
+    {
+      "id": "aha",
+      "names": {
+        "tr": [
+          "AHA",
+          "glikolik asit",
+          "laktik asit"
+        ],
+        "en": [
+          "AHA",
+          "glycolic acid",
+          "lactic acid"
+        ]
+      },
+      "category": "kimyasal peeling (yüzey)",
+      "treats": [
+        "hyperpigmentation",
+        "aging",
+        "oiliness"
+      ],
+      "evidence_level": "strong",
+      "usage": "Gece; haftada birkaç kez",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Topikal düşük konsantrasyon küçük miktarda kabul edilebilir; yüksek konsantrasyon/peeling KAÇIN."
+      },
+      "photosensitivity": {
+        "status": "increases",
+        "text": "UV hassasiyetini ARTIRIR (FDA) — etki ~1 hafta sürer. Gece kullan + SPF şart."
+      },
+      "do_not_mix": [
+        "retinoids",
+        "bha",
+        "vitamin_c"
+      ],
+      "note": "Yüzey hücre yenileme; aşırı peelingden kaçın.",
+      "evidence_urls": [
+        "https://www.apderm.com/blog/skincare-ingredients-that-can-cause-sun-sensitivity-what-to-avoid-in-the-summer-m/"
+      ],
+      "mechanism": "Korneosit bağlarını çözerek yüzey eksfoliasyonu yapar; fotohasarı azaltır.",
+      "concentration": "Glikolik %5–10 (ev); laktik %5–10. Peeling konsantrasyonları daha yüksek.",
+      "skin_types": [
+        "normal",
+        "yağlı",
+        "kalın"
+      ],
+      "pairs_well_with": [
+        "hyaluronic_acid",
+        "ceramides"
+      ],
+      "timeline": "Birkaç hafta.",
+      "what_to_expect": "Karıncalanma; UV hassasiyeti artar.",
+      "application_order": "gece toner/serum"
+    },
+    {
+      "id": "bha",
+      "names": {
+        "tr": [
+          "BHA",
+          "salisilik asit"
+        ],
+        "en": [
+          "BHA",
+          "salicylic acid"
+        ]
+      },
+      "category": "kimyasal peeling (gözenek içi)",
+      "treats": [
+        "acne",
+        "oiliness"
+      ],
+      "evidence_level": "strong",
+      "usage": "Gece veya gündüz (SPF); <%2",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Düşük doz (<%2) topikal kabul edilebilir; yüksek doz/peeling ve oral KAÇIN (gebelikte)."
+      },
+      "photosensitivity": {
+        "status": "increases",
+        "text": "Cildi kurutup inceltir → UV'ye daha duyarlı."
+      },
+      "do_not_mix": [
+        "retinoids",
+        "vitamin_c"
+      ],
+      "note": "Yağ çözücü; akne/gözenek için.",
+      "evidence_urls": [
+        "https://www.thebump.com/a/safe-skincare-products-during-pregnancy"
+      ],
+      "mechanism": "Yağ-çözünür; gözenek içine girip keratolitik + anti-inflamatuar etki.",
+      "concentration": "%0.5–2.",
+      "skin_types": [
+        "yağlı",
+        "akneli"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid"
+      ],
+      "timeline": "4–8 hafta.",
+      "what_to_expect": "Kuruluk, geçici purging.",
+      "application_order": "serum"
+    },
+    {
+      "id": "benzoyl_peroxide",
+      "names": {
+        "tr": [
+          "benzoil peroksit"
+        ],
+        "en": [
+          "benzoyl peroxide"
+        ]
+      },
+      "category": "antibakteriyel (akne)",
+      "treats": [
+        "acne"
+      ],
+      "evidence_level": "strong",
+      "usage": "Nokta veya bölge; <%5",
+      "pregnancy": {
+        "status": "caution",
+        "text": "AAD düşük dozu (<%5) güvenli sayar; bazı uzmanlar veri yokluğundan kaçınmayı önerir."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil ama kurutucu."
+      },
+      "do_not_mix": [
+        "retinoids",
+        "vitamin_c"
+      ],
+      "note": "Akne bakterisine etkili; retinol/C ile aynı anda kullanma (etkisizleştirir).",
+      "evidence_urls": [
+        "https://www.thebump.com/a/safe-skincare-products-during-pregnancy"
+      ],
+      "mechanism": "C. acnes bakterisine karşı antibakteriyel; komedolitik.",
+      "concentration": "%2.5–10 (düşük doz = benzer etki, az tahriş).",
+      "skin_types": [
+        "akneli"
+      ],
+      "pairs_well_with": [
+        "niacinamide"
+      ],
+      "timeline": "4–12 hafta.",
+      "what_to_expect": "Kuruluk; kumaşları ağartır.",
+      "application_order": "tedavi/nokta"
+    },
+    {
+      "id": "azelaic_acid",
+      "names": {
+        "tr": [
+          "azelaik asit"
+        ],
+        "en": [
+          "azelaic acid"
+        ]
+      },
+      "category": "anti-inflamatuar / aydınlatıcı",
+      "treats": [
+        "acne",
+        "redness",
+        "hyperpigmentation"
+      ],
+      "evidence_level": "strong",
+      "usage": "Sabah ve/veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelik-güvenli — akne, rozasea ve leke için iyi seçenek."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "Nazik ve çok amaçlı; gebelikte değerli.",
+      "evidence_urls": [
+        "https://yeouth.com/blogs/news/skincare-during-pregnancy-which-ingredients-are-commonly-avoided-and-why"
+      ],
+      "mechanism": "Antimikrobiyal + anti-inflamatuar; tirozinaz inhibisyonuyla leke açar.",
+      "concentration": "%10 OTC; %15–20 reçeteli.",
+      "skin_types": [
+        "hassas",
+        "rozasea",
+        "akneli"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid"
+      ],
+      "timeline": "4+ hafta.",
+      "what_to_expect": "Hafif karıncalanma.",
+      "application_order": "serum/krem"
+    },
+    {
+      "id": "hyaluronic_acid",
+      "names": {
+        "tr": [
+          "hyalüronik asit"
+        ],
+        "en": [
+          "hyaluronic acid"
+        ]
+      },
+      "category": "nemlendirici (humektan)",
+      "treats": [
+        "dryness",
+        "aging"
+      ],
+      "evidence_level": "moderate",
+      "usage": "Sabah veya gece; neme uygula",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "Nem çeker; aktiflerin tahrişini tamponlar.",
+      "evidence_urls": [],
+      "mechanism": "Humektan; suyu bağlayarak cildi dolgunlaştırır.",
+      "concentration": "%0.1–2.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "retinoids",
+        "vitamin_c",
+        "ceramides"
+      ],
+      "timeline": "Anında nem.",
+      "what_to_expect": "Kuru havada nemi ciltten çekebilir → neme uygula, üstüne nemlendirici.",
+      "application_order": "nemlendiriciden önce (neme)"
+    },
+    {
+      "id": "ceramides",
+      "names": {
+        "tr": [
+          "seramidler"
+        ],
+        "en": [
+          "ceramides"
+        ]
+      },
+      "category": "bariyer onarımı",
+      "treats": [
+        "barrier",
+        "dryness",
+        "sensitivity"
+      ],
+      "evidence_level": "moderate",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "Cilt bariyerini onarır; hassas/kuru cilt için temel.",
+      "evidence_urls": [],
+      "mechanism": "Bariyer lipidlerini yerine koyar; transepidermal su kaybını azaltır.",
+      "concentration": "Formülasyona bağlı.",
+      "skin_types": [
+        "kuru",
+        "hassas",
+        "bariyer hasarı"
+      ],
+      "pairs_well_with": [
+        "hyaluronic_acid",
+        "niacinamide"
+      ],
+      "timeline": "Günler–haftalar.",
+      "what_to_expect": "İyi tolere edilir.",
+      "application_order": "nemlendirici"
+    },
+    {
+      "id": "mineral_spf",
+      "names": {
+        "tr": [
+          "mineral güneş koruyucu",
+          "çinko oksit",
+          "titanyum dioksit"
+        ],
+        "en": [
+          "mineral sunscreen",
+          "zinc oxide",
+          "titanium dioxide"
+        ]
+      },
+      "category": "güneş koruma (fiziksel)",
+      "treats": [
+        "sun_protection",
+        "hyperpigmentation",
+        "aging"
+      ],
+      "evidence_level": "strong",
+      "usage": "Her sabah; rutinin son adımı; SPF 30+",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte tercih edilen; melazma/yaşlanmayı önler."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Koruyucu — fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "En kanıtlı anti-aging adımı; mineral filtreler gebelikte güvenli.",
+      "evidence_urls": [
+        "https://www.bouldermedicalcenter.com/safe-skincare-pregnant/"
+      ],
+      "mechanism": "Çinko oksit/titanyum dioksit UV'yi yansıtır ve saçar.",
+      "concentration": "SPF 30+ geniş spektrum.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "vitamin_c"
+      ],
+      "timeline": "Anında koruma.",
+      "what_to_expect": "Hafif beyaz iz bırakabilir.",
+      "application_order": "son adım (sabah)"
+    },
+    {
+      "id": "chemical_spf_oxybenzone",
+      "names": {
+        "tr": [
+          "kimyasal filtre",
+          "oksibenzon",
+          "oktinoksat"
+        ],
+        "en": [
+          "chemical sunscreen",
+          "oxybenzone",
+          "octinoxate"
+        ]
+      },
+      "category": "güneş koruma (kimyasal)",
+      "treats": [
+        "sun_protection"
+      ],
+      "evidence_level": "strong",
+      "usage": "Her sabah (gebe değilse)",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Gebelikte mineral tercih et — oksibenzon/oktinoksat sistemik emilip hormon bozucu olabilir (kanıt sınırlı)."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Koruyucu."
+      },
+      "do_not_mix": [],
+      "note": "Etkili ama gebelikte mineral öncelikli.",
+      "evidence_urls": [
+        "https://www.aol.com/dermatologists-shouldnt-skincare-ingredients-face-120000513.html"
+      ],
+      "mechanism": "UV'yi kimyasal olarak emer.",
+      "concentration": "SPF 30+ geniş spektrum.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [],
+      "timeline": "Anında koruma.",
+      "what_to_expect": "Bazı filtreler ciltçe emilebilir.",
+      "application_order": "son adım (sabah)"
+    },
+    {
+      "id": "hydroquinone",
+      "names": {
+        "tr": [
+          "hidrokinon"
+        ],
+        "en": [
+          "hydroquinone"
+        ]
+      },
+      "category": "depigmentasyon (reçeteli)",
+      "treats": [
+        "hyperpigmentation"
+      ],
+      "evidence_level": "strong",
+      "usage": "Hekim gözetiminde",
+      "pregnancy": {
+        "status": "avoid",
+        "text": "Gebelik/emzirmede KAÇIN — yüksek sistemik emilim."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "—"
+      },
+      "do_not_mix": [],
+      "note": "Güçlü leke gidericisi ama gebelikte kontrendike.",
+      "evidence_urls": [
+        "https://www.paulaschoice.com/expert-advice/skincare-advice/skin-care-how-tos/skincare-during-pregnancy.html"
+      ],
+      "mechanism": "Tirozinazı inhibe eder, melanosit aktivitesini baskılar.",
+      "concentration": "%2 (çoğu ülkede reçeteli) – %4 reçeteli.",
+      "skin_types": [
+        "leke"
+      ],
+      "pairs_well_with": [
+        "mineral_spf"
+      ],
+      "timeline": "4–12 hafta; sınırlı süre kullan.",
+      "what_to_expect": "Tahriş; uzun kullanımda okronozis riski.",
+      "application_order": "nokta/gece (hekim gözetimi)"
+    },
+    {
+      "id": "arbutin",
+      "names": {
+        "tr": [
+          "arbutin",
+          "alfa-arbutin"
+        ],
+        "en": [
+          "arbutin",
+          "alpha-arbutin"
+        ]
+      },
+      "category": "aydınlatıcı",
+      "treats": [
+        "hyperpigmentation"
+      ],
+      "evidence_level": "moderate",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Gebelikte dikkat — ciltte hidrokinona dönüşür."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "Daha nazik aydınlatıcı; gebelikte temkinli.",
+      "evidence_urls": [
+        "https://www.paulaschoice.com/expert-advice/skincare-advice/skin-care-how-tos/skincare-during-pregnancy.html"
+      ],
+      "mechanism": "Tirozinaz inhibisyonu (hidrokinonun daha nazik öncülü).",
+      "concentration": "Alfa-arbutin %2.",
+      "skin_types": [
+        "leke"
+      ],
+      "pairs_well_with": [
+        "vitamin_c",
+        "niacinamide"
+      ],
+      "timeline": "4–12 hafta.",
+      "what_to_expect": "Nazik.",
+      "application_order": "serum"
+    },
+    {
+      "id": "kojic_acid",
+      "names": {
+        "tr": [
+          "kojik asit"
+        ],
+        "en": [
+          "kojic acid"
+        ]
+      },
+      "category": "aydınlatıcı",
+      "treats": [
+        "hyperpigmentation"
+      ],
+      "evidence_level": "limited",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Topikal genelde güvenli sayılır ama klinik veri sınırlı — hekim onayı."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "Kanıt sınırlı.",
+      "evidence_urls": [
+        "https://www.cloudninecare.com/blog/skincare-ingredients-to-avoid-during-pregnancy"
+      ],
+      "mechanism": "Tirozinaz inhibisyonuyla aydınlatır.",
+      "concentration": "%1–2.",
+      "skin_types": [
+        "leke"
+      ],
+      "pairs_well_with": [
+        "vitamin_c"
+      ],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Hassasiyet/kontakt dermatit olası.",
+      "application_order": "serum"
+    },
+    {
+      "id": "peptides",
+      "names": {
+        "tr": [
+          "peptitler"
+        ],
+        "en": [
+          "peptides"
+        ]
+      },
+      "category": "firming (kozmetik)",
+      "treats": [
+        "aging"
+      ],
+      "evidence_level": "limited",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli kabul edilir."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "do_not_mix": [],
+      "note": "Kozmetik düzey kanıt.",
+      "evidence_urls": [],
+      "mechanism": "Hücre sinyali; kolajen desteği (kozmetik düzey).",
+      "concentration": "Değişken.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "hyaluronic_acid",
+        "niacinamide"
+      ],
+      "timeline": "Haftalar–aylar.",
+      "what_to_expect": "İyi tolere edilir.",
+      "application_order": "serum"
+    },
+    {
+      "id": "citrus_essential_oils",
+      "names": {
+        "tr": [
+          "sitrus esansiyel yağları",
+          "bergamot",
+          "limon"
+        ],
+        "en": [
+          "citrus essential oils",
+          "bergamot",
+          "lemon"
+        ]
+      },
+      "category": "koku / bitkisel (RİSK)",
+      "treats": [],
+      "evidence_level": "limited",
+      "usage": "Gündüz ciltte KULLANMA",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Yüksek konsantrasyon esansiyel yağlardan gebelikte kaçınılır."
+      },
+      "photosensitivity": {
+        "status": "phototoxic",
+        "text": "GERÇEK FOTOTOKSİK — furanokumarinler güneşte ciddi yanık/leke yapar. Herbalizm FOTOTOKSIK tier'ı ile aynı madde."
+      },
+      "do_not_mix": [],
+      "note": "Cilt bakımında fototoksik risk; herbalizm bölümüyle çapraz bağlı.",
+      "evidence_urls": [
+        "https://www.apderm.com/blog/skincare-ingredients-that-can-cause-sun-sensitivity-what-to-avoid-in-the-summer-m/"
+      ],
+      "mechanism": "Furanokumarinler UV ile reaksiyona girip fototoksik yanık yapar.",
+      "concentration": "Cilt bakımında kaçın.",
+      "skin_types": [],
+      "pairs_well_with": [],
+      "timeline": "—",
+      "what_to_expect": "Güneşte ciddi yanık/leke (fitofotodermatit).",
+      "application_order": "gündüz ciltte kullanma"
+    },
+    {
+      "id": "tranexamic_acid",
+      "names": {
+        "tr": [
+          "traneksamik asit"
+        ],
+        "en": [
+          "tranexamic acid"
+        ]
+      },
+      "category": "aydınlatıcı / leke",
+      "treats": "hyperpigmentation",
+      "evidence_level": "strong",
+      "mechanism": "Plazmin aktivitesini inhibe ederek UV/hormona bağlı pigment üretimini azaltır.",
+      "concentration": "Topikal %2–5.",
+      "skin_types": [
+        "hepsi",
+        "hassas"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "vitamin_c",
+        "azelaic_acid"
+      ],
+      "do_not_mix": [],
+      "timeline": "8–12 hafta.",
+      "what_to_expect": "Nazik; AHA gibi eksfoliye etmez.",
+      "application_order": "serum",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Topikal emilim düşük; veri sınırlı, temkinli kullan ve hekime danış. ORAL form gebelik/emzirmede KONTRENDİKE (pıhtılaşma)."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Melazma için etkili, nazik aydınlatıcı.",
+      "evidence_urls": [
+        "https://www.paulaschoice.com/expert-advice/skincare-advice/skin-care-how-tos/skincare-during-pregnancy.html",
+        "https://www.nooance-paris.com/en-us/blogs/journal/tranexamic-acid-danger"
+      ]
+    },
+    {
+      "id": "centella",
+      "names": {
+        "tr": [
+          "centella",
+          "cica",
+          "kaplan otu"
+        ],
+        "en": [
+          "centella asiatica",
+          "cica"
+        ]
+      },
+      "category": "yatıştırıcı / bariyer",
+      "treats": [
+        "sensitivity",
+        "redness",
+        "barrier"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Madekassosit/asiatikosit ile anti-inflamatuar; kolajen ve bariyer desteği.",
+      "concentration": "Ekstre/formüle bağlı.",
+      "skin_types": [
+        "hassas",
+        "kuru",
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid",
+        "ceramides"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Çok iyi tolere edilir; tahriş yatıştırır.",
+      "application_order": "serum/krem",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli kabul edilir."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Hassas/kızarık cilt ve aktif sonrası onarım için ideal.",
+      "evidence_urls": []
+    },
+    {
+      "id": "panthenol",
+      "names": {
+        "tr": [
+          "pantenol",
+          "provitamin B5"
+        ],
+        "en": [
+          "panthenol",
+          "provitamin B5"
+        ]
+      },
+      "category": "nemlendirici / yatıştırıcı",
+      "treats": [
+        "dryness",
+        "barrier",
+        "sensitivity"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Humektan + bariyer onarımı; yara iyileşmesini destekler.",
+      "concentration": "%1–5.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid",
+        "ceramides"
+      ],
+      "do_not_mix": [],
+      "timeline": "Günler–haftalar.",
+      "what_to_expect": "İyi tolere edilir.",
+      "application_order": "serum/krem",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Tahrişi azaltır, nemi artırır.",
+      "evidence_urls": []
+    },
+    {
+      "id": "allantoin",
+      "names": {
+        "tr": [
+          "allantoin"
+        ],
+        "en": [
+          "allantoin"
+        ]
+      },
+      "category": "yatıştırıcı",
+      "treats": [
+        "sensitivity",
+        "barrier"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Keratolitik + yatıştırıcı; hücre yenilenmesini destekler.",
+      "concentration": "%0.5–2.",
+      "skin_types": [
+        "hassas",
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "panthenol",
+        "niacinamide"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Çok nazik.",
+      "application_order": "krem",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Nazik onarıcı.",
+      "evidence_urls": []
+    },
+    {
+      "id": "beta_glucan",
+      "names": {
+        "tr": [
+          "beta glukan"
+        ],
+        "en": [
+          "beta-glucan"
+        ]
+      },
+      "category": "nemlendirici / yatıştırıcı",
+      "treats": [
+        "sensitivity",
+        "dryness",
+        "barrier"
+      ],
+      "evidence_level": "limited",
+      "mechanism": "Film oluşturup nem tutar; bağışıklık/onarım sinyali (kozmetik kanıt sınırlı).",
+      "concentration": "Formüle bağlı.",
+      "skin_types": [
+        "hassas",
+        "kuru"
+      ],
+      "pairs_well_with": [
+        "hyaluronic_acid",
+        "niacinamide"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Nazik.",
+      "application_order": "serum",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Hyalürona alternatif/tamamlayıcı humektan.",
+      "evidence_urls": []
+    },
+    {
+      "id": "green_tea",
+      "names": {
+        "tr": [
+          "yeşil çay",
+          "EGCG"
+        ],
+        "en": [
+          "green tea",
+          "EGCG"
+        ]
+      },
+      "category": "antioksidan",
+      "treats": [
+        "aging",
+        "redness",
+        "oiliness"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Polifenoller (EGCG) antioksidan + anti-inflamatuar; sebum modülasyonu.",
+      "concentration": "Ekstre/formüle bağlı.",
+      "skin_types": [
+        "yağlı",
+        "hassas",
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "vitamin_c",
+        "mineral_spf"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "İyi tolere edilir.",
+      "application_order": "serum",
+      "usage": "Sabah (antioksidan)",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli (topikal)."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "UV savunmasını destekler.",
+      "evidence_urls": []
+    },
+    {
+      "id": "colloidal_oatmeal",
+      "names": {
+        "tr": [
+          "kolloidal yulaf"
+        ],
+        "en": [
+          "colloidal oatmeal"
+        ]
+      },
+      "category": "yatıştırıcı / bariyer",
+      "treats": [
+        "sensitivity",
+        "dryness",
+        "barrier"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Avenantramidler anti-inflamatuar; bariyer ve nem desteği.",
+      "concentration": "Formüle bağlı.",
+      "skin_types": [
+        "hassas",
+        "kuru",
+        "egzama"
+      ],
+      "pairs_well_with": [
+        "ceramides",
+        "panthenol"
+      ],
+      "do_not_mix": [],
+      "timeline": "Günler.",
+      "what_to_expect": "Kaşıntı/kızarıklığı azaltır.",
+      "application_order": "krem",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Egzama/hassasiyet için kanıtlı yatıştırıcı.",
+      "evidence_urls": []
+    },
+    {
+      "id": "aloe_vera",
+      "names": {
+        "tr": [
+          "aloe vera (topikal)"
+        ],
+        "en": [
+          "aloe vera"
+        ]
+      },
+      "category": "yatıştırıcı / nem",
+      "treats": [
+        "sensitivity",
+        "dryness"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Yatıştırıcı, hafif nemlendirici, antioksidan.",
+      "concentration": "Jel/formüle bağlı.",
+      "skin_types": [
+        "hassas",
+        "yağlı",
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "panthenol",
+        "niacinamide"
+      ],
+      "do_not_mix": [],
+      "timeline": "Anında yatıştırma.",
+      "what_to_expect": "Hafif.",
+      "application_order": "jel",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Topikal gebelikte güvenli (iç kullanımdan farklı — bkz. herbalizm)."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "DİKKAT: topikal aloe ≠ herbalizm bölümündeki iç-kullanım aloe (laksatif).",
+      "evidence_urls": []
+    },
+    {
+      "id": "squalane",
+      "names": {
+        "tr": [
+          "skualan"
+        ],
+        "en": [
+          "squalane"
+        ]
+      },
+      "category": "emolyan / nem",
+      "treats": [
+        "dryness",
+        "barrier",
+        "sensitivity"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Cilt sebumuna benzer emolyan; nemi kilitler, komedojenik değil.",
+      "concentration": "Saf veya %.",
+      "skin_types": [
+        "kuru",
+        "hassas",
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "ceramides",
+        "hyaluronic_acid",
+        "retinoids"
+      ],
+      "do_not_mix": [],
+      "timeline": "Anında.",
+      "what_to_expect": "İyi tolere edilir.",
+      "application_order": "yağ/serum (son nem adımı)",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Aktif tahrişini tamponlar.",
+      "evidence_urls": []
+    },
+    {
+      "id": "glycerin",
+      "names": {
+        "tr": [
+          "gliserin"
+        ],
+        "en": [
+          "glycerin"
+        ]
+      },
+      "category": "nemlendirici (humektan)",
+      "treats": [
+        "dryness",
+        "barrier"
+      ],
+      "evidence_level": "strong",
+      "mechanism": "Güçlü humektan; suyu bağlar, bariyeri destekler.",
+      "concentration": "%3–10.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "hyaluronic_acid",
+        "ceramides",
+        "niacinamide"
+      ],
+      "do_not_mix": [],
+      "timeline": "Anında nem.",
+      "what_to_expect": "Çok iyi tolere edilir.",
+      "application_order": "krem/serum",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "En temel, en kanıtlı nemlendirici.",
+      "evidence_urls": []
+    },
+    {
+      "id": "urea",
+      "names": {
+        "tr": [
+          "üre"
+        ],
+        "en": [
+          "urea"
+        ]
+      },
+      "category": "nemlendirici / keratolitik",
+      "treats": [
+        "dryness",
+        "barrier"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Düşük %: humektan; yüksek %: keratolitik (pürüz/kalınlaşma).",
+      "concentration": "Nem %2–10; keratolitik %10–40.",
+      "skin_types": [
+        "kuru",
+        "kalın"
+      ],
+      "pairs_well_with": [
+        "ceramides",
+        "glycerin"
+      ],
+      "do_not_mix": [],
+      "timeline": "Günler–haftalar.",
+      "what_to_expect": "Yüksek %'de karıncalanma.",
+      "application_order": "krem",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Topikal düşük doz genelde güvenli; yüksek doz için hekime danış."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Doza göre çift işlevli.",
+      "evidence_urls": []
+    },
+    {
+      "id": "snail_mucin",
+      "names": {
+        "tr": [
+          "salyangoz müsini"
+        ],
+        "en": [
+          "snail mucin"
+        ]
+      },
+      "category": "nem / onarım",
+      "treats": [
+        "dryness",
+        "barrier",
+        "aging"
+      ],
+      "evidence_level": "limited",
+      "mechanism": "Glikoprotein/HA karışımı; nem ve onarım (kanıt sınırlı).",
+      "concentration": "Filtrat %.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "hyaluronic_acid",
+        "niacinamide"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Genelde iyi tolere.",
+      "application_order": "serum",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Topikal gebelikte güvenli kabul edilir."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Popüler ama kanıt sınırlı.",
+      "evidence_urls": []
+    },
+    {
+      "id": "ferulic_acid",
+      "names": {
+        "tr": [
+          "ferulik asit"
+        ],
+        "en": [
+          "ferulic acid"
+        ]
+      },
+      "category": "antioksidan (stabilizatör)",
+      "treats": [
+        "aging",
+        "hyperpigmentation"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Antioksidan; C+E vitamini stabilitesini ve etkisini artırır.",
+      "concentration": "%0.5–1.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "vitamin_c",
+        "vitamin_e"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "İyi tolere edilir.",
+      "application_order": "sabah serum (C ile)",
+      "usage": "Sabah",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "C vitamini serumlarının ortağı.",
+      "evidence_urls": []
+    },
+    {
+      "id": "vitamin_e",
+      "names": {
+        "tr": [
+          "E vitamini",
+          "tokoferol"
+        ],
+        "en": [
+          "vitamin E",
+          "tocopherol"
+        ]
+      },
+      "category": "antioksidan / emolyan",
+      "treats": [
+        "dryness",
+        "aging"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Yağ-çözünür antioksidan; bariyer ve C vitamini sinerjisi.",
+      "concentration": "%0.5–1.",
+      "skin_types": [
+        "kuru",
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "vitamin_c",
+        "ferulic_acid"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Nadiren komedojenik olabilir.",
+      "application_order": "serum/krem",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "C vitamini ile birlikte güçlenir.",
+      "evidence_urls": []
+    },
+    {
+      "id": "coenzyme_q10",
+      "names": {
+        "tr": [
+          "koenzim Q10",
+          "ubikinon"
+        ],
+        "en": [
+          "coenzyme Q10",
+          "ubiquinone"
+        ]
+      },
+      "category": "antioksidan",
+      "treats": [
+        "aging"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Hücresel antioksidan; serbest radikal hasarını azaltır.",
+      "concentration": "%0.5–1.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "vitamin_c",
+        "vitamin_e",
+        "peptides"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar–aylar.",
+      "what_to_expect": "İyi tolere edilir.",
+      "application_order": "serum/krem",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli kabul edilir."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Anti-aging antioksidan.",
+      "evidence_urls": []
+    },
+    {
+      "id": "resveratrol",
+      "names": {
+        "tr": [
+          "resveratrol"
+        ],
+        "en": [
+          "resveratrol"
+        ]
+      },
+      "category": "antioksidan",
+      "treats": [
+        "aging"
+      ],
+      "evidence_level": "limited",
+      "mechanism": "Polifenol antioksidan; gece onarımını destekler (kozmetik kanıt sınırlı).",
+      "concentration": "%1.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "vitamin_e",
+        "niacinamide"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Genelde iyi tolere.",
+      "application_order": "gece serum",
+      "usage": "Gece",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Veri sınırlı — gebelikte hekime danış."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Gece antioksidanı; kanıt gelişiyor.",
+      "evidence_urls": []
+    },
+    {
+      "id": "sulfur",
+      "names": {
+        "tr": [
+          "kükürt"
+        ],
+        "en": [
+          "sulfur"
+        ]
+      },
+      "category": "akne / yatıştırıcı",
+      "treats": [
+        "acne",
+        "oiliness",
+        "redness"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Keratolitik + antimikrobiyal; sebum emer, rozasea papüllerini azaltır.",
+      "concentration": "%2–10 (maske/nokta).",
+      "skin_types": [
+        "yağlı",
+        "akneli",
+        "rozasea"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "azelaic_acid"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Kuruluk, koku.",
+      "application_order": "nokta/maske",
+      "usage": "Gece veya gündüz",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelik-güvenli akne seçeneği (hekim gözetimiyle nokta maske)."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Gebelikte BHA/retinoide nazik alternatif.",
+      "evidence_urls": [
+        "https://www.mamaskin.app/blog/is-tea-tree-oil-safe-during-pregnancy"
+      ]
+    },
+    {
+      "id": "tea_tree_oil",
+      "names": {
+        "tr": [
+          "çay ağacı yağı"
+        ],
+        "en": [
+          "tea tree oil",
+          "Melaleuca alternifolia"
+        ]
+      },
+      "category": "akne (bitkisel)",
+      "treats": [
+        "acne",
+        "oiliness"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Terpinen-4-ol antibakteriyel/anti-inflamatuar; C. acnes'e etkili.",
+      "concentration": "Seyreltik %5 veya daha az; saf uygulama.",
+      "skin_types": [
+        "yağlı",
+        "akneli"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "aloe_vera"
+      ],
+      "do_not_mix": [
+        "retinoids"
+      ],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Saf halde tahriş/kontakt dermatit.",
+      "application_order": "nokta (seyreltik)",
+      "usage": "Gece (nokta)",
+      "pregnancy": {
+        "status": "caution",
+        "text": "1. trimesterde kaçın; 2./3.'te seyreltik/nokta, veri sınırlı. ASLA yutma (toksik). Hekime danış."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil (sitrus yağlarından farklı)."
+      },
+      "note": "Esansiyel yağ — temkinli, seyreltik kullan.",
+      "evidence_urls": [
+        "https://www.cleanconsciousbeauty.com/is-tea-tree-oil-safe-to-use-for-acne-while-pregnant/",
+        "https://www.mamaskin.app/blog/is-tea-tree-oil-safe-during-pregnancy"
+      ]
+    },
+    {
+      "id": "zinc_pca",
+      "names": {
+        "tr": [
+          "çinko PCA"
+        ],
+        "en": [
+          "zinc PCA"
+        ]
+      },
+      "category": "sebum / akne",
+      "treats": [
+        "oiliness",
+        "acne"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Sebum üretimini düzenler, hafif antibakteriyel.",
+      "concentration": "%0.1–1.",
+      "skin_types": [
+        "yağlı",
+        "akneli"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "bha"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "İyi tolere edilir.",
+      "application_order": "serum",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelikte güvenli kabul edilir."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "Yağ kontrolü için nazik.",
+      "evidence_urls": []
+    },
+    {
+      "id": "mandelic_acid",
+      "names": {
+        "tr": [
+          "mandelik asit"
+        ],
+        "en": [
+          "mandelic acid"
+        ]
+      },
+      "category": "kimyasal peeling (nazik AHA)",
+      "treats": [
+        "acne",
+        "hyperpigmentation",
+        "aging"
+      ],
+      "evidence_level": "strong",
+      "mechanism": "Büyük moleküllü AHA; yavaş penetrasyon → daha az tahrişle yüzey eksfoliasyonu.",
+      "concentration": "%5–10.",
+      "skin_types": [
+        "hassas",
+        "yağlı",
+        "koyu ten"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid"
+      ],
+      "do_not_mix": [
+        "retinoids",
+        "aha",
+        "bha"
+      ],
+      "timeline": "Haftalar.",
+      "what_to_expect": "AHA'lardan daha nazik.",
+      "application_order": "gece serum",
+      "usage": "Gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Gebelik-güvenli akne/leke seçeneği."
+      },
+      "photosensitivity": {
+        "status": "increases",
+        "text": "AHA ailesi — UV hassasiyetini hafif artırır; SPF kullan."
+      },
+      "note": "Hassas/koyu ten için nazik eksfoliyan.",
+      "evidence_urls": [
+        "https://artofskincare.com/blogs/learn/pregnancy-safe-skincare-complete-guide"
+      ]
+    },
+    {
+      "id": "pha",
+      "names": {
+        "tr": [
+          "PHA",
+          "glukonolakton",
+          "laktobiyonik asit"
+        ],
+        "en": [
+          "PHA",
+          "gluconolactone"
+        ]
+      },
+      "category": "kimyasal peeling (en nazik)",
+      "treats": [
+        "sensitivity",
+        "dryness",
+        "aging"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Büyük moleküllü poli-hidroksi asit; yüzey eksfoliasyon + humektan, minimal tahriş.",
+      "concentration": "%4–10.",
+      "skin_types": [
+        "hassas",
+        "kuru"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid",
+        "ceramides"
+      ],
+      "do_not_mix": [
+        "retinoids"
+      ],
+      "timeline": "Haftalar.",
+      "what_to_expect": "En düşük tahriş.",
+      "application_order": "gece serum",
+      "usage": "Gece",
+      "pregnancy": {
+        "status": "caution",
+        "text": "AHA ailesi; düşük doz topikal genelde kabul edilebilir — hekime danış."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "AHA/BHA'dan daha az UV hassasiyeti yapar; yine de SPF."
+      },
+      "note": "Hassas cilt için eksfoliyan giriş.",
+      "evidence_urls": []
+    },
+    {
+      "id": "retinaldehyde",
+      "names": {
+        "tr": [
+          "retinaldehit"
+        ],
+        "en": [
+          "retinaldehyde"
+        ]
+      },
+      "category": "retinoid (ara güç)",
+      "treats": [
+        "aging",
+        "acne"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Retinoik aside bir adım yakın; retinolden güçlü, tretinoinden nazik.",
+      "concentration": "%0.05–0.1.",
+      "skin_types": [
+        "normal",
+        "yağlı"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "hyaluronic_acid"
+      ],
+      "do_not_mix": [
+        "aha",
+        "bha",
+        "benzoyl_peroxide",
+        "vitamin_c"
+      ],
+      "timeline": "8–12 hafta.",
+      "what_to_expect": "Retinizasyon; retinolden hızlı sonuç.",
+      "application_order": "gece serum",
+      "usage": "Gece",
+      "pregnancy": {
+        "status": "avoid",
+        "text": "Retinoid — gebelik/emzirmede KAÇIN. Alternatif: bakuchiol/azelaik."
+      },
+      "photosensitivity": {
+        "status": "barrier",
+        "text": "Bariyeri inceltir → gündüz SPF."
+      },
+      "note": "Retinol ile tretinoin arası.",
+      "evidence_urls": []
+    },
+    {
+      "id": "copper_peptides",
+      "names": {
+        "tr": [
+          "bakır peptit",
+          "GHK-Cu"
+        ],
+        "en": [
+          "copper peptides",
+          "GHK-Cu"
+        ]
+      },
+      "category": "onarım / firming",
+      "treats": [
+        "aging",
+        "barrier"
+      ],
+      "evidence_level": "limited",
+      "mechanism": "Yara iyileşmesi/kolajen sinyali (kanıt sınırlı).",
+      "concentration": "Eser/formüle bağlı.",
+      "skin_types": [
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "hyaluronic_acid",
+        "peptides"
+      ],
+      "do_not_mix": [
+        "vitamin_c",
+        "aha",
+        "bha"
+      ],
+      "timeline": "Aylar.",
+      "what_to_expect": "Genelde iyi tolere.",
+      "application_order": "serum",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "caution",
+        "text": "Veri sınırlı — gebelikte hekime danış."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "C vitamini/asitlerle aynı anda kullanma (etkileşim tartışmalı).",
+      "evidence_urls": []
+    },
+    {
+      "id": "licorice_extract",
+      "names": {
+        "tr": [
+          "meyan kökü ekstresi (topikal)"
+        ],
+        "en": [
+          "licorice root extract"
+        ]
+      },
+      "category": "aydınlatıcı / yatıştırıcı",
+      "treats": [
+        "hyperpigmentation",
+        "redness"
+      ],
+      "evidence_level": "moderate",
+      "mechanism": "Glabridin tirozinazı inhibe eder; anti-inflamatuar.",
+      "concentration": "Ekstre/formüle bağlı.",
+      "skin_types": [
+        "hassas",
+        "hepsi"
+      ],
+      "pairs_well_with": [
+        "niacinamide",
+        "vitamin_c"
+      ],
+      "do_not_mix": [],
+      "timeline": "Haftalar.",
+      "what_to_expect": "Nazik.",
+      "application_order": "serum",
+      "usage": "Sabah veya gece",
+      "pregnancy": {
+        "status": "safe",
+        "text": "Topikal gebelikte güvenli kabul edilir (iç-kullanım meyan kökünden farklı — bkz. herbalizm)."
+      },
+      "photosensitivity": {
+        "status": "none",
+        "text": "Fototoksik değil."
+      },
+      "note": "DİKKAT: topikal ≠ herbalizm iç-kullanım meyan kökü (tansiyon).",
+      "evidence_urls": []
+    }
+  ]
+}

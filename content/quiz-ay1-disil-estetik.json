@@ -1,0 +1,291 @@
+{
+  "_meta": {
+    "belge": "quiz-ay1-disil-estetik",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "kararlar": "Quiz yönü: EĞLENCE-ÖNDE (Onedio tonu), bilim arada (Türkan, 5 Tem). Ölçek yolu C: özgün maddeler, marka sesi — 'doğrulanmış test' iddiası YOK. Ay 1 = Dişil Estetik Arketip · Sonuç = Baskın + Yükselen (özgün format). Rotasyon revizyon ÖNERİSİ: Big Five → Ay 3'e (rotasyon finali Türkan'da).",
+    "hassasiyet": "Tasarım dosyası kuralı gömülü: kalıba sokan/yargılayan DEĞİL, güçlendirici öz-ifade. Açılış: 'Bunlar kalıp değil, ayna — hepsi sende var; bugün hangisi parlıyor, ona bakıyoruz.' Etiket: sembolik · eğlence amaçlı.",
+    "puanlama": "Her şık: p arketipine +2, s arketipine +1. En yüksek = Baskın, ikinci = Yükselen. Eşitlikte son cevaplanan sorudaki tercih kazanır.",
+    "gating": "Free: quiz + baskın/yükselen + kisa metin. Pro: derin_ek (gölge daveti) + astro-context overlay + yıl haritasına işlenir.",
+    "sinerji": "Her arketipin herbaryum bitkisi var (sonuç ekranı → 'Senin bitkin: X' → koleksiyon köprüsü).",
+    "paylasim": "Sonuç kartı R1.5 şablon hattı; yalnız arketip adı + tek_satir + paylasim cümlesi render edilir.",
+    "durum": "TASLAK-ONAYLI; TR polisaj launch checklist."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — hepsi sende var. Bugün hangisi parlıyor, ona bakıyoruz.",
+  "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir} Yükselen {B} enerjisi ise buna kendi dokunuşunu katıyor.",
+  "arketipler": {
+    "siren": {
+      "ad": "Siren",
+      "tek_satir": "Derin suların sesi; çekiciliğin gürültüden değil, derinlikten gelir.",
+      "kisa": "Siren enerjisi baskınken insanlar sana yaklaşmak için sebep aramaz — sen bir atmosfersin. Gücün ifadende ve duygu derinliğinde.",
+      "derin_ek": "Gölge daveti: derinliğin bazen seni kıyıdan koparabilir; ara sıra yüzeye çıkıp paylaşmak da bir güçtür.",
+      "bitki": "nilufer",
+      "paylasim": "Baskın arketipim: Siren — derinlik benim doğam."
+    },
+    "femme_fatale": {
+      "ad": "Femme Fatale",
+      "tek_satir": "Keskin zarafet; gizemin bir duvar değil, seçilmiş bir kapı.",
+      "kisa": "Bu enerji sınır ve seçicilik demektir — herkes iç bahçene giremez. Bu soğukluk değil, öz-değer.",
+      "derin_ek": "Gölge daveti: kontrol bazen yakınlığı geciktirebilir; güvendiğinde kapıyı aralamak zayıflık değildir.",
+      "bitki": "gul",
+      "paylasim": "Baskın arketipim: Femme Fatale — kapım seçtiklerime açık."
+    },
+    "ingenu": {
+      "ad": "İngenü",
+      "tek_satir": "Sabah ışığı; merakın ve tazeliğin bulaşıcı.",
+      "kisa": "İngenü enerjisi dünyaya ilk kez bakar gibi bakmaktır — bu saflık değil, cesarettir.",
+      "derin_ek": "Gölge daveti: hep ışık olmak yorabilir; senin de gölgeli günlere hakkın var.",
+      "bitki": "papatya",
+      "paylasim": "Baskın arketipim: İngenü — merak benim süper gücüm."
+    },
+    "bohem": {
+      "ad": "Bohem Ruh",
+      "tek_satir": "Rüzgârın kızı; kökün toprakta değil, özgürlüğünde.",
+      "kisa": "Bohem ruh kural tanımaz değil, kendi ritmini tanır. Estetiğin de hayatın da akışkan.",
+      "derin_ek": "Gölge daveti: akış güzeldir; ama bazen bir liman seçmek de özgürlüktür.",
+      "bitki": "lavanta",
+      "paylasim": "Baskın arketipim: Bohem Ruh — ritmim bana ait."
+    },
+    "kralice": {
+      "ad": "Kraliçe",
+      "tek_satir": "Sofranın ve sözün sahibesi; varlığın düzen kurar.",
+      "kisa": "Kraliçe enerjisi otorite değil, alan tutmaktır — insanlar yanında güvende hisseder.",
+      "derin_ek": "Gölge daveti: herkesi taşımak tacı ağırlaştırır; senin de taşınmaya hakkın var.",
+      "bitki": "aslanpencesi",
+      "paylasim": "Baskın arketipim: Kraliçe — alanımı zarafetle tutarım."
+    },
+    "buyucu": {
+      "ad": "Gizemli Büyücü",
+      "tek_satir": "Perdenin ardını gören; sezgin senin pusulan.",
+      "kisa": "Büyücü enerjisi görünmeyeni okur — atmosferleri, alt metinleri, işaretleri.",
+      "derin_ek": "Gölge daveti: hep okumak yorucudur; bazen bilmemeyi seçmek de bilgeliktir.",
+      "bitki": "adacayi",
+      "paylasim": "Baskın arketipim: Gizemli Büyücü — işaretleri okurum."
+    },
+    "vahsi": {
+      "ad": "Vahşi Doğa",
+      "tek_satir": "Patikasız yürüyen; doğan evcilleşmeye gelmez.",
+      "kisa": "Vahşi Doğa enerjisi kuralsızlık değil, sahiciliktir — sınırlarını doğa gibi net çizersin.",
+      "derin_ek": "Gölge daveti: yaban kalp bazen yalnızlığı romantize eder; sürü de doğanın parçasıdır.",
+      "bitki": "isirgan",
+      "paylasim": "Baskın arketipim: Vahşi Doğa — sahicilik pazarlık kabul etmez."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Hafta sonu için tek bilet var. Hangisi?",
+      "secenekler": [
+        {
+          "metin": "Deniz kenarında gün batımı yüzüşü",
+          "p": "buyucu"
+        },
+        {
+          "metin": "Şehirde şık bir galeri gecesi",
+          "p": "femme_fatale"
+        },
+        {
+          "metin": "Kır evinde reçel, battaniye, kitap",
+          "p": "bohem",
+          "s": "ingenu"
+        },
+        {
+          "metin": "Ormanda patikasız bir yürüyüş",
+          "p": "vahsi"
+        }
+      ]
+    },
+    {
+      "soru": "Gardırobundan asla çıkmayacak parça?",
+      "secenekler": [
+        {
+          "metin": "Akışkan, dökümlü bir elbise",
+          "p": "siren"
+        },
+        {
+          "metin": "Keskin kesimli, iddialı bir ceket",
+          "p": "femme_fatale"
+        },
+        {
+          "metin": "Çiçekli, hafif bir yazlık",
+          "p": "ingenu"
+        },
+        {
+          "metin": "Kat kat el yapımı takılar",
+          "p": "bohem"
+        }
+      ]
+    },
+    {
+      "soru": "Bir davette seni nerede buluruz?",
+      "secenekler": [
+        {
+          "metin": "Piyanonun yanında, bir hikâye anlatırken",
+          "p": "siren"
+        },
+        {
+          "metin": "Kıyıda, üç dakikada herkesi çözmüşken",
+          "p": "buyucu",
+          "s": "femme_fatale"
+        },
+        {
+          "metin": "Ev sahibine yardım edip herkesi rahat ettirirken",
+          "p": "kralice"
+        },
+        {
+          "metin": "Balkonda, yıldızlara bakan küçük grupla",
+          "p": "bohem"
+        }
+      ]
+    },
+    {
+      "soru": "Telefon galerin en çok neyle dolu?",
+      "secenekler": [
+        {
+          "metin": "Gökyüzü ve ay fotoğrafları",
+          "p": "buyucu"
+        },
+        {
+          "metin": "Kahkaha anları, spontane kareler",
+          "p": "ingenu"
+        },
+        {
+          "metin": "Yollar, haritalar, gidilecek yerler",
+          "p": "vahsi",
+          "s": "bohem"
+        },
+        {
+          "metin": "Kusursuz kadrajlar: çiçek, fincan, ışık",
+          "p": "kralice",
+          "s": "femme_fatale"
+        }
+      ]
+    },
+    {
+      "soru": "Flört dilin hangisi?",
+      "secenekler": [
+        {
+          "metin": "Derin göz teması, az söz",
+          "p": "femme_fatale"
+        },
+        {
+          "metin": "Espri ve oyunbazlık",
+          "p": "ingenu"
+        },
+        {
+          "metin": "Gece yarısına sarkan uzun konuşmalar",
+          "p": "siren"
+        },
+        {
+          "metin": "Doğal akış — olursa olur rahatlığı",
+          "p": "bohem"
+        }
+      ]
+    },
+    {
+      "soru": "Ay ışığında bir bahçedesin. İlk ne yaparsın?",
+      "secenekler": [
+        {
+          "metin": "Çıplak ayak toprağa basarım",
+          "p": "vahsi"
+        },
+        {
+          "metin": "Bitkilere dokunur, kokularını içime çekerim",
+          "p": "buyucu"
+        },
+        {
+          "metin": "Ayın altında sessizce otururum",
+          "p": "bohem"
+        },
+        {
+          "metin": "Çiçeklerden kendime küçük bir taç yaparım",
+          "p": "ingenu"
+        }
+      ]
+    },
+    {
+      "soru": "İçeceğin hangisi?",
+      "secenekler": [
+        {
+          "metin": "Zarif bir fincanda, seremonisiyle demli çay",
+          "p": "kralice"
+        },
+        {
+          "metin": "Buz gibi taze nane-limon",
+          "p": "vahsi"
+        },
+        {
+          "metin": "Koyu, yoğun bir sıcak çikolata",
+          "p": "femme_fatale"
+        },
+        {
+          "metin": "Yasemin kokulu hafif bir çay",
+          "p": "siren"
+        }
+      ]
+    },
+    {
+      "soru": "İnsanlar seni ilk tanıdığında genelde ne der?",
+      "secenekler": [
+        {
+          "metin": "\"Sana bir şey anlatasım geliyor\"",
+          "p": "kralice"
+        },
+        {
+          "metin": "\"Aklımdan geçeni nasıl bildin?\"",
+          "p": "buyucu"
+        },
+        {
+          "metin": "\"Enerjin çok ferah\"",
+          "p": "ingenu"
+        },
+        {
+          "metin": "\"Seni çözemedim ama merak ediyorum\"",
+          "p": "femme_fatale"
+        }
+      ]
+    },
+    {
+      "soru": "Zor bir günün sonunda seni ne toparlar?",
+      "secenekler": [
+        {
+          "metin": "Uzun, köpüklü bir banyo",
+          "p": "siren"
+        },
+        {
+          "metin": "Her şeyi kapatıp doğaya kaçmak",
+          "p": "vahsi"
+        },
+        {
+          "metin": "Mum yakıp günlüğüme yazmak",
+          "p": "buyucu"
+        },
+        {
+          "metin": "Sevdiklerimi toplayıp sofra kurmak",
+          "p": "kralice"
+        }
+      ]
+    },
+    {
+      "soru": "Bir süper gücün olsaydı?",
+      "secenekler": [
+        {
+          "metin": "Sesimle sakinleştirmek",
+          "p": "siren"
+        },
+        {
+          "metin": "Görünmeden gözlemlemek",
+          "p": "femme_fatale"
+        },
+        {
+          "metin": "Bitkilerle konuşmak",
+          "p": "vahsi",
+          "s": "buyucu"
+        },
+        {
+          "metin": "Dokunduğumu neşelendirmek",
+          "p": "ingenu"
+        }
+      ]
+    }
+  ]
+}

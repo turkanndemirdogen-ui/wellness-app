@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "surum": "1.0",
+    "section": "mood",
+    "source_trust_tier": "dogrulanmis_cekirdek",
+    "display_language": "tr",
+    "framing": "Kanıt-temelli duygu farkındalığı (affektif bilim). Tanı/tedavi değildir. Mimari: bağımsız mood_logs (B) + cycle sekmesinden hızlı giriş (C).",
+    "free_preview_fields": [
+      "emotions (temel palet)",
+      "factors.ad"
+    ],
+    "pro_only_fields": [
+      "emotions (tam granüler palet)",
+      "regulation",
+      "factor korelasyon analizi"
+    ],
+    "not": "Tasarım ilkesi: duygusal granülerlik (Barrett) — sadece mutlu/üzgün değil ince palet. Astro-context (sembolik): Ay/4. ev ruh-hali teması, AYRI akış. Çapraz: cycle (faz↔mood), uyku/hareket faktörleri."
+  },
+  "evidence_levels": {
+    "strong": "güçlü (deneysel/klinik kanıt)",
+    "moderate": "orta",
+    "limited": "sınırlı"
+  },
+  "emotion_model": {
+    "tip": "circumplex (valence × arousal)",
+    "ilke": "Düşük granülerlik yalnızca valence/arousal ayırır; yüksek granülerlik ince kategoriler kurar → daha iyi düzenleme, daha az ruminasyon/depresyon.",
+    "evidence_urls": [
+      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9714615/",
+      "https://www.cannelevate.com.au/article/understanding-emotional-granularity-modern-wellness/"
+    ]
+  },
+  "emotions": [
+    {
+      "id": "excited",
+      "label_tr": "heyecanlı",
+      "valence": "pozitif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "joyful",
+      "label_tr": "neşeli",
+      "valence": "pozitif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "energetic",
+      "label_tr": "enerjik",
+      "valence": "pozitif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "inspired",
+      "label_tr": "ilhamlı",
+      "valence": "pozitif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "proud",
+      "label_tr": "gururlu",
+      "valence": "pozitif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "calm",
+      "label_tr": "sakin",
+      "valence": "pozitif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "peaceful",
+      "label_tr": "huzurlu",
+      "valence": "pozitif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "content",
+      "label_tr": "hoşnut",
+      "valence": "pozitif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "grateful",
+      "label_tr": "minnettar",
+      "valence": "pozitif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "safe",
+      "label_tr": "güvende",
+      "valence": "pozitif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "anxious",
+      "label_tr": "kaygılı",
+      "valence": "negatif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "tense",
+      "label_tr": "gergin",
+      "valence": "negatif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "angry",
+      "label_tr": "öfkeli",
+      "valence": "negatif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "overwhelmed",
+      "label_tr": "bunalmış",
+      "valence": "negatif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "frustrated",
+      "label_tr": "hayal kırıklığına uğramış",
+      "valence": "negatif",
+      "arousal": "yüksek"
+    },
+    {
+      "id": "sad",
+      "label_tr": "üzgün",
+      "valence": "negatif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "tired",
+      "label_tr": "yorgun",
+      "valence": "negatif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "low",
+      "label_tr": "bezgin",
+      "valence": "negatif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "lonely",
+      "label_tr": "yalnız",
+      "valence": "negatif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "numb",
+      "label_tr": "donuk",
+      "valence": "negatif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "hopeless",
+      "label_tr": "umutsuz",
+      "valence": "negatif",
+      "arousal": "düşük"
+    },
+    {
+      "id": "neutral",
+      "label_tr": "ne iyi ne kötü",
+      "valence": "nötr",
+      "arousal": "orta"
+    },
+    {
+      "id": "uncertain",
+      "label_tr": "kararsız",
+      "valence": "nötr",
+      "arousal": "orta"
+    }
+  ],
+  "factors": [
+    {
+      "id": "sleep",
+      "ad": "Uyku"
+    },
+    {
+      "id": "stress",
+      "ad": "Stres"
+    },
+    {
+      "id": "cycle_phase",
+      "ad": "Döngü fazı"
+    },
+    {
+      "id": "social",
+      "ad": "Sosyal etkileşim"
+    },
+    {
+      "id": "movement",
+      "ad": "Hareket/egzersiz"
+    },
+    {
+      "id": "nutrition",
+      "ad": "Beslenme"
+    },
+    {
+      "id": "weather",
+      "ad": "Hava"
+    },
+    {
+      "id": "work",
+      "ad": "İş/yük"
+    }
+  ],
+  "regulation": [
+    {
+      "id": "affect_labeling",
+      "ad": "Duyguyu Adlandırma (Affect Labeling)",
+      "ne": "Duyguyu spesifik kelimeyle adlandırmak amigdala tepkisini azaltır ('name it to tame it').",
+      "nasil": "Hisset → en spesifik kelimeyle adlandır → tek cümle 'neden'.",
+      "ne_zaman": "Her mood girişinde; akut yoğunlukta.",
+      "evidence_level": "strong",
+      "adimlar": [
+        "Bedensel hissi fark et",
+        "En ince ayrımlı kelimeyi seç (granülerlik)",
+        "Kısa bir 'çünkü…' ekle"
+      ],
+      "not": "Kısa tut — uzun uzun dalmak ruminasyona kayabilir.",
+      "evidence_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12404502/"
+      ]
+    },
+    {
+      "id": "reappraisal",
+      "ad": "Yeniden Değerlendirme (Reappraisal)",
+      "ne": "Durumu farklı/dengeli bir çerçeveden yorumlamak olumsuz duyguyu yumuşatır.",
+      "nasil": "Otomatik yorumu fark et → alternatif, gerçekçi bakış ara.",
+      "ne_zaman": "Stresli yorum sıkıştığında.",
+      "evidence_level": "strong",
+      "adimlar": [
+        "Tetikleyen düşünceyi yaz",
+        "'Başka nasıl bakılabilir?' sor",
+        "Dengeli alternatifi seç"
+      ],
+      "not": "İnkâr değil; gerçekçi yeniden çerçeveleme.",
+      "evidence_urls": []
+    },
+    {
+      "id": "acceptance",
+      "ad": "Kabul (Acceptance)",
+      "ne": "Duyguyla savaşmadan, onu yargılamadan var olmasına izin vermek (en güçlü olumlu ilişki).",
+      "nasil": "Duyguyu 'kötü' diye etiketlemeden gözlemle.",
+      "ne_zaman": "Geçici zor duygularda.",
+      "evidence_level": "moderate",
+      "adimlar": [
+        "Duyguyu fark et",
+        "'Şu an bu var' de",
+        "Geçiciliğini hatırla"
+      ],
+      "not": "Kabul ≠ teslimiyet; eylemi engellemez.",
+      "evidence_urls": []
+    },
+    {
+      "id": "behavioral_activation",
+      "ad": "Davranışsal Aktivasyon",
+      "ne": "Düşük mood'da küçük, anlamlı bir eylem yapmak ruh halini yükseltir (depresif çöküşte etkili).",
+      "nasil": "Minik, ulaşılabilir bir olumlu eylem seç ve yap.",
+      "ne_zaman": "Bezgin/çökkün hissederken.",
+      "evidence_level": "strong",
+      "adimlar": [
+        "Çok küçük bir eylem seç (5 dk)",
+        "Ruh hali 'hazır' olmasa da yap",
+        "Sonra hissi not et"
+      ],
+      "not": "Motivasyonu beklemeden eylem; küçük başla.",
+      "evidence_urls": []
+    },
+    {
+      "id": "grounding",
+      "ad": "Topraklanma (5-4-3-2-1)",
+      "ne": "Duyularla şimdiki ana dönmek yüksek kaygı/panik anında sakinleştirir.",
+      "nasil": "5 gör, 4 dokun, 3 duy, 2 kokla, 1 tat.",
+      "ne_zaman": "Akut kaygı/panik/bunalma.",
+      "evidence_level": "moderate",
+      "adimlar": [
+        "Çevreden 5 şey gör",
+        "4 dokunuş, 3 ses, 2 koku, 1 tat"
+      ],
+      "not": "Hızlı, her yerde uygulanır.",
+      "evidence_urls": []
+    },
+    {
+      "id": "self_compassion",
+      "ad": "Öz-Şefkat",
+      "ne": "Zor anda kendine bir dosta davranır gibi nazik davranmak distresi azaltır.",
+      "nasil": "Öz-eleştiriyi fark et → nazik, destekleyici iç dille değiştir.",
+      "ne_zaman": "Öz-eleştiri/utanç anında.",
+      "evidence_level": "moderate",
+      "adimlar": [
+        "'Bu zor' diye kabul et",
+        "Bir dosta ne derdin?",
+        "Aynı nazikliği kendine ver"
+      ],
+      "not": "Olumsuz öz-konuşmayı pekiştirmez.",
+      "evidence_urls": []
+    }
+  ],
+  "safety": {
+    "framing": "Bu modül duygu farkındalığı içindir; terapi, tanı veya tedavi DEĞİLDİR. Uygulama insan desteğinin yerini almaz.",
+    "kriz": "İntihar/kendine zarar veya kriz sinyalinde: TANI KOYMA, klinik güvenlik-değerlendirme sorusu sorma. Sıcak, doğrudan bir dille endişeni belirt; bölgeye uygun GÜNCEL kriz destek kaynaklarını sun (sabit hat gömme — uygulama yapılandırmasında, doğru/güncel tutulur). Yöntem/araç adı verme veya tarif etme.",
+    "ruminasyon": "Mood loglama ruminasyona DÖNÜŞMEMELİ. Granülerlik + kısa etiketleme koruyucu; uzun olumsuz dalış riskli. Yansıtıcı dinlemeyi olumsuz duyguyu BÜYÜTECEK şekilde yapma.",
+    "pekistirme_yok": "Olumsuz öz-konuşmayı/çaresizliği pekiştirme. Duyguyu doğrula ama çaresiz/yanlış inancı onaylama. Maladaptif stratejileri (ruminasyon, kaçınma) teşvik etme.",
+    "yonlendirme": "Sürekli düşük mood, işlev kaybı, umutsuzluk paterni → ruh sağlığı uzmanına yönlendir. Tanı koyma.",
+    "asiri_baglilik": "Sürekli uygulamayla etkileşimi teşvik etme; gerçek insan/profesyonel desteğe yönlendir."
+  }
+}

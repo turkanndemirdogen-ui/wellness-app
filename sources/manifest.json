@@ -1,0 +1,799 @@
+{
+  "meta": {
+    "surum": "1.2",
+    "olusturma": "2026-06-14",
+    "kaynak_sayisi": 46,
+    "toplam_kb": 405.7,
+    "not": "Kitap kaynaklarindan temiz raporlar. guven_tier + visibility atandi 2026-07-02. visibility: user=Kesif/kullanici, agent_only=agent icgoru (kullanici teshis gormez), excluded=chunk-duzeyi ingest'te. riskli_madde = contraindications ekseni (ayri).",
+    "haric_tutulan": [
+      "README.md",
+      "SPEC",
+      "Wellness_Agent_Kaynak_Listesi.md",
+      "heindel-message-dedup-kayit.md",
+      "hill-health-practitioners-kayit.md",
+      "html-raporlari-veri-katmani.md",
+      "module-content-standard.md",
+      "saunders-korroborasyon-kayit.md",
+      "wellness-ai-rehber.html"
+    ]
+  },
+  "tema_listesi": [
+    "alsimi",
+    "beden-patoloji",
+    "dekan-hermetik",
+    "genel",
+    "herbalizm",
+    "kilo-HASSAS",
+    "klasik-kaynak",
+    "medikal-astroloji",
+    "meslek-vocation",
+    "ruh-sagligi",
+    "teknik-astroloji"
+  ],
+  "kaynaklar": [
+    {
+      "id": "hermes-36-dekan",
+      "dosya": "hermes-36-dekan.md",
+      "kaynak": "Hermes-36-Dekan.html",
+      "baslik": "Ἱερὰ Βίβλος Ἑρμοῦ πρὸς Ἀσκληπιόν",
+      "tema": [
+        "dekan-hermetik"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [
+        "licorice",
+        "mugwort"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 4.6,
+      "visibility": "user"
+    },
+    {
+      "id": "hermes-kutsal-kitap-rehber",
+      "dosya": "hermes-kutsal-kitap-rehber.md",
+      "kaynak": "Hermes-Kutsal-Kitap-Rehber.html",
+      "baslik": "Anlaşılır Türkçe Rehber",
+      "tema": [
+        "dekan-hermetik"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [],
+      "orijinal_format": "html",
+      "boyut_kb": 7.5,
+      "visibility": "user"
+    },
+    {
+      "id": "alberoni-medikal-astroloji-kozmik-bitkisel-tip-raporu-estetik",
+      "dosya": "alberoni-medikal-astroloji-kozmik-bitkisel-tip-raporu-estetik.md",
+      "kaynak": "alberoni_medikal_astroloji_kozmik_bitkisel_tip_raporu_estetik.md",
+      "baslik": "kaynak: alberoni_medikal_astroloji_kozmik_bitkisel_tip_raporu_estetik",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 10.4,
+      "visibility": "user"
+    },
+    {
+      "id": "astro-herbalism-charles-rapor",
+      "dosya": "astro-herbalism-charles-rapor.md",
+      "kaynak": "astro-herbalism-charles-rapor.md",
+      "baslik": "Astro Herbalism (T.M. Charles) — Gezegen-Bitki Konsolidasyonu + Zamanlama Katmanı",
+      "tema": [
+        "herbalizm"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "black_cohosh",
+        "blue_cohosh",
+        "comfrey",
+        "ginkgo",
+        "kava",
+        "st_johns_wort",
+        "yew"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 8.2,
+      "visibility": "user"
+    },
+    {
+      "id": "astrology-of-depression-rapor",
+      "dosya": "astrology-of-depression-rapor.md",
+      "kaynak": "astrology-of-depression-rapor.md",
+      "baslik": "The Astrology of Depression — Mood Modülü Referansı (Güvenlik Çerçeveli)",
+      "tema": [
+        "ruh-sagligi"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 9.1,
+      "visibility_not": "agent guvenlik kalibrasyonu; kullaniciya symbolic cikmaz",
+      "visibility": "agent_only"
+    },
+    {
+      "id": "astrology-of-weight-loss-rapor",
+      "dosya": "astrology-of-weight-loss-rapor.md",
+      "kaynak": "astrology-of-weight-loss-rapor.md",
+      "baslik": "The Astrology of Weight Loss — Yeme-Bozukluğu Güvenliği & Beden-Nötr Yeniden Çerçeveleme",
+      "tema": [
+        "kilo-HASSAS"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 6.1,
+      "visibility_not": "ED guvenligi; agent kalibrasyonu; kullaniciya cikmaz",
+      "visibility": "agent_only"
+    },
+    {
+      "id": "blagrave-medikal-astroloji-kozmik-bitkisel-tip-raporu",
+      "dosya": "blagrave-medikal-astroloji-kozmik-bitkisel-tip-raporu.md",
+      "kaynak": "blagrave_medikal_astroloji_kozmik_bitkisel_tip_raporu.md",
+      "baslik": "kaynak: blagrave_medikal_astroloji_kozmik_bitkisel_tip_raporu",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji",
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 13.8,
+      "visibility": "user"
+    },
+    {
+      "id": "brian-clark-vocation-sifa-raporu",
+      "dosya": "brian-clark-vocation-sifa-raporu.md",
+      "kaynak": "brian_clark_vocation_sifa_raporu.md",
+      "baslik": "kaynak: brian_clark_vocation_sifa_raporu",
+      "tema": [
+        "meslek-vocation"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 10.1,
+      "visibility": "user"
+    },
+    {
+      "id": "cornell-rapor",
+      "dosya": "cornell-rapor.md",
+      "kaynak": "cornell-rapor.md",
+      "baslik": "Cornell · *Encyclopedia of Medical Astrology* — App-İçi Çıkarım",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "hemlock",
+        "henbane"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 9.0,
+      "visibility": "user"
+    },
+    {
+      "id": "cramer-health-reading-rapor",
+      "dosya": "cramer-health-reading-rapor.md",
+      "kaynak": "cramer-health-reading-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "mugwort"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 6.8,
+      "visibility": "user"
+    },
+    {
+      "id": "cramer-houses-rapor",
+      "dosya": "cramer-houses-rapor.md",
+      "kaynak": "cramer-houses-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "medikal-astroloji",
+        "teknik-astroloji"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [
+        "borage"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 8.8,
+      "visibility": "user"
+    },
+    {
+      "id": "cramer-nodes-rapor",
+      "dosya": "cramer-nodes-rapor.md",
+      "kaynak": "cramer-nodes-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "medikal-astroloji",
+        "teknik-astroloji"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [],
+      "orijinal_format": "html",
+      "boyut_kb": 7.3,
+      "visibility": "user"
+    },
+    {
+      "id": "cramer-rapor",
+      "dosya": "cramer-rapor.md",
+      "kaynak": "cramer-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "comfrey",
+        "mugwort"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 7.2,
+      "visibility": "user"
+    },
+    {
+      "id": "culpeper-rapor",
+      "dosya": "culpeper-rapor.md",
+      "kaynak": "culpeper-rapor.md",
+      "baslik": "Culpeper — Medikal Astroloji ve Kozmik Bitkisel Tıp Raporu",
+      "tema": [
+        "herbalizm"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "aconite",
+        "belladonna",
+        "comfrey",
+        "foxglove",
+        "greater_celandine",
+        "hellebore",
+        "hemlock",
+        "henbane",
+        "lily_of_the_valley",
+        "mandrake",
+        "mugwort",
+        "pennyroyal",
+        "rue",
+        "savin",
+        "st_johns_wort",
+        "tansy"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 15.3,
+      "visibility": "user"
+    },
+    {
+      "id": "culpeper-codex",
+      "dosya": "culpeper-codex.md",
+      "kaynak": "culpeper_codex.html",
+      "baslik": "The Culpeper Codex",
+      "tema": [
+        "herbalizm"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "html",
+      "boyut_kb": 3.0,
+      "visibility": "user"
+    },
+    {
+      "id": "culpeper-medikal-astroloji-kozmik-herbalizm-raporu",
+      "dosya": "culpeper-medikal-astroloji-kozmik-herbalizm-raporu.md",
+      "kaynak": "culpeper_medikal_astroloji_kozmik_herbalizm_raporu.html",
+      "baslik": "Culpeper’s Complete Astrology & Herbalism",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "html",
+      "boyut_kb": 3.9,
+      "visibility": "user"
+    },
+    {
+      "id": "daath-medical-astrology-rapor",
+      "dosya": "daath-medical-astrology-rapor.md",
+      "kaynak": "daath-medical-astrology-rapor.md",
+      "baslik": "Medical Astrology (Heinrich Daath) — Doğrulayıcı Melothesia + Yönetim Tablosu",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 5.0,
+      "visibility": "user"
+    },
+    {
+      "id": "de-radiis-rapor-1",
+      "dosya": "de-radiis-rapor-1.md",
+      "kaynak": "de-radiis-rapor-1.html",
+      "baslik": "Sentez Raporu",
+      "tema": [
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "st_johns_wort",
+        "wormwood"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 5.3,
+      "visibility": "user"
+    },
+    {
+      "id": "ebertin-astrological-healing-rapor",
+      "dosya": "ebertin-astrological-healing-rapor.md",
+      "kaynak": "ebertin-astrological-healing-rapor.md",
+      "baslik": "Ebertin — Astrological Healing / Astro-Medicine Raporu",
+      "tema": [
+        "genel"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "aconite"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 6.6,
+      "visibility": "user"
+    },
+    {
+      "id": "ebu-maser-rapor",
+      "dosya": "ebu-maser-rapor.md",
+      "kaynak": "ebu-maser-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "coltsfoot",
+        "sage",
+        "st_johns_wort"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 7.3,
+      "visibility": "user"
+    },
+    {
+      "id": "evolutionary-herbalism-rapor",
+      "dosya": "evolutionary-herbalism-rapor.md",
+      "kaynak": "evolutionary-herbalism-rapor.md",
+      "baslik": "Evolutionary Herbalism (Sajah Popham) — Modern Gezegen-Bitki Enerjetik Çerçevesi",
+      "tema": [
+        "herbalizm"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "heavy_metals"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 8.0,
+      "visibility": "user"
+    },
+    {
+      "id": "ficino-de-vita-medikal-astroloji-kozmik-bitkisel-tip-raporu",
+      "dosya": "ficino-de-vita-medikal-astroloji-kozmik-bitkisel-tip-raporu.md",
+      "kaynak": "ficino_de_vita_medikal_astroloji_kozmik_bitkisel_tip_raporu.md",
+      "baslik": "kaynak: ficino_de_vita_medikal_astroloji_kozmik_bitkisel_tip_raporu",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji",
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 12.2,
+      "visibility": "user"
+    },
+    {
+      "id": "firmicus-maternus-mathesis-medikal-astroloji-kozmik-bitkisel-tip-raporu",
+      "dosya": "firmicus-maternus-mathesis-medikal-astroloji-kozmik-bitkisel-tip-raporu.md",
+      "kaynak": "firmicus_maternus_mathesis_medikal_astroloji_kozmik_bitkisel_tip_raporu.md",
+      "baslik": "kaynak: firmicus_maternus_mathesis_medikal_astroloji_kozmik_bitkisel_tip_raporu",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji",
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 11.7,
+      "visibility": "user"
+    },
+    {
+      "id": "gezegen-aci-depresyon-dengeleme",
+      "dosya": "gezegen-aci-depresyon-dengeleme.md",
+      "kaynak": "gezegen-aci-depresyon-dengeleme.md",
+      "baslik": "Gezegen & Açı → Ağır/Düşük Enerji Teması → Dengeleme (Wellness)",
+      "tema": [
+        "ruh-sagligi",
+        "teknik-astroloji"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 7.1,
+      "visibility": "user"
+    },
+    {
+      "id": "heindel-astro-diagnosis-rapor",
+      "dosya": "heindel-astro-diagnosis-rapor.md",
+      "kaynak": "heindel-astro-diagnosis-rapor.md",
+      "baslik": "Astro-Diagnosis (Heindel) — Melothesia Katmanı & Teşhis Çerçevesi Sınırı",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 6.3,
+      "visibility_not": "hastalik-atfi chunk agent_only; melothesia user'a promote edilebilir",
+      "visibility": "agent_only"
+    },
+    {
+      "id": "hermetica-medikal-astroloji-kozmik-bitkisel-tip-raporu",
+      "dosya": "hermetica-medikal-astroloji-kozmik-bitkisel-tip-raporu.md",
+      "kaynak": "hermetica_medikal_astroloji_kozmik_bitkisel_tip_raporu.md",
+      "baslik": "kaynak: hermetica_medikal_astroloji_kozmik_bitkisel_tip_raporu",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji",
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 13.1,
+      "visibility": "user"
+    },
+    {
+      "id": "hill-pathology-rapor",
+      "dosya": "hill-pathology-rapor.md",
+      "kaynak": "hill-pathology-rapor.md",
+      "baslik": "Judith Hill · *Medical Astrology: A Guide to Planetary Pathology* — App-İçi Çıkarım",
+      "tema": [
+        "beden-patoloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "comfrey"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 8.4,
+      "visibility": "agent_only"
+    },
+    {
+      "id": "hippocratic-writings-medikal-astroloji-kozmik-bitkisel-tip-raporu",
+      "dosya": "hippocratic-writings-medikal-astroloji-kozmik-bitkisel-tip-raporu.md",
+      "kaynak": "hippocratic_writings_medikal_astroloji_kozmik_bitkisel_tip_raporu.md",
+      "baslik": "kaynak: hippocratic_writings_medikal_astroloji_kozmik_bitkisel_tip_raporu",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji",
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 11.2,
+      "visibility": "user"
+    },
+    {
+      "id": "hofman-classical-medical-astrology-rapor",
+      "dosya": "hofman-classical-medical-astrology-rapor.md",
+      "kaynak": "hofman-classical-medical-astrology-rapor.md",
+      "baslik": "Classical Medical Astrology (Oscar Hofman) — Mizaç & Önleme: Denge Omurgası",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 6.7,
+      "visibility": "user"
+    },
+    {
+      "id": "judith-hill-body-types-medikal-astroloji-kozmik-bitkisel-tip-raporu",
+      "dosya": "judith-hill-body-types-medikal-astroloji-kozmik-bitkisel-tip-raporu.md",
+      "kaynak": "judith_hill_body_types_medikal_astroloji_kozmik_bitkisel_tip_raporu.md",
+      "baslik": "kaynak: judith_hill_body_types_medikal_astroloji_kozmik_bitkisel_tip_raporu",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji",
+        "beden-patoloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 10.3,
+      "visibility": "agent_only"
+    },
+    {
+      "id": "lehman-rapor",
+      "dosya": "lehman-rapor.md",
+      "kaynak": "lehman-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "aconite",
+        "belladonna",
+        "bryony",
+        "comfrey",
+        "foxglove",
+        "goldenseal",
+        "greater_celandine",
+        "licorice",
+        "mugwort",
+        "nux_vomica",
+        "sage"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 5.9,
+      "visibility": "user"
+    },
+    {
+      "id": "millard-casenotes-rapor",
+      "dosya": "millard-casenotes-rapor.md",
+      "kaynak": "millard-casenotes-rapor.md",
+      "baslik": "Casenotes of a Medical Astrologer (Millard) — Sınır (Fence-off) Raporu",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 2.7,
+      "visibility_not": "prognoz/ameliyat-zamanlama chunk -> excluded",
+      "visibility": "agent_only"
+    },
+    {
+      "id": "morris-cycles-medical-astrology-rapor",
+      "dosya": "morris-cycles-medical-astrology-rapor.md",
+      "kaynak": "morris-cycles-medical-astrology-rapor.md",
+      "baslik": "Cycles in Medical Astrology (William Morris) — Döngü/Ritim + Yön-Enerjetiği Katmanı",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 5.9,
+      "visibility": "user"
+    },
+    {
+      "id": "paracelsus-okult-botanik-rapor",
+      "dosya": "paracelsus-okult-botanik-rapor.md",
+      "kaynak": "paracelsus-okult-botanik-rapor.md",
+      "baslik": "Paracelsus — Okült Botanik / Sihirli Bitkiler: Medikal Astroloji ve Signatura Raporu",
+      "tema": [
+        "herbalizm",
+        "alsimi"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [
+        "heavy_metals"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 9.5,
+      "visibility": "user"
+    },
+    {
+      "id": "paracelsus-sempatik-sifa-rapor",
+      "dosya": "paracelsus-sempatik-sifa-rapor.md",
+      "kaynak": "paracelsus-sempatik-sifa-rapor.md",
+      "baslik": "Paracelsus — Sempatik Şifa & Archaeus: Çerçeve ve Sınır Raporu",
+      "tema": [
+        "herbalizm",
+        "meslek-vocation",
+        "alsimi"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 5.0,
+      "visibility_not": "hastalik-transferi/asi-karsiti chunk -> excluded; Archaeus/placebo kalir",
+      "visibility": "agent_only"
+    },
+    {
+      "id": "part-of-fortune-rapor",
+      "dosya": "part-of-fortune-rapor.md",
+      "kaynak": "part-of-fortune-rapor.md",
+      "baslik": "Part of Fortune (Pars Fortuna) — Neşe Noktası, Para ve Düzeltme Raporu",
+      "tema": [
+        "teknik-astroloji"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 14.1,
+      "visibility": "user"
+    },
+    {
+      "id": "pharmacopoeia-hermetica-astro-herbal-rapor",
+      "dosya": "pharmacopoeia-hermetica-astro-herbal-rapor.md",
+      "kaynak": "pharmacopoeia_hermetica_astro_herbal_rapor.md",
+      "baslik": "kaynak: pharmacopoeia_hermetica_astro_herbal_rapor",
+      "tema": [
+        "herbalizm",
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 8.2,
+      "visibility": "user"
+    },
+    {
+      "id": "planetary-herbology-rapor",
+      "dosya": "planetary-herbology-rapor.md",
+      "kaynak": "planetary-herbology-rapor.md",
+      "baslik": "Planetary Herbology — Medikal Astroloji ve Kozmik Bitkisel Tıp Raporu",
+      "tema": [
+        "genel"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "comfrey",
+        "dong_quai",
+        "ephedra",
+        "goldenseal",
+        "sassafras"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 18.7,
+      "visibility": "user"
+    },
+    {
+      "id": "raphael-medikal-astroloji-raporu",
+      "dosya": "raphael-medikal-astroloji-raporu.md",
+      "kaynak": "raphael-medikal-astroloji-raporu.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "ginkgo",
+        "pennyroyal"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 5.6,
+      "visibility": "user"
+    },
+    {
+      "id": "ridder-patrick-rapor",
+      "dosya": "ridder-patrick-rapor.md",
+      "kaynak": "ridder-patrick-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "borage",
+        "coltsfoot",
+        "comfrey",
+        "hemlock",
+        "henbane",
+        "licorice",
+        "rue"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 6.2,
+      "visibility": "user"
+    },
+    {
+      "id": "sellar-medical-astrology-intro-rapor",
+      "dosya": "sellar-medical-astrology-intro-rapor.md",
+      "kaynak": "sellar-medical-astrology-intro-rapor.md",
+      "baslik": "An Introduction to Medical Astrology (Wanda Sellar) — Çok-Yöneticili Korelasyon + Dignite Katmanı",
+      "tema": [
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 6.3,
+      "visibility": "user"
+    },
+    {
+      "id": "sepharial-rapor",
+      "dosya": "sepharial-rapor.md",
+      "kaynak": "sepharial-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "mugwort"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 7.1,
+      "visibility": "user"
+    },
+    {
+      "id": "stenudd-rapor",
+      "dosya": "stenudd-rapor.md",
+      "kaynak": "stenudd-rapor.html",
+      "baslik": "Karşılaştırmalı Sentez Raporu",
+      "tema": [
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "mugwort"
+      ],
+      "orijinal_format": "html",
+      "boyut_kb": 5.0,
+      "visibility": "user"
+    },
+    {
+      "id": "tetrabiblos-rapor",
+      "dosya": "tetrabiblos-rapor.md",
+      "kaynak": "tetrabiblos-rapor.md",
+      "baslik": "Tetrabiblos — Medikal Astroloji ve Kozmik Bitkisel Tıp Raporu",
+      "tema": [
+        "klasik-kaynak"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [
+        "borage",
+        "ginkgo",
+        "licorice",
+        "sage",
+        "st_johns_wort",
+        "vitex"
+      ],
+      "orijinal_format": "md",
+      "boyut_kb": 21.9,
+      "visibility": "user"
+    },
+    {
+      "id": "vocational-astrology-rapor",
+      "dosya": "vocational-astrology-rapor.md",
+      "kaynak": "vocational-astrology-rapor.md",
+      "baslik": "Vocational Astrology — Arketip, Yetenek ve Çağrı Raporu",
+      "tema": [
+        "meslek-vocation"
+      ],
+      "guven_tier": "anlati_only",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 11.0,
+      "visibility": "user"
+    },
+    {
+      "id": "white-hollingsworth-medikal-astroloji-kozmik-bitkisel-tip-raporu",
+      "dosya": "white-hollingsworth-medikal-astroloji-kozmik-bitkisel-tip-raporu.md",
+      "kaynak": "white_hollingsworth_medikal_astroloji_kozmik_bitkisel_tip_raporu.md",
+      "baslik": "Medikal Astroloji & Kozmik Bitkisel Tıp Raporu — White & Hollingsworth",
+      "tema": [
+        "herbalizm",
+        "medikal-astroloji"
+      ],
+      "guven_tier": "tekil_gelenek",
+      "riskli_madde": [],
+      "orijinal_format": "md",
+      "boyut_kb": 22.3,
+      "visibility": "user"
+    }
+  ]
+}

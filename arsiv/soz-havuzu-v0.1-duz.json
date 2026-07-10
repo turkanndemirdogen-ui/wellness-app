@@ -1,0 +1,137 @@
+{
+  "_meta": {
+    "belge": "soz-havuzu",
+    "surum": "v0.1-PILOT",
+    "tarih": "2026-07-05",
+    "karar": "Atıfsız özgün yol (Türkan onayı, 5 Tem): tüm sözler bu proje için yazıldı, hiçbir gerçek kişiye/kaynağa atfedilmez ve atfedilmeyecek.",
+    "durum": "TASLAK-ONAYLI: build için kullanılabilir; yayın öncesi TR polisajı launch-checklist maddesi.",
+    "kullanim": "Ana Sayfa 'günün sözü': free = global günlük seçim; pro = tema bazlı kişisel seçim (karar günlüğü). Tema sözlüğü: sukunet, cesaret, dongu, birakma, baslangic, sabir, sefkat, denge."
+  },
+  "sozler": [
+    {
+      "id": "soz_001",
+      "tema": "sabir",
+      "metin": "Yavaşlamak da bir yol almaktır."
+    },
+    {
+      "id": "soz_002",
+      "tema": "baslangic",
+      "metin": "Bugün atılan küçük bir adım, yarın kök olur."
+    },
+    {
+      "id": "soz_003",
+      "tema": "sukunet",
+      "metin": "Nefesin, her an dönebileceğin bir eve benzer."
+    },
+    {
+      "id": "soz_004",
+      "tema": "sabir",
+      "metin": "Toprak acele etmez; yine de her bahar çiçek açar."
+    },
+    {
+      "id": "soz_005",
+      "tema": "birakma",
+      "metin": "Bırakmak boşluk değil; yeni filizlere yer açmaktır."
+    },
+    {
+      "id": "soz_006",
+      "tema": "sefkat",
+      "metin": "İçindeki bahçe ilgiyle büyür, eleştiriyle değil."
+    },
+    {
+      "id": "soz_007",
+      "tema": "dongu",
+      "metin": "Ay bile her gece aynı parlaklıkta değil; senin de olman gerekmiyor."
+    },
+    {
+      "id": "soz_008",
+      "tema": "sukunet",
+      "metin": "Dinlenmek, vazgeçmek değildir."
+    },
+    {
+      "id": "soz_009",
+      "tema": "sabir",
+      "metin": "Kökleri görünmeyen ağaç da sağlam durur; emeğin görünmese de birikir."
+    },
+    {
+      "id": "soz_010",
+      "tema": "baslangic",
+      "metin": "Bir tohum, karanlıkta da büyümeye başlar."
+    },
+    {
+      "id": "soz_011",
+      "tema": "birakma",
+      "metin": "Bugüne sığmayan her şey, yarının toprağına ekilebilir."
+    },
+    {
+      "id": "soz_012",
+      "tema": "cesaret",
+      "metin": "Cesaret bazen yalnızca 'bugün buradayım' demektir."
+    },
+    {
+      "id": "soz_013",
+      "tema": "denge",
+      "metin": "Esnemek de bir güç biçimidir."
+    },
+    {
+      "id": "soz_014",
+      "tema": "dongu",
+      "metin": "Her mevsimin kendi görevi var; seninkinin de."
+    },
+    {
+      "id": "soz_015",
+      "tema": "sefkat",
+      "metin": "Kendine sorduğun nazik bir soru, bazen en iyi cevaptır."
+    },
+    {
+      "id": "soz_016",
+      "tema": "sabir",
+      "metin": "Su, acele etmeden yol bulur; sen de bulursun."
+    },
+    {
+      "id": "soz_017",
+      "tema": "birakma",
+      "metin": "Bugün taşıdığın yük, yarın da taşımak zorunda olduğun anlamına gelmez."
+    },
+    {
+      "id": "soz_018",
+      "tema": "baslangic",
+      "metin": "Sabah, dünden kalanları sormaz."
+    },
+    {
+      "id": "soz_019",
+      "tema": "denge",
+      "metin": "Duraksamak, yönünü kaybetmek değildir."
+    },
+    {
+      "id": "soz_020",
+      "tema": "sefkat",
+      "metin": "İyi bakılan küçük şeyler, büyük hayatlar kurar."
+    },
+    {
+      "id": "soz_021",
+      "tema": "dongu",
+      "metin": "Gökyüzü her gün başka konuşur; dinlemek yeter."
+    },
+    {
+      "id": "soz_022",
+      "tema": "birakma",
+      "metin": "Bir yaprağın düşüşü bile ağacın hikâyesine hizmet eder."
+    },
+    {
+      "id": "soz_023",
+      "tema": "sefkat",
+      "metin": "Kendinle yumuşak konuş; içindeki bahçıvan seni duyuyor."
+    },
+    {
+      "id": "soz_024",
+      "tema": "cesaret",
+      "metin": "Başlamak için hazır hissetmek şart değil; nazikçe başlamak yeter."
+    },
+    {
+      "id": "soz_025",
+      "tema": "denge",
+      "metin": "Denge hiç sallanmamak değil; her sallanışta merkezini hatırlamaktır."
+    }
+  ]
+}

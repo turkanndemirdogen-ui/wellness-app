@@ -1,0 +1,384 @@
+{
+  "_meta": {
+    "belge": "motor-tablo-parti2",
+    "surum": "v0.2",
+    "tarih": "2026-07-05",
+    "kapsam": "Parti 2: +9 bitki (10 hedeflendi; zerdeçal veri yetersizliğinden askıya alındı — şişirme yerine dürüst eksik). Hedef: Satürn/Jüpiter/Ay güçlendirme.",
+    "guvenlik_elemeleri": "T0 filtresi 4 adayı eledi: karakafes (comfrey T0), pelin (wormwood T0), ardıç (savin T0 eşleşmesi — tür karışıklığı temkinli eleme; J. communis ayrı değerlendirme Türkan kararı), melek otu (dong quai T2 karışıklığı). Meyan T3+düşük frekansla alınmadı.",
+    "aski_listesi": [
+      "zerdecal (sinyal tek-yönlü 3, kimlikle çelişik — Latin adlarla derin tarama bekliyor)"
+    ],
+    "veto_durumu": "KAPANDI (5 Tem, 'tamamlayalım' talimatı): önerilen atamalar uygulandı — tarçın=Güneş · ceviz=Satürn · hindiba=Jüpiter · mürver=Satürn · şerbetçiotu=Venüs · ebegümeci=Venüs · marul=Ay. Türkan tek mesajla değiştirebilir; gerekçeler celiski_notu alanlarında.",
+    "uyarilar": [
+      "mevsim alanı vault-dışı geçici",
+      "atamalar uygulandı; celiski_notu alanları tarihsel gerekçe kaydıdır"
+    ],
+    "mevsim_notu": "mevsim alanları mevsim-haritasi.json ile senkronlandı (parlama modeli). Otorite: mevsim-haritasi.json."
+  },
+  "bitkiler": [
+    {
+      "herb_id": "devedikeni",
+      "names": {
+        "tr": "Devedikeni",
+        "en": "Milk Thistle",
+        "la": "Silybum marianum"
+      },
+      "gezegen_birincil": "jupiter",
+      "gezegen_ikincil": [
+        "mars"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "karaciger"
+      ],
+      "tat": [
+        "acı"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "provisional",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 11,
+      "source_note": "Jüpiter 10 — net; klasik karaciğer kimliğiyle birebir.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "kediotu",
+      "names": {
+        "tr": "Kediotu",
+        "en": "Valerian",
+        "la": "Valeriana officinalis"
+      },
+      "gezegen_birincil": "merkur",
+      "gezegen_ikincil": [
+        "mars"
+      ],
+      "celiski_notu": null,
+      "beden_bolgeleri": [
+        "sinir-uyku"
+      ],
+      "tat": [
+        "acımsı",
+        "topraksı"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "provisional",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok. Sedatiflerle etkileşim literatürde bilinir; vault'ta kayıt YOK — eklenmesi Türkan kararı."
+      },
+      "kaynak_sayisi": 8,
+      "source_note": "Merkür 11 — ezici; klasik valerian=Merkür ile uyumlu. Merkür-freni hedefine rağmen sinyal+kimlik gereği dürüst atama.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "hindiba",
+      "names": {
+        "tr": "Hindiba",
+        "en": "Chicory",
+        "la": "Cichorium intybus"
+      },
+      "gezegen_birincil": "jupiter",
+      "gezegen_ikincil": [
+        "merkur"
+      ],
+      "celiski_notu": "Merkür 6 = Jüpiter 6 tam eşitlik. Klasik gelenek (succory=Jüpiter) + karaciğer-acı tonik kimliği → birincil Jüpiter. Veto açık.",
+      "beden_bolgeleri": [
+        "karaciger",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "acı"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz",
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 6,
+      "source_note": "Eşitlik → P2 kimlik kuralı uygulandı.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "tarcin",
+      "names": {
+        "tr": "Tarçın",
+        "en": "Cinnamon",
+        "la": "Cinnamomum verum"
+      },
+      "gezegen_birincil": "gunes",
+      "gezegen_ikincil": [
+        "mars",
+        "saturn"
+      ],
+      "celiski_notu": "⚠ KIRILGAN: sinyal dağınık ve Satürn önde (3/2/2). Satürn bağlamı 'soğuğa karşı ısıtıcı' ilişkisel kullanım (zencefil emsali). Sıcak-aromatik kimlik + klasik gelenek → Güneş. Veto öncelikli.",
+      "beden_bolgeleri": [
+        "mide-sindirim",
+        "kalp-dolasim"
+      ],
+      "tat": [
+        "keskin",
+        "tatlımsı"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "her-mevsim"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok. Cassia türünde kumarin notu literatürde bilinir; vault'ta kayıt YOK — Türkan kararı."
+      },
+      "kaynak_sayisi": 5,
+      "source_note": "Kimlik yorumu Güneş; frekans temkinli.",
+      "mevsim_tipi": "geleneksel-sembolik"
+    },
+    {
+      "herb_id": "marul",
+      "names": {
+        "tr": "Marul",
+        "en": "Lettuce",
+        "la": "Lactuca sativa"
+      },
+      "gezegen_birincil": "ay",
+      "gezegen_ikincil": [],
+      "celiski_notu": "Sinyal düşük (Ay 2) ama tek yönlü; klasik gelenek (lettuce=Ay) ezici. Kimlik ataması — veto hafif.",
+      "beden_bolgeleri": [
+        "sinir-uyku",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "sulu",
+        "acımsı"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "nemlendirici",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "ilkbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 5,
+      "source_note": "Ay rafını 2→3 yapan atama.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "ceviz",
+      "names": {
+        "tr": "Ceviz",
+        "en": "Walnut",
+        "la": "Juglans regia"
+      },
+      "gezegen_birincil": "saturn",
+      "gezegen_ikincil": [
+        "gunes"
+      ],
+      "celiski_notu": "⚠ KIRILGAN: klasik gelenekte Güneş/Jüpiter atamaları da var; kaynak sinyalimiz Satürn önde (4/1) ve imza okuması (sert kabuk, dayanıklı ağaç, kıvrımlı iç) Satürn'ü destekliyor. Veto öncelikli.",
+      "beden_bolgeleri": [
+        "sinir-uyku"
+      ],
+      "tat": [
+        "yağlı",
+        "buruk"
+      ],
+      "enerjetik": {
+        "isi": "ısıtıcı",
+        "nem": "kurutucu",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 5,
+      "source_note": "Satürn rafını güçlendiren aday.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "murver",
+      "names": {
+        "tr": "Mürver",
+        "en": "Elder",
+        "la": "Sambucus nigra"
+      },
+      "gezegen_birincil": "saturn",
+      "gezegen_ikincil": [
+        "jupiter",
+        "ay"
+      ],
+      "celiski_notu": "Culpeper geleneği mürveri Venüs'e yazar; kaynak sinyalimiz net Satürn (6) ve halk geleneğindeki 'Satürn ağacı' kimliğiyle uyumlu. Veto açık.",
+      "beden_bolgeleri": [
+        "gogus-nefes",
+        "deri"
+      ],
+      "tat": [
+        "tatlımsı",
+        "buruk"
+      ],
+      "enerjetik": {
+        "isi": "provisional",
+        "nem": "provisional",
+        "durum": "dogrulanamadi"
+      },
+      "mevsim": [
+        "ilkbahar",
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok. Çiğ meyve uyarısı literatürde bilinir; vault'ta kayıt YOK — Türkan kararı."
+      },
+      "kaynak_sayisi": 4,
+      "source_note": "Folklor + sinyal örtüştü.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "serbetciotu",
+      "names": {
+        "tr": "Şerbetçiotu",
+        "en": "Hops",
+        "la": "Humulus lupulus"
+      },
+      "gezegen_birincil": "venus",
+      "gezegen_ikincil": [
+        "saturn",
+        "mars"
+      ],
+      "celiski_notu": "Klasik Culpeper hops=Mars der; kaynak sinyalimiz Venüs (4) ve yatıştırıcı-gevşetici kimlik Venüs okumasını destekliyor. Veto açık.",
+      "beden_bolgeleri": [
+        "sinir-uyku"
+      ],
+      "tat": [
+        "acı"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "provisional",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "sonbahar"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 3,
+      "source_note": "Düşük frekans; kimlik+sinyal uyumu.",
+      "mevsim_tipi": "botanik"
+    },
+    {
+      "herb_id": "ebegumeci",
+      "names": {
+        "tr": "Ebegümeci",
+        "en": "Common Mallow",
+        "la": "Malva sylvestris"
+      },
+      "gezegen_birincil": "venus",
+      "gezegen_ikincil": [
+        "ay"
+      ],
+      "celiski_notu": "Sinyal pratikte yok (1/1/1); atama tamamen kimlikle yapıldı — hatmiyle aynı aile, klasik mallow=Venüs. Veto hafif.",
+      "beden_bolgeleri": [
+        "gogus-nefes",
+        "mide-sindirim"
+      ],
+      "tat": [
+        "tatlımsı"
+      ],
+      "enerjetik": {
+        "isi": "serinletici",
+        "nem": "nemlendirici",
+        "durum": "provisional"
+      },
+      "mevsim": [
+        "yaz"
+      ],
+      "mevsim_durum": "taslak-claude; mevsim-haritasi.json otorite; Türkan teyidi bekliyor",
+      "kozmik_olay": null,
+      "guvenlik": {
+        "app_safe": true,
+        "guven_tier": null,
+        "uyari_chip": null,
+        "gebelik": "doğrulanmadı",
+        "not": "T-listesinde yok."
+      },
+      "kaynak_sayisi": 3,
+      "source_note": "Kimlik ataması; hatmi emsali.",
+      "mevsim_tipi": "botanik"
+    }
+  ]
+}

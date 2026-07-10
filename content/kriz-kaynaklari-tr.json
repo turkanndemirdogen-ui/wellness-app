@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "belge": "kriz-kaynaklari-tr",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "kapsam": "Yerel Türkiye acil/kriz hatları. Sohbet kriz katmanı + haftalik-bakis-spec kriz-modu bu dosyaya referans verir.",
+    "kararlar": "K-1=yerel TR (global dizin hariç) · K-2=182 teyit-bekliyor damgasıyla dahil.",
+    "hassas_kural": "Sunum metni gizlilik/yetkili-müdahale GARANTİSİ vermez; kesin prosedür iddiası yok. Yalnız 'arayabilirsin, ücretsiz, profesyonel destek' çerçevesi. Ton: sıcak, sakin, davetkar; emir değil.",
+    "dogrulama_notu": "112/155/183 web'den güçlü doğrulandı (183 resmi: alo183.aile.gov.tr). 182 ikincil kaynaklarda tutarlı ama resmi Sağlık Bakanlığı sayfasından final teyit BEKLİYOR (Türkan). Numaralar zamanla değişebilir — yayın öncesi + periyodik teyit launch checklist maddesi."
+  },
+  "acil_uyari_esigi": "Anlık hayati tehlike (intihar girişimi, ciddi yaralanma, zehirlenme) → 112 öncelikli.",
+  "hatlar": [
+    {
+      "id": "112",
+      "ad": "Acil Yardım",
+      "numara": "112",
+      "kurum": "Sağlık Bakanlığı",
+      "kapsam": "Hayati aciliyet, ambulans, psikiyatrik acil",
+      "ucretsiz": true, "saat": "7/24",
+      "dogrulama": "guclu",
+      "oncelik": 1
+    },
+    {
+      "id": "182",
+      "ad": "ALO Yaşam Hattı",
+      "numara": "182",
+      "kurum": "Sağlık Bakanlığı",
+      "kapsam": "İntihar önleme, ağır ruhsal kriz, panik atak, yoğun kaygı",
+      "ucretsiz": true, "saat": "7/24",
+      "dogrulama": "teyit-bekliyor",
+      "dogrulama_not": "İkincil kaynaklarda tutarlı; resmi Sağlık Bakanlığı sayfasından teyit edilmeli. UI'da gösterilmeden önce Türkan onayı.",
+      "oncelik": 2
+    },
+    {
+      "id": "183",
+      "ad": "ALO Sosyal Destek Hattı",
+      "numara": "183",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kapsam": "Aile içi şiddet, kadına yönelik şiddet, çocuk istismarı, psikososyal destek",
+      "ucretsiz": true, "saat": "7/24",
+      "ek_not": "İşitme/konuşma engelli: 0549 381 0 183 (işaret dili). Kürtçe/Arapça personel mevcut.",
+      "dogrulama": "guclu",
+      "oncelik": 3
+    },
+    {
+      "id": "155",
+      "ad": "Polis İmdat",
+      "numara": "155",
+      "kurum": "Emniyet",
+      "kapsam": "Anlık fiziksel tehlike, güvenlik",
+      "ucretsiz": true, "saat": "7/24",
+      "dogrulama": "guclu",
+      "oncelik": 4
+    }
+  ],
+  "kriz_modu_metni": {
+    "acilis": "Şu an zor bir andan geçiyor olabilirsin. Yalnız değilsin — aşağıdaki hatlar ücretsiz ve seninle konuşmak için var.",
+    "kapanis_112": "Hayati bir tehlike varsa, lütfen hemen 112'yi ara.",
+    "yumusak_hatirlatma": "Bir uzmanla ya da güvendiğin biriyle konuşmak, bu yükü tek başına taşımaktan daha kolay olabilir.",
+    "ton_notu": "TASLAK — Türkçe son polisaj Türkan'da. Emir kipi yok, garanti yok."
+  }
+}

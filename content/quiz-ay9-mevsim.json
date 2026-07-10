@@ -1,0 +1,218 @@
+{
+  "_meta": {
+    "puanlama": "p +2, s +1; Baskın+Yükselen. Eşitlikte son soru.",
+    "durum": "TASLAK-ONAYLI; TR polisaj checklist.",
+    "hassasiyet": "'Kalıp değil ayna' açılışı ortak; güçlendirici çerçeve. Etiket: sembolik · eğlence amaçlı.",
+    "belge": "quiz-ay9-mevsim",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "ozel_sinerji": "Mevsim-haritası/parlama modeliyle tematik uyum + mevsim→bitki köprüsü. 4 mevsim arketipi.",
+    "gating": "Free: mevsim+kisa+bitki. Pro: derin_ek + gerçek mevsimle uyum + astro overlay."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — dört mevsim de içinde yaşar. Bugün hangisi sende hüküm sürüyor, ona bakıyoruz.",
+  "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir} (Bitkin: {A_bitki}.)",
+  "arketipler": {
+    "ilkbahar": {
+      "ad": "İlkbahar Ruhu",
+      "tek_satir": "Sen bir yenilenmesin; her şeyde yeniden doğuşu görürsün.",
+      "kisa": "İlkbahar enerjisi tazelik ve umuttur — taze başlangıçlar, filizlenme, iyimserlik. Yeniyi sen açarsın.",
+      "derin_ek": "Gölge daveti: her şey yeni ve heyecanlı; ama bitirmek de büyümenin parçası.",
+      "bitki": "menekse",
+      "paylasim": "Mevsimim İlkbahar — yenilenmenin ruhu."
+    },
+    "yaz": {
+      "ad": "Yaz Ruhu",
+      "tek_satir": "Sen bir bollukluk; enerjin ve neşen çevrene taşar.",
+      "kisa": "Yaz enerjisi coşku ve doluluktur — canlı, sıcak, cömert. Hayatı dolu dolu, yüksek sesle yaşarsın.",
+      "derin_ek": "Gölge daveti: hep parlamak yorar; gölgeye çekilmek de dinlendirir.",
+      "bitki": "aynisefa",
+      "paylasim": "Mevsimim Yaz — enerjim taşar."
+    },
+    "sonbahar": {
+      "ad": "Sonbahar Ruhu",
+      "tek_satir": "Sen olgun bir güzelliksin; bırakmayı ve şükretmeyi bilirsin.",
+      "kisa": "Sonbahar enerjisi olgunluk ve zarafettir — hasat, minnet, güzel bir bırakış. Derinliği ve dönüşümü kucaklarsın.",
+      "derin_ek": "Gölge daveti: bırakmak güzel; ama bazı şeyleri tutmaya da izin var.",
+      "bitki": "ceviz",
+      "paylasim": "Mevsimim Sonbahar — olgun bir güzellik."
+    },
+    "kis": {
+      "ad": "Kış Ruhu",
+      "tek_satir": "Sen derin bir dinginlik; sessizlikte güç toplarsın.",
+      "kisa": "Kış enerjisi içe dönüş ve dinlenmedir — sükûnet, sabır, derinlik. Sessizlikte kök salar, sonra dönersin.",
+      "derin_ek": "Gölge daveti: içe çekilmek onarır; ama kapıyı ilkbahara da arala.",
+      "bitki": "kediotu",
+      "paylasim": "Mevsimim Kış — sessizlikte güç toplarım."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Hayata bakışın?",
+      "secenekler": [
+        {
+          "metin": "Her gün yeni bir başlangıç",
+          "p": "ilkbahar"
+        },
+        {
+          "metin": "Dolu dolu yaşanmalı",
+          "p": "yaz"
+        },
+        {
+          "metin": "Her şeyin bir mevsimi var",
+          "p": "sonbahar"
+        },
+        {
+          "metin": "Sessizlikte anlam bulunur",
+          "p": "kis"
+        }
+      ]
+    },
+    {
+      "soru": "İdeal bir gün?",
+      "secenekler": [
+        {
+          "metin": "Taze, hareketli, yeni",
+          "p": "ilkbahar"
+        },
+        {
+          "metin": "Güneşli, sosyal, canlı",
+          "p": "yaz"
+        },
+        {
+          "metin": "Sıcak içecek, kitap, huzur",
+          "p": "sonbahar"
+        },
+        {
+          "metin": "Battaniye, sessizlik, iç dünya",
+          "p": "kis"
+        }
+      ]
+    },
+    {
+      "soru": "Enerjin nasıl?",
+      "secenekler": [
+        {
+          "metin": "Filizlenen, meraklı",
+          "p": "ilkbahar"
+        },
+        {
+          "metin": "Yüksek, taşan",
+          "p": "yaz"
+        },
+        {
+          "metin": "Dingin, olgun",
+          "p": "sonbahar"
+        },
+        {
+          "metin": "Derin, sakin",
+          "p": "kis"
+        }
+      ]
+    },
+    {
+      "soru": "Değişimle aran?",
+      "secenekler": [
+        {
+          "metin": "Bayılırım, yeniyi severim",
+          "p": "ilkbahar"
+        },
+        {
+          "metin": "Heyecanla karşılarım",
+          "p": "yaz"
+        },
+        {
+          "metin": "Zarafetle kabul ederim",
+          "p": "sonbahar"
+        },
+        {
+          "metin": "Yavaşça, içe dönerek",
+          "p": "kis"
+        }
+      ]
+    },
+    {
+      "soru": "Seni ne besler?",
+      "secenekler": [
+        {
+          "metin": "Yeni deneyimler",
+          "p": "ilkbahar"
+        },
+        {
+          "metin": "İnsanlar, kahkaha",
+          "p": "yaz"
+        },
+        {
+          "metin": "Anlam, derinlik",
+          "p": "sonbahar"
+        },
+        {
+          "metin": "Yalnızlık, dinlenme",
+          "p": "kis"
+        }
+      ]
+    },
+    {
+      "soru": "Zor zamanda?",
+      "secenekler": [
+        {
+          "metin": "Yeni bir kapı ararım",
+          "p": "ilkbahar"
+        },
+        {
+          "metin": "Enerjimi yükseltirim",
+          "p": "yaz"
+        },
+        {
+          "metin": "Kabul eder, sindiririm",
+          "p": "sonbahar"
+        },
+        {
+          "metin": "İçime çekilir, beklerim",
+          "p": "kis"
+        }
+      ]
+    },
+    {
+      "soru": "Seni en iyi anlatan?",
+      "secenekler": [
+        {
+          "metin": "'Yeniden başlıyorum'",
+          "p": "ilkbahar"
+        },
+        {
+          "metin": "'Şu an yaşıyorum'",
+          "p": "yaz"
+        },
+        {
+          "metin": "'Minnettarım'",
+          "p": "sonbahar"
+        },
+        {
+          "metin": "'Dinleniyorum'",
+          "p": "kis"
+        }
+      ]
+    },
+    {
+      "soru": "Doğada seni ne çeker?",
+      "secenekler": [
+        {
+          "metin": "İlk açan çiçek",
+          "p": "ilkbahar"
+        },
+        {
+          "metin": "Öğle güneşi",
+          "p": "yaz"
+        },
+        {
+          "metin": "Düşen yapraklar",
+          "p": "sonbahar"
+        },
+        {
+          "metin": "Karla kaplı sessizlik",
+          "p": "kis"
+        }
+      ]
+    }
+  ]
+}

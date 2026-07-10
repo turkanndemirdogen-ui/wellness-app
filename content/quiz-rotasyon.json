@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "belge": "quiz-rotasyon",
+    "surum": "v1.0-FINAL",
+    "tarih": "2026-07-05",
+    "karar": "Türkan 'rotasyonu finalle' talimatı (5 Tem). Eğlence-önde; bilim ayları 3-8-12 (çeşni). Veto: tek mesajla değiştirilebilir.",
+    "etiket_kurali": "C-eğlence ayları: 'sembolik · eğlence amaçlı' rozeti. A-bilim ayları: '...modelinden esinlenen' etiketi — 'doğrulanmış test' iddiası ASLA.",
+    "format": "Tüm aylar: 10 soru × 4 şık · Baskın+Yükselen sonuç · bitki köprüsü · R1.5 paylaşım kartı."
+  },
+  "aylar": [
+    {
+      "ay": 1,
+      "tema": "Dişil Estetik Arketip",
+      "katman": "C-eğlence",
+      "durum": "ÜRETİLDİ ✓",
+      "not": "güçlendirici çerçeve gömülü"
+    },
+    {
+      "ay": 2,
+      "tema": "Tanrıça Arketipi",
+      "katman": "C-eğlence",
+      "durum": "ÜRETİLDİ ✓",
+      "not": "Yunan 7'li; v2 adayı: Anadolu tanrıçaları (Kibele, Hepat) — yerelleştirme fırsatı"
+    },
+    {
+      "ay": 3,
+      "tema": "Kişilik Pusulası (Big Five-esinli)",
+      "katman": "A-bilim",
+      "durum": "bekliyor",
+      "not": "'modelden esinlenen' etiketi ZORUNLU; TR-doğrulanmış kısa formlar referans; ticari lisans kontrolü checklist'te"
+    },
+    {
+      "ay": 4,
+      "tema": "Element Arketipi (Ateş·Toprak·Hava·Su)",
+      "katman": "C-eğlence",
+      "durum": "bekliyor",
+      "not": "element-denge pro lensiyle sinerji"
+    },
+    {
+      "ay": 5,
+      "tema": "Bitki Arketipi ('Hangi bitkisin?')",
+      "katman": "C-eğlence",
+      "durum": "bekliyor",
+      "not": "37'lik havuzdan 7-8 bitki; herbaryum cross-sell en güçlü ay"
+    },
+    {
+      "ay": 6,
+      "tema": "Ay Fazı Arketipi",
+      "katman": "C-eğlence",
+      "durum": "bekliyor",
+      "not": "Gece Açanlar / kozmik kimlik sinerjisi"
+    },
+    {
+      "ay": 7,
+      "tema": "Hayvan Arketipi",
+      "katman": "C-eğlence",
+      "durum": "bekliyor",
+      "not": "'spirit animal' DEĞİL — duyarlılık kuralı (tasarım dosyası)"
+    },
+    {
+      "ay": 8,
+      "tema": "İç Kahramanın (Jung-esinli 12 arketip)",
+      "katman": "A-bilim",
+      "durum": "bekliyor",
+      "not": "'Jung'dan esinlenen' etiketi; kavramlar kamu malı"
+    },
+    {
+      "ay": 9,
+      "tema": "Mevsim Ruhu",
+      "katman": "C-eğlence",
+      "durum": "bekliyor",
+      "not": "mevsim-haritası/parlama modeliyle tematik uyum"
+    },
+    {
+      "ay": 10,
+      "tema": "Cadı Arketipi (Mutfak·Yeşil·Ay·Yıldız...)",
+      "katman": "C-eğlence",
+      "durum": "bekliyor",
+      "not": "soft witchery çekirdeği; güçlendirici çerçeve"
+    },
+    {
+      "ay": 11,
+      "tema": "Aura Rengin",
+      "katman": "C-eğlence",
+      "durum": "bekliyor",
+      "not": "pudra paletten 7 ton; en paylaşılabilir görsel sonuç adayı"
+    },
+    {
+      "ay": 12,
+      "tema": "Değerler Pusulası (yıl kapanışı)",
+      "katman": "A-bilim",
+      "durum": "bekliyor",
+      "not": "Schwartz-esinli; 'gelecek yıl neye alan açacaksın' teması"
+    }
+  ]
+}

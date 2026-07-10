@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "belge": "journal-transit-sorulari",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "KATMAN": "PRO journal özelliği (J-1=c hibrit, J-2=c dönemsel+günlük). Gökyüzü motoruna (engine-rules) bağlı.",
+    "uretim_modeli": "HİBRİT: bu havuz elle yazılmış ton-garantili sorulardır. LLM YALNIZCA (1) aktif transite uygun temayı seçer, (2) kullanıcının son journal temasına göre soruyu HAFİF çerçeveler. LLM YENİ İDDİA/KEHANET ÜRETMEZ — havuzdan seçer ve nazikçe bağlar.",
+    "ton_kurali_KRITIK": "Her soru = DAVET, asla kehanet. Format: '[transit] bu dönem [tema] öne çıkarabilir; [açık uçlu içsel-keşif sorusu]'. İlk yarı sembolik-davetkar ('öne çıkarabilir'), ikinci yarı kullanıcıya dönük soru. Kesin kader/kesinlik dili YASAK (marka kuralı). 'Yapmalısın' yok.",
+    "eslesme": "transit_key → engine-rules rule trigger ile eşleşir (aynı gezegen+hedef). Aktif kural varsa ilgili soru havuzu açılır.",
+    "gizlilik": "LLM çerçeveleme için kullanıcının SON journal TEMASINI (etiket) alır, ham metni DEĞİL. Soru seçimi client-side transit + tema etiketiyle yapılabilir; LLM opsiyonel katman.",
+    "gating": "PRO-only. Free journal serbest yazı + AM/PM ritüel; transit-soruları pro farkı.",
+    "durum": "TASLAK-ONAYLI; TR polisaj launch checklist."
+  },
+  "donemsel_sorular": [
+    {
+      "transit_key": "saturn_gunes",
+      "tema": "yapı, sorumluluk, sınır",
+      "sorular": [
+        "Satürn bu dönem yapı ve sorumluluk temasını öne çıkarabilir. Şu an hayatında neyi 'inşa etmek' istiyorsun — ve ilk taşı nereye koyabilirsin?",
+        "Bu dönem enerjin sınırlı hissedilebilir. Enerjini gerçekten neye harcamak istiyorsun, neyi bırakabilirsin?",
+        "Satürn olgunlaşma davet eder. Şu an sana 'ağır' gelen bir sorumluluk, aslında hangi büyümenin kapısı olabilir?"
+      ]
+    },
+    {
+      "transit_key": "saturn_ay",
+      "tema": "içe çekilme, duygusal sınır",
+      "sorular": [
+        "Satürn bu dönem duygularını içe çekebilir. Şu an neye ihtiyacın var ama kendinden esirgiyorsun?",
+        "İçsel havan serinlemiş olabilir. Sana sıcaklık veren küçük bir ritüel ne olabilir?",
+        "Bu dönem yalnızlık ve dinginlik arasındaki fark nerede senin için — hangisindesin?"
+      ]
+    },
+    {
+      "transit_key": "saturn_asc",
+      "tema": "kimlik, duruş, hayır diyebilme",
+      "sorular": [
+        "Satürn bu dönem 'kim olduğun' sorusunu sadeleştirebilir. Hangi maskeyi taşımaktan yorulduğunu fark ediyorsun?",
+        "Bu dönem sınır çizmek doğal bir ödev olabilir. Nerede 'hayır' demek, aslında bir 'evet'e alan açar?",
+        "Duruşun sınanıyor olabilir. Kendini kanıtlamak zorunda hissetmeden, olduğun kadarıyla durmak nasıl hissettirir?"
+      ]
+    },
+    {
+      "transit_key": "jupiter_gunes",
+      "tema": "genişleme, fırsat, iyimserlik",
+      "sorular": [
+        "Jüpiter bu dönem alanını genişletebilir. Kendine 'bir beden büyük' bir şeyi denemek için izin versen, o ne olurdu?",
+        "Bu dönem bir kapı aralanıyor olabilir. Hangi fırsata 'evet' demekten seni ne alıkoyuyor?",
+        "İyimserlik güzel; ölçüyü sen koyarsın. Neyi büyütmek istiyorsun ve neden — cevabını kendine dürüstçe yaz."
+      ]
+    },
+    {
+      "transit_key": "jupiter_ay",
+      "tema": "duygusal bolluk, şükran",
+      "sorular": [
+        "Jüpiter bu dönem iç dünyanı besleyebilir. Şu an neye minnettarsın — küçük de olsa, adını koy.",
+        "Bu dönem duyguların geniş bir ekranda olabilir. Büyük bir his, mutlaka büyük bir karar gerektirmiyor; şu an sadece ne hissettiğini yazsan?",
+        "Paylaştıkça büyüyen bir bereket havası olabilir. Bugün kime, neyi paylaşmak içinden geliyor?"
+      ]
+    },
+    {
+      "transit_key": "jupiter_asc",
+      "tema": "görünürlük, yeni alanlar",
+      "sorular": [
+        "Jüpiter bu dönem seni daha görünür kılabilir. Kendini göstermekten çekindiğin bir alan hangisi — ve neden?",
+        "Bu dönem yeni insanlar ve alanlar yaklaşabilir. Hangi davete açık olmak istersin?",
+        "Genişleme dağınık olabilir. Enerjini tek bir alana toplasan, o neresi olurdu?"
+      ]
+    },
+    {
+      "transit_key": "mars_gunes",
+      "tema": "enerji, cesaret, sabırsızlık",
+      "sorular": [
+        "Mars bu dönem içindeki ateşi körükleyebilir. Ertelediğin neye şimdi omuz vermek istiyorsun?",
+        "Bu dönem fitilin kısa olabilir. Son zamanlarda seni gerçekten neyin kışkırttığını fark ediyor musun — altında ne var?",
+        "Cesaret bu dönem elinin altında. Korkudan değil, istekten atacağın bir adım ne olurdu?"
+      ]
+    },
+    {
+      "transit_key": "mars_ay",
+      "tema": "duygusal ateş, hareket ihtiyacı",
+      "sorular": [
+        "Mars bu dönem duygularını çabuk alevlendirebilir. İçinde kaynayan bir şey varsa, ona hareketle çıkış versen nasıl olur?",
+        "Bu dönem 'canım istiyor' hissi güçlü olabilir. Bu isteği küçümsemeden, sağlıklı bir yola nasıl dökebilirsin?",
+        "His ile eylem bu dönem yakın. Bugün bedenin sana ne söylüyor — onu dinlesen ne yapardın?"
+      ]
+    },
+    {
+      "transit_key": "mars_asc",
+      "tema": "girişkenlik, ilk adım",
+      "sorular": [
+        "Mars bu dönem sana ivme veriyor olabilir. Başlatmakta zorlandığın şeye ilk adımı bugün atsan, o adım ne olur?",
+        "Bu dönem 'hemen şimdi' hissi güçlü olabilir. Gerçek aciliyet ile his arasındaki farkı ayırsan, hangisi kalır?",
+        "Duruşunda diri bir enerji var. Bu enerjiyi kavgaya değil, yaratmaya yöneltsen ne çıkar?"
+      ]
+    }
+  ],
+  "gunluk_sorular": [
+    {
+      "transit_key": "ay_sert_genel",
+      "tema": "günlük duygusal dalga",
+      "sorular": [
+        "Bugün duygular sebepsiz dalgalanabilir. Şu an içinden geçen his ne — onu yargılamadan tek cümleyle yazsan?",
+        "Bugün hassasiyetin yüzeye yakın olabilir. Kendine bugün hangi küçük yumuşaklığı gösterebilirsin?"
+      ]
+    },
+    {
+      "transit_key": "ay_yumusak_genel",
+      "tema": "günlük duygusal denge",
+      "sorular": [
+        "Bugün iç sular sakin olabilir. Bu dinginlikte, sana iyi gelen ne var — onu fark et ve yaz.",
+        "Bugün duygusal zemin sağlam. Ertelediğin küçük bir şeyi bugün kendine sunsan, o ne olurdu?"
+      ]
+    },
+    {
+      "transit_key": "ay_gunluk_genel",
+      "tema": "günün iç hali",
+      "sorular": [
+        "Ay bugün bir ruh hali getiriyor olabilir. Sabahtan şu ana neyin değiştiğini fark ediyor musun?",
+        "Bugünün rengi ne senin için — tek bir kelimeyle başla, sonra istersen aç."
+      ]
+    }
+  ]
+}

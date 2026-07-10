@@ -1,0 +1,1153 @@
+{
+  "meta": {
+    "surum": "2.4-FINAL",
+    "olusturma": "2026-06-17",
+    "amac": "Sifa bahcesi (astro-herbalizm) guvenlik filtresi. Manifest 'riskli_madde' birlesimi (34 madde) + web dogrulama.",
+    "kapsam_kaynagi": "kaynak-kutuphanesi/manifest.json riskli_madde alanlari",
+    "durum_ozeti": "TAMAM: 33 madde dogrulandi (gercek otoriter kaynakli) + heavy_metals kategori_notu. taslak=0. KAYNAK UYDURULMADI.",
+    "not": "durum=dogrulandi => gercek otoriter kaynakli. durum=taslak => toksikoloji bilgisine gore yerlestirildi, web dogrulamasi bekliyor.",
+    "son_guncelleme": "2026-07-05: +4 etkileşim-only vault-dışı madde (C kararı)."
+  },
+  "global_kurallar": {
+    "ana_uyari_tr": "Bu bolumdeki bitkiler tibbi tavsiye degildir. Burada anlatilan, bu alanin meraklilarina yonelik GELENEKSEL kullanim bilgisidir. Hicbir bitkiyi tedavi amaciyla kullanmayin; saglik sorununuz icin hekime danisin.",
+    "gebelik_emzirme_kurali": {
+      "mesaj_tr": "Gebelikte ve emzirme doneminde hicbir bitki kullanilmamalidir.",
+      "motor_davranisi": "Kullanici gebe/emziren olarak isaretliyse: spesifik bitki onerisi/hazirlamasi HIC gosterilmez; yalnizca bu baslik uyarisi gorunur."
+    },
+    "tier_tanimlari": {
+      "T0_EXCLUDE": "Akut toksik/olumcul VEYA guclu dusuk-yapici. Motor hazirlama/oneri ASLA gostermez. En fazla 'tarihsel, zehirli — kullanilmaz' baglaminda ad gecebilir. Sert filtre.",
+      "T1_PREGNANCY": "Dusuk-yapici / rahim uyarici / hormonal. Gebelik-emzirme global kuraliyla zaten bastirilir; ayrica isaretli.",
+      "T2_INTERACTION": "Onemli bitki-ilac etkilesimi. Gosterilirse uyari notu zorunlu.",
+      "T3_CAUTION": "Doza/sureye bagli risk. Genel disclaimer + olcu notu yeterli."
+    },
+    "coklu_flag": "Bir madde birden fazla flag tasiyabilir; en kisitlayici disposition gecerlidir (exclude > caution > allow)."
+  },
+  "maddeler": [
+    {
+      "id": "pennyroyal",
+      "names": {
+        "tr": "yarpuz",
+        "en": "pennyroyal",
+        "la": "Mentha pulegium"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "dusuk_yapici",
+        "hepatotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Pulegon -> karaciger nekrozu, bobrek yetmezligi, nobet, coklu organ yetmezligi, olum. Dusuk-yapici kullanimda olum vakalari var.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "NCBI LiverTox (NIH)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK548673/"
+        },
+        {
+          "ad": "MSKCC About Herbs",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/pennyroyal"
+        },
+        {
+          "ad": "Poison Control",
+          "url": "https://www.poison.org/articles/pennyroyal-oil"
+        }
+      ],
+      "motor_kurali": "Asla hazirlama/oneri gosterme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "aconite",
+      "names": {
+        "tr": "kurtbogan / kaplanbogan",
+        "en": "aconite / monkshood / wolfsbane",
+        "la": "Aconitum napellus"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "kardiyotoksik",
+        "norotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Akonitin -> dakikalar icinde olumcul kalp ritim bozuklugu, felc. Cok dar terapotik aralik; antidotu yok. Yutulan herhangi bir parca olumcul.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "Poison Control",
+          "url": "https://www.poison.org/articles/why-is-monkshood-considered-a-poison--174"
+        },
+        {
+          "ad": "NCBI PMC (fatal case)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11444581/"
+        }
+      ],
+      "motor_kurali": "Asla hazirlama/oneri gosterme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "comfrey",
+      "names": {
+        "tr": "karakafes otu",
+        "en": "comfrey / knitbone",
+        "la": "Symphytum officinale"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "hepatotoksik",
+        "ic_kullanim_yasak",
+        "dusuk_yapici",
+        "karsinojen_supheli"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Pirolizidin alkaloitleri -> karaciger sinuzoidal tikanma sendromu, agir karaciger hasari, olum. FDA 2001'de ic kullanimi geri cektirdi; EMA yalnizca kisa sureli HARICI kullanima izin verir.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "FDA / FTC (2001 geri cekme)",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2001/07/ftc-announces-second-case-focusing-safety-risks-comfrey-products-promoted-internet"
+        },
+        {
+          "ad": "NCBI LiverTox (NIH)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK548370/"
+        },
+        {
+          "ad": "Drugs.com (EMA/Commission E)",
+          "url": "https://www.drugs.com/npp/comfrey.html"
+        }
+      ],
+      "motor_kurali": "Ic kullanim asla. Harici bile onerme (cilt emilimi kanitli).",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "st_johns_wort",
+      "names": {
+        "tr": "sari kantaron",
+        "en": "St John's Wort",
+        "la": "Hypericum perforatum"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "ciddi_ilac_etkilesimi",
+        "fotosensitivite",
+        "gebelik_riski"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Guclu CYP3A4 induktoru -> dogum kontrol hapinin etkisini DUSURUR (gebelik riski); siklosporin/indinavir/warfarin/digoksin kan duzeyini dusurur. SSRI ile serotonin sendromu (hayati tehlike). Yuksek dozda fotosensitivite.",
+      "etkilesim": [
+        "dogum_kontrol_haplari",
+        "SSRI_antidepresan",
+        "warfarin",
+        "siklosporin",
+        "digoksin",
+        "HIV_antiretroviral",
+        "triptan"
+      ],
+      "kaynak": [
+        {
+          "ad": "NCCIH (NIH)",
+          "url": "https://www.nccih.nih.gov/health/st-johns-wort"
+        },
+        {
+          "ad": "NCCIH Herb-Drug Interactions",
+          "url": "https://www.nccih.nih.gov/health/providers/digest/herb-drug-interactions-science"
+        },
+        {
+          "ad": "Mayo Clinic",
+          "url": "https://www.mayoclinic.org/drugs-supplements-st-johns-wort/art-20362212"
+        }
+      ],
+      "motor_kurali": "Ilac kullanan kullaniciya onerme; gosterilirse etkilesim uyarisi zorunlu.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "belladonna",
+      "names": {
+        "tr": "guzelavrat otu",
+        "en": "deadly nightshade",
+        "la": "Atropa belladonna"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "tropan_alkaloit"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Atropin/skopolamin/hiyosiyamin -> antikolinerjik sendrom: deliryum, halusinasyon, tasikardi, nobet, koma, olum. En zehirli bitkilerden; cocuklarda yaban mersini ile karistirma riski.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "NCBI PMC (case+review)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11449552/"
+        },
+        {
+          "ad": "ScienceDirect (toxicology)",
+          "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/atropa-belladonna"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "hemlock",
+      "names": {
+        "tr": "baldiran",
+        "en": "poison hemlock",
+        "la": "Conium maculatum"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "norotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Koniin -> solunum felci, olum (tarihsel idam zehiri, Sokrates). Tum parcalar zehirli; antidotu yok. Maydanoz/kereviz ile karistirma riski.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "Cleveland Clinic",
+          "url": "https://my.clevelandclinic.org/health/diseases/24122-poison-hemlock"
+        },
+        {
+          "ad": "PubMed (review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15234067/"
+        },
+        {
+          "ad": "USDA ARS Poisonous Plant Research",
+          "url": "https://www.ars.usda.gov/pacific-west-area/logan-ut/poisonous-plant-research/docs/poison-hemlock-conium-maculatum/"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "henbane",
+      "names": {
+        "tr": "ban otu / gavurhasi",
+        "en": "henbane",
+        "la": "Hyoscyamus niger"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "tropan_alkaloit"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Hiyosiyamin/atropin/skopolamin -> antikolinerjik toksisite: deliryum, halusinasyon; yuksek dozda koma, olum. Yapraklar/tohumlar/kokler zehirli.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "NCBI PMC (toxicity review)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4224707/"
+        },
+        {
+          "ad": "ScienceDirect",
+          "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/hyoscyamus-niger"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "mandrake",
+      "names": {
+        "tr": "adamotu",
+        "en": "mandrake",
+        "la": "Mandragora officinarum"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "tropan_alkaloit"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Tropan alkaloitleri (atropin/skopolamin) -> antikolinerjik zehirlenme, deliryum, halusinasyon. Cilt/mukozadan emilebilir.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "ScienceDirect (Mandragora)",
+          "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/mandragora"
+        },
+        {
+          "ad": "Royal Society of Chemistry",
+          "url": "https://edu.rsc.org/feature/belladonna-broomsticks-and-brain-chemistry/2020099.article"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "foxglove",
+      "names": {
+        "tr": "yuksukotu",
+        "en": "foxglove",
+        "la": "Digitalis purpurea"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "kardiyak_glikozit"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Digitalis glikozitleri (digoksin/digitoksin) -> olumcul kalp ritim bozuklugu, hiperkalemi. Cok dar terapotik aralik; karakafes/hodan yapragiyla karistirma olum vakalari var.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "PubMed (fatal case)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28463019/"
+        },
+        {
+          "ad": "Medscape (cardiac glycoside poisoning)",
+          "url": "https://emedicine.medscape.com/article/816781-overview"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "lily_of_the_valley",
+      "names": {
+        "tr": "inci cicegi / muge",
+        "en": "lily of the valley",
+        "la": "Convallaria majalis"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "kardiyak_glikozit"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Kardiyak glikozitler (konvallatoksin) -> kalp ritim bozuklugu, zehirlenme. Vazo suyu bile riskli kabul edilir.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "Medscape (cardiac glycoside plant poisoning)",
+          "url": "https://emedicine.medscape.com/article/816781-overview"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "yew",
+      "names": {
+        "tr": "porsuk agaci",
+        "en": "yew",
+        "la": "Taxus baccata"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "kardiyotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Taksin A/B alkaloitleri -> kalp sodyum/kalsiyum kanal blokaji, olumcul aritmi, kardiyojenik sok. Etkili antidotu yok; arilus disindaki tum parcalar toksik.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "Oxford EHJ Case Reports (fatal)",
+          "url": "https://academic.oup.com/ehjcr/article/4/1/1/5686032"
+        },
+        {
+          "ad": "NCBI PMC (review)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9367666/"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "nux_vomica",
+      "names": {
+        "tr": "kargabuken / kuchila",
+        "en": "nux vomica / poison nut",
+        "la": "Strychnos nux-vomica"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "striknin"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Striknin/brusin -> siddetli kasilmalar (opistotonus), solunum felci, olum. Cogu ulkede yasakli/kisitli; 1-2 ezilmis tohum olumcul olabilir.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "NCBI LiverTox (NIH)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK589896/"
+        },
+        {
+          "ad": "NCBI StatPearls (Strychnine)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK459306/"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "hellebore",
+      "names": {
+        "tr": "coplemeotu / noel gulu",
+        "en": "hellebore",
+        "la": "Helleborus niger (+ Veratrum 'false hellebore')"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "kardiyotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Helleborus: kardiyotonik glikozitler + saponinler -> kusma, kardiyorespiratuar yetmezlik, olum. 'Sahte coplemeotu' (Veratrum): steroidal alkaloitler -> bradikardi/hipotansiyon. Ikisi de zehirli.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "ScienceDirect (Hellebore)",
+          "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/hellebore"
+        },
+        {
+          "ad": "Annals of Internal Medicine (false hellebore case)",
+          "url": "https://www.acpjournals.org/doi/10.7326/aimcc.2022.0715"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "bryony",
+      "names": {
+        "tr": "seytansalgami / akasma",
+        "en": "white/black bryony",
+        "la": "Bryonia alba / dioica"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "siddetli_mushil",
+        "dusuk_yapici"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Kukurbitasinler/bryonin -> siddetli kusma, kanli ishal, kolik, nobet, bobrek hasari, dusuk; buyuk dozda olum (~40 meyve yetiskinde olumcul). Taze bitkiye dokunma cilt tahrisi yapar.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "ScienceDirect (Bryonia)",
+          "url": "https://www.sciencedirect.com/topics/immunology-and-microbiology/bryonia"
+        },
+        {
+          "ad": "NCBI PMC",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5282084/"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "savin",
+      "names": {
+        "tr": "sabin ardici",
+        "en": "savin juniper",
+        "la": "Juniperus sabina"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik_akut",
+        "dusuk_yapici",
+        "nefrotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Sabin yagi (sabinil asetat) -> guclu dusuk-yapici; kanli kusma/ishal, bobrek hasari, olumcul zehirlenme. Tarihsel olarak 'en guclu dogal dusuk-yapicilardan'; mutfak ardici (J. communis) ile KARISTIRILMAMALI.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "Monaco Nature Encyclopedia",
+          "url": "https://www.monaconatureencyclopedia.com/juniperus-sabina/?lang=en"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "ephedra",
+      "names": {
+        "tr": "deniz uzumu / ma huang",
+        "en": "ephedra / ma huang",
+        "la": "Ephedra sinica"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "kardiyovaskuler_risk",
+        "yasakli_ABD"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Efedrin -> kalp krizi, inme, ani olum. FDA 2004'te takviye olarak yasakladi (RAND/NEJM kanitlari).",
+      "etkilesim": [
+        "uyaricilar",
+        "kafein",
+        "MAO_inhibitor"
+      ],
+      "kaynak": [
+        {
+          "ad": "FDA Import Alert 54-13",
+          "url": "https://www.accessdata.fda.gov/cms_ia/importalert_144.html"
+        },
+        {
+          "ad": "NEJM",
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMc1502505"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "sassafras",
+      "names": {
+        "tr": "sasafras",
+        "en": "sassafras",
+        "la": "Sassafras albidum"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "karsinojen",
+        "yasakli_ABD"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Safrol -> hayvan modellerinde karaciger karsinojeni; FDA 1960'ta gida/ilac olarak yasakladi. NTP 'insan karsinojeni olmasi makul'.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "MSKCC About Herbs",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/sassafras"
+        },
+        {
+          "ad": "NCBI Report on Carcinogens (Safrole)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK590823/"
+        }
+      ],
+      "motor_kurali": "Asla goster.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "kava",
+      "names": {
+        "tr": "kava",
+        "en": "kava",
+        "la": "Piper methysticum"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "hepatotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Kavalaktonlar/flavokavainler -> idiyosenkratik agir karaciger hasari, fulminan yetmezlik, olum/transplant vakalari. FDA tuketici uyarisi; Almanya yasagi. Risk ozellikle alkollu/asetonik ekstraktlarda.",
+      "etkilesim": [
+        "alkol",
+        "karaciger_ilaclari",
+        "sedatifler"
+      ],
+      "kaynak": [
+        {
+          "ad": "NCBI LiverTox (NIH)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK548637/"
+        },
+        {
+          "ad": "FDA advisory (CDC MMWR)",
+          "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5147a1.htm"
+        }
+      ],
+      "motor_kurali": "Onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "wormwood",
+      "names": {
+        "tr": "pelin otu / aci pelin",
+        "en": "wormwood",
+        "la": "Artemisia absinthium"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "norotoksik_tujon",
+        "dusuk_yapici"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Tujon -> GABA-A blokaji, doza-bagli tonik-klonik nobet; FDA 'unsafe herb' (tujon iceren formlar). Esans yagi tehlikeli/olumcul olabilir. Tujon-suz mutfak miktari ayri (GRAS).",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "Drugs.com (FDA 'unsafe herb')",
+          "url": "https://www.drugs.com/npp/wormwood.html"
+        },
+        {
+          "ad": "ScienceDirect (neurotoxicity review)",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S037887411000382X"
+        }
+      ],
+      "motor_kurali": "Tibbi doz/yag onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "coltsfoot",
+      "names": {
+        "tr": "devetabani / oksuruk otu",
+        "en": "coltsfoot",
+        "la": "Tussilago farfara"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "hepatotoksik",
+        "ic_kullanim_yasak"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Pirolizidin alkaloitleri (senkirkin/senesionin) -> karaciger veno-okluzif hastaligi/sinuzoidal tikanma; bebeklerde ozellikle riskli. EMA gunluk PA limiti. Kok yapraktan daha riskli.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "ScienceDirect (EMA/Meyler's)",
+          "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/tussilago"
+        },
+        {
+          "ad": "PeaceHealth",
+          "url": "https://www.peacehealth.org/medical-topics/id/hn-2072005"
+        }
+      ],
+      "motor_kurali": "Ic kullanim asla.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "borage",
+      "names": {
+        "tr": "hodan / sigir dili",
+        "en": "borage",
+        "la": "Borago officinalis"
+      },
+      "tier": "T1_PREGNANCY",
+      "disposition": "caution",
+      "flags": [
+        "hepatotoksik_PA",
+        "ic_kullanim_riski"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Pirolizidin alkaloitleri (amabilin) -> karaciger hasari, olasi karsinojen; teratojen/erken dogum riski. Yalnizca PA-suz sertifikali yag formu ayri.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "MSKCC About Herbs",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/borage"
+        },
+        {
+          "ad": "NCBI LactMed (NIH)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK501790/"
+        }
+      ],
+      "motor_kurali": "Ic kullanimi onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "greater_celandine",
+      "names": {
+        "tr": "kirlangic otu",
+        "en": "greater celandine",
+        "la": "Chelidonium majus"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "hepatotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Idiyosenkratik karaciger hasari (sarilik, hepatosellüler hepatit; viral hepatite benzer). Avrupa'da coklu vaka; literaturde risk-fayda 'negatif' degerlendiriliyor.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "NCBI LiverTox (NIH)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK548684/"
+        },
+        {
+          "ad": "PubMed (review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28379595/"
+        }
+      ],
+      "motor_kurali": "Ic kullanim onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "tansy",
+      "names": {
+        "tr": "solucan otu / pireotu",
+        "en": "tansy",
+        "la": "Tanacetum vulgare"
+      },
+      "tier": "T1_PREGNANCY",
+      "disposition": "exclude",
+      "flags": [
+        "dusuk_yapici",
+        "norotoksik_tujon"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Tujon -> rahim uyarici/dusuk-yapici + norotoksik nobet; esans yagi/cay ile olum vakalari.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "Drugs.com",
+          "url": "https://www.drugs.com/npp/tansy.html"
+        },
+        {
+          "ad": "Herbal Reality",
+          "url": "https://www.herbalreality.com/herb/tansy/"
+        }
+      ],
+      "motor_kurali": "Onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "rue",
+      "names": {
+        "tr": "sedef otu",
+        "en": "rue",
+        "la": "Ruta graveolens"
+      },
+      "tier": "T1_PREGNANCY",
+      "disposition": "exclude",
+      "flags": [
+        "dusuk_yapici",
+        "fototoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Guclu dusuk-yapici/emmenagog (chalepensin); fototoksik furokumarinler (kabarcikli yanik); yuksek dozda karaciger/bobrek hasari, coklu organ yetmezligi.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "IPCS INCHEM (PIM 475)",
+          "url": "https://www.inchem.org/documents/pims/plant/rutagrav.htm"
+        },
+        {
+          "ad": "Drugs.com",
+          "url": "https://www.drugs.com/npp/rue.html"
+        }
+      ],
+      "motor_kurali": "Onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "blue_cohosh",
+      "names": {
+        "tr": "mavi kohos",
+        "en": "blue cohosh",
+        "la": "Caulophyllum thalictroides"
+      },
+      "tier": "T1_PREGNANCY",
+      "disposition": "exclude",
+      "flags": [
+        "dusuk_yapici",
+        "fetal_kardiyotoksik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "N-metilsitisin (nikotinik) + vazoaktif glikozitler -> rahim uyarici/dusuk-yapici; anneden gecisle yenidoganda kalp krizi, konjestif kalp yetmezligi, perinatal inme vakalari.",
+      "etkilesim": [],
+      "kaynak": [
+        {
+          "ad": "NCBI PMC (Herbal Abortifacients)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10192026/"
+        },
+        {
+          "ad": "J Pediatr (neonatal CHF)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9544922/"
+        }
+      ],
+      "motor_kurali": "Onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "mugwort",
+      "names": {
+        "tr": "miskotu / ayvadana",
+        "en": "mugwort",
+        "la": "Artemisia vulgaris"
+      },
+      "tier": "T1_PREGNANCY",
+      "disposition": "caution",
+      "flags": [
+        "emmenagog",
+        "alerjen"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Emmenagog/rahim uyarici (tujon) -> gebelikte dusuk riski (NatMed 'likely unsafe'). Asteraceae/ragweed polen alerjisi caprazligi (yaygin).",
+      "etkilesim": [
+        "antikoagulan",
+        "sedatif"
+      ],
+      "kaynak": [
+        {
+          "ad": "WebMD/NatMed",
+          "url": "https://www.webmd.com/vitamins/ai/ingredientmono-123/mugwort"
+        }
+      ],
+      "motor_kurali": "Gebelikte gosterme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "black_cohosh",
+      "names": {
+        "tr": "siyah kohos / yilankoku",
+        "en": "black cohosh",
+        "la": "Actaea racemosa"
+      },
+      "tier": "T1_PREGNANCY",
+      "disposition": "caution",
+      "flags": [
+        "hormonal",
+        "hepatotoksisite_supheli"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Idiyosenkratik karaciger hasari (LiverTox skoru 'A'; bazen transplant/olum, otoimmun-benzeri hepatit). Hormonal etki; gebelikte onerilmez. (Nedensellik tartismali ama urun-bazli kanit yeterli.)",
+      "etkilesim": [
+        "karaciger_ilaclari"
+      ],
+      "kaynak": [
+        {
+          "ad": "NCBI LiverTox (NIH)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK547990/"
+        },
+        {
+          "ad": "ScienceDirect (EMA review)",
+          "url": "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/actaea-racemosa"
+        }
+      ],
+      "motor_kurali": "Gebelikte gosterme; karaciger uyarisi.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "ginkgo",
+      "names": {
+        "tr": "mabet agaci",
+        "en": "ginkgo",
+        "la": "Ginkgo biloba"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "kanama_riski",
+        "antiplatelet_etkilesimi"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Antiplatelet etki -> warfarin/antiplatelet ile majör kanama riski (buyuk kohort: HR~1.38). Gebelikte guvensiz (erken dogum/kanama).",
+      "etkilesim": [
+        "warfarin",
+        "aspirin",
+        "antiplatelet",
+        "NSAID"
+      ],
+      "kaynak": [
+        {
+          "ad": "NCCIH (NIH)",
+          "url": "https://www.nccih.nih.gov/health/ginkgo"
+        },
+        {
+          "ad": "NCBI PMC (VA kohort)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4765589/"
+        }
+      ],
+      "motor_kurali": "Kan sulandirici kullanana onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "goldenseal",
+      "names": {
+        "tr": "kanada koku / hydrastis",
+        "en": "goldenseal",
+        "la": "Hydrastis canadensis"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "CYP_inhibitor_berberin"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Berberin/hidrastin -> CYP3A4/2D6/2C9 inhibisyonu (klinik: CYP2D6/3A %40-60 azalir). Dar terapotik aralikli ilaclarin duzeyini yukseltir; gebelikte sakincali.",
+      "etkilesim": [
+        "CYP3A4_substratlari",
+        "CYP2D6_substratlari",
+        "siklosporin",
+        "midazolam"
+      ],
+      "kaynak": [
+        {
+          "ad": "Pharmacy Times",
+          "url": "https://www.pharmacytimes.com/view/goldenseal-drug-interactions"
+        },
+        {
+          "ad": "NaPDI Center (NIH)",
+          "url": "https://napdicenter.org/natural-products-studied/goldenseal/study-rationale/"
+        }
+      ],
+      "motor_kurali": "Ilac kullanana onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "dong_quai",
+      "names": {
+        "tr": "dong kuai / Cin melekotu",
+        "en": "dong quai",
+        "la": "Angelica sinensis"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "kanama_riski",
+        "fototoksik",
+        "hormonal"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Kumarin turevleri -> warfarin/antiplatelet ile kanama (warfarin potansiyalizasyonu vakasi); fototoksik; hormonal/ostrojenik. Gebelikte dusuk/rahim uyarisi.",
+      "etkilesim": [
+        "warfarin",
+        "antikoagulan",
+        "antiplatelet"
+      ],
+      "kaynak": [
+        {
+          "ad": "MSKCC About Herbs",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/dong-quai"
+        },
+        {
+          "ad": "NCBI LactMed (NIH)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK501836/"
+        }
+      ],
+      "motor_kurali": "Kan sulandirici kullanana onerme.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "vitex",
+      "names": {
+        "tr": "hayit",
+        "en": "chasteberry / vitex",
+        "la": "Vitex agnus-castus"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "hormonal",
+        "dopaminerjik"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Ostrojen/dopamin reseptorlerine baglanir -> dogum kontrol hapinin etkisini DUSUREBILIR (TGA: beklenmedik gebelik raporu); dopamin agonist/antagonistleriyle etkilesir. Gebelikte kontrendike.",
+      "etkilesim": [
+        "dogum_kontrol_haplari",
+        "dopamin_agonist_antagonist",
+        "hormon_replasman"
+      ],
+      "kaynak": [
+        {
+          "ad": "TGA (Avustralya) safety alert",
+          "url": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/vitex-agnus-castus"
+        },
+        {
+          "ad": "AAFP",
+          "url": "https://www.aafp.org/pubs/afp/issues/2005/0901/p821.html"
+        }
+      ],
+      "motor_kurali": "Hormonal/dopamin ilaci kullanana uyari.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "sage",
+      "names": {
+        "tr": "adacayi (tibbi)",
+        "en": "sage",
+        "la": "Salvia officinalis"
+      },
+      "tier": "T3_CAUTION",
+      "disposition": "caution",
+      "flags": [
+        "norotoksik_tujon_yuksek_doz"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Tujon/kamfor -> yag veya yuksek/uzun dozda nobet (bebek/cocukta tonik-klonik vaka raporlari). Gebelikte emmenagog/dusuk-yapici (EMA kontrendike). Mutfak miktari guvenli.",
+      "etkilesim": [
+        "antikonvulzan",
+        "sedatif",
+        "antidiyabetik"
+      ],
+      "kaynak": [
+        {
+          "ad": "WebMD/NatMed",
+          "url": "https://www.webmd.com/vitamins/ai/ingredientmono-504/sage"
+        },
+        {
+          "ad": "ScienceDirect (yenidogan nobet vakasi)",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0887899411002177"
+        }
+      ],
+      "motor_kurali": "Tibbi doz/yag onerme; mutfak kullanimi ayri.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "licorice",
+      "names": {
+        "tr": "meyan koku",
+        "en": "licorice",
+        "la": "Glycyrrhiza glabra"
+      },
+      "tier": "T3_CAUTION",
+      "disposition": "caution",
+      "flags": [
+        "hipertansiyon",
+        "hipokalemi"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Glisirizin -> 11β-HSD2 inhibisyonu -> psodohiperaldosteronizm: hipertansiyon, hipokalemi, odem, uzun QT/aritmi (agir vakada olum). Gebelikte erken dogum riski. Yuksek/uzun kullanim; tansiyon/kalp/bobrek hastasinda daha riskli.",
+      "etkilesim": [
+        "tansiyon_ilaclari",
+        "diuretik",
+        "digoksin",
+        "kortikosteroid"
+      ],
+      "kaynak": [
+        {
+          "ad": "Frontiers in Nutrition (review)",
+          "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2021.719197/full"
+        },
+        {
+          "ad": "NCBI PMC (hipertansif kriz vakasi)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5882392/"
+        }
+      ],
+      "motor_kurali": "Tansiyon/kalp hastasina onerme; sure siniri.",
+      "durum": "dogrulandi"
+    },
+    {
+      "id": "heavy_metals",
+      "names": {
+        "tr": "agir metaller (alsimi)",
+        "en": "heavy metals",
+        "la": "—"
+      },
+      "tier": "T0_EXCLUDE",
+      "disposition": "exclude",
+      "flags": [
+        "toksik",
+        "bitki_disi"
+      ],
+      "gebelik_emzirme": "yasak",
+      "neden_tr": "Paracelsus alsimisindeki civa/antimon/arsenik vb. — modern uygulamada ASLA tedavi/oneri olarak kullanilmaz. Sembolik baglamda kalir.",
+      "etkilesim": [],
+      "kaynak": [],
+      "motor_kurali": "Asla oneri olarak gosterme; yalnizca tarihsel/sembolik anlati.",
+      "durum": "kategori_notu"
+    },
+    {
+      "id": "garlic_vaultdisi",
+      "names": {
+        "tr": "Sarımsak",
+        "en": "Garlic",
+        "la": "Allium sativum"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "etkilesim"
+      ],
+      "gebelik_emzirme": "veri-yok",
+      "neden_tr": "Kan sulandırıcı (antikoagülan/antiplatelet) ilaçlarla etkileşerek kanama riskini artırabilir.",
+      "etkilesim": [
+        "warfarin",
+        "antiplatelet",
+        "antikoagulan"
+      ],
+      "kaynak": "GENEL FARMAKOLOJI BILGISI — contraindications vault dışı; eczacı/hekim teyidi ZORUNLU (launch checklist).",
+      "motor_kurali": "Kan sulandırıcı kullanan kullanıcıya önerilirken uyarı çipi göster. Doz/tüketim dili yok.",
+      "durum": "taslak-uzman-teyidi-bekliyor"
+    },
+    {
+      "id": "ginger_vaultdisi",
+      "names": {
+        "tr": "Zencefil",
+        "en": "Ginger",
+        "la": "Zingiber officinale"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "etkilesim"
+      ],
+      "gebelik_emzirme": "veri-yok",
+      "neden_tr": "Yüksek miktarda, kan sulandırıcı ilaçlarla etkileşerek kanama riskini artırabilir.",
+      "etkilesim": [
+        "warfarin",
+        "antikoagulan"
+      ],
+      "kaynak": "GENEL FARMAKOLOJI BILGISI — vault dışı; eczacı/hekim teyidi ZORUNLU (launch checklist).",
+      "motor_kurali": "Kan sulandırıcı kullanana uyarı çipi. Doz/tüketim dili yok.",
+      "durum": "taslak-uzman-teyidi-bekliyor"
+    },
+    {
+      "id": "willow_vaultdisi",
+      "names": {
+        "tr": "Söğüt",
+        "en": "Willow",
+        "la": "Salix alba"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "etkilesim",
+        "alerji"
+      ],
+      "gebelik_emzirme": "veri-yok",
+      "neden_tr": "Salisilat içerir; aspirin/salisilat duyarlılığı olanlarda ve kan sulandırıcı kullananlarda risk taşıyabilir.",
+      "etkilesim": [
+        "aspirin",
+        "antikoagulan",
+        "salisilat-duyarliligi"
+      ],
+      "kaynak": "GENEL FARMAKOLOJI BILGISI — vault dışı; eczacı/hekim teyidi ZORUNLU (launch checklist).",
+      "motor_kurali": "Aspirin duyarlılığı/kan sulandırıcı kullanana uyarı çipi. Doz/tüketim dili yok.",
+      "durum": "taslak-uzman-teyidi-bekliyor"
+    },
+    {
+      "id": "valerian_vaultdisi",
+      "names": {
+        "tr": "Kediotu",
+        "en": "Valerian",
+        "la": "Valeriana officinalis"
+      },
+      "tier": "T2_INTERACTION",
+      "disposition": "caution",
+      "flags": [
+        "etkilesim"
+      ],
+      "gebelik_emzirme": "veri-yok",
+      "neden_tr": "Yatıştırıcı (sedatif) ilaçlar, alkol veya uyku ilaçlarıyla etkileşerek etkilerini artırabilir.",
+      "etkilesim": [
+        "sedatif",
+        "benzodiazepin",
+        "alkol",
+        "uyku-ilaci"
+      ],
+      "kaynak": "GENEL FARMAKOLOJI BILGISI — vault dışı; eczacı/hekim teyidi ZORUNLU (launch checklist).",
+      "motor_kurali": "Sedatif/uyku ilacı kullanana uyarı çipi. Doz/tüketim dili yok.",
+      "durum": "taslak-uzman-teyidi-bekliyor"
+    }
+  ]
+}

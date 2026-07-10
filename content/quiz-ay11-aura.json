@@ -1,0 +1,248 @@
+{
+  "_meta": {
+    "belge": "quiz-ay11-aura",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "ozel_sinerji": "EN GÜÇLÜ GÖRSEL-PAYLAŞIM AYI: sonuç bir RENK (marka paletinden). Paylaşım kartı R1.5 hattında saf renk-alanı + aura adı → Instagram estetiğiyle birebir; sosyal fabrika çift kullanımı en yüksek. Renkler görsel tasarım kiti paletinden (marka tutarlılığı).",
+    "hassasiyet": "Aura estetik-kişilik çerçevesinde; enerji-okuma iddiası değil. 'Kalıp değil ayna' açılışı ortak. Etiket: sembolik · eğlence amaçlı.",
+    "puanlama": "p +2, s +1; Baskın+Yükselen (iki renk = aura gradyanı, görsel olarak güzel).",
+    "gating": "Free: aura + kisa + renk kartı. Pro: derin_ek + gradyan animasyonlu paylaşım + astro overlay.",
+    "not": "7 renk: 5'i palet (pudra yeşil/mavi/pembe/kavun/lila) + 2 türetme (inci beyazı, gül kurusu) paletle uyumlu. Hex'ler görsel kitle senkron; kesinleşince güncellenir.",
+    "durum": "TASLAK-ONAYLI; TR polisaj checklist."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — hepsi sende var. Bugün hangi renk çevrende parlıyor, ona bakıyoruz.",
+  "sonuc_sablonu": "Auran: {A} · İkincil ton: {B} — {A_tek_satir}",
+  "arketipler": {
+    "pudra_yesil": {
+      "ad": "Pudra Yeşil Aura",
+      "hex": "#CADBC8",
+      "tek_satir": "Şifa ve denge yayarsın; yanında insanlar iyileşir gibi hisseder.",
+      "kisa": "Yeşil aura büyüme ve kalp enerjisidir — sakin, besleyici, dengeleyici. Doğal bir şifacısın.",
+      "derin_ek": "Gölge daveti: herkesi iyileştirirken kendi yaralarına da bak.",
+      "paylasim": "Auram Pudra Yeşil — şifa ve denge yayarım."
+    },
+    "pudra_mavi": {
+      "ad": "Pudra Mavi Aura",
+      "hex": "#C9D8E4",
+      "tek_satir": "Dinginlik ve berraklık taşırsın; sözlerin sakinleştirir.",
+      "kisa": "Mavi aura iletişim ve huzurdur — açık, dürüst, yatıştırıcı. İnsanlar yanında rahat nefes alır.",
+      "derin_ek": "Gölge daveti: hep sakin görünmek zorunda değilsin; fırtınana da izin ver.",
+      "paylasim": "Auram Pudra Mavi — dinginlik ve berraklık."
+    },
+    "pudra_pembe": {
+      "ad": "Pudra Pembe Aura",
+      "hex": "#EBD3D6",
+      "tek_satir": "Sevgi ve şefkat yayarsın; kalbin herkese açık.",
+      "kisa": "Pembe aura sevgi ve nazikliktir — sıcak, kucaklayıcı, romantik. Yanında sevilmek kolaydır.",
+      "derin_ek": "Gölge daveti: sevgini dağıtırken kendine ayırmayı unutma.",
+      "paylasim": "Auram Pudra Pembe — sevgi ve şefkat yayarım."
+    },
+    "kavun": {
+      "ad": "Kavun İçi Aura",
+      "hex": "#F6D9C2",
+      "tek_satir": "Sıcaklık ve yaratıcılık saçarsın; enerjin bulaşıcı.",
+      "kisa": "Kavun aura neşe ve yaratıcılıktır — canlı, sıcak, ilham verici. Girdiğin ortam renklenir.",
+      "derin_ek": "Gölge daveti: hep parlamak yorar; sönük günlerine de hakkın var.",
+      "paylasim": "Auram Kavun İçi — sıcaklık ve yaratıcılık."
+    },
+    "lila": {
+      "ad": "Lila Aura",
+      "hex": "#D6C9E0",
+      "tek_satir": "Sezgi ve gizem taşırsın; görünmeyeni sezersin.",
+      "kisa": "Lila aura sezgi ve ruhaniliktir — derin, bilge, gizemli. Perdenin ardını görebilirsin.",
+      "derin_ek": "Gölge daveti: sezgin güçlü; ama bazen mantığın da söz alsın.",
+      "paylasim": "Auram Lila — sezgi ve gizem taşırım."
+    },
+    "inci": {
+      "ad": "İnci Beyazı Aura",
+      "hex": "#F4EFEA",
+      "tek_satir": "Saflık ve tazelik yayarsın; yeni başlangıçların rengisin.",
+      "kisa": "İnci aura arınma ve potansiyeldir — berrak, taze, yeni. Her günü temiz bir sayfa gibi karşılarsın.",
+      "derin_ek": "Gölge daveti: her şeyi temiz tutmak yorar; dağınıklığa da yer aç.",
+      "paylasim": "Auram İnci Beyazı — saflık ve tazelik."
+    },
+    "gul_kurusu": {
+      "ad": "Gül Kurusu Aura",
+      "hex": "#C99DA3",
+      "tek_satir": "Olgun bir zarafet taşırsın; sıcaklık ve derinliği birleştirirsin.",
+      "kisa": "Gül kurusu aura olgunluk ve şefkatli güçtür — köklü, zarif, dengeli. Hem sıcak hem sağlamsın.",
+      "derin_ek": "Gölge daveti: güçlü durmak zorunda değilsin her an; kırılganlığın da güzel.",
+      "paylasim": "Auram Gül Kurusu — olgun bir zarafet."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Sabah uyandığında ilk hissin genelde?",
+      "secenekler": [
+        {
+          "metin": "Sakin bir denge",
+          "p": "gul_kurusu",
+          "s": "pudra_yesil"
+        },
+        {
+          "metin": "Berrak bir zihin",
+          "p": "inci",
+          "s": "pudra_mavi"
+        },
+        {
+          "metin": "İçten bir sıcaklık",
+          "p": "pudra_pembe"
+        },
+        {
+          "metin": "Yaratıcı bir kıpırtı",
+          "p": "inci",
+          "s": "kavun"
+        }
+      ]
+    },
+    {
+      "soru": "İnsanlar yanında ne hisseder?",
+      "secenekler": [
+        {
+          "metin": "Huzur, güven",
+          "p": "pudra_mavi",
+          "s": "pudra_yesil"
+        },
+        {
+          "metin": "Sevildiklerini",
+          "p": "pudra_pembe"
+        },
+        {
+          "metin": "Enerji, neşe",
+          "p": "gul_kurusu",
+          "s": "kavun"
+        },
+        {
+          "metin": "Merak, gizem",
+          "p": "lila"
+        }
+      ]
+    },
+    {
+      "soru": "Hangi ortam seni doldurur?",
+      "secenekler": [
+        {
+          "metin": "Yeşil, doğal, ferah",
+          "p": "pudra_yesil"
+        },
+        {
+          "metin": "Sakin, düzenli, açık",
+          "p": "pudra_mavi"
+        },
+        {
+          "metin": "Sıcak, canlı, kalabalık",
+          "p": "kavun"
+        },
+        {
+          "metin": "Loş, mistik, sessiz",
+          "p": "lila"
+        }
+      ]
+    },
+    {
+      "soru": "Zor bir anda kendini nasıl toparlarsın?",
+      "secenekler": [
+        {
+          "metin": "Doğaya, yeşile dönerim",
+          "p": "pudra_yesil"
+        },
+        {
+          "metin": "Sevdiklerime sarılırım",
+          "p": "pudra_pembe"
+        },
+        {
+          "metin": "Yaratıcı bir şeye dalarım",
+          "p": "kavun"
+        },
+        {
+          "metin": "İçime çekilir, sezgime güvenirim",
+          "p": "lila"
+        }
+      ]
+    },
+    {
+      "soru": "Seni en iyi anlatan renk hissi?",
+      "secenekler": [
+        {
+          "metin": "Taze bir başlangıç",
+          "p": "inci"
+        },
+        {
+          "metin": "Olgun bir sıcaklık",
+          "p": "gul_kurusu"
+        },
+        {
+          "metin": "Sakin bir deniz",
+          "p": "pudra_mavi"
+        },
+        {
+          "metin": "Yumuşak bir şefkat",
+          "p": "pudra_pembe"
+        }
+      ]
+    },
+    {
+      "soru": "Bir odaya girdiğinde ne değişir?",
+      "secenekler": [
+        {
+          "metin": "Ortam sakinleşir",
+          "p": "pudra_mavi"
+        },
+        {
+          "metin": "Ortam ısınır",
+          "p": "kavun"
+        },
+        {
+          "metin": "İnsanlar rahatlar",
+          "p": "pudra_pembe"
+        },
+        {
+          "metin": "Bir merak dalgası yayılır",
+          "p": "lila"
+        }
+      ]
+    },
+    {
+      "soru": "Ruhunu en çok ne besler?",
+      "secenekler": [
+        {
+          "metin": "Şifa vermek, büyütmek",
+          "p": "pudra_yesil"
+        },
+        {
+          "metin": "Temizlik, tazelik, düzen",
+          "p": "inci"
+        },
+        {
+          "metin": "Derinlik ve olgunluk",
+          "p": "gul_kurusu"
+        },
+        {
+          "metin": "İlham ve yaratım",
+          "p": "kavun"
+        }
+      ]
+    },
+    {
+      "soru": "Işığın nasıl?",
+      "secenekler": [
+        {
+          "metin": "Yumuşak yeşil bir parıltı",
+          "p": "pudra_yesil"
+        },
+        {
+          "metin": "Berrak mavi bir aydınlık",
+          "p": "pudra_mavi"
+        },
+        {
+          "metin": "Sıcak turuncu bir kor",
+          "p": "kavun"
+        },
+        {
+          "metin": "Derin mor bir hâle",
+          "p": "lila"
+        }
+      ]
+    }
+  ]
+}

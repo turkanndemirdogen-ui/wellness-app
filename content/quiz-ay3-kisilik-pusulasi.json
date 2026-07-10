@@ -1,0 +1,211 @@
+{
+  "_meta": {
+    "puanlama": "p +2, s +1; Baskın+Yükselen.",
+    "durum": "TASLAK-ONAYLI; TR polisaj checklist.",
+    "belge": "quiz-ay3-kisilik-pusulasi",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "KATMAN": "A-BİLİM. Big Five (Beş Faktör) modelinden ESİNLENMİŞTİR. 'Doğrulanmış/klinik kişilik testi' DEĞİLDİR ve öyle sunulamaz — sembolik/eğlence amaçlı öz-yansıtma aracı.",
+    "ic_kaynak": "Yapı: Beş Faktör Kişilik Modeli (Costa & McCrae geleneği; TR-doğrulanmış kısa formlar BFI-10/QBF referans). Maddeler ÖZGÜN yazıldı (telif temiz), psikometrik re-validasyon YAPILMADI. Ticari kullanımda ölçek-lisansı kontrolü gereksiz (özgün madde) ama 'esinlenen' ibaresi zorunlu.",
+    "FORMAT_FARKI": "Diğer aylardan farklı: 7 arketip DEĞİL, 5 BOYUT PROFİLİ. Her boyutta düşük/orta/yüksek + sembolik-nötr etiket (tip yanılsaması kurmadan). Zayıf-nokta düzeltmesi: Big Five sürekli boyuttur, arketip formatına zorlamak bilimsel yanıltıcı olurdu.",
+    "puanlama_ozel": "Her boyut ayrı skorlanır (2 soru, +/- yön). Boyut skoru → düşük(<40%)/orta/yüksek(>60%) + ilgili etiket. Sonuç = 5 boyut profili, tek 'kazanan' yok.",
+    "gating": "Free: 5 boyut yüzde + etiketler. Pro: derin_ek + boyutların astro-context yorumu + yıl haritasına işlenir.",
+    "hassasiyet": "Etiketler NÖTR ve güçlendirici (her iki uç da değerli çerçevesi); 'iyi/kötü' boyut yok. 'Bunlar kalıp değil, ayna.'"
+  },
+  "acilis_metni": "Bu bir sınav değil, bir ayna — 'daha iyi/kötü' yok, sadece sen. Beş pusulanın nereyi gösterdiğine bakıyoruz.",
+  "sonuc_yapisi": "5 boyutun her biri: {ad} — %{skor}, etiket: {yuksek/dusuk etiket}, {metin}. Kapanış: bu bir fotoğraf, kimliğin değil; zamanla değişebilir.",
+  "boyutlar": {
+    "aciklik": {
+      "ad": "Açıklık",
+      "yuksek": "Meraklı Kâşif",
+      "dusuk": "Sağlam Gelenek",
+      "yuksek_metin": "Yeniye, hayale, farklı fikirlere açıksın. Rutinden çok keşif seni besler.",
+      "dusuk_metin": "Bildik, denenmiş, somut olanda güven bulursun. İstikrar senin gücün.",
+      "derin_ek": "İki uç da değerli; açıklık ilham verir, köklülük taşır."
+    },
+    "sorumluluk": {
+      "ad": "Sorumluluk",
+      "yuksek": "Düzen Mimarı",
+      "dusuk": "Akış Ustası",
+      "yuksek_metin": "Planlı, disiplinli, hedefe kilitli. Söz verdiğinde yaparsın.",
+      "dusuk_metin": "Esnek, spontane, ana açık. Katı plan seni sıkar, akış sana yakışır.",
+      "derin_ek": "Düzen güven verir, esneklik özgürlük; hangisi baskınsa diğerine de alan aç."
+    },
+    "disadonukluk": {
+      "ad": "Dışadönüklük",
+      "yuksek": "Sosyal Güneş",
+      "dusuk": "Dingin Ay",
+      "yuksek_metin": "İnsanlarla, hareketle, uyaranla dolarsın. Kalabalık seni yorar değil şarj eder.",
+      "dusuk_metin": "Sakinlik, yalnızlık, derin ikili sohbet seni besler. İç dünyan zengin.",
+      "derin_ek": "İkisi de sağlıklı; enerjini nerede topladığını bilmek öz-şefkattir."
+    },
+    "uyumluluk": {
+      "ad": "Uyumluluk",
+      "yuksek": "Şefkatli Köprü",
+      "dusuk": "Net Sınır",
+      "yuksek_metin": "Empati, uyum, işbirliği senin dilin. İnsanları önemser, köprü kurarsın.",
+      "dusuk_metin": "Dürüstlük, sınır, öz-savunma senin gücün. Herkesi memnun etme derdin yok.",
+      "derin_ek": "Şefkat bağ kurar, sınır korur; sağlıklı denge ikisini de ister."
+    },
+    "duygusallik": {
+      "ad": "Duygusal Hassasiyet",
+      "yuksek": "Derin Hisseden",
+      "dusuk": "Sakin Liman",
+      "yuksek_metin": "Duyguları derin ve yoğun yaşarsın. Bu bir kırılganlık değil, zengin bir iç dünya.",
+      "dusuk_metin": "Duygusal olarak sakin ve dengeli. Fırtınalarda soğukkanlılığını korursun.",
+      "derin_ek": "Derin hissetmek de sakin kalmak da güç; kendine nazik ol."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Yeni bir yere seyahatte planın?",
+      "secenekler": [
+        {
+          "metin": "Detaylı program çıkarırım",
+          "boyut": "sorumluluk",
+          "yon": "+"
+        },
+        {
+          "metin": "Akışına bırakırım",
+          "boyut": "sorumluluk",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "Boş bir hafta sonu?",
+      "secenekler": [
+        {
+          "metin": "Yeni bir şey denerim",
+          "boyut": "aciklik",
+          "yon": "+"
+        },
+        {
+          "metin": "Bildiğim rahat rutinime dönerim",
+          "boyut": "aciklik",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "Kalabalık bir partiden sonra?",
+      "secenekler": [
+        {
+          "metin": "Enerji dolu hissederim",
+          "boyut": "disadonukluk",
+          "yon": "+"
+        },
+        {
+          "metin": "Yorulur, yalnızlığa kaçarım",
+          "boyut": "disadonukluk",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "Bir anlaşmazlıkta?",
+      "secenekler": [
+        {
+          "metin": "Uzlaşı ve uyum ararım",
+          "boyut": "uyumluluk",
+          "yon": "+"
+        },
+        {
+          "metin": "Görüşümü net savunurum",
+          "boyut": "uyumluluk",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "Zor bir haber karşısında?",
+      "secenekler": [
+        {
+          "metin": "Derinden etkilenir, uzun hissederim",
+          "boyut": "duygusallik",
+          "yon": "+"
+        },
+        {
+          "metin": "Sakin kalır, çabuk toparlarım",
+          "boyut": "duygusallik",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "İş/görev tarzın?",
+      "secenekler": [
+        {
+          "metin": "Listeler, düzen, son teslim öncesi biterim",
+          "boyut": "sorumluluk",
+          "yon": "+"
+        },
+        {
+          "metin": "Son ana esnek, ilhamla çalışırım",
+          "boyut": "sorumluluk",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "Sanat/fikir dünyası?",
+      "secenekler": [
+        {
+          "metin": "Soyut, felsefi, hayali severim",
+          "boyut": "aciklik",
+          "yon": "+"
+        },
+        {
+          "metin": "Somut, pratik, işe yararı severim",
+          "boyut": "aciklik",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "Bir grupta genelde?",
+      "secenekler": [
+        {
+          "metin": "Konuşan, başlatan benim",
+          "boyut": "disadonukluk",
+          "yon": "+"
+        },
+        {
+          "metin": "Dinleyen, gözlemleyen benim",
+          "boyut": "disadonukluk",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "Biri yardım istediğinde?",
+      "secenekler": [
+        {
+          "metin": "Kendi işimi bırakır, koşarım",
+          "boyut": "uyumluluk",
+          "yon": "+"
+        },
+        {
+          "metin": "Sınırımı korur, gerçekçi olurum",
+          "boyut": "uyumluluk",
+          "yon": "-"
+        }
+      ]
+    },
+    {
+      "soru": "Stresli dönemde?",
+      "secenekler": [
+        {
+          "metin": "Kaygı ve duygular yoğunlaşır",
+          "boyut": "duygusallik",
+          "yon": "+"
+        },
+        {
+          "metin": "Genelde dengede kalırım",
+          "boyut": "duygusallik",
+          "yon": "-"
+        }
+      ]
+    }
+  ]
+}

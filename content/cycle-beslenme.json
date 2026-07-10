@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "belge": "cycle-beslenme",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "kararlar": "H6=a manuel giriş · C-1=bilimsel+sembolik sentez · C-2=b iç-mevsim+klinik alt-etiket · C-3=b iki ayrı blok (aslında 4: sembolik + araştırma + ayurveda + GÇT).",
+    "KAYNAK_AYRIMI_KRITIK": "Marka kuralı 'kanıt-akışı ve sembolik-akış asla karışmaz' → her faz kartında AYRI görsel bloklar: 🌙 Sembolik (mevsim/ruh) + 📊 Araştırma (modern beslenme, kanıt etiketli) + 🌿 Ayurveda (gelenek etiketli) + ☯ GÇT (gelenek etiketli). Kullanıcı neyin kanıt neyin gelenek olduğunu GÖRÜR. Nedensel birleşik iddia ('kış fazında demir eksikliği olur') YASAK.",
+    "BEDEN_NOTR_GUVENLIK": "Sıfır sayı (kalori/gram/kilo/porsiyon). Besin GRUPLARI, spesifik miktar değil. 'Kısıtla/kaçın/yeme' DİLİ YOK → 'alan açabilirsin' dili. 'Bu bir kural değil, davet' tonu. Disordered eating tetikleyici dil yasak. 'Symptom/belirti' kelimesi UI'da yasak (memory kuralı). Beden performans/kontrol çerçevesi yok.",
+    "kanit_etiketleri": "arastirma bloğu: 'güçlü/orta/sınırlı kanıt'. ayurveda/gct: 'gelenek' (kanıt iddiası değil). Faz-beslenmenin bilimsel kanıtı genelde sınırlı → dürüstçe 'bazı araştırmalarca' / 'genel beslenme bilgisi' çerçevesi.",
+    "DAMGA": "Tüm besin bilgileri genel beslenme/Ayurveda/GÇT kültüründen; gerçek DOI/URL yok. Yayın öncesi diyetisyen + kaynak teyidi ZORUNLU (launch checklist). Ayurveda/GÇT iddiaları o geleneklerin kendi çerçevesinde sunulur, bilimsel doğruluk iddiası taşımaz.",
+    "astro_ayrimi": "Döngü kartı = beslenme/beden akışı. Sembolik AY/gökyüzü içeriği bu modülde AYRI kalır; döngü fazı ≠ ay fazı (ikisi karıştırılmaz, ayrı kartlar). İç-mevsim metaforu döngüye ait, astrolojik mevsim değil.",
+    "manuel_giris": "H6=a: kullanıcı son adet başlangıcını + ortalama döngü süresini manuel girer → faz tahmini. Sağlık API'leri v2. 'Tahmini' vurgusu (kesinlik iddiası yok).",
+    "herbaryum_kopru": "Faza uygun sakinleştirici/geleneksel bitkiler herbaryumda kart olarak varsa nazik köprü (ör. sonbahar/luteal → papatya). Bitki dili sembolik, doz yok.",
+    "gating": "Free: 4 faz kartı (sembolik + araştırma bloğu) + manuel giriş. Pro: Ayurveda+GÇT derin bloklar + faz-mood korelasyonu + kişiselleştirilmiş faz takibi.",
+    "sabit_kapanis": "Bu içerik bilgilendirme amaçlıdır, tıbbi tavsiye yerine geçmez. Beslenme, döngü veya sağlık konusunda bir uzmana/diyetisyene danışabilirsin.",
+    "durum": "TASLAK-ONAYLI; TR polisaj + diyetisyen teyidi launch checklist."
+  },
+  "fazlar": {
+    "kis": {
+      "ic_mevsim": "Kış",
+      "klinik": "menstrual faz",
+      "gunler": "~1-5. gün",
+      "sembolik": "İçe dönüş ve dinlenme zamanı. Doğanın kış uykusu gibi, bedenin de yavaşlamak isteyebilir. Bu bir durgunluk değil, yeniden toplanma. Kendine nazik ol; bugünlerde az yapmak da yeterli.",
+      "arastirma": {
+        "baslik": "Modern beslenme yaklaşımı",
+        "metin": "Bu dönemde demir açısından zengin besinlere alan açmak bazı araştırmalarca desteklenir (yeşil yapraklılar, baklagiller, kırmızı et gibi kaynaklar). C vitamini içeren besinlerle birlikte demir emilimi artabilir.",
+        "kanit": "orta"
+      },
+      "ayurveda": {
+        "baslik": "Ayurveda yaklaşımı",
+        "metin": "Ayurveda geleneğinde bu dönem 'vata'nın arttığı, ısıtıcı ve topraklayıcı besinlerin tercih edildiği bir zaman olarak anılır — sıcak çorbalar, pişmiş sebzeler, kök sebzeler gibi.",
+        "kanit": "gelenek"
+      },
+      "gct": {
+        "baslik": "Geleneksel Çin Tıbbı yaklaşımı",
+        "metin": "GÇT geleneğinde bu faz 'kan'ın yenilendiği dönem sayılır; ılık ve besleyici gıdalarla bedene alan açmak önerilir — soğuk/çiğ yerine sıcak yemekler gibi.",
+        "kanit": "gelenek"
+      }
+    },
+    "ilkbahar": {
+      "ic_mevsim": "İlkbahar",
+      "klinik": "foliküler faz",
+      "gunler": "~6-13. gün",
+      "sembolik": "Filizlenme ve tazelenme zamanı. Enerjin yükselmeye, merakın canlanmaya başlayabilir. İlkbahar gibi, yeni şeylere yönelmek için doğal bir açıklık olabilir. Küçük başlangıçlar için güzel bir dönem.",
+      "arastirma": {
+        "baslik": "Modern beslenme yaklaşımı",
+        "metin": "Yükselen enerjiyle birlikte taze, hafif besinler ve yeterli proteine alan açmak bu dönemde iyi gelebilir. Fermente gıdalar ve lifli sebzeler bağırsak sağlığını destekleyebilir (genel beslenme bilgisi).",
+        "kanit": "orta"
+      },
+      "ayurveda": {
+        "baslik": "Ayurveda yaklaşımı",
+        "metin": "Ayurveda'da bu dönem hafif ve taze besinlerin, acı-buruk tatların dengeye katkı sunduğu bir zaman olarak anılır — taze yeşillikler, filizler gibi.",
+        "kanit": "gelenek"
+      },
+      "gct": {
+        "baslik": "Geleneksel Çin Tıbbı yaklaşımı",
+        "metin": "GÇT'de bu yükselen faz 'yang'ın arttığı dönem sayılır; hafif, taze ve yeşil gıdalarla akışı desteklemek geleneksel bir yaklaşımdır.",
+        "kanit": "gelenek"
+      }
+    },
+    "yaz": {
+      "ic_mevsim": "Yaz",
+      "klinik": "ovulasyon fazı",
+      "gunler": "~14-16. gün",
+      "sembolik": "Doruk ve dışa açılma zamanı. Enerjin ve öz-güvenin en yüksek hissedilebileceği dönem. Yaz gibi parlak; sosyalleşmek, ifade etmek, görünmek için doğal bir alan olabilir.",
+      "arastirma": {
+        "baslik": "Modern beslenme yaklaşımı",
+        "metin": "Bu dönemde antioksidan açısından zengin renkli sebze-meyvelere ve lifli gıdalara alan açmak genel olarak önerilir. Bol su ve hafif öğünler yüksek enerjiye eşlik edebilir (genel beslenme bilgisi).",
+        "kanit": "orta"
+      },
+      "ayurveda": {
+        "baslik": "Ayurveda yaklaşımı",
+        "metin": "Ayurveda'da bu parlak dönem serinletici ve hafif besinlerin tercih edildiği bir zaman olarak anılır — taze meyveler, serin salatalar gibi.",
+        "kanit": "gelenek"
+      },
+      "gct": {
+        "baslik": "Geleneksel Çin Tıbbı yaklaşımı",
+        "metin": "GÇT'de bu doruk faz 'qi ve kan'ın bol olduğu dönem sayılır; taze, renkli ve serinletici gıdalarla dengeyi korumak geleneksel bir yaklaşımdır.",
+        "kanit": "gelenek"
+      }
+    },
+    "sonbahar": {
+      "ic_mevsim": "Sonbahar",
+      "klinik": "luteal faz",
+      "gunler": "~17-28. gün",
+      "sembolik": "İçe çekilme ve sindirim zamanı. Enerjin yavaşça geri çekilebilir, içe dönme isteği artabilir. Sonbahar gibi; hasadı toplamak, sadeleşmek ve dinlenmeye hazırlanmak için doğal bir dönem. Kendine karşı ekstra şefkatli ol.",
+      "arastirma": {
+        "baslik": "Modern beslenme yaklaşımı",
+        "metin": "Bu dönemde magnezyum ve kompleks karbonhidratlara alan açmak, bazı araştırmalarca döngü öncesi rahatlığa katkı bağlamında incelenmiştir (tam tahıllar, kuruyemişler, koyu yeşillikler, kakao gibi). B6 vitamini içeren besinler de bu bağlamda anılır.",
+        "kanit": "orta"
+      },
+      "ayurveda": {
+        "baslik": "Ayurveda yaklaşımı",
+        "metin": "Ayurveda'da bu dönem topraklayıcı, ısıtıcı ve besleyici gıdaların tercih edildiği bir zaman olarak anılır — kök sebzeler, sıcak baharatlı yemekler gibi.",
+        "kanit": "gelenek"
+      },
+      "gct": {
+        "baslik": "Geleneksel Çin Tıbbı yaklaşımı",
+        "metin": "GÇT'de bu faz bedenin 'kan'ı beslemeye hazırlandığı dönem sayılır; ılık, besleyici ve tatlı-toprak gıdalarla desteklemek geleneksel bir yaklaşımdır.",
+        "kanit": "gelenek"
+      }
+    }
+  }
+}

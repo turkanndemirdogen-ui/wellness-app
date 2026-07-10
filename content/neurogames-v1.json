@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "belge": "neurogames-v1",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "KONUMLANDIRMA_KRITIK": "Modül 'beyin egzersizi/geliştirme' DEĞİL 'zihinsel mola / mindful oyun'dur. FTC dersi (Lumosity 2016, 2M$ ceza): hiçbir bilişsel-gelişim iddiası YOK. Zayıflığı (iddia yasağı) güce çevrildi: 'geliştirmez ama dinlendirir' dürüst ve yeterli vaat. Pazar konumu: brain-training değil, mindfulness/mola.",
+    "kararlar": "N-1=b botanik/kozmik temalı · N-2=B süreklilik herbaryumda + baskısız aylık ayna (ayrı seri YOK — R1 tek-döngü kilidi korundu). Kod-tanımlı v1 (React Native), lisans/video maliyeti sıfır, offline.",
+    "IDDIA_KURALI": "Skor YOK, gelişim grafiği YOK (örtük iddia riski). Geri bildirim NÖTR ve şefkatli ('güzel bir mola'), performans/karşılaştırma/percentile YOK. 'Geliştirir/artırır/güçlendirir' kelimeleri YASAK.",
+    "herbaryum_bagi": "Her oyun tamamlama = earn_action (herbaryum-spec §3). Süreklilik tek merkezde (herbaryum) görünür; ayrı seri sayacı yok.",
+    "ayna": "Opsiyonel baskısız geriye-dönük kayıt: 'bu ay X mola verdin' (hedef/streak DEĞİL, sadece nazik ayna; bozulacak bir şey yok).",
+    "gunluk_ritim": "Lumosity'nin 'günlük set' ritminden esinli ama iddiasız: opsiyonel 'bugünün 3 molası' önerisi (zorunlu değil, baskı yok).",
+    "tema_katmani": "Sembolik gezegen-günü teması opsiyonel (ör. Merkür günü → odak molası önerisi) — iddiasız, sadece atmosfer.",
+    "gating": "Free: 4 oyun temel + günlük mola. Pro: ekstra zorluk seviyeleri + gezegen-günü temalı öneriler + aylık ayna detayı.",
+    "teknik_not": "⚠ v1 = basit mekanikler (flip/tap-timing/sequence/breath-scale) React Native'de rahat. Karmaşık fizik/animasyon (zen bahçe vb.) v2. 4 oyun gerçekçi v1 kapsamı.",
+    "durum": "TASLAK-ONAYLI; TR polisaj launch checklist."
+  },
+  "oyunlar": [
+    {
+      "id": "bahce_eslestirme",
+      "ad": "Bahçe Eşleştirme",
+      "mekanik_tip": "hafıza (memory match)",
+      "tema": "Kapalı kartları çevirip eşleşen bitki çiftlerini bul. Herbaryumdaki botanik illüstrasyonlar kart yüzü olur.",
+      "mola_hissi": "Sakin, ritmik; acele ettiren zamanlayıcı yok. Kendi hızında çevir.",
+      "teknik": "Basit grid + flip state. React Native'de kolay. 3 zorluk: 4/6/8 çift.",
+      "herbaryum_bagi": "Kart yüzleri kullanıcının kazandığı bitki kartlarından → koleksiyonla görsel süreklilik.",
+      "iddia_yok": "'Hafızanı güçlendirir' DEMEZ. Tamamlanınca: 'Güzel bir mola. Zihnin biraz dinlendi.'"
+    },
+    {
+      "id": "yildiz_takip",
+      "ad": "Yıldız Takibi",
+      "mekanik_tip": "odak (visual tracking)",
+      "tema": "Gökyüzünde yavaşça hareket eden bir yıldızı gözünle/parmağınla takip et; belirli anlarda hafifçe dokun.",
+      "mola_hissi": "Meditatif, nefes-temposunda. Yıldız yumuşak bir yörüngede süzülür.",
+      "teknik": "Tek hareketli öğe + tap-timing. Animasyon basit (translate). Nefes ritmiyle senkron opsiyonu.",
+      "herbaryum_bagi": "Kozmik tema; Gece Açanlar/kozmik kartlarla estetik uyum.",
+      "iddia_yok": "'Dikkatini artırır' DEMEZ. 'Bir an durup göğü izledin. Bu da bir mola.'"
+    },
+    {
+      "id": "mevsim_deseni",
+      "ad": "Mevsim Deseni",
+      "mekanik_tip": "örüntü (pattern sequence)",
+      "tema": "Botanik/mevsim sembollerinden oluşan bir dizi kısa süre gösterilir; sonra sırayı sen tekrarla.",
+      "mola_hissi": "Nazik meydan okuma; yanlışta ceza yok, tekrar denenebilir.",
+      "teknik": "Simon-benzeri sıra hatırlama. Sembol seti = mevsim/element motifleri. Kolay-orta-derin.",
+      "herbaryum_bagi": "Mevsim motifleri parlama modeliyle uyumlu; element quiz'iyle görsel dil ortak.",
+      "iddia_yok": "'Beyin performansı' DEMEZ. 'Deseni takip ettin, zihnin bir tur attı.'"
+    },
+    {
+      "id": "nefes_bahcesi",
+      "ad": "Nefes Bahçesi",
+      "mekanik_tip": "sakinleşme (breath-paced interaction)",
+      "tema": "Ekranda bir tomurcuk; nefes alırken açılıyor, verirken kapanıyor. Ritme uyarak dokun, bahçe çiçekleniyor.",
+      "mola_hissi": "Saf dinginlik; oyun-değil-mola tarafında. Rekabet sıfır.",
+      "teknik": "Nefes döngüsü animasyonu (scale) + ritim dokunuşu. Breathwork modülüyle mekanik paylaşımı.",
+      "herbaryum_bagi": "Çiçeklenme görseli herbaryum estetiğiyle birebir; nefes modülüne köprü.",
+      "iddia_yok": "Tıbbi/klinik iddia yok. 'Birkaç nefes aldın, bahçen açtı. Kendine iyi baktın.'"
+    }
+  ]
+}

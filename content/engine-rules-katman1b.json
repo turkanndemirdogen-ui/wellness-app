@@ -1,0 +1,221 @@
+{
+  "_meta": {
+    "belge": "engine-rules-katman1b",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "not": "Ay'ın natal noktalara açıları; K4-4 orb ±3°. 10 kural × 2 varyant.",
+    "ton": "davetkar, kader dilsiz, emir yok; TASLAK-ONAYLI, TR polisaj launch checklist"
+  },
+  "rules": [
+    {
+      "rule_id": "k1b_ay_sert_gunes",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "sert",
+        "natal_target": "gunes",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_sert_gunes",
+      "user_text_variants": [
+        "Ay bugün Güneş'inle gergin bir açıda — iç ihtiyaçlarla günün talepleri çekişebilir. İkisini de duymak, birini bastırmaktan iyi gelir.",
+        "Bugün duyguyla irade aynı yöne bakmayabilir. Küçük bir uzlaşma — kısa bir mola, sonra iş — günü yumuşatabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_yum_gunes",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "yumusak",
+        "natal_target": "gunes",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_yumusak_gunes",
+      "user_text_variants": [
+        "Ay bugün Güneş'ini destekliyor — içinle dışın aynı hizada. Kendin gibi davranmak bugün zahmetsiz olabilir.",
+        "Duygu ve niyet bugün el ele. Ertelediğin kişisel bir şeye alan açmak için akışkan bir gün."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_sert_ay",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "sert",
+        "natal_target": "ay",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_sert_ay",
+      "user_text_variants": [
+        "Gökteki Ay bugün doğum Ay'ınla çekişiyor — duygular sebepsiz dalgalanabilir. Dalganın geçmesine izin vermek, onunla boğuşmaktan kolay olabilir.",
+        "Bugün hassasiyet yüzeye yakın. Kendine küçük bir yumuşaklık payı bırakmak iyi gelir; her hissi çözmek gerekmiyor."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_yum_ay",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "yumusak",
+        "natal_target": "ay",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_yumusak_ay",
+      "user_text_variants": [
+        "Gökteki Ay doğum Ay'ınla uyumlu — duygusal zemin bugün sakin. İçine iyi gelen ne varsa, bugün kolay bulunur.",
+        "Bugün iç sular durgun. Dinlenmek, beslenmek, sevdiğin küçük ritüeller: hepsi yerine oturuyor."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_sert_asc",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "sert",
+        "natal_target": "asc",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_sert_asc",
+      "user_text_variants": [
+        "Ay bugün yükselenini zorluyor — içeride hissettiğinle dışarı yansıyan uyuşmayabilir. Maskeyi zorlamak yerine biraz sadelik iyi gelebilir.",
+        "Bugün 'nasıl görünüyorum' sorusu yorabilir. Cevabı basitleştirmek serbest: bugünlük, olduğun kadarı yeter."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_yum_asc",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "yumusak",
+        "natal_target": "asc",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_yumusak_asc",
+      "user_text_variants": [
+        "Ay bugün yükselenine eşlik ediyor — kendini ifade etmek doğal akabilir. İnsanlarla temas bugün az enerji ister.",
+        "Bugün dışa dönük yüzünle için barışık. Küçük bir buluşma ya da kısa bir paylaşım güne iyi oturabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_sert_merkur",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "sert",
+        "natal_target": "merkur",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_sert_merkur",
+      "user_text_variants": [
+        "Ay bugün Merkür'ünle gergin — duygu, kelimelerin arasına karışabilir. Önemli mesajları göndermeden bir kez daha okumak yeterli.",
+        "Bugün zihin ile kalp farklı dilde konuşabilir. Yazıp beklemek, söyleyip düzeltmekten kolay olabilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_yum_merkur",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "yumusak",
+        "natal_target": "merkur",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_yumusak_merkur",
+      "user_text_variants": [
+        "Ay bugün Merkür'ünü destekliyor — hisleri kelimeye dökmek kolaylaşıyor. Günlüğün ya da ertelenen bir mesaj için akışkan bir gün.",
+        "Bugün iç ses net. Aklındaki bir konuyu konuşmak ya da yazmak, taşımaktan hafif gelebilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_sert_venus",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "sert",
+        "natal_target": "venus",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_sert_venus",
+      "user_text_variants": [
+        "Ay bugün Venüs'ünle çekişiyor — keyif ve sorumluluk aynı anda çağırabilir. Küçük bir güzelliğe de yer açmak dengeyi kurar.",
+        "Bugün gönül ister, gün izin vermez gibi hissedilebilir. Minik bir keyfi araya sıkıştırmak iyi gelebilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    },
+    {
+      "rule_id": "k1b_ay_yum_venus",
+      "katman": "1b",
+      "trigger": {
+        "transit_planet": "ay",
+        "aspect_quality": "yumusak",
+        "natal_target": "venus",
+        "sign_modifier": null,
+        "house_modifier": null
+      },
+      "theme_internal": "ay_yumusak_venus",
+      "user_text_variants": [
+        "Ay bugün Venüs'ünü destekliyor — güzellik, tat ve yakınlık bugün kolay bulunur. Kendine nazik bir şey seçmek serbest.",
+        "Bugün küçük keyiflerin günü: sevdiğin bir koku, bir çay, kısa bir sohbet. Az şey, çok iyi gelebilir."
+      ],
+      "body_zone": null,
+      "herb_motif": null,
+      "evidence_label": "sembolik",
+      "priority": 20,
+      "source_chunk_refs": []
+    }
+  ]
+}

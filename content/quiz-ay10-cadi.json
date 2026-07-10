@@ -1,0 +1,245 @@
+{
+  "_meta": {
+    "belge": "quiz-ay10-cadi",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "ozel_sinerji": "SOFT WITCHERY ÇEKİRDEĞİ + MODÜL KÖPRÜSÜ: her cadı türü bir modüle bağlanır (Mutfak→döngü-beslenme, Yeşil→herbaryum, Ay→kozmos, Deniz→breathwork, Kozmik→keşif, Kristal→skincare, Eşik→journal). Sonuç ekranı kullanıcıyı 'senin modülün'e yönlendirir → tüm uygulamaya cross-sell.",
+    "hassasiyet": "'Cadı' güçlendirici/estetik çerçevede; okült/inanç iddiası değil, kişilik-estetik kimliği. 'Kalıp değil ayna' açılışı ortak. Etiket: sembolik · eğlence amaçlı.",
+    "puanlama": "p +2, s +1; Baskın+Yükselen.",
+    "gating": "Free: baskın/yükselen+kisa+modül köprüsü. Pro: derin_ek + astro overlay.",
+    "durum": "TASLAK-ONAYLI; TR polisaj checklist."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — hepsi sende var. Hangi cadı bugün sende uyanık, ona bakıyoruz.",
+  "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir} (Senin köşen: {A_modul}.)",
+  "arketipler": {
+    "mutfak": {
+      "ad": "Mutfak Cadısı",
+      "tek_satir": "Büyün tencerede pişer; sıradan bir yemeği ritüele çevirirsin.",
+      "kisa": "Mutfak cadısı gündelik büyüdür — niyeti çorbaya, sevgiyi ekmeğe katarsın. Sihrin görkemli değil, besleyici.",
+      "derin_ek": "Gölge daveti: herkesi doyururken kendi tabağını unutma.",
+      "modul": "cycle-nutrition",
+      "paylasim": "Ben bir Mutfak Cadısıyım — büyüm tencerede pişer."
+    },
+    "yesil": {
+      "ad": "Yeşil Cadı",
+      "tek_satir": "Toprakla konuşursun; bitkiler senin dilini bilir.",
+      "kisa": "Yeşil cadı doğanın çırağıdır — saksılar, tohumlar, kurutulmuş demetler. Büyün kökten ve yapraktan gelir.",
+      "derin_ek": "Gölge daveti: her şeyi büyütmek istersin; bazen bir şeyi solmaya bırakmak da bahçıvanlıktır.",
+      "modul": "herbaryum",
+      "paylasim": "Ben bir Yeşil Cadıyım — bitkiler dilimi bilir."
+    },
+    "ay": {
+      "ad": "Ay Cadısı",
+      "tek_satir": "Ritmin gökten gelir; dolunayda dolar, yeniayda yenilenirsin.",
+      "kisa": "Ay cadısı döngülerle yaşar — niyetlerini fazlara göre kurar, duygularını ayla okur. Sezgin en güçlü aracın.",
+      "derin_ek": "Gölge daveti: her duyguyu aya bağlama; bazıları sadece senin.",
+      "modul": "kozmos",
+      "paylasim": "Ben bir Ay Cadısıyım — ritmim gökten gelir."
+    },
+    "deniz": {
+      "ad": "Deniz Cadısı",
+      "tek_satir": "Duyguların gelgit gibi; derinliğin hem gücün hem sığınağın.",
+      "kisa": "Deniz cadısı suyun büyüsüdür — tuz, kabuk, gözyaşı ve dalga. Arınmayı ve akışı bilirsin.",
+      "derin_ek": "Gölge daveti: derin sular güzel; ama ara sıra kıyıya da çık.",
+      "modul": "breathwork",
+      "paylasim": "Ben bir Deniz Cadısıyım — duygularım gelgit gibi."
+    },
+    "kozmik": {
+      "ad": "Kozmik Cadı",
+      "tek_satir": "Yıldızlar senin haritan; büyün gezegenlerin dilinde yazılı.",
+      "kisa": "Kozmik cadı gök bilgesidir — transitler, dekanlar, yıldız işaretleri. Büyük resmi ve zamanlamayı okursun.",
+      "derin_ek": "Gölge daveti: her şeyi yıldızlara sorma; bazen sadece hisset.",
+      "modul": "kesif",
+      "paylasim": "Ben bir Kozmik Cadıyım — haritam yıldızlarda."
+    },
+    "kristal": {
+      "ad": "Kristal Cadısı",
+      "tek_satir": "Güzellikte güç bulursun; enerjini renk ve ışıkla düzenlersin.",
+      "kisa": "Kristal cadı estetik şifacıdır — taşlar, renkler, ışık oyunları. Ortamın enerjisini sezer, düzenlersin.",
+      "derin_ek": "Gölge daveti: dışarıyı düzenlerken içerini de dinle.",
+      "modul": "skincare",
+      "paylasim": "Ben bir Kristal Cadıyım — güzellikte güç bulurum."
+    },
+    "hedge": {
+      "ad": "Eşik Cadısı",
+      "tek_satir": "İki dünyanın arasında yürürsün; rüya ile uyanıklık senin sınırında buluşur.",
+      "kisa": "Eşik cadısı sezgi gezginidir — rüyalar, içe yolculuk, sessiz bilme. Görünenin ötesini fark edersin.",
+      "derin_ek": "Gölge daveti: ötesini görmek güzel; ama buraya, şimdiye de kök sal.",
+      "modul": "journal",
+      "paylasim": "Ben bir Eşik Cadısıyım — iki dünyanın arasındayım."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Evinde mutlaka bulunan şey?",
+      "secenekler": [
+        {
+          "metin": "Kurutulmuş bitki demetleri",
+          "p": "kristal",
+          "s": "yesil"
+        },
+        {
+          "metin": "Baharat ve el yapımı karışımlar",
+          "p": "mutfak"
+        },
+        {
+          "metin": "Ay takvimi / kristal takımı",
+          "p": "ay",
+          "s": "kristal"
+        },
+        {
+          "metin": "Rüya günlüğü",
+          "p": "hedge"
+        }
+      ]
+    },
+    {
+      "soru": "Stresli bir günde ritüelin?",
+      "secenekler": [
+        {
+          "metin": "Niyetle bir yemek pişirmek",
+          "p": "mutfak"
+        },
+        {
+          "metin": "Bitkilerimle ilgilenmek",
+          "p": "yesil"
+        },
+        {
+          "metin": "Deniz/su sesi dinlemek",
+          "p": "deniz"
+        },
+        {
+          "metin": "Mum yakıp içe dönmek",
+          "p": "hedge"
+        }
+      ]
+    },
+    {
+      "soru": "Seni en çok ne büyüler?",
+      "secenekler": [
+        {
+          "metin": "Dolunay",
+          "p": "kristal",
+          "s": "ay"
+        },
+        {
+          "metin": "Yıldız haritaları",
+          "p": "kozmik"
+        },
+        {
+          "metin": "Dalgaların sesi",
+          "p": "deniz"
+        },
+        {
+          "metin": "Işığın kristalde kırılması",
+          "p": "kristal"
+        }
+      ]
+    },
+    {
+      "soru": "Bir niyeti nasıl güçlendirirsin?",
+      "secenekler": [
+        {
+          "metin": "Ay fazına göre zamanlarım",
+          "p": "ay"
+        },
+        {
+          "metin": "Doğru günü yıldızlardan seçerim",
+          "p": "kozmik"
+        },
+        {
+          "metin": "Toprağa bir tohum ekerim",
+          "p": "yesil"
+        },
+        {
+          "metin": "Yemeğe niyet katarım",
+          "p": "mutfak"
+        }
+      ]
+    },
+    {
+      "soru": "İç dünyana nasıl bağlanırsın?",
+      "secenekler": [
+        {
+          "metin": "Rüyalarım ve iç yolculuklarım",
+          "p": "hedge"
+        },
+        {
+          "metin": "Suyla, banyoyla arınarak",
+          "p": "deniz"
+        },
+        {
+          "metin": "Cildime, bedenime bakarak",
+          "p": "kristal"
+        },
+        {
+          "metin": "Ayı ve duygularımı izleyerek",
+          "p": "ay"
+        }
+      ]
+    },
+    {
+      "soru": "Favori atmosferin?",
+      "secenekler": [
+        {
+          "metin": "Buhar tüten bir mutfak",
+          "p": "mutfak"
+        },
+        {
+          "metin": "Yeşilliğe boğulmuş bir oda",
+          "p": "yesil"
+        },
+        {
+          "metin": "Ay ışıklı bir pencere kenarı",
+          "p": "ay"
+        },
+        {
+          "metin": "Loş, mumlu, sessiz bir köşe",
+          "p": "hedge"
+        }
+      ]
+    },
+    {
+      "soru": "Bir arkadaşına nasıl destek olursun?",
+      "secenekler": [
+        {
+          "metin": "Sıcak bir yemek yaparım",
+          "p": "mutfak"
+        },
+        {
+          "metin": "Rahatlatıcı bir bitki çayı öneririm",
+          "p": "yesil"
+        },
+        {
+          "metin": "'Şu dönem senin için...' diye okurum",
+          "p": "kozmik"
+        },
+        {
+          "metin": "Sadece dinlerim, hissederim",
+          "p": "deniz"
+        }
+      ]
+    },
+    {
+      "soru": "Gece göğünde gözün nereye gider?",
+      "secenekler": [
+        {
+          "metin": "Ayın evresine",
+          "p": "ay"
+        },
+        {
+          "metin": "Gezegenlerin dizilişine",
+          "p": "kozmik"
+        },
+        {
+          "metin": "Ayın sudaki yansımasına",
+          "p": "deniz"
+        },
+        {
+          "metin": "Yıldızların ardındaki karanlığa",
+          "p": "hedge"
+        }
+      ]
+    }
+  ]
+}

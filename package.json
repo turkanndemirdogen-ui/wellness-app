@@ -1,0 +1,20 @@
+{
+  "name": "wellness-app-data",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Wellness App — veri temeli: Supabase şeması, içerik seed üretici, görünürlük duvarı testleri. (Mobil uygulama ayrı: mobile/)",
+  "scripts": {
+    "seed:generate": "node scripts/generate-seed.mjs",
+    "engine:generate": "node scripts/generate-engine-seed.mjs",
+    "test:visibility": "node scripts/test-visibility.mjs",
+    "test:retrieval": "node scripts/test-retrieval.mjs",
+    "db:check": "node scripts/check-db.mjs",
+    "ingest:dry": "node scripts/ingest.mjs --dry --all",
+    "ingest": "node scripts/ingest.mjs",
+    "push:chunks": "node scripts/push-chunks.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.0"
+  }
+}

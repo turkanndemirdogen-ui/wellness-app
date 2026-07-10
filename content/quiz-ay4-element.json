@@ -1,0 +1,222 @@
+{
+  "_meta": {
+    "puanlama": "p +2, s +1; Baskın+Yükselen. Eşitlikte son soru.",
+    "durum": "TASLAK-ONAYLI; TR polisaj checklist.",
+    "hassasiyet": "'Kalıp değil ayna' açılışı ortak; güçlendirici çerçeve. Etiket: sembolik · eğlence amaçlı.",
+    "belge": "quiz-ay4-element",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "ozel_sinerji": "Element→bitki köprüsü + PRO element-denge lensiyle sinerji (koleksiyonun element dağılımı). 4 arketip (klasik unsur).",
+    "gating": "Free: element+kisa+bitki. Pro: derin_ek + element-denge lensi + astro overlay."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — dört unsur da sende var. Bugün hangisi baskın, ona bakıyoruz.",
+  "sonuc_sablonu": "Baskın: {A} {A_glif} · Yükselen: {B} — {A_tek_satir} (Bitkin: {A_bitki}.)",
+  "arketipler": {
+    "ates": {
+      "ad": "Ateş",
+      "glif": "🜂",
+      "tek_satir": "İçinde sönmeyen bir kıvılcım var; harekete geçiren sensin.",
+      "kisa": "Ateş enerjisi tutku ve cesarettir — başlatır, ısıtır, ilham verirsin. Durgunluk sana göre değil.",
+      "derin_ek": "Gölge daveti: alevin güçlü; ara sıra dinlenmek onu söndürmez, korur.",
+      "bitki": "zencefil",
+      "paylasim": "Elementim Ateş — kıvılcım bende."
+    },
+    "toprak": {
+      "ad": "Toprak",
+      "glif": "🜃",
+      "tek_satir": "Sağlam ve besleyicisin; insanların bastığı güvenli zemin.",
+      "kisa": "Toprak enerjisi istikrar ve bolluktur — köklü, güvenilir, verimli. Sözün senettir.",
+      "derin_ek": "Gölge daveti: sağlam olmak güzel; bazen değişime de toprağını aç.",
+      "bitki": "atkuyrugu",
+      "paylasim": "Elementim Toprak — güvenli zeminim."
+    },
+    "hava": {
+      "ad": "Hava",
+      "glif": "🜁",
+      "tek_satir": "Zihin ve özgürlük taşırsın; fikirlerin rüzgâr gibi dolaşır.",
+      "kisa": "Hava enerjisi düşünce ve iletişimdir — meraklı, esnek, sosyal. Bağ kurar, ilham dağıtırsın.",
+      "derin_ek": "Gölge daveti: zihnin uçarken bedenini de yere indir.",
+      "bitki": "lavanta",
+      "paylasim": "Elementim Hava — fikirlerim rüzgâr gibi."
+    },
+    "su": {
+      "ad": "Su",
+      "glif": "🜄",
+      "tek_satir": "Derin ve sezgiselsin; duyguların gücün, akışın yolun.",
+      "kisa": "Su enerjisi duygu ve sezgidir — derin, şefkatli, uyumlu. Hisseder, sarar, arındırırsın.",
+      "derin_ek": "Gölge daveti: her duyguyu emmek zorunda değilsin; kıyıya da çık.",
+      "bitki": "nilufer",
+      "paylasim": "Elementim Su — derinlik benim doğam."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Yeni bir projeye nasıl başlarsın?",
+      "secenekler": [
+        {
+          "metin": "Hemen atlar, yaparak öğrenirim",
+          "p": "ates"
+        },
+        {
+          "metin": "Plan yapar, adım adım ilerlerim",
+          "p": "toprak"
+        },
+        {
+          "metin": "Önce araştırır, fikir toplarım",
+          "p": "hava"
+        },
+        {
+          "metin": "İçime sorar, doğru hissi beklerim",
+          "p": "su"
+        }
+      ]
+    },
+    {
+      "soru": "Arkadaş grubunda rolün?",
+      "secenekler": [
+        {
+          "metin": "Ateşleyen, harekete geçiren",
+          "p": "ates"
+        },
+        {
+          "metin": "Güvenilen, kollayan",
+          "p": "toprak"
+        },
+        {
+          "metin": "Fikir üreten, bağ kuran",
+          "p": "hava"
+        },
+        {
+          "metin": "Dinleyen, derinleştiren",
+          "p": "su"
+        }
+      ]
+    },
+    {
+      "soru": "Stresini nasıl atarsın?",
+      "secenekler": [
+        {
+          "metin": "Spor, hareket, ter",
+          "p": "ates"
+        },
+        {
+          "metin": "Doğada, toprakta",
+          "p": "toprak"
+        },
+        {
+          "metin": "Konuşarak, yazarak",
+          "p": "hava"
+        },
+        {
+          "metin": "Suyla, banyoyla, ağlayarak",
+          "p": "su"
+        }
+      ]
+    },
+    {
+      "soru": "Seni ne besler?",
+      "secenekler": [
+        {
+          "metin": "Yeni maceralar",
+          "p": "ates"
+        },
+        {
+          "metin": "Rutin ve güven",
+          "p": "toprak"
+        },
+        {
+          "metin": "Yeni fikirler, sohbet",
+          "p": "hava"
+        },
+        {
+          "metin": "Derin bağlar",
+          "p": "su"
+        }
+      ]
+    },
+    {
+      "soru": "Karar verirken?",
+      "secenekler": [
+        {
+          "metin": "İçgüdüyle, hızlı",
+          "p": "ates"
+        },
+        {
+          "metin": "Pratik, mantıklı",
+          "p": "toprak"
+        },
+        {
+          "metin": "Tüm açıları tartarak",
+          "p": "hava"
+        },
+        {
+          "metin": "Sezgiyle",
+          "p": "su"
+        }
+      ]
+    },
+    {
+      "soru": "İdeal ortamın?",
+      "secenekler": [
+        {
+          "metin": "Canlı, hareketli",
+          "p": "ates"
+        },
+        {
+          "metin": "Doğal, sakin",
+          "p": "toprak"
+        },
+        {
+          "metin": "Açık, sosyal",
+          "p": "hava"
+        },
+        {
+          "metin": "Su kenarı, dingin",
+          "p": "su"
+        }
+      ]
+    },
+    {
+      "soru": "Zorlukta ilk tepkin?",
+      "secenekler": [
+        {
+          "metin": "Savaşırım",
+          "p": "ates"
+        },
+        {
+          "metin": "Sağlam dururum",
+          "p": "toprak"
+        },
+        {
+          "metin": "Çözüm ararım",
+          "p": "hava"
+        },
+        {
+          "metin": "Hissederim, sonra hareket ederim",
+          "p": "su"
+        }
+      ]
+    },
+    {
+      "soru": "Gece göğünde seni ne çeker?",
+      "secenekler": [
+        {
+          "metin": "Kayan yıldızın ateşi",
+          "p": "ates"
+        },
+        {
+          "metin": "Sabit, güvenli takımyıldızlar",
+          "p": "toprak"
+        },
+        {
+          "metin": "Rüzgârdaki bulutlar",
+          "p": "hava"
+        },
+        {
+          "metin": "Ayın sudaki yolu",
+          "p": "su"
+        }
+      ]
+    }
+  ]
+}

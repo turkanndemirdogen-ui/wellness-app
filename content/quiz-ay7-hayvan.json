@@ -1,0 +1,239 @@
+{
+  "_meta": {
+    "puanlama": "p +2, s +1; Baskın+Yükselen. Eşitlikte son soru.",
+    "durum": "TASLAK-ONAYLI; TR polisaj checklist.",
+    "hassasiyet": "'Kalıp değil ayna' açılışı ortak; güçlendirici çerçeve. Etiket: sembolik · eğlence amaçlı.",
+    "belge": "quiz-ay7-hayvan",
+    "surum": "v0.1",
+    "tarih": "2026-07-05",
+    "duyarlilik_ozel": "'Spirit animal' / kültürel-totem dili KULLANILMADI (tasarım dosyası kuralı). Çerçeve: 'sende hangi hayvan enerjisi baskın' — kişilik-metafor, ruhani/kültürel iddia değil. Etiket: sembolik · eğlence amaçlı.",
+    "gating": "Free: hayvan+kisa. Pro: derin_ek + astro overlay."
+  },
+  "acilis_metni": "Bunlar kalıp değil, ayna — bu hayvanların enerjisi sende. Bugün hangisi öne çıkıyor, ona bakıyoruz.",
+  "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir}",
+  "arketipler": {
+    "kurt": {
+      "ad": "Kurt",
+      "tek_satir": "Bağımsız ama sadık; hem yalnız yürür hem sürünü korursun.",
+      "kisa": "Kurt enerjisi sadakat ve özgürlüktür — güçlü sezgi, derin bağ, net sınır. Ailene bağlı ama kimseye bağımlı değilsin.",
+      "derin_ek": "Gölge daveti: yalnız yürüyebilirsin; ama sürüye yaslanmak zayıflık değil.",
+      "paylasim": "Hayvanım Kurt — bağımsız ama sadık."
+    },
+    "kedi": {
+      "ad": "Kedi",
+      "tek_satir": "Zarif ve bağımsız; sevgini de alanını da kendin seçersin.",
+      "kisa": "Kedi enerjisi özerklik ve zarafettir — seçici, gizemli, öz-yeterli. Yakınlığını hak edene verirsin.",
+      "derin_ek": "Gölge daveti: mesafe seni korur; ama bazen yaklaşmak da güzeldir.",
+      "paylasim": "Hayvanım Kedi — alanımı kendim seçerim."
+    },
+    "kelebek": {
+      "ad": "Kelebek",
+      "tek_satir": "Dönüşümün ustası; her evreni güzelliğe çevirirsin.",
+      "kisa": "Kelebek enerjisi dönüşüm ve hafifliktir — değişimden korkmaz, güzelliğe uçarsın. Her son, senin için yeni bir kanat.",
+      "derin_ek": "Gölge daveti: uçmak güzel; ama bazen bir çiçekte de dinlen.",
+      "paylasim": "Hayvanım Kelebek — dönüşümün ustası."
+    },
+    "baykus": {
+      "ad": "Baykuş",
+      "tek_satir": "Gecenin bilgesi; görünmeyeni görür, sessizce bilirsin.",
+      "kisa": "Baykuş enerjisi bilgelik ve sezgidir — sakin gözlem, derin kavrayış. Konuşmadan önce anlar, gölgede görürsün.",
+      "derin_ek": "Gölge daveti: her şeyi bilmek zorunda değilsin; bilmemek de dinlendirir.",
+      "paylasim": "Hayvanım Baykuş — gecenin bilgesi."
+    },
+    "geyik": {
+      "ad": "Geyik",
+      "tek_satir": "Nazik ama tetikte; yumuşaklığın bir zayıflık değil, zarafet.",
+      "kisa": "Geyik enerjisi nezaket ve uyanıklıktır — narin, sezgili, zarif. Sertliğe ihtiyacın yok; yumuşaklığın gücün.",
+      "derin_ek": "Gölge daveti: tetikte olmak korur; ama bazen gardını indirip otlağın tadını çıkar.",
+      "paylasim": "Hayvanım Geyik — yumuşaklığım zarafetim."
+    },
+    "tilki": {
+      "ad": "Tilki",
+      "tek_satir": "Zeki ve uyanık; her durumda kıvrak bir yol bulursun.",
+      "kisa": "Tilki enerjisi zeka ve uyumdur — kurnaz değil akıllı, esnek, çözüm odaklı. Kapalı kapıya pencere bulursun.",
+      "derin_ek": "Gölge daveti: her şeyi tek başına çözmek zorunda değilsin; yardım istemek de zeka.",
+      "paylasim": "Hayvanım Tilki — her zaman bir yol bulurum."
+    },
+    "kugu": {
+      "ad": "Kuğu",
+      "tek_satir": "Sakin yüzeyde zarafet, altta güçlü kürek; zarafetin emek ürünü.",
+      "kisa": "Kuğu enerjisi zarafet ve iç güçtür — dışarıda dingin, içeride kararlı. Görünen sükûnetin, görünmez emeğinden gelir.",
+      "derin_ek": "Gölge daveti: hep zarif görünmek yorar; altta kürek çektiğini paylaşmak da güç.",
+      "paylasim": "Hayvanım Kuğu — sakin yüzey, güçlü kürek."
+    }
+  },
+  "sorular": [
+    {
+      "soru": "Yeni bir ortama girince?",
+      "secenekler": [
+        {
+          "metin": "Kenarda gözlemlerim",
+          "p": "geyik",
+          "s": "baykus"
+        },
+        {
+          "metin": "Kendi alanımı bulurum",
+          "p": "kugu",
+          "s": "kedi"
+        },
+        {
+          "metin": "Hızla uyum sağlarım",
+          "p": "tilki"
+        },
+        {
+          "metin": "Sakin ama tetikte dururum",
+          "p": "geyik"
+        }
+      ]
+    },
+    {
+      "soru": "Arkadaşlıkta sen?",
+      "secenekler": [
+        {
+          "metin": "Az ama derin bağ",
+          "p": "kugu",
+          "s": "kurt"
+        },
+        {
+          "metin": "Bağımsız ama sıcak",
+          "p": "kedi"
+        },
+        {
+          "metin": "Herkesle uyumlu",
+          "p": "kelebek"
+        },
+        {
+          "metin": "Sadık ve koruyucu",
+          "p": "kurt",
+          "s": "kugu"
+        }
+      ]
+    },
+    {
+      "soru": "Zorlukta stratejin?",
+      "secenekler": [
+        {
+          "metin": "Sabırla gözler, doğru anı beklerim",
+          "p": "baykus"
+        },
+        {
+          "metin": "Kıvrak bir çözüm bulurum",
+          "p": "tilki"
+        },
+        {
+          "metin": "Dönüştürür, fırsata çeviririm",
+          "p": "kelebek"
+        },
+        {
+          "metin": "Sakin kalır, içten güçlenirim",
+          "p": "kugu"
+        }
+      ]
+    },
+    {
+      "soru": "Seni ne tanımlar?",
+      "secenekler": [
+        {
+          "metin": "Sadakat",
+          "p": "kurt"
+        },
+        {
+          "metin": "Bağımsızlık",
+          "p": "kedi"
+        },
+        {
+          "metin": "Dönüşüm",
+          "p": "kelebek"
+        },
+        {
+          "metin": "Bilgelik",
+          "p": "baykus"
+        }
+      ]
+    },
+    {
+      "soru": "İdeal anın?",
+      "secenekler": [
+        {
+          "metin": "Sürümle/ailemle",
+          "p": "kurt"
+        },
+        {
+          "metin": "Tek başıma, huzurlu",
+          "p": "kedi"
+        },
+        {
+          "metin": "Yeni bir yere uçarken",
+          "p": "kelebek"
+        },
+        {
+          "metin": "Gece, sessizlikte",
+          "p": "baykus"
+        }
+      ]
+    },
+    {
+      "soru": "İnsanlar sana ne için gelir?",
+      "secenekler": [
+        {
+          "metin": "Korunmaya, güvene",
+          "p": "kurt"
+        },
+        {
+          "metin": "Bilgece bir bakışa",
+          "p": "baykus"
+        },
+        {
+          "metin": "Bir çözüme",
+          "p": "tilki"
+        },
+        {
+          "metin": "Sakinleşmeye",
+          "p": "geyik"
+        }
+      ]
+    },
+    {
+      "soru": "Değişim geldiğinde?",
+      "secenekler": [
+        {
+          "metin": "Kanat açarım",
+          "p": "kelebek"
+        },
+        {
+          "metin": "Uyum sağlarım",
+          "p": "tilki"
+        },
+        {
+          "metin": "Sağlam dururum",
+          "p": "kurt"
+        },
+        {
+          "metin": "Zarafetle akarım",
+          "p": "kugu"
+        }
+      ]
+    },
+    {
+      "soru": "Gece uyanıksan ne yaparsın?",
+      "secenekler": [
+        {
+          "metin": "Düşünür, sezerim",
+          "p": "baykus"
+        },
+        {
+          "metin": "Sessizce dolaşırım",
+          "p": "kedi"
+        },
+        {
+          "metin": "Rüyalara dalarım",
+          "p": "geyik"
+        },
+        {
+          "metin": "Planımı kurarım",
+          "p": "tilki"
+        }
+      ]
+    }
+  ]
+}

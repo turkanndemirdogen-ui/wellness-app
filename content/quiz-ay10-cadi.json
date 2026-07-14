@@ -3,7 +3,7 @@
     "belge": "quiz-ay10-cadi",
     "surum": "v0.1",
     "tarih": "2026-07-05",
-    "ozel_sinerji": "SOFT WITCHERY ÇEKİRDEĞİ + MODÜL KÖPRÜSÜ: her cadı türü bir modüle bağlanır (Mutfak→döngü-beslenme, Yeşil→herbaryum, Ay→kozmos, Deniz→breathwork, Kozmik→keşif, Kristal→skincare, Eşik→journal). Sonuç ekranı kullanıcıyı 'senin modülün'e yönlendirir → tüm uygulamaya cross-sell.",
+    "ozel_sinerji": "SOFT WITCHERY ÇEKİRDEĞİ + MODÜL KÖPRÜSÜ: her cadı türü bir modüle bağlanır (Mutfak→döngü-beslenme, Yeşil→herbaryum, Ay→kozmos, Deniz→mood [duygu düzenleme/iç-akış patikası — KD-01 sonrası; eski hedef breathwork kapsam dışı], Kozmik→keşif, Kristal→skincare, Eşik→journal). Sonuç ekranı kullanıcıyı 'senin modülün'e yönlendirir → tüm uygulamaya cross-sell.",
     "hassasiyet": "'Cadı' güçlendirici/estetik çerçevede; okült/inanç iddiası değil, kişilik-estetik kimliği. 'Kalıp değil ayna' açılışı ortak. Etiket: sembolik · eğlence amaçlı.",
     "puanlama": "p +2, s +1; Baskın+Yükselen.",
     "gating": "Free: baskın/yükselen+kisa+modül köprüsü. Pro: derin_ek + astro overlay.",
@@ -41,7 +41,7 @@
       "tek_satir": "Duyguların gelgit gibi; derinliğin hem gücün hem sığınağın.",
       "kisa": "Deniz cadısı suyun büyüsüdür — tuz, kabuk, gözyaşı ve dalga. Akışı da bırakışı da bilirsin.",
       "derin_ek": "Gölge daveti: derin sular güzel; ama ara sıra kıyıya da çık.",
-      "modul": "breathwork",
+      "modul": "mood",
       "paylasim": "Ben bir Deniz Cadısıyım — duygularım gelgit gibi."
     },
     "kozmik": {

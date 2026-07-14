@@ -27,7 +27,10 @@ Tarih: 2026-07-14 · Kaynak: repository cleanup (Governance §3/§9 gereği rapo
 
 **Önerilen akış (onay sonrası, ayrı görev):** #1 kararı → `npm run seed:generate` → üretilen SQL'in panelden/kullanıcı eliyle uygulanması → `npm run db:check` + `test:visibility` ile doğrulama.
 
-## 4. Deniz Cadısı arketipinin modül köprüsü (KD-01 kalıntısı) — KARAR BEKLİYOR
+## 4. Deniz Cadısı arketipinin modül köprüsü (KD-01 kalıntısı) — ✅ ÇÖZÜLDÜ (2026-07-14, ürün sahibi kararı)
+
+> **Karar:** Deniz Cadısı artık ayrı bir nefes modülüne yönlenmez; köprü "duygu düzenleme / iç-akış patikası" olarak yeniden çerçevelendi. Hedef akış: Deniz Cadısı → duygu check-in'i → Mood/Journal girişi → bağlamsal ritüel/bitki içeriği. Nefes göndermeleri metaforik/gözlemsel kalabilir; yönlendirilmiş nefes protokolü işlevi göremez.
+> **Uygulanan:** `content/quiz-ay10-cadi.json` → `arketipler.deniz.modul: "breathwork" → "mood"` + `_meta.ozel_sinerji` köprü haritası güncellendi. Deniz Cadısı'nın kullanıcıya görünen metinlerinde nefes pratiği zaten yoktu (su/duygu metaforu) — editoryal metin değişmedi. Seed yeniden üretildi (quiz 12 ✓); DB'ye yükleme onay bekliyor.
 
 **Durum:** KD-01 ile Breathwork modülü kapsam dışı; ancak `content/quiz-ay10-cadi.json` içinde Deniz Cadısı arketipinin `"modul": "breathwork"` yapısal köprüsü (ve açılış tanıtımındaki "Deniz→breathwork" ifadesi) hâlâ bu modüle işaret ediyor. Diğer 6 cadı türünün köprüleri aktif modüllere gidiyor (döngü, herbaryum, kozmos, keşif, skincare, journal).
 

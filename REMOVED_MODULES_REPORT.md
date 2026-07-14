@@ -31,9 +31,9 @@ Tarih: 2026-07-14 · Karar: KD-01 (`KD-01-modul-kaldirma.md`, Türkan, 2026-07-1
 - JSON parse 33/33 ✓ · scriptler `node --check` ✓ · mobile lint + typecheck ✓.
 - Aktif ağaçta kalan `neurogame` izleri yalnız kasıtlı etiket/tarihçe satırları (hook-sentez başlık+notlar, akis-spec KD-01 notu, architecture İPTAL maddeleri).
 
-## 4. Açık kalan tek nokta
+## 4. Açık kalan tek nokta — ✅ KAPANDI (2026-07-14)
 
-`content/quiz-ay10-cadi.json` → Deniz Cadısı arketipinin `"modul": "breathwork"` **yapısal köprüsü** kaldırılan modüle işaret ediyor (quiz açılış metnindeki "Deniz→breathwork" tanıtımı dahil). Yeni hedef modül seçimi ürün kararı gerektirir → `DECISION_REQUIRED.md` #4. Bu veri şu an canlıda quiz `data` alanında duruyor; mobil uygulama henüz `modul` köprüsünü render etmediği için kullanıcıya görünür etkisi yok.
+Deniz Cadısı köprüsü ürün sahibi kararıyla çözüldü: `"modul": "breathwork" → "mood"` (duygu düzenleme / iç-akış patikası; akış: duygu check-in'i → Mood/Journal → bağlamsal ritüel/bitki içeriği). Kullanıcıya görünen metin değişmedi (nefes pratiği içermiyordu); `_meta` köprü haritası güncellendi; seed yeniden üretildi. Ayrıntı: `DECISION_REQUIRED.md` #4.
 
 ## 5. Eski talimat dosyaları hakkında
 

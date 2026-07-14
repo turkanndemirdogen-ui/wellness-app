@@ -12,7 +12,7 @@ export const SOURCES = join(ROOT, 'sources');
 
 const readJson = (p) => JSON.parse(readFileSync(p, 'utf8'));
 
-// Motor tablo + kart dosyaları (37 bitki 4'er parçada).
+// Motor tablo (37 bitki 4 parçada) + kart metinleri (editoryal final, tek dosya).
 const MOTOR_FILES = [
   'motor-tablo-pilot.json',
   'motor-tablo-parti1.json',
@@ -20,10 +20,7 @@ const MOTOR_FILES = [
   'motor-tablo-parti3.json',
 ];
 const CARD_FILES = [
-  'bitki-kartlari-pilot.json',
-  'bitki-kartlari-parti1.json',
-  'bitki-kartlari-parti2.json',
-  'bitki-kartlari-parti3.json',
+  'bitki-kartlari-master.json',
 ];
 
 // Quiz başlıkları (ekran görünümü için; TR polisaj launch checklist'te).

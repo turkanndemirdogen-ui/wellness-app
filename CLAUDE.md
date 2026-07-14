@@ -1,44 +1,41 @@
-# CLAUDE.md — Proje Kural Dosyası (harness çekirdeği)
+# CLAUDE.md — PROJECT ENTRY POINT
 
-> Bu dosya Claude Code'un **statik bağlamıdır**: her oturumda geçerli kimlik + kurallar + çalışma tarzı. Kısa ve yüksek-sinyal tutulur (bağlam çürümesinden kaçın). Ayrıntı gereken yerde ilgili dosyaya işaret eder.
+Bu dosya repository kökünde bulunur.
 
-## Proje
-Türkçe bir **wellness mobil uygulaması** (soft-witchery; astroloji + herbalizm + kanıt-temelli wellness). Bu repoda kurulacak: **veri temeli + RAG pipeline** (uygulama arayüzü ve içerik dolumu HARİÇ). Görev tarifi: `rag-base-spec.md`. Kararların gerekçesi: `ARCHITECTURE_DECISIONS.md`.
+## Başlangıç
 
-## Nasıl çalış (çalışma sözleşmesi — bunlara uy)
-- **Önce plan, sonra kod.** Herhangi bir kod/migration yazmadan önce planı **sade Türkçeyle** sun, onayımı bekle. Ben kod yazmıyorum; kararları teknik olmayan dille açıkla.
-- **Onay kapıları.** Her kritik adımda dur, onay al. "Devam/Olur/Evet" gelmeden ilerleme.
-- **Varsayma — sor.** Emin değilsen sor. Muğlak gereksinimi kendi kafana göre doldurma (bu "%20 sorunu"nun tuzağı). Bir varsayım yaptıysan **açıkça işaretle.**
-- **Küçük, gözden geçirilebilir adımlar.** Büyük tek seferlik değişiklik yok; her adımı özetle, ne yaptığını ve nasıl test edileceğini söyle.
-- **2-3 seçenek sun** kritik kararlarda; artı/eksi ile. Daha iyi bir araç/yaklaşım varsa söyle.
-- **Beni test edip karar verirken yönlendir:** her adımda "şunu şöyle kontrol et / şu çıktı şu demek" diye net doğrulama talimatı ver.
+Her görevden önce:
 
-## Agentic disiplin (vibe coding değil)
-- **Önce doğrulama, sonra kod.** Bir bileşeni kurmadan, onun "doğru" sayılma ölçütünü (kabul testi/kontrol) tanımla; sonra ona göre kur. Bkz. `rag-base-spec.md` §8 kabul kriterleri.
-- **Korkuluklar (guardrails/hooks):** gizli anahtarları koda yazma (env/secret); commit öncesi sır/anahtar sızıntısı kontrolü; migration'ları versiyonla.
-- **Gözlemlenebilirlik:** pipeline adımlarını logla (kaç kaynak, kaç chunk, hata) ki "sessiz sapma" olmasın.
-- **Her ürettiğin satırı gözden geçirilebilir kıl:** uydurma paket/kütüphane çağırma; hata yönetimini gerçek başarısızlıklara göre yaz.
+1. `docs/governance/GOVERNANCE_MASTER.md` dosyasını oku.
+2. Governance’ın görev türü için belirttiği kanonik belgeleri oku.
+3. İlgili kodu veya veriyi incele.
+4. Yalnızca görev kapsamındaki değişiklikleri yap.
 
-## Kilitli kararlar (DEĞİŞTİRME — gerekçe: ARCHITECTURE_DECISIONS.md)
-- Stack: Supabase (Postgres + pgvector + RLS + Auth). **Keycloak/Docker/Go YOK** — auth Supabase'in içinde.
-- Embedding: OpenAI `text-embedding-3-large`, `dimensions=1536`, **abstraction katmanı arkasında** (sağlayıcı değiştirilebilir).
-- Loglar modül başına ayrı tablo + cross-modül view; doğum verisi izole `birth_data`.
-- Motor tablosu vault'a köprülü (`engine_rules.source_chunk_refs[]` → `vault_chunks`).
+## Kanonik belgeler
 
-## Sert güvenlik & dürüstlük kuralları
-- **Uydurma yok:** sahte kaynak/URL/atıf üretme; emin değilsen "doğrulayamıyorum" de.
-- **KVKK:** kullanıcı verisi (özellikle `birth_data`) RLS ile korunur; hesap silme cascade; runtime sorgu embedding'i 3. tarafa gider (işaretle).
-- **Kullanıcıya asla:** yazar/kaynak adı gösterme (iç katman); tıbbi teşhis/iddia; doz.
-- Bu repo **base**; UI, içerik dolumu, astro hesap motoru (Faz 5) KAPSAM DIŞI.
+- Architecture: `docs/architecture/ARCHITECTURE_DECISIONS.md`
+- Design: `docs/design/PRODUCT_DESIGN_SYSTEM_MASTER.md`
+- Editorial: `docs/editorial/EDITORIAL_MASTER_SPEC.md`
+- Safety: `docs/safety/SAFETY_MASTER_SPEC.md`
 
-## Bağlam haritası (hangi dosya ne için)
-- `rag-base-spec.md` → yapılacak işin tam tarifi (birincil).
-- `ARCHITECTURE_DECISIONS.md` → kilitli kararlar ve gerekçe.
-- `sources/` → 46 kaynak (+manifest.json) = RAG ingest'in işleyeceği veri.
-- `modules/` → mood.json, journal.json = log tablolarının alanları buradan.
-- `contraindications.json` → güvenlik filtresi (toksik/T0 → app_safe=false).
-- `specs/` → sekme ekran spec'leri (ana-sayfa v1.2 · kesif v1.1 · sohbet v1.1 · bahce v1.2) + karar günlüğü (5 Tem) + hook-sentez v1.2. UI build bu fazda hâlâ kapsam dışı; süreklilik/handoff referansıdır.
-- `arsiv/` → tarihsel belgeler; geçerli kaynak değildir.
+## Temel sınırlar
 
-## Maliyet
-Embedding'i **Batch API** ile yap (toplu, ucuz). Küçük korpus → toplam birkaç dolar. Gereksiz büyük-model çağrısından kaçın.
+- `docs/archive/` aktif otorite değildir.
+- Nested repository olan `mobile/` kendi Git sınırını korur.
+- Belirsiz veya çelişkili kararı kendin çözme; raporla.
+- Kalıcı silme varsayılan olarak yasaktır.
+- `.env` commit edilmez.
+- JSON değişikliklerinde parse doğrulaması çalıştırılır.
+- Kod değişikliklerinde ilgili lint/typecheck/test/build çalıştırılır.
+
+## Mobile repo
+
+`mobile/CLAUDE.md`, yalnızca mobile repository’nin teknik çalışma kurallarında geçerlidir. Kök Governance, Design, Editorial ve Safety otoriteleriyle çelişemez.
+
+## Cleanup görevi
+
+Repository cleanup yapılacaksa:
+
+- `docs/operations/REPOSITORY_CLEANUP_TASK.md` dosyasını uygula,
+- mevcut `PROJECT-INVENTORY.md` ve `CLEANUP-PLAN.md` dosyalarını incele,
+- her taşıma ve arşiv işlemini raporla.

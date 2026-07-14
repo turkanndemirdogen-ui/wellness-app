@@ -54,7 +54,7 @@ acik_kararlar: []
 ### G3 · Bugünün kazanımı satırı
 
 - **Ne:** tek satır durum + mikro-ilerleme: "Bugünün kartı bahçede seni bekliyor" ↔ "Bugünün kartı Herbaryum'a katıldı ✓" (+ varsa uyuyan tohum notu, aşağıda R1.4).
-- **Kazanım kuralı (R1.1 = b — final, 5 Tem 2. tur):** günün ilk `earn_action`'ı kartı kazandırır. `earn_actions` v1 beyaz listesi (config): `[gunun_muttefiki_hikayesi_acildi, mood_log, journal_entry, reminder_tamamlama]`. Tek eylem yeter; sayaç/çoklu koşul yok. Genişletme adayları (nefes, meditasyon, yoga, neurogame, quiz, Akış) v1.1 config güncellemesidir — hook-sentez-spec ilgili modül bölümleri.
+- **Kazanım kuralı (R1.1 = b — final, 5 Tem 2. tur):** günün ilk `earn_action`'ı kartı kazandırır. `earn_actions` v1 beyaz listesi (config): `[gunun_muttefiki_hikayesi_acildi, mood_log, journal_entry, reminder_tamamlama]`. Tek eylem yeter; sayaç/çoklu koşul yok. Genişletme adayları (quiz, Akış) v1.1 config güncellemesidir — hook-sentez-spec ilgili modül bölümleri.
 - **Veri:** `garden_state` (bkz. §3) + `earn_events` log.
 - **Güvenlik/ton:** ceza/borç dili yasak; kaçırma durumunda bile yargı yok.
 

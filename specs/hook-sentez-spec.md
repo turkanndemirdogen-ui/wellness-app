@@ -50,6 +50,7 @@ Amaç: Benchmark uygulamalardan seçilen hook mekaniklerinin, modül modül bizi
 **Karar (kilitli):** H3 (haftalık içgörü free/pro bölünmesi).
 
 ## 4 · Meditasyon & Nefes — kaynak: Calm, Breathwrk, Insight Timer
+> **[KAPSAM DIŞI — KD-01]** Meditasyon ve Nefes modülleri v1.0 ve planlanan kapsam dışında; bu bölüm tarihsel benchmark kaydı olarak korunuyor.
 **Kopyalanan mekanik:** Calm'ın "Günün Meditasyonu" (her gün 1 taze içerik); Breathwrk'ün kod-tanımlı görsel nefes pattern'leri.
 **Bizim çevirimiz:**
 - "Günün Sakinliği": her gün öne çıkan 1 seans — günün bitki/gökyüzü temasıyla estetik eşleşir (içerik eşleşmesi sembolik katmanda kalır, iddia yok).
@@ -60,6 +61,7 @@ Amaç: Benchmark uygulamalardan seçilen hook mekaniklerinin, modül modül bizi
 **Veri ihtiyacı:** meditasyon içerik havuzu (ses/metin) — açık boşluk.
 
 ## 5 · Yoga — kaynak: Down Dog, Alo Moves
+> **[KAPSAM DIŞI — KD-01]** Yoga modülü v1.0 ve planlanan kapsam dışında; bu bölüm tarihsel benchmark kaydı olarak korunuyor.
 **Kopyalanan mekanik:** Down Dog'un konfigürasyon motoru (süre + seviye + odak seç → klipler dizilir); Alo'nun beceri yolculuğu programları.
 **Bizim çevirimiz:**
 - v1: stok video klip kütüphanesi üzerinde basit konfigürasyon — süre (10/20/30 dk) + seviye + odak (sırt, kalça, sakinleşme) seçimi; motor uygun klip dizisini oynatır.
@@ -70,6 +72,7 @@ Amaç: Benchmark uygulamalardan seçilen hook mekaniklerinin, modül modül bizi
 **Veri ihtiyacı:** stok klip kaynak araştırması — açık boşluk.
 
 ## 6 · Neurogames — kaynak: Lumosity, Elevate, Peak
+> **[KAPSAM DIŞI — KD-01]** Neurogames modülü v1.0 ve planlanan kapsam dışında; bu bölüm tarihsel benchmark kaydı olarak korunuyor.
 **Kopyalanan mekanik:** Lumosity'nin günlük 3 oyunluk "workout" ritmi; Elevate'in alan-bazlı ilerleme görünümü; Peak'in koç karakteri fikri (bizde ton olarak, ayrı karakter olarak değil).
 **Bizim çevirimiz:**
 - "Zihin Molası": günde 3 kısa oyunluk set; adaptif zorluk.
@@ -148,10 +151,8 @@ Amaç: Benchmark uygulamalardan seçilen hook mekaniklerinin, modül modül bizi
 ## 14 · Veri boşlukları (bu spec'in eklediği/teyit ettiği)
 - Günün sözü havuzu (bilinen boşluk)
 - Arketip quiz item veritabanı (bilinen boşluk)
-- Meditasyon içerik havuzu (yeni)
-- Yoga stok klip kaynak araştırması (yeni — v1 kapsamını belirler)
-- Neurogames v1 oyun listesi onayı (yeni — içerik sohbetine devredilebilir)
 - Motor tablo + plant card dataset (sipariş tanımlı: herbaryum-spec §11)
+- *(Meditasyon içerik havuzu · Yoga stok klip araştırması · Neurogames oyun listesi maddeleri KD-01 ile kapsam dışına çıkarıldı.)*
 
 ## EK-B · Senkron bloğu (Claude Code klasörü + ekran spec sohbetine taşı)
 ```

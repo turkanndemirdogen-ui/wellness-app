@@ -22,11 +22,11 @@ Finch'in gücü "eylemim bir şeyi büyütüyor" duygusudur (görev→pet). Bu d
 ## 3 · İlerleme aynası (seri DEĞİL)
 - Baskısız geriye-dönük görünüm: "bu hafta/ay şu ritüellere alan açtın" — nötr ayna, hedef/streak değil.
 - ⚠ "X gündür üst üste" sayacı YOK (seri baskısı = marka-dışı + ikinci döngü). Süreklilik herbaryum koleksiyonunda zaten görünür.
-- Neurogames aylık aynasıyla aynı felsefe: kendini görme, bozulacak bir şey yok.
+- Baskısız-ayna felsefesi: kendini görme, bozulacak bir şey yok. *(Önceki referans olan Neurogames modülü KD-01 ile kapsam dışı; felsefe bu spec için geçerliliğini korur.)*
 
 ## 4 · Herbaryum entegrasyonu (A-3 — çift sayım çözümü)
 - Ritüel tamamlama `earn_action` havuzuna katılır (herbaryum-spec §3 genişletme).
-- **Çift sayım önleme:** kullanıcı-ritüelleri + sabit modül-eylemleri (mood/journal/nefes...) aynı gün yapılsa bile **günlük tek-kart tavanı korunur** (herbaryum-spec: günün ilk eylemi kart, sonrası tohum dönüşümü). Yani ritüel earn_action'a katılır ama ekstra kart üretmez — tek-döngü matematiği bozulmaz.
+- **Çift sayım önleme:** kullanıcı-ritüelleri + sabit modül-eylemleri (mood/journal...) aynı gün yapılsa bile **günlük tek-kart tavanı korunur** (herbaryum-spec: günün ilk eylemi kart, sonrası tohum dönüşümü). Yani ritüel earn_action'a katılır ama ekstra kart üretmez — tek-döngü matematiği bozulmaz.
 - Bu, earn_actions v1.1 genişletmesinin parçası (ARCH'ta kayıtlı açık iş).
 
 ## 5 · Free / Pro

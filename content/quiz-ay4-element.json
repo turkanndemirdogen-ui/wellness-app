@@ -10,7 +10,7 @@
     "gating": "Free: element+kisa+bitki. Pro: derin_ek + element-denge lensi + astro overlay."
   },
   "acilis_metni": "Bunlar kalıp değil, ayna — dört unsur da sende var. Bugün hangisi baskın, ona bakıyoruz.",
-  "sonuc_sablonu": "Baskın: {A} {A_glif} · Yükselen: {B} — {A_tek_satir} (Bitkin: {A_bitki}.)",
+  "sonuc_sablonu": "Baskın: {A} {A_glif} · Yükselen: {B} — {A_tek_satir} (Senin bitkin: {A_bitki}.)",
   "arketipler": {
     "ates": {
       "ad": "Ateş",
@@ -24,9 +24,9 @@
     "toprak": {
       "ad": "Toprak",
       "glif": "🜃",
-      "tek_satir": "Sağlam ve besleyicisin; insanların bastığı güvenli zemin.",
+      "tek_satir": "Sağlam ve besleyicisin; insanların güvenle bastığı zemin.",
       "kisa": "Toprak enerjisi istikrar ve bolluktur — köklü, güvenilir, verimli. Sözün senettir.",
-      "derin_ek": "Gölge daveti: sağlam olmak güzel; bazen değişime de toprağını aç.",
+      "derin_ek": "Gölge daveti: sağlam olmak güzel; ama toprak en çok sürüldüğünde verir — değişim düşman değil.",
       "bitki": "atkuyrugu",
       "paylasim": "Elementim Toprak — güvenli zeminim."
     },
@@ -43,8 +43,8 @@
       "ad": "Su",
       "glif": "🜄",
       "tek_satir": "Derin ve sezgiselsin; duyguların gücün, akışın yolun.",
-      "kisa": "Su enerjisi duygu ve sezgidir — derin, şefkatli, uyumlu. Hisseder, sarar, arındırırsın.",
-      "derin_ek": "Gölge daveti: her duyguyu emmek zorunda değilsin; kıyıya da çık.",
+      "kisa": "Su enerjisi duygu ve sezgidir — derin, şefkatli, uyumlu. Hisseder, sarar, yumuşatırsın.",
+      "derin_ek": "Gölge daveti: her duyguyu sünger gibi çekmek zorunda değilsin; ara sıra kıyıya çıkmak da suya dahil.",
       "bitki": "nilufer",
       "paylasim": "Elementim Su — derinlik benim doğam."
     }

@@ -16,17 +16,17 @@
     "pudra_yesil": {
       "ad": "Pudra Yeşil Aura",
       "hex": "#CADBC8",
-      "tek_satir": "Şifa ve denge yayarsın; yanında insanlar iyileşir gibi hisseder.",
-      "kisa": "Yeşil aura büyüme ve kalp enerjisidir — sakin, besleyici, dengeleyici. Doğal bir şifacısın.",
-      "derin_ek": "Gölge daveti: herkesi iyileştirirken kendi yaralarına da bak.",
-      "paylasim": "Auram Pudra Yeşil — şifa ve denge yayarım."
+      "tek_satir": "Denge ve tazelik yayarsın; yanında insanlar derin bir nefes almış gibi hisseder.",
+      "kisa": "Yeşil aura büyümenin ve kalbin rengidir — sakin, kucaklayıcı, dengeli. Yanında her şey serpilir gibi.",
+      "derin_ek": "Gölge daveti: herkesle ilgilenirken aynı özeni kendine de göster.",
+      "paylasim": "Auram Pudra Yeşil — denge ve tazelik yayarım."
     },
     "pudra_mavi": {
       "ad": "Pudra Mavi Aura",
       "hex": "#C9D8E4",
-      "tek_satir": "Dinginlik ve berraklık taşırsın; sözlerin sakinleştirir.",
-      "kisa": "Mavi aura iletişim ve huzurdur — açık, dürüst, yatıştırıcı. İnsanlar yanında rahat nefes alır.",
-      "derin_ek": "Gölge daveti: hep sakin görünmek zorunda değilsin; fırtınana da izin ver.",
+      "tek_satir": "Dinginlik ve berraklık taşırsın; sözlerin ortalığı yumuşatır.",
+      "kisa": "Mavi aura iletişim ve huzurdur — açık, dürüst, dingin. İnsanlar yanında rahatça konuşur.",
+      "derin_ek": "Gölge daveti: hep sakin görünmek zorunda değilsin; ara sıra fırtınan da görünsün.",
       "paylasim": "Auram Pudra Mavi — dinginlik ve berraklık."
     },
     "pudra_pembe": {
@@ -49,7 +49,7 @@
       "ad": "Lila Aura",
       "hex": "#D6C9E0",
       "tek_satir": "Sezgi ve gizem taşırsın; görünmeyeni sezersin.",
-      "kisa": "Lila aura sezgi ve ruhaniliktir — derin, bilge, gizemli. Perdenin ardını görebilirsin.",
+      "kisa": "Lila aura sezgi ve derinliktir — bilge, gizemli, içe dönük. Satır aralarını okursun.",
       "derin_ek": "Gölge daveti: sezgin güçlü; ama bazen mantığın da söz alsın.",
       "paylasim": "Auram Lila — sezgi ve gizem taşırım."
     },
@@ -57,8 +57,8 @@
       "ad": "İnci Beyazı Aura",
       "hex": "#F4EFEA",
       "tek_satir": "Saflık ve tazelik yayarsın; yeni başlangıçların rengisin.",
-      "kisa": "İnci aura arınma ve potansiyeldir — berrak, taze, yeni. Her günü temiz bir sayfa gibi karşılarsın.",
-      "derin_ek": "Gölge daveti: her şeyi temiz tutmak yorar; dağınıklığa da yer aç.",
+      "kisa": "İnci aura tazelik ve potansiyeldir — berrak, duru, yeni. Her günü temiz bir sayfa gibi karşılarsın.",
+      "derin_ek": "Gölge daveti: her şeyi temiz tutmak yorar; biraz dağınıklık da hayatın rengi.",
       "paylasim": "Auram İnci Beyazı — saflık ve tazelik."
     },
     "gul_kurusu": {
@@ -206,7 +206,7 @@
       "soru": "Ruhunu en çok ne besler?",
       "secenekler": [
         {
-          "metin": "Şifa vermek, büyütmek",
+          "metin": "Büyütmek, yeşertmek",
           "p": "pudra_yesil"
         },
         {

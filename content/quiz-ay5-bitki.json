@@ -17,7 +17,7 @@
       "ad": "Papatya",
       "glif": "☾ Ay",
       "tek_satir": "Sen sakin bir sığınaksın; telaşın ortasında insanların nefes aldığı yer.",
-      "kisa": "Papatya ruhu yatıştırmaktır — gösterişsiz ama vazgeçilmez. İnsanlar yanında yavaşlar, güvenir. Gücün yumuşaklığında.",
+      "kisa": "Papatya ruhu sükûnettir — gösterişsiz ama vazgeçilmez. İnsanlar yanında yavaşlar, güvenir. Gücün yumuşaklığında.",
       "derin_ek": "Gölge daveti: herkesi sakinleştirirken kendi fırtınanı bastırma; senin de dalgalanmaya hakkın var.",
       "paylasim": "Ruh bitkim: Papatya — sakin bir sığınağım."
     },
@@ -33,7 +33,7 @@
       "ad": "Lavanta",
       "glif": "☿ Merkür",
       "tek_satir": "Sen bir akşam huzurusun; kalabalık zihinleri durultursun.",
-      "kisa": "Lavanta ruhu berraklıktır — telaşlı bir günün sonunda gözün dinlendiği yer. Sakinleştirir, düzenler, ferahlatırsın.",
+      "kisa": "Lavanta ruhu berraklıktır — telaşlı bir günün sonunda gözün dinlendiği yer. Dağınık zihinler senin yanında toparlanır.",
       "derin_ek": "Gölge daveti: herkesin huzuru olurken kendi kokunu unutma; sana da dinlenmek düşer.",
       "paylasim": "Ruh bitkim: Lavanta — kalabalığı durultan huzur."
     },
@@ -49,7 +49,7 @@
       "ad": "Isırgan",
       "glif": "♂ Mars",
       "tek_satir": "Sen sahici bir güçsün; dokunulmayı beklemez, mesafeni hissettirirsin.",
-      "kisa": "Isırgan ruhu sınır ve sahiciliktir — yaklaşana mesafesini gösterir ama tanıyana en besleyici yeşilliktir. Yumuşamadan koruyabilirsin.",
+      "kisa": "Isırgan ruhu sınır ve sahiciliktir — yaklaşana mesafesini gösterir ama tanıyana cömert bir dosttur. Yumuşamadan koruyabilirsin.",
       "derin_ek": "Gölge daveti: sürekli kalkan olmak yorar; doğru ellerde dikensiz de kalabilirsin.",
       "paylasim": "Ruh bitkim: Isırgan — sahiciliğim pazarlık kabul etmez."
     },
@@ -208,7 +208,7 @@
           "p": "papatya"
         },
         {
-          "metin": "Düşünceyi yazıya döker, durultur um",
+          "metin": "Düşüncelerimi yazıya döker, zihnimi durulturum",
           "p": "lavanta"
         },
         {
@@ -265,7 +265,7 @@
       ]
     },
     {
-      "soru": "Gece göğünde seni ne çağırır?",
+      "soru": "Gece göğüne baktığında gözün nerede kalır?",
       "secenekler": [
         {
           "metin": "Ayın yumuşak ışığı",

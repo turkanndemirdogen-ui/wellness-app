@@ -9,7 +9,7 @@
     "ozel_sinerji": "KOZMOS + Gece Açanlar sinerjisi: ay fazı kimliği, kozmik kart mekaniğiyle tematik uyum. 4 faz arketipi.",
     "gating": "Free: faz+kisa. Pro: derin_ek + gerçek anlık ay fazınla karşılaştırma + astro overlay."
   },
-  "acilis_metni": "Bunlar kalıp değil, ayna — ay gibi sen de tüm fazları taşırsın. Bugün hangisi öne çıkıyor, ona bakıyoruz.",
+  "acilis_metni": "Bunlar kalıp değil, ayna — ay gibi sen de tüm fazları taşırsın. Bugün hangisinin ışığındasın, ona bakıyoruz.",
   "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir}",
   "arketipler": {
     "yeniay": {
@@ -29,13 +29,13 @@
     "dolunay": {
       "ad": "Dolunay",
       "tek_satir": "Sen doruk noktasısın; parlaklığın ve duygu yoğunluğun tam.",
-      "kisa": "Dolunay enerjisi doluluk ve ifadedir — görünür, parlak, yoğun. Zirveyi, aydınlanmayı, paylaşmayı temsil edersin.",
+      "kisa": "Dolunay enerjisi doluluk ve ifadedir — görünür, parlak, yoğun. Zirveyi, açığa çıkmayı, paylaşmayı seversin.",
       "derin_ek": "Gölge daveti: her zaman dolu parlamak zorunda değilsin; solmak da döngünün parçası.",
       "paylasim": "Fazım Dolunay — parlaklığım tam."
     },
     "sonhilal": {
       "ad": "Solan Ay",
-      "tek_satir": "Sen bir bilgeliksin; bırakmayı ve arınmayı bilen enerji.",
+      "tek_satir": "Sen bir bilgeliksin; bırakmayı ve sadeleşmeyi bilen enerji.",
       "kisa": "Solan ay enerjisi olgunluk ve bırakıştır — hasadı topladın, fazlalığı bırakıyorsun. Dinlenmeyi, sindirmeyi bilirsin.",
       "derin_ek": "Gölge daveti: bırakmak güzel; ama bazı şeyleri tutmaya da izin var.",
       "paylasim": "Fazım Solan Ay — bırakmayı bilirim."
@@ -197,7 +197,7 @@
           "p": "yeniay"
         },
         {
-          "metin": "İncelen aydınlık",
+          "metin": "Usulca büyüyen ışık",
           "p": "hilal"
         },
         {

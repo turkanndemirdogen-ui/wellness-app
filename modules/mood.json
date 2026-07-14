@@ -50,7 +50,7 @@
     },
     {
       "id": "inspired",
-      "label_tr": "ilhamlı",
+      "label_tr": "ilham dolu",
       "valence": "pozitif",
       "arousal": "yüksek"
     },
@@ -196,7 +196,7 @@
     },
     {
       "id": "weather",
-      "ad": "Hava"
+      "ad": "Hava durumu"
     },
     {
       "id": "work",
@@ -207,16 +207,16 @@
     {
       "id": "affect_labeling",
       "ad": "Duyguyu Adlandırma (Affect Labeling)",
-      "ne": "Duyguyu spesifik kelimeyle adlandırmak amigdala tepkisini azaltır ('name it to tame it').",
-      "nasil": "Hisset → en spesifik kelimeyle adlandır → tek cümle 'neden'.",
+      "ne": "Duyguyu tam adıyla, ince ayrımıyla adlandırmak amigdala tepkisini azaltır ('name it to tame it' — adını koy, yatışsın).",
+      "nasil": "Hisset → en ince ayrımlı sözcükle adlandır → tek cümlelik bir 'çünkü' ekle.",
       "ne_zaman": "Her mood girişinde; akut yoğunlukta.",
       "evidence_level": "strong",
       "adimlar": [
         "Bedensel hissi fark et",
-        "En ince ayrımlı kelimeyi seç (granülerlik)",
+        "Onu en ince ayrımıyla anlatan kelimeyi seç",
         "Kısa bir 'çünkü…' ekle"
       ],
-      "not": "Kısa tut — uzun uzun dalmak ruminasyona kayabilir.",
+      "not": "Kısa tut — uzun uzun dalmak, düşünceyi kısır döngüye (ruminasyona) çevirebilir.",
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC12404502/"
       ]
@@ -239,7 +239,7 @@
     {
       "id": "acceptance",
       "ad": "Kabul (Acceptance)",
-      "ne": "Duyguyla savaşmadan, onu yargılamadan var olmasına izin vermek (en güçlü olumlu ilişki).",
+      "ne": "Duyguyla savaşmadan, onu yargılamadan var olmasına izin vermek — araştırmalarda iyi oluşla en tutarlı bağı gösteren yaklaşımlardan.",
       "nasil": "Duyguyu 'kötü' diye etiketlemeden gözlemle.",
       "ne_zaman": "Geçici zor duygularda.",
       "evidence_level": "moderate",
@@ -248,13 +248,13 @@
         "'Şu an bu var' de",
         "Geçiciliğini hatırla"
       ],
-      "not": "Kabul ≠ teslimiyet; eylemi engellemez.",
+      "not": "Kabul teslimiyet değildir; eyleme engel olmaz.",
       "evidence_urls": []
     },
     {
       "id": "behavioral_activation",
       "ad": "Davranışsal Aktivasyon",
-      "ne": "Düşük mood'da küçük, anlamlı bir eylem yapmak ruh halini yükseltir (depresif çöküşte etkili).",
+      "ne": "Ruh hâlin düşükken küçük, anlamlı bir eylem yapmak toparlanmaya yardımcı olur (çökkün dönemlerde özellikle etkili).",
       "nasil": "Minik, ulaşılabilir bir olumlu eylem seç ve yap.",
       "ne_zaman": "Bezgin/çökkün hissederken.",
       "evidence_level": "strong",
@@ -283,7 +283,7 @@
     {
       "id": "self_compassion",
       "ad": "Öz-Şefkat",
-      "ne": "Zor anda kendine bir dosta davranır gibi nazik davranmak distresi azaltır.",
+      "ne": "Zor anda kendine, bir dosta davranır gibi nazik davranmak iç sıkıntısını hafifletir.",
       "nasil": "Öz-eleştiriyi fark et → nazik, destekleyici iç dille değiştir.",
       "ne_zaman": "Öz-eleştiri/utanç anında.",
       "evidence_level": "moderate",

@@ -10,11 +10,11 @@
     "gating": "Free: mevsim+kisa+bitki. Pro: derin_ek + gerçek mevsimle uyum + astro overlay."
   },
   "acilis_metni": "Bunlar kalıp değil, ayna — dört mevsim de içinde yaşar. Bugün hangisi sende hüküm sürüyor, ona bakıyoruz.",
-  "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir} (Bitkin: {A_bitki}.)",
+  "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir} (Senin bitkin: {A_bitki}.)",
   "arketipler": {
     "ilkbahar": {
       "ad": "İlkbahar Ruhu",
-      "tek_satir": "Sen bir yenilenmesin; her şeyde yeniden doğuşu görürsün.",
+      "tek_satir": "Sen yenilenmenin ruhusun; her şeyde yeniden doğuşu görürsün.",
       "kisa": "İlkbahar enerjisi tazelik ve umuttur — taze başlangıçlar, filizlenme, iyimserlik. Yeniyi sen açarsın.",
       "derin_ek": "Gölge daveti: her şey yeni ve heyecanlı; ama bitirmek de büyümenin parçası.",
       "bitki": "menekse",
@@ -22,7 +22,7 @@
     },
     "yaz": {
       "ad": "Yaz Ruhu",
-      "tek_satir": "Sen bir bollukluk; enerjin ve neşen çevrene taşar.",
+      "tek_satir": "Sen bolluğun ta kendisisin; enerjin ve neşen çevrene taşar.",
       "kisa": "Yaz enerjisi coşku ve doluluktur — canlı, sıcak, cömert. Hayatı dolu dolu, yüksek sesle yaşarsın.",
       "derin_ek": "Gölge daveti: hep parlamak yorar; gölgeye çekilmek de dinlendirir.",
       "bitki": "aynisefa",
@@ -32,13 +32,13 @@
       "ad": "Sonbahar Ruhu",
       "tek_satir": "Sen olgun bir güzelliksin; bırakmayı ve şükretmeyi bilirsin.",
       "kisa": "Sonbahar enerjisi olgunluk ve zarafettir — hasat, minnet, güzel bir bırakış. Derinliği ve dönüşümü kucaklarsın.",
-      "derin_ek": "Gölge daveti: bırakmak güzel; ama bazı şeyleri tutmaya da izin var.",
+      "derin_ek": "Gölge daveti: bırakmakta ustasın; ama kış için birkaç şey saklamak da bilgeliktir.",
       "bitki": "ceviz",
       "paylasim": "Mevsimim Sonbahar — olgun bir güzellik."
     },
     "kis": {
       "ad": "Kış Ruhu",
-      "tek_satir": "Sen derin bir dinginlik; sessizlikte güç toplarsın.",
+      "tek_satir": "Sen derin bir dinginliksin; sessizlikte güç toplarsın.",
       "kisa": "Kış enerjisi içe dönüş ve dinlenmedir — sükûnet, sabır, derinlik. Sessizlikte kök salar, sonra dönersin.",
       "derin_ek": "Gölge daveti: içe çekilmek onarır; ama kapıyı ilkbahara da arala.",
       "bitki": "kediotu",

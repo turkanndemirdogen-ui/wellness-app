@@ -36,7 +36,7 @@
     },
     "yaratici": {
       "ad": "Yaratıcı",
-      "tek_satir": "Hayal gücün ve ifaden gücün; zihnindekini var edersin.",
+      "tek_satir": "Hayal gücü ve ifade senin alanın; zihnindekini var edersin.",
       "kisa": "Yaratıcı arketipi hayal ve ifadedir — özgünlük, vizyon, üretim. Var olmayanı hayal eder, gerçeğe dökersin.",
       "derin_ek": "Gölge daveti: mükemmeliyet bazen üretimi durdurur; 'yeterince iyi' de bir sanat.",
       "paylasim": "İç kahramanım: Yaratıcı — hayalimi var ederim."
@@ -58,7 +58,7 @@
     "sihirbaz": {
       "ad": "Sihirbaz",
       "tek_satir": "Dönüşüm ve vizyon senin gücün; gerçekliği değiştirebilirsin.",
-      "kisa": "Sihirbaz arketipi dönüşüm ve farkındalıktır — değişim yaratma, görünmeyeni okuma, iyileştirme. Katalizörsün.",
+      "kisa": "Sihirbaz arketipi dönüşüm ve farkındalıktır — değişim yaratır, görünmeyeni okur, yeni bakışlar açarsın. Değişimin katalizörüsün.",
       "derin_ek": "Gölge daveti: her şeyi dönüştürmek zorunda değilsin; bazı şeyler olduğu gibi güzel.",
       "paylasim": "İç kahramanım: Sihirbaz — dönüşümün katalizörü."
     }
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "soru": "İnsanlar sana ne için gelir?",
+      "soru": "İnsanlar en çok ne için kapını çalar?",
       "secenekler": [
         {
           "metin": "Bilgeliğe, tavsiyeye",
@@ -229,7 +229,7 @@
           "p": "bilge"
         },
         {
-          "metin": "Dönüşüm ve iyileşme",
+          "metin": "Dönüşüm ve yenilenme",
           "p": "sihirbaz"
         }
       ]

@@ -17,14 +17,14 @@
     "ozgurluk": {
       "ad": "Özgürlük",
       "tek_satir": "Kendi yolunu çizmek senin için her şeyden değerli.",
-      "kisa": "Özerklik ve özgür seçim senin pusulan — bağımsızlık, kendi kararların, sınırsızlık. Gelecek yıl kendine daha çok alan açmak isteyebilirsin.",
+      "kisa": "Özerklik ve özgür seçim senin pusulan — bağımsızlık, kendi kararların, sınırsızlık. Gelecek yıl daha çok kendi ritminde yaşamak isteyebilirsin.",
       "derin_ek": "Bu yıla soru: özgürlüğü bağlardan kaçış olarak mı, kendini gerçekleştirme olarak mı yaşıyorsun?",
       "paylasim": "Değerim: Özgürlük — kendi yolumu çizerim."
     },
     "baglilik": {
       "ad": "Bağlılık",
       "tek_satir": "Sevdiklerinle derin bağlar senin en büyük zenginliğin.",
-      "kisa": "Yakınlık ve aidiyet senin pusulan — aile, dostluk, sadakat. Gelecek yıl bağlarını beslemeye alan açabilirsin.",
+      "kisa": "Yakınlık ve aidiyet senin pusulan — aile, dostluk, sadakat. Gelecek yıl bağlarına daha çok zaman ayırmak isteyebilirsin.",
       "derin_ek": "Bu yıla soru: bağlarına verdiğin emeği kendine de veriyor musun?",
       "paylasim": "Değerim: Bağlılık — bağlarım zenginliğim."
     },
@@ -32,7 +32,7 @@
       "ad": "Başarı",
       "tek_satir": "Bir şeyi ustalıkla yapmak ve iz bırakmak seni ateşler.",
       "kisa": "Yetkinlik ve etki senin pusulan — hedefler, ustalık, katkı. Gelecek yıl anlamlı bir başarıya yönelmek isteyebilirsin.",
-      "derin_ek": "Bu yıla soru: başarıyı dışarının onayı için mi, kendi tatmin in için mi arıyorsun?",
+      "derin_ek": "Bu yıla soru: başarıyı dışarının onayı için mi, kendi tatminin için mi arıyorsun?",
       "paylasim": "Değerim: Başarı — iz bırakmak isterim."
     },
     "huzur": {
@@ -51,16 +51,16 @@
     },
     "sefkat_d": {
       "ad": "Şefkat",
-      "tek_satir": "Dünyaya ve insanlara iyilik katmak senin misyonun.",
+      "tek_satir": "Dünyaya ve insanlara iyilik katmak senin yolun.",
       "kisa": "İyilik ve katkı senin pusulan — yardım, adalet, merhamet. Gelecek yıl şefkatini somut bir yola dökmek isteyebilirsin.",
       "derin_ek": "Bu yıla soru: dünyaya verdiğin şefkatin bir damlasını kendine ayırıyor musun?",
-      "paylasim": "Değerim: Şefkat — iyilik katmak misyonum."
+      "paylasim": "Değerim: Şefkat — iyilik katmak benim yolum."
     },
     "yaraticilik_d": {
       "ad": "Yaratıcılık",
       "tek_satir": "Var olmayanı hayal edip yaratmak senin özün.",
       "kisa": "İfade ve özgünlük senin pusulan — sanat, vizyon, üretim. Gelecek yıl yaratıcı sesini daha çok duyurmak isteyebilirsin.",
-      "derin_ek": "Bu yıla soru: yaratma dürtünü erteliyor musun, yoksa ona yer açıyor musun?",
+      "derin_ek": "Bu yıla soru: yaratma dürtünü erteliyor musun, yoksa ona gerçekten zaman ayırıyor musun?",
       "paylasim": "Değerim: Yaratıcılık — hayal edip yaratırım."
     }
   },

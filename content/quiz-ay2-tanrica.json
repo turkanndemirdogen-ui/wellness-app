@@ -23,7 +23,7 @@
     "athena": {
       "ad": "Athena",
       "tek_satir": "Zihnin zırhı ve zeytin dalı; stratejin şefkatle keskin.",
-      "kisa": "Athena enerjisi berrak akıldır — kaosun ortasında plan görebilen göz. Bilgin, senin süsün değil aracın.",
+      "kisa": "Athena enerjisi berrak akıldır — kaosun ortasında planı görebilen göz. Bilgi senin için süs değil, araç.",
       "derin_ek": "Gölge daveti: her şeyi çözmek zorunda değilsin; bazen kalbin de söz alsın.",
       "bitki": "ceviz",
       "paylasim": "Baskın tanrıçam: Athena — aklım pusulam."
@@ -31,7 +31,7 @@
     "hestia": {
       "ad": "Hestia",
       "tek_satir": "Ocağın sessiz alevi; huzur senin doğal halin.",
-      "kisa": "Hestia enerjisi merkezde kalabilmektir — dış dünya ne kadar hızlansa da için sıcak ve sabit yanar.",
+      "kisa": "Hestia enerjisi merkezde kalabilmektir — dış dünya ne kadar hızlanırsa hızlansın, içindeki ateş sakin ve sabit yanar.",
       "derin_ek": "Gölge daveti: iç dünyan güvenli; ama kapıyı ara sıra aralamak onu bozmaz.",
       "bitki": "biberiye",
       "paylasim": "Baskın tanrıçam: Hestia — huzurum içeriden."
@@ -55,7 +55,7 @@
     "persephone": {
       "ad": "Persephone",
       "tek_satir": "İki dünyanın kızı; karanlığı da baharı da tanırsın.",
-      "kisa": "Persephone enerjisi dönüşümdür — inişleri yok saymaz, onlardan baharla dönersin. Derinlik seni korkutmaz.",
+      "kisa": "Persephone enerjisi dönüşümdür — inişleri yok saymazsın; her inişten bir baharla dönersin. Derinlik seni korkutmaz.",
       "derin_ek": "Gölge daveti: derinlik senin evin; ama yüzeyin çiçekleri de senin. İkisi arasında köprü kur.",
       "bitki": "menekse",
       "paylasim": "Baskın tanrıçam: Persephone — her kışım bir baharla biter."
@@ -63,7 +63,7 @@
     "afrodit": {
       "ad": "Afrodit",
       "tek_satir": "Deniz köpüğünden doğan; güzellik senin dilin, yaratmak nefesin.",
-      "kisa": "Afrodit enerjisi hayat sevincidir — güzelliği tüketmez, üretirsin; temas ettiğin şey canlanır.",
+      "kisa": "Afrodit enerjisi hayat sevincidir — güzelliği tüketmez, üretirsin; dokunduğun şey canlanır.",
       "derin_ek": "Gölge daveti: sevilmek için parlamana gerek yok; olduğun ışık yeter.",
       "bitki": "gul",
       "paylasim": "Baskın tanrıçam: Afrodit — güzellik benim dilim."
@@ -82,7 +82,7 @@
           "p": "afrodit"
         },
         {
-          "metin": "Evden hiç çıkmadığım bir spa haftası",
+          "metin": "Evde kendime kurduğum bir spa haftası",
           "p": "hestia"
         },
         {

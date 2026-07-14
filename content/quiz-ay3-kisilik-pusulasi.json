@@ -12,7 +12,7 @@
     "gating": "Free: 5 boyut yüzde + etiketler. Pro: derin_ek + boyutların astro-context yorumu + yıl haritasına işlenir.",
     "hassasiyet": "Etiketler NÖTR ve güçlendirici (her iki uç da değerli çerçevesi); 'iyi/kötü' boyut yok. 'Bunlar kalıp değil, ayna.'"
   },
-  "acilis_metni": "Bu bir sınav değil, bir ayna — 'daha iyi/kötü' yok, sadece sen. Beş pusulanın nereyi gösterdiğine bakıyoruz.",
+  "acilis_metni": "Bu bir sınav değil, bir ayna — iyisi ya da kötüsü yok, sadece sen varsın. Beş pusulanın nereyi gösterdiğine bakıyoruz.",
   "sonuc_yapisi": "5 boyutun her biri: {ad} — %{skor}, etiket: {yuksek/dusuk etiket}, {metin}. Kapanış: bu bir fotoğraf, kimliğin değil; zamanla değişebilir.",
   "boyutlar": {
     "aciklik": {
@@ -29,15 +29,15 @@
       "dusuk": "Akış Ustası",
       "yuksek_metin": "Planlı, disiplinli, hedefe kilitli. Söz verdiğinde yaparsın.",
       "dusuk_metin": "Esnek, spontane, ana açık. Katı plan seni sıkar, akış sana yakışır.",
-      "derin_ek": "Düzen güven verir, esneklik özgürlük; hangisi baskınsa diğerine de alan aç."
+      "derin_ek": "Düzen güven verir, esneklik özgürlük; hangisi baskınsa, ara sıra öbürünü denemek de iyi gelir."
     },
     "disadonukluk": {
       "ad": "Dışadönüklük",
       "yuksek": "Sosyal Güneş",
       "dusuk": "Dingin Ay",
-      "yuksek_metin": "İnsanlarla, hareketle, uyaranla dolarsın. Kalabalık seni yorar değil şarj eder.",
+      "yuksek_metin": "İnsanlarla, hareketle, hayatın uğultusuyla dolarsın. Kalabalık seni yormaz; aksine doldurur.",
       "dusuk_metin": "Sakinlik, yalnızlık, derin ikili sohbet seni besler. İç dünyan zengin.",
-      "derin_ek": "İkisi de sağlıklı; enerjini nerede topladığını bilmek öz-şefkattir."
+      "derin_ek": "İkisi de sağlıklı; önemli olan enerjini nerede topladığını bilmek."
     },
     "uyumluluk": {
       "ad": "Uyumluluk",
@@ -53,7 +53,7 @@
       "dusuk": "Sakin Liman",
       "yuksek_metin": "Duyguları derin ve yoğun yaşarsın. Bu bir kırılganlık değil, zengin bir iç dünya.",
       "dusuk_metin": "Duygusal olarak sakin ve dengeli. Fırtınalarda soğukkanlılığını korursun.",
-      "derin_ek": "Derin hissetmek de sakin kalmak da güç; kendine nazik ol."
+      "derin_ek": "Derin hissetmek de sakin kalmak da birer güç; birinin diğerinden üstünlüğü yok."
     }
   },
   "sorular": [
@@ -121,7 +121,7 @@
       "soru": "Zor bir haber karşısında?",
       "secenekler": [
         {
-          "metin": "Derinden etkilenir, uzun hissederim",
+          "metin": "Derinden etkilenirim, uzun süre içimde taşırım",
           "boyut": "duygusallik",
           "yon": "+"
         },
@@ -136,7 +136,7 @@
       "soru": "İş/görev tarzın?",
       "secenekler": [
         {
-          "metin": "Listeler, düzen, son teslim öncesi biterim",
+          "metin": "Listeler, düzen; işim son tarihten önce biter",
           "boyut": "sorumluluk",
           "yon": "+"
         },

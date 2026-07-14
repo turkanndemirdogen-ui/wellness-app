@@ -9,7 +9,7 @@
     "duyarlilik_ozel": "'Spirit animal' / kültürel-totem dili KULLANILMADI (tasarım dosyası kuralı). Çerçeve: 'sende hangi hayvan enerjisi baskın' — kişilik-metafor, ruhani/kültürel iddia değil. Etiket: sembolik · eğlence amaçlı.",
     "gating": "Free: hayvan+kisa. Pro: derin_ek + astro overlay."
   },
-  "acilis_metni": "Bunlar kalıp değil, ayna — bu hayvanların enerjisi sende. Bugün hangisi öne çıkıyor, ona bakıyoruz.",
+  "acilis_metni": "Bunlar kalıp değil, ayna — bu hayvanların enerjisi sende. Bugün hangisi içinde dolaşıyor, ona bakıyoruz.",
   "sonuc_sablonu": "Baskın: {A} · Yükselen: {B} — {A_tek_satir}",
   "arketipler": {
     "kurt": {
@@ -28,7 +28,7 @@
     },
     "kelebek": {
       "ad": "Kelebek",
-      "tek_satir": "Dönüşümün ustası; her evreni güzelliğe çevirirsin.",
+      "tek_satir": "Dönüşümün ustası; her evreyi güzelliğe çevirirsin.",
       "kisa": "Kelebek enerjisi dönüşüm ve hafifliktir — değişimden korkmaz, güzelliğe uçarsın. Her son, senin için yeni bir kanat.",
       "derin_ek": "Gölge daveti: uçmak güzel; ama bazen bir çiçekte de dinlen.",
       "paylasim": "Hayvanım Kelebek — dönüşümün ustası."
@@ -50,8 +50,8 @@
     "tilki": {
       "ad": "Tilki",
       "tek_satir": "Zeki ve uyanık; her durumda kıvrak bir yol bulursun.",
-      "kisa": "Tilki enerjisi zeka ve uyumdur — kurnaz değil akıllı, esnek, çözüm odaklı. Kapalı kapıya pencere bulursun.",
-      "derin_ek": "Gölge daveti: her şeyi tek başına çözmek zorunda değilsin; yardım istemek de zeka.",
+      "kisa": "Tilki enerjisi zekâ ve uyumdur — kurnaz değil akıllı, esnek, çözüm odaklı. Kapalı kapıya pencere bulursun.",
+      "derin_ek": "Gölge daveti: her şeyi tek başına çözmek zorunda değilsin; yardım istemek de zekâ.",
       "paylasim": "Hayvanım Tilki — her zaman bir yol bulurum."
     },
     "kugu": {

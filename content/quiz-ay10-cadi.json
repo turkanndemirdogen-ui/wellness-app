@@ -39,7 +39,7 @@
     "deniz": {
       "ad": "Deniz Cadısı",
       "tek_satir": "Duyguların gelgit gibi; derinliğin hem gücün hem sığınağın.",
-      "kisa": "Deniz cadısı suyun büyüsüdür — tuz, kabuk, gözyaşı ve dalga. Arınmayı ve akışı bilirsin.",
+      "kisa": "Deniz cadısı suyun büyüsüdür — tuz, kabuk, gözyaşı ve dalga. Akışı da bırakışı da bilirsin.",
       "derin_ek": "Gölge daveti: derin sular güzel; ama ara sıra kıyıya da çık.",
       "modul": "breathwork",
       "paylasim": "Ben bir Deniz Cadısıyım — duygularım gelgit gibi."
@@ -54,8 +54,8 @@
     },
     "kristal": {
       "ad": "Kristal Cadısı",
-      "tek_satir": "Güzellikte güç bulursun; enerjini renk ve ışıkla düzenlersin.",
-      "kisa": "Kristal cadı estetik şifacıdır — taşlar, renkler, ışık oyunları. Ortamın enerjisini sezer, düzenlersin.",
+      "tek_satir": "Güzellikte güç bulursun; rengin ve ışığın dilinden anlarsın.",
+      "kisa": "Kristal cadı estetiğin ustasıdır — taşlar, renkler, ışık oyunları. Bir odanın havasını ilk bakışta sezer, güzellikle dönüştürürsün.",
       "derin_ek": "Gölge daveti: dışarıyı düzenlerken içerini de dinle.",
       "modul": "skincare",
       "paylasim": "Ben bir Kristal Cadıyım — güzellikte güç bulurum."
@@ -207,11 +207,11 @@
           "p": "mutfak"
         },
         {
-          "metin": "Rahatlatıcı bir bitki çayı öneririm",
+          "metin": "Bir demlik bitki çayı yapar, yanında otururum",
           "p": "yesil"
         },
         {
-          "metin": "'Şu dönem senin için...' diye okurum",
+          "metin": "'Gökyüzü ne diyor' der, birlikte bakarız",
           "p": "kozmik"
         },
         {

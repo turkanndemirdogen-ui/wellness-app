@@ -26,7 +26,7 @@
     {
       "id": "gratitude",
       "ad": "Şükran Günlüğü",
-      "ne": "İyi giden / minnettar olunan şeyleri yazmak; iyi oluşu artırır.",
+      "ne": "İyi giden ya da minnettar hissettiren şeyleri yazmak; iyi oluşu destekler.",
       "nasil": "Kısa, somut, samimi — 3 şey veya bir an.",
       "sure": "3–5 dk",
       "evidence_level": "strong",
@@ -39,10 +39,10 @@
       "id": "reflective",
       "ad": "Yansıtıcı / İfade Edici Yazma",
       "ne": "En derin düşünce ve duyguları, zorlayıcı bir deneyim üzerine yazmak (Pennebaker).",
-      "nasil": "Dil bilgisini dert etme, akışına bırak; anlam-yapımına doğru hareket et.",
+      "nasil": "Yazım ve kural düşünmeden, aklına geldiği gibi yaz; zamanla 'bu bana ne anlatıyor' sorusuna doğru ilerle.",
       "sure": "15–20 dk",
       "evidence_level": "moderate",
-      "not": "DİKKAT: geçici olarak sıkıntı artırabilir (özellikle travma); aynı hikâyeyi aynı şekilde tekrarlamak = ruminasyon, faydasız. Perspektif kaydır.",
+      "not": "Dikkat: bu tür yazma kısa süreliğine sıkıntıyı artırabilir (özellikle zorlayıcı anılarda). Aynı hikâyeyi hep aynı şekilde tekrarlamak fayda getirmez; takıldığında bakış açısını değiştir.",
       "evidence_urls": [
         "https://www.va.gov/WHOLEHEALTHLIBRARY/docs/Therapeutic-Journaling.pdf",
         "https://www.apa.org/news/podcasts/speaking-of-psychology/expressive-writing"
@@ -60,7 +60,7 @@
     },
     {
       "kategori": "sukran",
-      "prompt": "Bugün sana destek olan / iyi hissettiren biri."
+      "prompt": "Bugün sana destek olan ya da seni iyi hissettiren biri."
     },
     {
       "kategori": "sukran",
@@ -68,7 +68,7 @@
     },
     {
       "kategori": "yansitici",
-      "prompt": "Zihnini meşgul eden bir şeyi olduğu gibi yaz — dil bilgisini dert etme."
+      "prompt": "Zihnini meşgul eden bir şeyi olduğu gibi yaz — kurallı olması gerekmiyor."
     },
     {
       "kategori": "yansitici",
@@ -92,9 +92,9 @@
     }
   ],
   "practice_rules": {
-    "sure": "15–20 dk en kanıtlı aralık; daha uzun daha iyi DEĞİL.",
-    "siklik": "Kısa-günlük seanslar, seyrek-uzun seanslardan daha iyi sonuç verir.",
-    "bicim": "Dil bilgisi/üslup önemli değil; süreklilik önemli (defter/app fark etmez).",
+    "sure": "15–20 dakika, kanıtın en güçlü olduğu aralık; daha uzun yazmak daha iyi sonuç vermez.",
+    "siklik": "Kısa ama düzenli yazmak, seyrek ve uzun oturumlardan daha iyi sonuç verir.",
+    "bicim": "Dil bilgisi ve üslup önemli değil; süreklilik önemli. Defter de olur, uygulama da.",
     "anti_ruminasyon": "Aynı içeriği aynı şekilde tekrarlama ruminasyon işaretidir → perspektif-kaydırma promptuna yönlendir."
   },
   "safety": {

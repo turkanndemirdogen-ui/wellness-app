@@ -17,7 +17,7 @@
     "siren": {
       "ad": "Siren",
       "tek_satir": "Derin suların sesi; çekiciliğin gürültüden değil, derinlikten gelir.",
-      "kisa": "Siren enerjisi baskınken insanlar sana yaklaşmak için sebep aramaz — sen bir atmosfersin. Gücün ifadende ve duygu derinliğinde.",
+      "kisa": "Siren enerjisi baskınken insanların sana yaklaşmak için sebebe ihtiyacı olmaz — sen başlı başına bir atmosfersin. Gücün, kendini ifade edişinde ve duygularının derinliğinde.",
       "derin_ek": "Gölge daveti: derinliğin bazen seni kıyıdan koparabilir; ara sıra yüzeye çıkıp paylaşmak da bir güçtür.",
       "bitki": "nilufer",
       "paylasim": "Baskın arketipim: Siren — derinlik benim doğam."
@@ -25,7 +25,7 @@
     "femme_fatale": {
       "ad": "Femme Fatale",
       "tek_satir": "Keskin zarafet; gizemin bir duvar değil, seçilmiş bir kapı.",
-      "kisa": "Bu enerji sınır ve seçicilik demektir — herkes iç bahçene giremez. Bu soğukluk değil, öz-değer.",
+      "kisa": "Bu enerji sınır ve seçicilik demektir — herkes iç bahçene giremez. Soğukluk değil bu; kendi değerini bilmek.",
       "derin_ek": "Gölge daveti: kontrol bazen yakınlığı geciktirebilir; güvendiğinde kapıyı aralamak zayıflık değildir.",
       "bitki": "gul",
       "paylasim": "Baskın arketipim: Femme Fatale — kapım seçtiklerime açık."
@@ -49,7 +49,7 @@
     "kralice": {
       "ad": "Kraliçe",
       "tek_satir": "Sofranın ve sözün sahibesi; varlığın düzen kurar.",
-      "kisa": "Kraliçe enerjisi otorite değil, alan tutmaktır — insanlar yanında güvende hisseder.",
+      "kisa": "Kraliçe enerjisi otorite kurmak değil, herkesi rahat ettiren bir düzen kurmaktır — insanlar yanında güvende hisseder.",
       "derin_ek": "Gölge daveti: herkesi taşımak tacı ağırlaştırır; senin de taşınmaya hakkın var.",
       "bitki": "aslanpencesi",
       "paylasim": "Baskın arketipim: Kraliçe — alanımı zarafetle tutarım."
@@ -123,7 +123,7 @@
           "p": "siren"
         },
         {
-          "metin": "Kıyıda, üç dakikada herkesi çözmüşken",
+          "metin": "Bir kenarda, üç dakikada herkesi çözmüşken",
           "p": "buyucu",
           "s": "femme_fatale"
         },

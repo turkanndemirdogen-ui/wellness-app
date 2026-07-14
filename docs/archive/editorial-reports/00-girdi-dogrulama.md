@@ -1,0 +1,24 @@
+# Girdi JSON Doğrulaması
+
+- `bitki-kartlari-master.json`: **GEÇERLİ**
+- `bitki-kartlari-pilot.json`: **GEÇERLİ**
+- `bitki-kartlari-parti1.json`: **GEÇERLİ**
+- `bitki-kartlari-parti2.json`: **GEÇERLİ**
+- `bitki-kartlari-parti3.json`: **GEÇERLİ**
+- `quiz-ay1-disil-estetik.json`: **GEÇERLİ**
+- `quiz-ay2-tanrica.json`: **GEÇERLİ**
+- `quiz-ay3-kisilik-pusulasi.json`: **GEÇERLİ**
+- `quiz-ay4-element.json`: **GEÇERLİ**
+- `quiz-ay5-bitki.json`: **GEÇERLİ**
+- `quiz-ay6-ayfazi.json`: **GEÇERLİ**
+- `quiz-ay7-hayvan.json`: **GEÇERLİ**
+- `quiz-ay8-ickahraman.json`: **GEÇERLİ**
+- `quiz-ay9-mevsim.json`: **GEÇERLİ**
+- `quiz-ay10-cadi.json`: **GEÇERLİ**
+- `quiz-ay11-aura.json`: **GEÇERLİ**
+- `quiz-ay12-degerler.json`: **GEÇERLİ**
+- `mood.json`: **GEÇERLİ**
+- `journal.json`: **GEÇERLİ**
+- `journal-transit-sorulari.json`: **GEÇERLİ**
+- `cycle-beslenme.json`: **GEÇERLİ**
+- `neurogames-v1.json`: **GEÇERLİ**

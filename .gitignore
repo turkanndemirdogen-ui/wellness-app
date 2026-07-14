@@ -13,3 +13,9 @@ node_modules/
 wellness-app-BUILD-*.zip
 
 # Mobil uygulamanın kendi .gitignore'u mobile/ içinde
+
+# Nested Git deposu — kök repo mobile içeriğini izlemez (kendi .git ve .gitignore'u var)
+mobile/
+
+# Expo yerel cache
+.expo/

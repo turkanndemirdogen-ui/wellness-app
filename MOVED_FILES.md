@@ -102,3 +102,12 @@ Mobile deposunda hiçbir dosya değiştirilmedi, taşınmadı, silinmedi (`git -
 |---|---|---|---|
 | `content/neurogames-v1.json` | `docs/archive/removed-modules/neurogames/neurogames-v1.json` | KD-01: Neurogames kapsam dışı; silinmedi, git mv ile arşivlendi | JSON parse ✓; DB'de seed kaydı yok; aktif ağaçta dosya referansı kalmadı |
 | `content/bitki-kartlari-{pilot,parti1..3}.json` (4 dosya) | (aktif ağaçtan çıkarıldı — git geçmişinde) | DECISION_REQUIRED #1 Seçenek A: kart metni tek canonical `bitki-kartlari-master.json`'a tekilleşti | `seed:generate` 37/37 kart eşleşti; `db:check` ✓ |
+
+## 10. ACG paketi yerleşimi (2026-07-18 — `acg-uygulama-paketi.zip`)
+
+| Eski yol | Yeni yol | Neden | Doğrulama |
+|---|---|---|---|
+| paket `specs/acg-spec.md`, `specs/astro-engine-spec.md` | `specs/` | Aktif spec klasörüne yerleşim (ACG-UYGULAMA-NOTU §1) | acg-spec eski kopyayla hash-eşit; astro-engine-spec'te 2026-07-19'da başlık/giriş bloğu 15 Tem orijinaliyle geri yüklendi (rekonstrüksiyon notu düştü) → aktif dosya arşiv kopyasıyla hash-eşit |
+| paket `ACG-UYGULAMA-NOTU.md` | kök | Geçici çalışma dosyası | — |
+| kök `guncelleme-bloklari.md` | `docs/archive/acg-onceki-kopya-2026-07-15/` | Bloklar 2026-07-19'da uygulandı (A1/A3/A2→ADR §14 + satır işaretleri; B1 düşürüldü — A1 ile mükerrer; B2-B4 → PROJECT-CHECKPOINT; MapTiler+KVKK kısıtları ayrıca ADR §14) → görev bitti, arşive taşındı | arşivdeki kopyayla hash-eşitti (üzerine taşındı, tek kopya) |
+| `added-specialties and new module astrocartography/` (untracked) | `docs/archive/acg-onceki-kopya-2026-07-15/` | Paket-öncesi kopya; aktif sürümler yukarıda — Governance §5 tek doğru kaynak | başlık restorasyonu sonrası 3 dosyanın 3'ü aktif/ilgili sürümlerle hash-eşit |

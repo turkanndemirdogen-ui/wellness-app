@@ -18,6 +18,7 @@ Tarih: 2026-07-14 · Oluşturan: repository cleanup (`docs/operations/REPOSITORY
 | `arsiv/herbaryum-spec.md` | Tarihsel herbaryum spec'i (Architecture'da "tarihsel arşiv" damgalı; yeni yol burası) | kök `arsiv/` (git mv) |
 | `arsiv/soz-havuzu-v0.1-duz.json` | Söz havuzu ilk düz seri (aktif sürüm: `content/soz-havuzu.json` v0.3) | kök `arsiv/` (git mv) |
 | `build-snapshots/wellness-app-BUILD-2026-07-05.zip` | 2026-07-05 build anlık görüntüsü (112 dosya; bütünlük testi geçti). `.gitignore` deseni gereği **Git'e girmez** — yalnız disk/OneDrive arşivi | `Archive/` |
+| `acg-onceki-kopya-2026-07-15/` | ACG/astro spec'lerinin 15 Tem kopyası. Spec'lerin aktif sürümleri `specs/`te (başlık restorasyonu 2026-07-19 sonrası hash-eşit). `guncelleme-bloklari.md` 2026-07-19'da uygulandı ve buraya taşındı (uygulama izi: `MOVED_FILES.md` §10, ADR §14, PROJECT-CHECKPOINT) | kök `added-specialties and new module astrocartography/` (untracked; Move-Item) + kök `guncelleme-bloklari.md` |
 
 ## Bilinçli olarak arşive KOPYALANMAYANLAR
 

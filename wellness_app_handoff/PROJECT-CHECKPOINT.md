@@ -1,6 +1,6 @@
 # Wellness App — Project Checkpoint
 
-**Son güncelleme:** 2026-07-18
+**Son güncelleme:** 2026-07-19
 
 ## Current repository state
 - Root repository: `wellness-app/`
@@ -8,7 +8,8 @@
 - Active mobile branch: `master` (sprint branch'i kapandı)
 - Latest merged master: `bacfadf` — Sprint 2.2A (PR #3, squash)
 - Önceki kilometre taşları: Phase 1 `657a30d` · Home B1–B6 `5268064`
-- Current Sprint: **Sprint 2.2A KAPANDI (2026-07-18)** — sıradaki iş: ACG paketi (aşağıda)
+- Current Sprint: **Sprint 2.2A KAPANDI (2026-07-18)** · ACG paket yerleşimi +
+  guncelleme-bloklari uygulaması TAMAM (2026-07-19, ADR §14) — sıradaki iş: Adım 6 (aşağıda)
 
 ## Completed
 1. Phase 1 foundation T1–T15 + fiziksel cihaz kabulü
@@ -36,11 +37,31 @@
    timeOfDay saat dilimleri de GEÇİCİ (theme-provider).
 6. Favoriler liste ekranı · R1.5 görsel söz paylaşım şablonu · çevirmeli
    kart (GS-1=b) — ayrı onaylı iş kalemleri.
+7. **Adım 6/7 sırası KİLİTLİ:** önce astro-core+motor, golden fixture'lar
+   yeşil, SONRA ACG (Adım 7 komutu acg-spec §8 sonunda).
+8. **MapTiler:** Free plan ticari kullanım için DEĞİL → lansman öncesi Flex
+   plana geçiş + attribution kontrolü (acg-spec §5; ADR §14 kalıcı kısıt).
+9. **KVKK/GDPR:** doğum verisi + Claude API yurt dışı aktarımı için nitelikli
+   avukat onayı yayın-öncesi listede (rapor RQ7; ADR §14 kalıcı kısıt).
 
-## Next work (sıra, ürün sahibi talimatı 2026-07-18)
-1. **ACG paketi:** `acg-uygulama-paketi.zip` aç; iki spec → `specs/`;
-   "added-specialties and new module astrocartography" klasörüyle karşılaştır
-   ve klasörü arşivle; `ACG-UYGULAMA-NOTU.md` + `guncelleme-bloklari.md` köke.
-   `guncelleme-bloklari.md` ONAY OLMADAN UYGULANMAZ.
-2. `ARCHITECTURE_DECISIONS.md` ve `KALINAN-YER.md` konum/halef raporu.
-3. **plant-safety zip'i yalnız ürün sahibi "başla" deyince açılır.**
+## Yayın öncesi (launch-checklist eki — ana liste: roadmap Phase 9)
+- KVKK aydınlatma + açık rıza metni (doğum verisi, yurt dışı aktarım) — avukat teyidi
+- App Store 4.3(b) riski: fark anlatısı hazır olsun (bütünsel wellness ≠ salt astroloji);
+  web-app fallback planı çekmecede
+- MapTiler ticari plan + harita attribution kontrolü
+- (Roadmap Phase 9'daki mevcut kalemler: TR metin polisajı, "esinlenmiştir"
+  görünürlüğü, kriz kaynakları teyidi, disclaimer denetimi, AI-görsel lisans teyidi)
+
+## Next work (sıra, ürün sahibi talimatı 2026-07-18/19)
+1. **Adım 6 — Astro-core + in-house natal/transit motoru + LLM context builder.**
+   Spec: `specs/astro-engine-spec.md`. Claude Code'a komut (plan mode):
+   > "Adım 6'ya geç: astro-engine-spec.md'yi oku ve uygula — ortak astro-core +
+   > in-house natal/transit motoru + LLM context builder. Plan mode'da önce
+   > planı sun, onayımı bekle. Golden fixture'lar geçmeden Sohbet
+   > entegrasyonuna geçme."
+2. **Adım 7 — Astrokartografi modülü** (Adım 6 fixture'ları yeşil OLMADAN başlama).
+   Spec: `specs/acg-spec.md`. Claude Code'a komut (plan mode):
+   > "Adım 7'ye geç: acg-spec.md'yi oku ve uygula. Plan mode'da planı sun,
+   > onayımı bekle. 12 kenar-durum fixture'ı geçmeden harita katmanına geçme."
+3. **plant-safety zip'i yalnız ürün sahibi "başla" deyince açılır** (Adım 6/7'den
+   bağımsız ayrı iş — aynı branch/commit'te karıştırılmaz).

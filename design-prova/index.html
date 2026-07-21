@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasarım Provası v4 — Üç Sicil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Caveat:wght@500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  /* PROVA v4 — Estetik Anayasa 1.0 sicil önizlemesi (2026-07-20).
+     Galeri modeli: krom DAİMA krem; koyuluk (patlıcan-lacivert + antika
+     altın) yalnız görsel panelde. Işıltı: prizmatik kırılım serbest,
+     yay/renk şeridi YASAK. Ay glifi nefesi: 1.00→1.02 / 6sn / ekran
+     başına tek nefes / reduced-motion'da statik. */
+  :root{
+    --erik:#3A2E37; --erik-soft:#5d4b58; --krem:#FBF6F3; --gul:#F1E4E1;
+    --secili:#E7D3D0; --ikincil:#B29AA4; --accent:#C98B99;
+    --mavi:#C9D8E4; --altin:#C9A96A; --patlican:#2E2640;
+    --golge-yakin:0 2px 6px rgba(58,46,55,.05);
+    --golge-uzak:0 20px 44px rgba(58,46,55,.10);
+    --sans:-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#E3DCE0;font-family:Lora,serif;color:var(--erik);
+       display:flex;flex-direction:column;align-items:center;padding:28px 8px 60px;gap:18px}
+  .yontitle{font-family:Fraunces,serif;font-size:15px;color:var(--erik-soft);margin-top:10px}
+  .phone{width:390px;background:var(--krem);border-radius:28px;overflow:hidden;
+         box-shadow:var(--golge-yakin),var(--golge-uzak)}
+  .mini{width:390px;border-radius:22px;overflow:hidden;background:var(--krem);
+        box-shadow:var(--golge-yakin),var(--golge-uzak)}
+
+  .screen{position:relative;min-height:748px;display:flex;flex-direction:column;
+          background:var(--krem);overflow:hidden}
+  .screen::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
+    background:radial-gradient(72% 46% at 0% 0%, rgba(248,236,217,.55), transparent 70%)}
+  .grain{position:absolute;inset:0;pointer-events:none;z-index:4;opacity:.028;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23g)'/%3E%3C/svg%3E")}
+  .siluet{position:absolute;z-index:0;top:290px;right:-190px;width:520px;opacity:.06;
+          transform:rotate(-11deg);pointer-events:none;
+          filter:grayscale(1) brightness(.7);mix-blend-mode:multiply;
+          -webkit-mask-image:radial-gradient(68% 66% at 55% 42%,#000 38%,transparent 74%);
+          mask-image:radial-gradient(68% 66% at 55% 42%,#000 38%,transparent 74%)}
+  .content{position:relative;z-index:2;display:flex;flex-direction:column;flex:1}
+
+  .eyebrow{font-family:var(--sans);font-size:10.5px;letter-spacing:.19em;
+           color:var(--accent);font-weight:600}
+  .manset{font-family:Fraunces,serif;font-optical-sizing:auto;font-weight:590;
+          font-size:36px;line-height:1.1;font-variant-numeric:oldstyle-nums;
+          font-feature-settings:"onum"}
+  .latince{font-family:Fraunces,serif;font-style:italic;font-size:14px;
+           color:var(--erik-soft)}
+  .govde{font-size:16px;line-height:1.65;color:var(--erik-soft)}
+  .moonline{font-size:14px;color:var(--erik-soft);margin-top:10px}
+  .moonline .m{display:inline-block;opacity:.85}
+  @keyframes nefes{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+  .nefes{animation:nefes 6s ease-in-out infinite;transform-origin:center}
+  @media (prefers-reduced-motion: reduce){.nefes{animation:none}}
+  .folio{position:absolute;top:16px;right:18px;z-index:3;font-family:Fraunces,serif;
+         font-style:italic;font-size:12px;color:#8a6f56;
+         font-variant-numeric:oldstyle-nums;
+         text-shadow:0 0 8px var(--krem),0 0 14px var(--krem),0 0 4px var(--krem)}
+  .ayrac{display:flex;align-items:center;gap:12px;margin:24px 22px 0}
+  .ayrac::before,.ayrac::after{content:"";flex:1;height:.5px;background:#DCC9C4}
+  .ayrac span{font-size:13px;color:#C4A99F;line-height:1}
+
+  .hero{position:relative;height:300px;overflow:hidden}
+  .hero img{width:150%;margin-left:-25%;height:120%;object-fit:cover;
+            object-position:50% 6%;mix-blend-mode:multiply;
+            filter:brightness(1.07) saturate(.94)}
+  .hero::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(251,246,243,.14) 0%,transparent 24%,
+               rgba(251,246,243,.82) 62%,var(--krem) 88%)}
+  .hero-metin{position:relative;margin-top:-108px;padding:0 22px;z-index:2}
+  .hero-metin .eyebrow,.hero-metin .manset{text-shadow:0 0 10px var(--krem),
+    0 0 22px var(--krem),0 0 4px var(--krem)}
+
+  .bitki{padding:0 22px 0 30px;margin-top:20px}
+  .bitki .ad{font-family:Fraunces,serif;font-weight:580;font-size:23px}
+  .bitki .govde{margin-top:8px;max-width:29ch}
+  .pull{position:relative;margin:26px 34px 0 44px}
+  .pull .tirnak{position:absolute;left:-24px;top:-14px;font-family:Fraunces,serif;
+                font-style:italic;font-size:44px;color:var(--accent);
+                opacity:.55;line-height:1}
+  .pull .qtext{font-family:Caveat,cursive;font-size:22px;line-height:1.35}
+  .acts{display:flex;gap:24px;font-size:13.5px;color:var(--ikincil);
+        margin:14px 34px 0 44px;padding-top:10px;border-top:.5px solid #DCC9C4}
+  .tabbar{margin-top:auto;display:flex;padding:12px 6px 18px;position:relative;z-index:2}
+  .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;
+       color:var(--erik);font-size:10px;font-family:var(--sans)}
+  .tab svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.5;
+           stroke-linecap:round;stroke-linejoin:round}
+  .tab.dim{opacity:.4}
+
+  /* ── IŞILTI sicili (kutlama anı) ── */
+  .isilti .screen::before{
+    background:radial-gradient(76% 50% at 0% 0%, rgba(246,231,200,.75), transparent 70%),
+               radial-gradient(40% 26% at 86% 10%, rgba(235,225,240,.5), transparent 75%)}
+  .prisma{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.5;
+    background:linear-gradient(115deg, rgba(201,216,228,.16) 8%, rgba(235,211,214,.14) 32%,
+               rgba(246,217,194,.2) 55%, rgba(214,201,224,.16) 78%, transparent 95%)}
+  .bokeh{position:absolute;pointer-events:none;z-index:1;border-radius:50%;
+         background:radial-gradient(circle, rgba(246,231,200,.5), transparent 66%)}
+  .kayit{margin:22px 22px 0;border-radius:16px;text-align:center;padding:16px 18px 15px;
+         background:radial-gradient(70% 120% at 50% 0%, rgba(246,231,200,.6), transparent 72%), #FDFAF7;
+         box-shadow:var(--golge-yakin),var(--golge-uzak)}
+  .kayit .onay{font-family:Fraunces,serif;font-weight:580;font-size:16px}
+  .kayit .alt{font-size:13.5px;color:var(--erik-soft);margin-top:3px}
+
+  /* ── GECE sicili (görsel panel) ── */
+  .gecepanel{margin:0 22px;border-radius:19px;overflow:hidden;position:relative;
+             box-shadow:var(--golge-yakin),0 24px 48px rgba(46,38,64,.28)}
+  .gecepanel svg{display:block;width:100%}
+
+  /* ── Keşif KS-1 (suluboya) ── */
+  .kesif{position:relative;padding:26px 22px 30px;background:var(--krem)}
+  .kesif .kshead{font-family:Fraunces,serif;font-weight:590;font-size:26px}
+  .kscard{position:relative;margin-top:34px;background:#FDFAF7;border-radius:19px;
+          box-shadow:var(--golge-yakin),var(--golge-uzak)}
+  .kscard .win{height:168px;overflow:hidden;border-radius:19px 19px 0 0}
+  .kscard .win img{width:150%;margin-left:-25%;height:118%;object-fit:cover;
+                   object-position:50% 7%;mix-blend-mode:multiply;
+                   filter:brightness(1.08) saturate(.94)}
+  .kscard .winfade{position:absolute;top:0;left:0;right:0;height:168px;
+    border-radius:19px 19px 0 0;pointer-events:none;
+    background:linear-gradient(180deg,transparent 62%,#FDFAF7 97%)}
+  .branch{position:absolute;top:-46px;right:30px;width:88px;height:128px;z-index:3;
+          object-fit:cover;object-position:30% 0%;transform:rotate(-8deg);
+          mix-blend-mode:multiply;filter:brightness(1.06) saturate(.95);
+          -webkit-mask-image:radial-gradient(62% 58% at 50% 52%,#000 40%,transparent 76%);
+          mask-image:radial-gradient(62% 58% at 50% 52%,#000 40%,transparent 76%)}
+  .ksbadge{position:absolute;top:12px;left:12px;z-index:2;width:30px;height:30px;
+           border-radius:50%;background:var(--mavi);display:flex;align-items:center;
+           justify-content:center;font-size:15px;color:var(--erik);
+           box-shadow:var(--golge-yakin)}
+  .kscard .kbody{padding:14px 20px 20px}
+  .kscard .ad{font-family:Fraunces,serif;font-weight:580;font-size:21px}
+  .kscard .govde{font-size:14.5px;margin-top:7px;line-height:1.6}
+
+  /* ── Ek belgeler ── */
+  .doc{width:390px;background:#FDFBFA;border-radius:18px;padding:20px 18px;
+       box-shadow:0 4px 18px rgba(58,46,55,.10)}
+  .doc h2{font-family:Fraunces,serif;font-size:16px;font-weight:600;margin-bottom:12px;
+          border-bottom:1px solid var(--secili);padding-bottom:6px}
+  .doc h3{font-family:Fraunces,serif;font-size:13px;font-weight:500;color:var(--accent);
+          margin:14px 0 8px}
+  .doc .note{font-size:11px;color:var(--ikincil);line-height:1.5;margin-top:8px;
+             font-family:var(--sans)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .refimg{border:1px solid var(--secili);border-radius:12px;overflow:hidden;background:#fff}
+  .refimg img{width:100%;display:block}
+  .win680{height:200px;overflow:hidden;display:flex;justify-content:center;align-items:center;
+          border:1px solid var(--secili);border-radius:12px;background:#fff;margin-bottom:4px}
+  .win680 img{width:680px;max-width:none;flex:none}
+  .cap{font-size:11px;color:var(--ikincil);font-family:var(--sans);margin-bottom:10px}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ SİCİL 1 · SULUBOYA (varsayılan) ═══════════ -->
+<div class="yontitle">Suluboya — varsayılan</div>
+<div class="phone">
+  <div class="screen">
+    <div class="grain"></div>
+    <img class="siluet" src="assets/kohler-matricaria.jpg" alt="">
+    <div class="folio">Levha № 07</div>
+    <div class="content">
+      <div class="hero"><img src="assets/kohler-matricaria.jpg" alt="Papatya plakası"></div>
+      <div class="hero-metin">
+        <div class="eyebrow">BAHÇE GÜNLÜĞÜ · 20 TEMMUZ</div>
+        <h1 class="manset">Pazartesi,<br>usul bir başlangıç</h1>
+        <div class="moonline"><span class="m nefes">☽</span> Ay Boğa'da · ilk dördün</div>
+      </div>
+      <div class="bitki">
+        <div class="ad">Papatya</div>
+        <div class="latince">Matricaria chamomilla</div>
+        <p class="govde">Ay'ın yumuşak nefesi; telaşın karşısına sessizlikle çıkan çiçek.</p>
+      </div>
+      <div class="ayrac"><span>❦</span></div>
+      <div class="pull">
+        <span class="tirnak">"</span>
+        <div class="qtext">Ağaç, fırtınada değil, köklerinde büyür.</div>
+      </div>
+      <div class="acts"><span>♡ Kaydet</span><span>Paylaş</span></div>
+      <nav class="tabbar">
+        <span class="tab"><svg viewBox="0 0 24 24"><path d="M19.5 13.5A8 8 0 1 1 10.5 4.6a6.6 6.6 0 0 0 9 8.9Z"/></svg>Bugün</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="6.2"/><path d="M8.6 18.6h6.8M7 21h10"/></svg>Keşif</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><path d="M12 21V8.5M12 12.5C12 9.5 9.8 7.2 6.8 7c.2 3 2.4 5.3 5.2 5.5ZM12 10c0-3 2.2-5.3 5.2-5.5-.2 3-2.4 5.3-5.2 5.5Z"/><path d="M8.5 21h7"/></svg>Bahçe</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><path d="M4.5 7A2.5 2.5 0 0 1 7 4.5h10A2.5 2.5 0 0 1 19.5 7v6a2.5 2.5 0 0 1-2.5 2.5H9.4L5.6 19a.6.6 0 0 1-1-.5Z"/></svg>Sohbet</span>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SİCİL 2 · IŞILTI (günlük kaydı kutlaması) ═══════════ -->
+<div class="yontitle">Işıltı — kutlama anı</div>
+<div class="phone isilti">
+  <div class="screen">
+    <div class="grain"></div>
+    <img class="siluet" src="assets/kohler-matricaria.jpg" alt="">
+    <div class="bokeh" style="top:120px;left:26px;width:34px;height:34px"></div>
+    <div class="bokeh" style="top:64px;right:60px;width:22px;height:22px"></div>
+    <div class="bokeh" style="top:210px;right:30px;width:28px;height:28px;opacity:.8"></div>
+    <div class="folio">Levha № 07</div>
+    <div class="content">
+      <div class="hero">
+        <img src="assets/kohler-matricaria.jpg" alt="Papatya plakası">
+        <div class="prisma"></div>
+      </div>
+      <div class="hero-metin">
+        <div class="eyebrow">BAHÇE GÜNLÜĞÜ · 20 TEMMUZ</div>
+        <h1 class="manset">Pazartesi,<br>usul bir başlangıç</h1>
+        <div class="moonline"><span class="m nefes">☽</span> Ay Boğa'da · ilk dördün</div>
+      </div>
+      <div class="kayit">
+        <div class="onay">Bugünün izi düştü</div>
+        <div class="alt">Küçük bir işaret; yumuşak bir adım.</div>
+      </div>
+      <div class="bitki" style="margin-top:16px">
+        <div class="ad">Papatya</div>
+        <div class="latince">Matricaria chamomilla</div>
+        <p class="govde">Ay'ın yumuşak nefesi; telaşın karşısına sessizlikle çıkan çiçek.</p>
+      </div>
+      <div class="ayrac"><span style="color:#C9A96A">❦</span></div>
+      <div class="pull">
+        <span class="tirnak">"</span>
+        <div class="qtext">Ağaç, fırtınada değil, köklerinde büyür.</div>
+      </div>
+      <div class="acts"><span>♡ Kaydet</span><span>Paylaş</span></div>
+      <nav class="tabbar">
+        <span class="tab"><svg viewBox="0 0 24 24"><path d="M19.5 13.5A8 8 0 1 1 10.5 4.6a6.6 6.6 0 0 0 9 8.9Z"/></svg>Bugün</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="6.2"/><path d="M8.6 18.6h6.8M7 21h10"/></svg>Keşif</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><path d="M12 21V8.5M12 12.5C12 9.5 9.8 7.2 6.8 7c.2 3 2.4 5.3 5.2 5.5ZM12 10c0-3 2.2-5.3 5.2-5.5-.2 3-2.4 5.3-5.2 5.5Z"/><path d="M8.5 21h7"/></svg>Bahçe</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><path d="M4.5 7A2.5 2.5 0 0 1 7 4.5h10A2.5 2.5 0 0 1 19.5 7v6a2.5 2.5 0 0 1-2.5 2.5H9.4L5.6 19a.6.6 0 0 1-1-.5Z"/></svg>Sohbet</span>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SİCİL 3 · GECE (dolunay teması) ═══════════ -->
+<div class="yontitle">Gece — dolunay teması (galeri modeli)</div>
+<div class="phone">
+  <div class="screen">
+    <div class="grain"></div>
+    <div class="folio">Levha № 07</div>
+    <div class="content">
+      <div style="padding:30px 22px 0">
+        <div class="eyebrow">BAHÇE GÜNLÜĞÜ · 20 TEMMUZ</div>
+        <h1 class="manset">Pazartesi,<br>dolunay gecesi</h1>
+        <div class="moonline"><span class="m nefes">☽</span> Ay Akrep'te · dolunay</div>
+      </div>
+      <div class="gecepanel" style="margin-top:18px">
+        <svg viewBox="0 0 346 226" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="zemin" cx="50%" cy="42%" r="80%">
+              <stop offset="0%" stop-color="#3A3052"/><stop offset="100%" stop-color="#2E2640"/>
+            </radialGradient>
+            <radialGradient id="ay" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F6E7C8"/><stop offset="72%" stop-color="#E8CF9E"/>
+              <stop offset="100%" stop-color="#C9A96A" stop-opacity=".0"/>
+            </radialGradient>
+          </defs>
+          <rect width="346" height="226" fill="url(#zemin)"/>
+          <g fill="#EAE0F0">
+            <circle cx="30" cy="34" r="1"/><circle cx="70" cy="80" r=".8"/><circle cx="52" cy="150" r="1.1"/>
+            <circle cx="112" cy="28" r=".9"/><circle cx="146" cy="66" r=".7"/><circle cx="196" cy="30" r="1"/>
+            <circle cx="250" cy="52" r=".8"/><circle cx="300" cy="36" r="1.1"/><circle cx="318" cy="96" r=".8"/>
+            <circle cx="282" cy="140" r="1"/><circle cx="230" cy="120" r=".6"/><circle cx="94" cy="118" r=".7"/>
+            <circle cx="322" cy="182" r=".9"/><circle cx="36" cy="196" r=".8"/>
+          </g>
+          <circle cx="173" cy="96" r="74" fill="none" stroke="#C9A96A" stroke-width=".7" opacity=".45"/>
+          <circle cx="173" cy="96" r="88" fill="none" stroke="#C9A96A" stroke-width=".5" opacity=".3"
+                  stroke-dasharray="1 5"/>
+          <circle cx="173" cy="96" r="34" fill="url(#ay)"/>
+          <circle cx="173" cy="96" r="26" fill="#F2E3C2"/>
+          <path d="M166 90a4 3.4 0 1 0 5 3M178 100a2.6 2.3 0 1 1 3-2M170 103a2 1.8 0 1 0 2.4 1.6"
+                fill="none" stroke="#DCC49A" stroke-width=".8" opacity=".7"/>
+          <g fill="none" stroke="#C9A96A" stroke-width="1" stroke-linecap="round">
+            <path d="M40 210c40-8 60-30 66-52M286 214c-34-10-52-30-58-50" opacity=".8"/>
+            <path d="M84 176c-4-8-2-15 3-19M96 186c-7-3-10-9-9-15M252 180c5-8 3-16-2-20M240 190c7-2 11-8 10-14" opacity=".7"/>
+          </g>
+          <g>
+            <circle cx="87" cy="171" r="3.4" fill="#8E4A5C"/>
+            <circle cx="99" cy="183" r="2.6" fill="#C98B99"/>
+            <circle cx="249" cy="175" r="3.4" fill="#8E4A5C"/>
+            <circle cx="238" cy="187" r="2.6" fill="#7A8B72"/>
+          </g>
+        </svg>
+      </div>
+      <div class="bitki" style="margin-top:20px">
+        <div class="ad">Papatya</div>
+        <div class="latince">Matricaria chamomilla</div>
+        <p class="govde">Ay'ın yumuşak nefesi; telaşın karşısına sessizlikle çıkan çiçek.</p>
+      </div>
+      <div class="ayrac"><span>❦</span></div>
+      <div class="pull">
+        <span class="tirnak">"</span>
+        <div class="qtext">Ağaç, fırtınada değil, köklerinde büyür.</div>
+      </div>
+      <div class="acts"><span>♡ Kaydet</span><span>Paylaş</span></div>
+      <nav class="tabbar">
+        <span class="tab"><svg viewBox="0 0 24 24"><path d="M19.5 13.5A8 8 0 1 1 10.5 4.6a6.6 6.6 0 0 0 9 8.9Z"/></svg>Bugün</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="6.2"/><path d="M8.6 18.6h6.8M7 21h10"/></svg>Keşif</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><path d="M12 21V8.5M12 12.5C12 9.5 9.8 7.2 6.8 7c.2 3 2.4 5.3 5.2 5.5ZM12 10c0-3 2.2-5.3 5.2-5.5-.2 3-2.4 5.3-5.2 5.5Z"/><path d="M8.5 21h7"/></svg>Bahçe</span>
+        <span class="tab dim"><svg viewBox="0 0 24 24"><path d="M4.5 7A2.5 2.5 0 0 1 7 4.5h10A2.5 2.5 0 0 1 19.5 7v6a2.5 2.5 0 0 1-2.5 2.5H9.4L5.6 19a.6.6 0 0 1-1-.5Z"/></svg>Sohbet</span>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ KEŞİF · KS-1 (suluboya) ═══════════ -->
+<div class="yontitle">Keşif KS-1 — suluboya</div>
+<div class="mini">
+  <div class="kesif">
+    <div class="grain"></div>
+    <div class="kshead">Keşif</div>
+    <div class="kscard">
+      <img class="branch" src="assets/kohler-matricaria.jpg" alt="">
+      <div class="ksbadge">☽</div>
+      <div class="win"><img src="assets/kohler-matricaria.jpg" alt="Papatya"></div>
+      <div class="winfade"></div>
+      <div class="kbody">
+        <div class="ad">Papatya</div>
+        <div class="latince">Matricaria chamomilla</div>
+        <p class="govde">Ay'ın yumuşak nefesi; telaşın karşısına sessizlikle çıkan çiçek.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ EK 1 · AI STİL TESTİ ═══════════ -->
+<div class="doc">
+  <h2>Ek 1: AI stil testi (SD1.5, lokal)</h2>
+  <h3>Referans — Köhler (botanik doğruluk çıpası)</h3>
+  <div class="refimg"><img src="assets/kohler-matricaria.jpg" alt="Köhler referans"></div>
+  <h3>Üretimler — hedef: doğal renkli vintage botanik plaka · suluboya · krem zemin · bol boşluk</h3>
+  <div class="grid2">
+    <div class="refimg"><img src="assets/sd-papatya-1.png" alt="SD üretim 1"></div>
+    <div class="refimg"><img src="assets/sd-papatya-2.png" alt="SD üretim 2"></div>
+    <div class="refimg"><img src="assets/sd-papatya-3.png" alt="SD üretim 3"></div>
+  </div>
+  <div class="note">Botanik kontrol: #1/#3 tüysü yaprak doğru; #2 yaprakları papatya değil; kapitulum tam konik değil. Model/lisans: PROVA-NOTLAR §2b + EK-A.</div>
+</div>
+
+<!-- ═══════════ EK 2 · KAYITLAR ═══════════ -->
+<div class="doc">
+  <h2>Ek 2: kayıtlar (v4)</h2>
+  <h3>Sicil önizlemesi — Estetik Anayasa 1.0</h3>
+  <div class="note">Üç ekran aynı blok iskeletini paylaşır (hero-görsel · manşet ritüeli · bitki · ❦ · söz · aksiyonlar · tab bar); yalnız görsel katman ve mikro-vurgular değişir. Işıltı: prizmatik kırılım (yay/renk şeridi YOK), bokeh 3 nokta, altın fleuron, kutlama yatağı. Gece: patlıcan-lacivert (#2E2640→#3A3052) + antika altın (#C9A96A) YALNIZ SVG panelde; krom krem (galeri modeli). Dolunay: altın halkalı dolunay + yıldız alanı + mücevher tomurcuklu altın dal çizgisi. Ay glifi nefesi: scale 1→1.02, 6sn ease-in-out, ekran başına tek öğe, prefers-reduced-motion'da statik.</div>
+  <h3>Cila karşılaştırması (Real-ESRGAN)</h3>
+  <div class="win680"><img src="assets/kohler-detay-ham.png" alt="ham"></div>
+  <div class="cap">HAM — 512px kırpım, tarayıcı büyütmesi</div>
+  <div class="win680"><img src="assets/kohler-detay-esrgan.png" alt="esrgan"></div>
+  <div class="cap">REAL-ESRGAN — x4plus 2048px · Magnific: API anahtarı bekliyor</div>
+  <h3>Görsel işleme</h3>
+  <div class="note">Köhler doğal renk (duotone YASAK); multiply + brightness(1.07) saturate(.94); maskeler yumuşak. Dosyaya piksel işlenmedi. Tipografi: Fraunces 36/590 manşet + italik alt satır · Lora 16/1.65 · Caveat yalnız söz (script başlık YOK — anayasa §6.4). Kaynak/lisans: PROVA-NOTLAR.md · kanon: estetik-anayasa.md (Sürüm 1.0).</div>
+</div>
+</body>
+</html>

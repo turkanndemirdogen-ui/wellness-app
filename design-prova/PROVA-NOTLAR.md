@@ -1,5 +1,8 @@
 # PROVA NOTLARI — Tasarım Provası (Sprint 2.3 "Görsel Kimlik" · Adım 0)
 
+> **Superseded by docs/design (15 > 00-16) — 2026-07-21 — tarihsel referans.**
+> Prova süreci ve stil kararları arşiv statüsündedir; aktif tasarım otoritesi `docs/design/` paketidir. Telif/lisans kayıtları (§ kaynaklar) tarihsel kayıt olarak geçerliliğini korur.
+
 **Tarih:** 2026-07-19 · **Kapsam:** yalnız `design-prova/` (mobile koduna dokunulmadı)
 
 ## 0 · STİL PİVOTU (ürün sahibi kararı, 2026-07-19 — 1. revizyon)

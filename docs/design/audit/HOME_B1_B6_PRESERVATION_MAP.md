@@ -1,0 +1,37 @@
+# HOME B1–B6 PRESERVATION MAP — Phase 0
+
+**Tarih:** 2026-07-20 · **Revizyon:** 2026-07-21 (`15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md` uyumu — davranış sözleşmesi DEĞİŞMEDİ) · Dosya: `mobile/src/app/(tabs)/index.tsx` (455 satır) · Statü: cihazda 2 tur kabul edilmiş (2026-07-18/19), commit `bacfadf`. **Bu haritadaki "korunacak davranış" sütunu Phase 4 retrofit'inin sözleşmesidir.**
+
+**15 override etkileri (görsel hedef güncellemeleri; davranışlar aynen geçerli):**
+- Home, 4-tab mimarisinin sabit ilk tabıdır (15 §2); retrofit'te route/navigation değişmez.
+- Phase 4 retrofit'in görsel değerleri artık 15 §7 `homeSpec` ile kilitli: background #F8F2EC, surface #FFFDFC, accent #879A7A, visualPanel #3F4A5D, padding 20/16, sectionGap 28, cardGap 12, heroHeight 280, cardRadius 16, panelRadius 24, motionLevel M1, **maxAnimatedElements 2**.
+- Ekran arka planı hiçbir saatte koyulaşmaz (15 §3); koyuluk yalnız hero görsel panelinde (`visualPanelHex`, scrim zorunlu).
+- Tipografi hedefleri 15 §5 rollerine göre okunur: B1 başlık Fraunces (display), B5 söz metni Caveat adayı (≤32 kelime/2 satır sınırıyla; sınır aşılırsa reading/body rolü) — `Fraunces+Inter only` referansları geçersiz.
+- 15 §7 Home sırası "6. Free/Pro teaser" içerir: bu YENİ bir slot'tur ve B6 slot ladder gibi koşullu render edilir; Phase 4 retrofit'inde **davranış eklenmez**, yalnız `ProTeaser` contract'ı yerleşince (P5+) sıraya girer. B6'nın "bilinçli yokluk" davranışı aynen korunur.
+- Ambient scale sınırı 1.00→1.02, press ≈0.98; Reduced Motion'da ambient tamamen durur (15 §9) — mevcut `motionScale=0` statik davranışı bu şartı zaten sağlıyor.
+
+| Alan | Mevcut konum | Data source | State/store | Bileşen | Test | KORUNACAK davranış | Görsel değişecek | Risk |
+|---|---|---|---|---|---|---|---|---|
+| B1 tarih başlığı | index.tsx:244 (formatDayTitle :79-81) | cihaz saati + MONTHS_TR/WEEKDAYS_TR (home-copy) | — | Text display.l | yok | TR tarih formatı; başlık a11y header | Fraunces display.h1/h2 tipografisi | DÜŞÜK |
+| B1 ay çipi (moon chip) | index.tsx:245-259 | `astro.getDailyTransit` (mock provider) → moonSign/moonPhase | transit state :103-121 | Surface base full + MoonPhaseGlyph + Text label | yok | veri yoksa çip SESSİZCE gizli; transitSettled'a kadar iskelet aynı kabukta; faz-doğru glif | MoonPhaseChip (07) + SVG moon-phase glifi (05, 8 faz) | ORTA (faz eşlemesi 4→8 genişlerken veri sözleşmesi 4 fazlı — dönüşüm katmanı gerek) |
+| B2 sky line (kozmik satır) | index.tsx:262-278 | canlı DB RPC `match_engine_rules` → pickThemeLine (home.ts:110-128) | daily (useAsyncResource `home.daily.v1`) | Pressable + Text body.l | yok | YALNIZ transit-only kurallar (natal sızmaz — free sınırı); deterministik günlük seçim (FNV-1a); tap→Keşif; 48pt dokunma; iskelet 48pt sabit | Tipografi/yüzey | ORTA (iş kuralı görünmez — regresyonu fark etmek zor; seçici fonksiyonlara DOKUNMA) |
+| B3 günlük bitki hero | index.tsx:280-327 | canlı `herbs` (app_safe=true + uyari_chip YOK filtresi pickDailyHerb home.ts:97-104); fallback OPENING_HERB (home-copy, gömülü Papatya) | daily + dailyPending :203-207 | Reveal+Card hero + HerbIllustration + PLANET_GLYPH | yok | **hero ASLA boş kalmaz** (canlı→önbellek→gömülü Papatya, ONAYLI karar); kart metni yalnız tek_satir; T1-T3 karta girmez; tap→Keşif (geçici köprü, ONAYLI); emoji fallback YOK | PlantCard kimliği: bilimsel ad italik EKLENİR (00 §6.2 — veri modelinde alan yok, bkz. blocker), gerçek botanik görsel, Fraunces ad | YÜKSEK görsel / DÜŞÜK davranış (seçici + fallback zinciri aynen taşınır) |
+| B4 mood chip alanı | index.tsx:329-355 (onSelectMood :146-162) | modules/mood.json id+label birebir (QUICK_MOODS) | checkin state + `checkin.v1.<date>` AsyncStorage | Card + Chip×6 | yok | id+label kanonik sözlükten; tek dokunuş kayıt; aynı gün ikinci seçim=GÜNCELLEME (çift kayıt yok); seçim→light haptic ANINDA, görsel durum da anında; kalıcılık arka planda; sayı baskısı/ceza dili yok | MoodChip (icon+label, 02 mood renkleri — renk tek kanal olamaz) | ORTA (haptic sırası + optimistic update korunmalı) |
+| B4 başarı → ambient tepki | index.tsx:152-159 + ambient-background.tsx | saveCheckin başarı sinyali | ambientPulse state | AmbientBackground responseSignal | yok | medium haptic YALNIZ gerçek kalıcılıkta; tek-atış ışık kayması (§21.2 dengi = 09 M2/M3 "mood completion pulse") | Atmosfer token'ları (02) | DÜŞÜK |
+| B5 quote alanı | index.tsx:357-392 | canlı `quotes` (TABLO YOK — launch-blocker) → pickDailyQuote | daily + favoriteIds (`favorites.quotes.v1`) | Reveal+Card + Chip kaydet/paylaş | yok | havuz yoksa blok SESSİZCE GİZLİ (sahte aktivasyon yasak); global günlük deterministik seçim; atıfsız; paylaşımda YALNIZ söz metni; favori cihazda sınırsız | Kaydet/paylaş ikonları (♥/♡→Save icon), tipografi | DÜŞÜK |
+| B6 slot ladder | index.tsx:394-397 (yorum; JSX yok) | kural merdiveni (spec §2-B6) | — | — | yok | Bugünkü modül setiyle hiçbir koşul sağlanamaz → SLOT RENDER EDİLMEZ; ekran 5 blokla tamdır. Bu "yokluk" bir davranıştır — retrofit'te yanlışlıkla doldurulmamalı | 08 §3 "slot ladder" görünümü modüller geldikçe | DÜŞÜK |
+| Save/share aksiyonları | index.tsx:176-188 + 360-380 | Share API (yalnız metin) | favorites.ts | Chip | yok | atıf eklenmez (GS-3/K2); iptal sessiz | TertiaryButton/IconButton'a geçebilir | DÜŞÜK |
+| Skeletonlar | B1:254-259 · B2:274-277 · B3:314-327 · B5:381-392 | — | dailyPending/transitSettled | Skeleton (textRole sözleşmesi) | yok | blok yükseklikleri sabit — YERLEŞİM SIÇRAMASI YOK; iskelet, nihai bileşenle aynı yükseklik (07 §12) | Yüzey renkleri | DÜŞÜK |
+| Haptics | lib/haptics.ts (:17-32) | — | — | — | yok | YALNIZ 2 haptic: çip=Light, başarılı kayıt=Medium (09 §7 tablosuyla birebir); spam yok | — (his ayarı açık kalem) | DÜŞÜK |
+| Check-in store | lib/checkin.ts | AsyncStorage `checkin.v1.<YYYY-MM-DD>` | — | — | yok | şema mood_logs çekirdek alt kümesi (ileri senkron için); anahtar formatı DEĞİŞMEZ | — | DÜŞÜK |
+| Living World placeholderları | ambient-background.tsx + use-motion-scale.ts | — | scrollY SharedValue | AmbientBackground | yok | paralaks ≤s24/s96; reduced-motion→tam statik; sürekli döngü YOK; low-power dikişi (stub) hazır | 09 breathing leaf vb. eklenirken bütçe: aynı anda maks 1 ana + 1 ambient | ORTA (yeni ambient'ler eklerken bütçe aşımı riski) |
+| Önbellek düşüşü | lib/query.ts + cache.ts (`cache.v1.home.daily.v1`) | Supabase | useAsyncResource | — | yok | stale cache'e sessiz düşüş; hata iskeleti süründürmez; __DEV__ stale bildirimi | — | DÜŞÜK |
+| symbolicEmpty satırı | index.tsx:212-218, 399-403 | tüm sembolik kaynaklar | — | Text | yok | YALNIZ tüm sembolik bölge boşsa tek yumuşak satır (offlineSky) | Tipografi | DÜŞÜK |
+
+## Kritik koruma kuralları (Phase 4 giriş kriteri)
+1. `lib/home.ts` seçici fonksiyonlarına ve `lib/*` davranış katmanına dokunulmaz.
+2. AsyncStorage anahtar şemaları değişmez (`checkin.v1.*`, `favorites.quotes.v1`, `cache.v1.*`).
+3. Haptic tetik noktaları ve sırası değişmez.
+4. "Sessiz gizlenme" halleri (B1 çip, B5 blok, symbolicEmpty) aynen korunur; B3 asla boş kalmaz zinciri korunur.
+5. İskelet yükseklik eşitliği her yeni görselde yeniden doğrulanır.
+6. Test YOK → jest-expo ONAYLANDI (15 düzeltme talimatı §8); Phase 1'de bu haritadaki davranışlar için karakterizasyon testleri kurulur (pickDailyHerb/pickThemeLine/pickDailyQuote + checkin update determinizmi — saf fonksiyonlar, kolay test edilir; bkz. PHASE_1_IMPLEMENTATION_PROPOSAL §9).

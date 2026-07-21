@@ -14,7 +14,7 @@ Her görevden önce:
 ## Kanonik belgeler
 
 - Architecture: `docs/architecture/ARCHITECTURE_DECISIONS.md`
-- Design: `docs/design/PRODUCT_DESIGN_SYSTEM_MASTER.md`
+- Design: `docs/design/` kanon paketi (öncelik: `15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md` > `00`–`14`; `16` uygulama talimatı). Eski `PRODUCT_DESIGN_SYSTEM_MASTER.md` arşiv/tarihsel referanstır.
 - Editorial: `docs/editorial/EDITORIAL_MASTER_SPEC.md`
 - Safety: `docs/safety/SAFETY_MASTER_SPEC.md`
 

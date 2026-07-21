@@ -10,6 +10,9 @@ acik_kararlar: []
 
 # Ana Sayfa — İçerik & Davranış Spec v1.0
 
+> **Görsel/tasarım maddeleri: Superseded by docs/design (15 > 00-16) — 2026-07-21 — tarihsel referans.**
+> Bu spec'in görsel ve tasarım nitelikli maddeleri (renk, tipografi, yüzey, kompozisyon ölçüleri) artık `docs/design/` paketine tabidir (öncelik: 15). **İçerik ve davranış sözleşmesi ise YÜRÜRLÜKTEDİR** — Home B1–B6 korunacak davranışlarının otoritesi bu belgedir (bkz. `docs/design/audit/HOME_B1_B6_PRESERVATION_MAP.md`).
+
 ## 0. Ekranın rolü
 
 - **Günlük ritüel kapısı:** 60 saniyede "bugünü al (sembolik) + bugünü işaretle (kanıt)".

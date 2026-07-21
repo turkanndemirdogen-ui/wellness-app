@@ -1,8 +1,11 @@
 # PRODUCT DESIGN SYSTEM MASTER
 
-**Belge türü:** Product Design, UX Architecture ve Frontend UI için tek tasarım otoritesi  
+> **Superseded by docs/design (15 > 00-16) — 2026-07-21 — tarihsel referans.**
+> Bu belge artık aktif tasarım otoritesi değildir; kanonik kaynak `docs/design/` paketidir (öncelik: `15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md` > `00`–`14`, `16` uygulama talimatı). İçeriği yalnız geçmiş araştırması için okunur.
+
+**Belge türü:** Product Design, UX Architecture ve Frontend UI için tek tasarım otoritesi *(arşiv statüsü — yukarıdaki nota bakınız)*  
 **Sürüm:** 1.0  
-**Durum:** DESIGN FREEZE — CANONICAL  
+**Durum:** ~~DESIGN FREEZE — CANONICAL~~ ARŞİV / TARİHSEL REFERANS (2026-07-21)  
 **Tarih:** 2026-07-14  
 **Ürün adı:** Marka bağımsız; ürün adı bu belgede kullanılmaz  
 **Platform önceliği:** Mobil — iOS ve Android; ardından tablet  

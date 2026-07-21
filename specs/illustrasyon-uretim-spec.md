@@ -1,5 +1,8 @@
 # İllüstrasyon Üretim — Spec v1.0 (5 Temmuz 2026)
 
+> **Superseded by docs/design (15 > 00-16) — 2026-07-21 — tarihsel referans.**
+> Görsel üretim hattının aktif otoritesi artık `docs/design/06_BOTANICAL_AND_CELESTIAL_ART_DIRECTION.md` + `10_ASSET_PIPELINE_AND_NAMING.md` (15 kilitleri altında). Buradaki LoRA/üretim kararları tarihsel kayıttır; yeniden kullanılacaksa 10'un doğrulama/metadata şartlarına tabidir.
+
 Kartlar + modül görselleri + UI botanik motiflerinin tek-elden üretim hattı. Görsel Tasarım Kiti'ni genişletir.
 **Kilitli kararlar:** B (AI üretim) · B1 (kendi LoRA, SD/FLUX; Claude Code kurar) · öncelik: dengeli.
 

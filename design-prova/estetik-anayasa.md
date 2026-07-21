@@ -1,4 +1,7 @@
-# ESTETİK ANAYASA — Sürüm 1.0 — KANONİK
+# ESTETİK ANAYASA — Sürüm 1.0 — ~~KANONİK~~ ARŞİV
+
+> **Superseded by docs/design (15 > 00-16) — 2026-07-21 — tarihsel referans.**
+> Bu belge artık aktif tasarım otoritesi değildir; kanonik kaynak `docs/design/` paketidir (öncelik: `15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md`). Galeri modeli ve "koyuluk yalnız görsel katmanda" ilkesi 15 §3'te devam ediyor; çelişen tüm maddeler geçersiz.
 
 **Tarih:** 2026-07-20 · **Onay:** ürün sahibi (Türkan), 2026-07-20 — §6 dört karar + §3 çakışma önceliği dahil
 **Girdi:** `design-prova/wellness-appdesign-provamoodboard/` (27 görsel, tamamı incelendi)

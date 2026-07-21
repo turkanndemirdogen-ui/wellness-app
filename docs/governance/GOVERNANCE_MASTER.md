@@ -19,11 +19,11 @@ Bu belge ürün kararı üretmez. Hangi konunun hangi kanonik belge tarafından 
 Repository, uygulama mimarisi, frontend/backend sınırları, Supabase, veri modeli, migration, API, runtime içerik kaynağı ve deploy kararlarını yönetir.
 
 ### Ürün tasarımı
-`docs/design/PRODUCT_DESIGN_SYSTEM_MASTER.md`
+`docs/design/` kanon paketi — öncelik sırası: `15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md` > `00_VISUAL_SYSTEM_CANONICAL.md` … `14_CLAUDE_CODE_MASTER_INSTRUCTION.md` (+ `16_CLAUDE_CODE_CORRECTION_PROMPT.md` uygulama talimatı). *(Güncelleme 2026-07-21; önceki otorite `PRODUCT_DESIGN_SYSTEM_MASTER.md` arşiv/tarihsel referans statüsüne indi.)*
 
 UX, UI, information architecture, navigasyon davranışı, design token’ları, component/pattern sistemi, motion, responsive davranış, erişilebilirlik ve frontend UI uygulama kurallarını yönetir.
 
-Kullanıcı metninin anlamını değiştirmez.
+Kullanıcı metninin anlamını değiştirmez. Görsel/tasarım kararları dışına çıkamaz: güvenlik ve içerik kuralları (toksik bitki dışlaması, tıbbi iddia/doz yasağı, astrolojide kesin kader dili yasağı, KVKK yükümlülükleri) Safety/ilgili otoritelerde kalır ve tasarım paketiyle değiştirilemez.
 
 ### Editoryal dil
 `docs/editorial/EDITORIAL_MASTER_SPEC.md`

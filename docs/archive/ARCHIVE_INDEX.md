@@ -24,3 +24,13 @@ Tarih: 2026-07-14 · Oluşturan: repository cleanup (`docs/operations/REPOSITORY
 
 - **Eski içerik taslakları** (editoryal düzenleme öncesi 17 JSON + eski kök dosyaları): tamamı git geçmişinde (`d727ffb` ve sonrası). Governance §5 gereği git geçmişi varken ayrıca kopya tutulmadı. Erişim: `git show <commit>:content/<dosya>`.
 - **Yinelenen spec/CLAUDE kopyaları**: kurulan sürümle hash-eşit doğrulanan kopyalar silindi (kayıt: `MOVED_FILES.md` §7).
+
+## Tasarım tarihçesi (2026-07-22 eklendi)
+
+| Klasör / dosya | İçerik | Kaynak |
+|---|---|---|
+| `design-tarihce/PRODUCT_DESIGN_SYSTEM_MASTER.md` | Eski tasarım otoritesi (superseded 2026-07-21; aktif otorite `docs/design/` 00–16 + audit) | `docs/design/` (git mv) |
+| `design-tarihce/design-prova/` | Sprint 2.3 görsel kimlik provası: PROVA-NOTLAR.md, estetik-anayasa.md (superseded), index.html, assets/ (Köhler + SD testleri + 8 Health Icons SVG), moodboard (27 lisanssız referans görseli), wellness_visual_package_v1.zip (60K — istenirse repo dışı Yedekler'e alınabilir) | kök `design-prova/` (git mv) |
+| `design-tarihce/kanon-tam-metin.md` | 00–16 + audit + estetik-anayasa'nın geçici birleşik okuma kopyası (2026-07-22) | kök (untracked) |
+
+Not: Telif/lisans kayıtları arşivde KALMAZ — kalıcı kayıt: `docs/legal/ASSET-LICENSES.md`. `docs/design/audit/` raporlarındaki `design-prova/...` yolları artık `docs/archive/design-tarihce/design-prova/...` altında çözülür (audit dosyaları kanon olduğundan içerikleri değiştirilmedi).

@@ -24,7 +24,8 @@ wellness-app/
 │   ├── governance/GOVERNANCE_MASTER.md          # karar sahipliği + çakışma çözümü (LOCKED)
 │   ├── architecture/ARCHITECTURE_DECISIONS.md   # teknik mimari otoritesi
 │   ├── architecture/rag-base-spec.md            # RAG/DB base görev spec'i
-│   ├── design/PRODUCT_DESIGN_SYSTEM_MASTER.md   # tasarım otoritesi (DESIGN FREEZE)
+│   ├── design/00–16 + audit/                    # tasarım kanon paketi (öncelik: 15 > 00–14; 16 talimat)
+│   ├── legal/ASSET-LICENSES.md                  # lansman telif/lisans kaydı (KALICI — arşive gitmez)
 │   ├── editorial/EDITORIAL_MASTER_SPEC.md       # Türkçe kullanıcı dili otoritesi
 │   ├── safety/SAFETY_MASTER_SPEC.md             # güvenlik otoritesi (çatışmada kazanır)
 │   ├── operations/REPOSITORY_CLEANUP_TASK.md    # bu cleanup'ın görev tanımı
@@ -71,7 +72,7 @@ mobile/
 | Konu | Otorite |
 |---|---|
 | Teknik mimari, veri modeli, Supabase, runtime içerik kaynağı | `docs/architecture/ARCHITECTURE_DECISIONS.md` |
-| UX/UI, token, motion, erişilebilirlik | `docs/design/PRODUCT_DESIGN_SYSTEM_MASTER.md` |
+| UX/UI, token, motion, erişilebilirlik | `docs/design/` kanon paketi (öncelik: `15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md` > `00`–`14`; `16` uygulama talimatı) |
 | Kullanıcıya görünen Türkçe | `docs/editorial/EDITORIAL_MASTER_SPEC.md` |
 | Sağlık iddiası, kriz, toksisite sınırları | `docs/safety/SAFETY_MASTER_SPEC.md` (çatışmada kazanır) |
 | Karar sahipliği, okuma sırası, arşiv politikası | `docs/governance/GOVERNANCE_MASTER.md` |

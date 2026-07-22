@@ -111,3 +111,14 @@ Mobile deposunda hiçbir dosya değiştirilmedi, taşınmadı, silinmedi (`git -
 | paket `ACG-UYGULAMA-NOTU.md` | kök | Geçici çalışma dosyası | — |
 | kök `guncelleme-bloklari.md` | `docs/archive/acg-onceki-kopya-2026-07-15/` | Bloklar 2026-07-19'da uygulandı (A1/A3/A2→ADR §14 + satır işaretleri; B1 düşürüldü — A1 ile mükerrer; B2-B4 → PROJECT-CHECKPOINT; MapTiler+KVKK kısıtları ayrıca ADR §14) → görev bitti, arşive taşındı | arşivdeki kopyayla hash-eşitti (üzerine taşındı, tek kopya) |
 | `added-specialties and new module astrocartography/` (untracked) | `docs/archive/acg-onceki-kopya-2026-07-15/` | Paket-öncesi kopya; aktif sürümler yukarıda — Governance §5 tek doğru kaynak | başlık restorasyonu sonrası 3 dosyanın 3'ü aktif/ilgili sürümlerle hash-eşit |
+
+## 11. Tasarım arşiv temizliği (2026-07-22 — `chore(repo)`)
+
+| Eski yol | Yeni yol | Neden | Doğrulama |
+|---|---|---|---|
+| `docs/design/PRODUCT_DESIGN_SYSTEM_MASTER.md` | `docs/archive/design-tarihce/PRODUCT_DESIGN_SYSTEM_MASTER.md` | Governance §2 güncellemesi (2026-07-21) ile arşiv/tarihsel referans statüsüne indi; aktif otorite `docs/design/` 00–16 paketi | `git mv` (tarihçe korundu); kanon 00–16 + audit/ yerinde |
+| `design-prova/` (tamamı: PROVA-NOTLAR, estetik-anayasa, index.html, assets/, moodboard 27 görsel, wellness_visual_package_v1.zip) | `docs/archive/design-tarihce/design-prova/` | Prova süreci superseded (başlık damgaları 2026-07-21); telif kayıtları `docs/legal/ASSET-LICENSES.md`'ye kalıcı olarak çıkarıldı | `git mv` (tarihçe korundu); lisans kayıtları legal dosyada |
+| kök `kanon-tam-metin.md` | `docs/archive/design-tarihce/kanon-tam-metin.md` | Geçici birleşik okuma kopyası (26 dosyanın concat'i); kanonik kaynak tek tek dosyalar | untracked → arşive taşınıp commit'lendi |
+
+Oluşan yeni dosya: `docs/legal/ASSET-LICENSES.md` — lansman telif dosyası (Köhler PD, Health Icons CC0, Google Fonts OFL, SD1.5 OpenRAIL-M, araçlar); kalıcı, arşive gitmez.
+Not: `guncelleme-bloklari.md` kalıntısı zaten `docs/archive/acg-onceki-kopya-2026-07-15/` altında (bkz. §10) — işlem gerekmedi. Kök dizinde zip yok.

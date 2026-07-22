@@ -19,7 +19,14 @@
 
 - **Set:** Health Icons — https://healthicons.org · repo: https://github.com/resolvetosavelives/healthicons
 - **Lisans:** CC0 1.0 (public domain)
-- **Karar kaydı:** MIT lisanslı setler (Feather/Lucide) prova sırasında "yalnız public-domain" kuralı gereği kullanılmadı. (Not: audit `ASSET_GAP` §4'te production UI ikonu için Lucide RN *önerisi* vardır; ikon kütüphanesi kararı verildiğinde lisans kaydı buraya eklenir.)
+- **Karar kaydı:** MIT lisanslı setler (Feather/Lucide) prova sırasında "yalnız public-domain" kuralı gereği kullanılmadı. (Not: bu kural yalnız prova içindi; production kararı aşağıda.)
+
+## 2b · Lucide (production UI ikon ailesi — KARAR VERİLDİ, 2026-07-22)
+
+- **Paket:** `lucide-react-native` 1.25.0 — https://lucide.dev · repo: https://github.com/lucide-icons/lucide
+- **Lisans:** **ISC** (© Lucide Contributors; Feather Icons türevi — orijinal Feather kısmı MIT, © Cole Bemis) — ticari kullanım ve gömme serbesttir; lisans bildirimi `mobile/THIRD_PARTY_NOTICES.md`'de tutulur.
+- **Karar:** 05 §10 kanonik önerisi ürün sahibi onayıyla kabul edildi (Phase 2 bağımlılık turu, 2026-07-22). Tek UI ikon kütüphanesi Lucide'dir; astro glyphleri özel SVG setidir (Lucide'den gelmez). Kullanım Phase 3'te başlar.
+- **Render altyapısı:** `react-native-svg` 15.15.4 — MIT (© Software Mansion); kod kütüphanesidir, görsel asset değildir; kaydı `THIRD_PARTY_NOTICES.md`'de.
 - **İndirilen 8 outline SVG (arşivde):** heart · magnifying-glass · referral · info · ui-settings · ui-user_profile · calendar · star-medium → `docs/archive/design-tarihce/design-prova/assets/icons/`
 
 ## 3 · Google Fonts (tipografi)

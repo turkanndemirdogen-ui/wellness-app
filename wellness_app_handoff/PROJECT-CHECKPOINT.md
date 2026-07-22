@@ -7,12 +7,17 @@
   tasarım belgeleri + design-prova → `docs/archive/design-tarihce/`; kalıcı telif
   dosyası `docs/legal/ASSET-LICENSES.md` oluşturuldu)
 - Mobile repository: `wellness-app/mobile/`
-- Active mobile branch: `master` (feat/p1-foundations merge'lendi)
-- Latest merged master: `189a380` — Görsel Kimlik P1 foundations (PR #4, squash)
-- Önceki kilometre taşları: Sprint 2.2A `bacfadf` · Phase 1 `657a30d` · Home B1–B6 `5268064`
-- Current Sprint: **Görsel Kimlik P1 (foundations) MERGE'LENDİ (2026-07-22, PR #4)** ·
-  Sprint 2.2A kapandı (2026-07-18) · ACG paket yerleşimi + guncelleme-bloklari
-  uygulaması tamam (2026-07-19, ADR §14) — sıradaki iş: Adım 6 (aşağıda)
+- Active mobile branch: `master` (feat/p2-glyphs merge'lendi)
+- Latest merged master: `6d8aa43` — Görsel Kimlik P2 glyph sistemi (PR #5, squash)
+- Önceki kilometre taşları: P1 foundations `189a380` · Sprint 2.2A `bacfadf` ·
+  Phase 1 `657a30d` · Home B1–B6 `5268064`
+- Aktif dev build: EAS `d86c16fa` (commit 3f4739c; react-native-svg +
+  lucide-react-native native dahil) — P2 sonrası native değişiklik yok,
+  build geçerli
+- Current Sprint: **Görsel Kimlik P2 (glyph sistemi) MERGE'LENDİ (2026-07-22,
+  PR #5)** · P1 foundations merge'lendi (PR #4) · Sprint 2.2A kapandı
+  (2026-07-18) · ACG paket yerleşimi + guncelleme-bloklari uygulaması tamam
+  (2026-07-19, ADR §14) — sıradaki iş: Adım 6 (aşağıda)
 
 ## Completed
 1. Phase 1 foundation T1–T15 + fiziksel cihaz kabulü
@@ -37,6 +42,20 @@
    12 test suite + `check-tokens` script'i · dev-gallery.
    **dev-gallery ürün sahibi kabulü (2026-07-22): fontlar Türkçe temiz, panel
    koyuluğu yalnız panelde / krom krem, sözleşme bileşenleri yerinde — GEÇTİ.**
+7. **Görsel Kimlik P2 — glyph sistemi (`6d8aa43`, PR #5, 2026-07-22):**
+   30 monoline SVG (05 §5 kilitli ağaç: 10 planet + 12 zodiac + 8 ay fazı) ·
+   `GlyphSvg` tabanı (viewBox 24, stroke 1.5, currentColor, a11y sözleşmesi) ·
+   dispatcher'lar (PlanetGlyph 02 §6 renkleri, ZodiacGlyph 3 mod,
+   MoonPhaseDataGlyph) · `fourPhaseToGlyph` 4→8 köprüsü ·
+   `resolveGlyphBreath` (1.012 ≤ maxScale 1.02; reduced-motion'da statik) ·
+   02 §6-7 planet/zodiac token'ları · dev-gallery P2 vitrini + native yetenek
+   kapısı (eski client teşhis ekranı — çökme dersi) · 8 yeni test suite
+   (gerçek-SVG sanity dahil; toplam 19 suite / 159 test / 30 snapshot) ·
+   bağımlılık: react-native-svg 15.15.4 (MIT) + lucide-react-native 1.25.0
+   (ISC, kullanım Phase 3) — lisanslar THIRD_PARTY_NOTICES + ASSET-LICENSES §2b.
+   **dev-gallery ürün sahibi kabulü (2026-07-22): 30 glyph doğru render — GEÇTİ.
+   Karakter kararı: glyph'ler işlevsel monoline simge olarak KALIR; illüstratif
+   zenginlik asset katmanının işidir (sanat-yönü kilidi).**
 
 ## Open items
 1. **TalkBack kabul turu (madde 12)** — ertelendi; sonraki cihaz turunda.
@@ -51,12 +70,14 @@
    timeOfDay saat dilimleri de GEÇİCİ (theme-provider).
 6. Favoriler liste ekranı · R1.5 görsel söz paylaşım şablonu · çevirmeli
    kart (GS-1=b) — ayrı onaylı iş kalemleri.
-10. **Görsel Kimlik P1 sonrası kalanlar (13 faz planı, P2+):** ekran/bileşen
-    migrasyonu P1 kapsamı DIŞINDA kaldı (foundations yalnız temel katman;
-    ekranlar hâlâ legacy `Spacing`/tema yolunda) · UI ikon kütüphanesi kararı
-    (audit önerisi Lucide RN + react-native-svg; karar verilince lisans kaydı
-    `docs/legal/ASSET-LICENSES.md`'ye işlenir) · ay fazı 8 SVG asset'i (4→8 faz
-    veri genişlemesi astro sağlayıcı sözleşmesine dokunur — Adım 6 ile koordine) ·
+10. **Görsel Kimlik P2 sonrası kalanlar (13 faz planı, P3+):** ekran/bileşen
+    migrasyonu hâlâ açık (ekranlar legacy `Spacing`/tema yolunda; glyph'lerin
+    ekran adaptasyonu Phase 4 Home retrofit'inde — `domain-ui/moon-phase-glyph`
+    ve `PLANET_GLYPH` Unicode'u o zamana dek yerinde) · UI ikon geçişi:
+    Lucide RN KARARI VERİLDİ ve bağımlılık kuruldu (ISC lisansı kayıtlı);
+    emoji `Icon` primitive'inin Lucide'e geçişi Phase 3 işi · **ay fazı: 8 SVG
+    HAZIR (P2, `6d8aa43`); veri genişlemesi (4→8 faz) Adım 6 astro-core'da —
+    `fourPhaseToGlyph` köprüsü o güne dek arayüzü 4 doğru fazda tutar** ·
     production paywall ekranı (`ProTeaser` yalnız contract).
 7. **Adım 6/7 sırası KİLİTLİ:** önce astro-core+motor, golden fixture'lar
    yeşil, SONRA ACG (Adım 7 komutu acg-spec §8 sonunda).

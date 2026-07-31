@@ -22,6 +22,8 @@ const MOTOR_FILES = [
 const CARD_FILES = [
   'bitki-kartlari-master.json',
 ];
+// Kart görselleri: herb_id → Storage yolu + sürüm (migration 0007 sütunları).
+const IMAGE_FILE = 'bitki-gorselleri.json';
 
 // Quiz başlıkları (ekran görünümü için; TR polisaj launch checklist'te).
 const QUIZ_TITLES = {
@@ -61,8 +63,23 @@ export function loadHerbs() {
       cardMatched++;
     }
   }
+  // Kart görselleri (10 §10: yalnız bucket-içi yol + sürüm; tam URL DEĞİL).
+  // Görseli olmayan bitki alanları null kalır → istemci placeholder gösterir (10 §11).
+  let imageMatched = 0;
+  const imageDoc = readJson(join(CONTENT, IMAGE_FILE));
+  for (const g of imageDoc.gorseller ?? []) {
+    const herb = byId.get(g?.herb_id);
+    if (!herb) continue;
+    if (!g.path || !Number.isInteger(g.version) || g.version < 1) {
+      throw new Error(`[content-io] ${IMAGE_FILE}: ${g.herb_id} için geçersiz path/version`);
+    }
+    herb.image_path = g.path;
+    herb.image_version = g.version;
+    imageMatched++;
+  }
+
   const herbs = [...byId.values()];
-  return { herbs, cardMatched };
+  return { herbs, cardMatched, imageMatched };
 }
 
 /** 12 aylık quiz: quiz_id + ay + title + tam içerik. */

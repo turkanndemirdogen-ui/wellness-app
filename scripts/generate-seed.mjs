@@ -24,7 +24,7 @@ function dq(value) {
 }
 
 // --- Verileri yükle ---
-const { herbs, cardMatched } = loadHerbs();
+const { herbs, cardMatched, imageMatched } = loadHerbs();
 const quizzes = loadQuizzes();
 const sources = loadSources().map((s) => ({
   id: s.id,
@@ -45,26 +45,34 @@ const sql = `-- ================================================================
 -- 0003_seed_content.sql  ·  ÜRETİLMİŞ DOSYA — elle düzenleme.
 -- Üretici: scripts/generate-seed.mjs  (yeniden üret: npm run seed:generate)
 --
--- İçerik: ${herbs.length} bitki · ${quizzes.length} quiz · ${sources.length} kaynak.
+-- İçerik: ${herbs.length} bitki (${imageMatched} görselli) · ${quizzes.length} quiz · ${sources.length} kaynak.
+-- Ön koşul: migration 0007 (herbs.image_path / image_version) uygulanmış olmalı.
 -- Idempotent: ON CONFLICT DO UPDATE (panelde tekrar tekrar çalıştırılabilir).
 -- Ön koşul: 0001 + 0002 migrationları çalıştırılmış olmalı.
 -- =====================================================================
 
 -- ---------- herbs (${herbs.length}) ----------
-insert into public.herbs (herb_id, name_tr, gezegen_birincil, app_safe, guven_tier, data)
+insert into public.herbs (
+  herb_id, name_tr, gezegen_birincil, app_safe, guven_tier,
+  image_path, image_version, data
+)
 select
   e->>'herb_id',
   e#>>'{names,tr}',
   e->>'gezegen_birincil',
   coalesce((e#>>'{guvenlik,app_safe}')::boolean, true),
   e#>>'{guvenlik,guven_tier}',
-  e
+  e->>'image_path',                       -- 10 §10: bucket-ici yol, TAM URL DEGIL
+  (e->>'image_version')::int,
+  e - 'image_path' - 'image_version'      -- gorsel alanlari SUTUNDA; data'da tekrarlanmaz
 from jsonb_array_elements(${dq(herbs)}::jsonb) as e
 on conflict (herb_id) do update set
   name_tr          = excluded.name_tr,
   gezegen_birincil = excluded.gezegen_birincil,
   app_safe         = excluded.app_safe,
   guven_tier       = excluded.guven_tier,
+  image_path       = excluded.image_path,
+  image_version    = excluded.image_version,
   data             = excluded.data,
   updated_at       = now();
 
@@ -109,7 +117,7 @@ writeFileSync(outPath, sql, 'utf8');
 
 // --- Özet (gözlemlenebilirlik) ---
 console.log('[seed] üretildi →', outPath);
-console.log(`[seed] bitki: ${herbs.length} (kart eşleşen: ${cardMatched})`);
+console.log(`[seed] bitki: ${herbs.length} (kart eşleşen: ${cardMatched} · görsel eşleşen: ${imageMatched})`);
 console.log(`[seed] quiz:  ${quizzes.length}`);
 console.log(`[seed] kaynak: ${sources.length}  = user ${userVis.length} · agent_only ${agentOnly.length} · excluded ${excluded.length}`);
 if (herbs.length !== 37) console.warn(`[seed] ⚠ bitki sayısı 37 değil (${herbs.length}) — beklenen envanterle karşılaştır.`);

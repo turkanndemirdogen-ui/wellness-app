@@ -390,7 +390,7 @@ renk kilidi negatifleri ve §6 devir kilitleri aynen geçerlidir. Değişen tek 
 - Modül sahne sayıları (§9.2) ürün sahibi teyidini bekler.
 - Üretim çıktıları onaya kadar çalışma klasöründe; repoya girmez.
 
-## 12.2 · Çalışma klasörü kuralı (2026-08-27 — Batch-1 veri kaybı dersi)
+## 13 · Çalışma klasörü kuralı (2026-08-27 — Batch-1 veri kaybı dersi)
 - **Staging ASLA Temp'te tutulmaz.** Batch-1'in 12 çıktısı + metadata.json'ları
   oturum scratchpad'inde (`%LOCALAPPDATA%\Temp\claude\...`) bekletildi; Windows
   Temp temizliği dosyaları sildi ve Replicate tarafı da veriyi 1 saat sonra

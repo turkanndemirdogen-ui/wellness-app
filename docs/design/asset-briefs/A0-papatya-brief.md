@@ -389,3 +389,15 @@ renk kilidi negatifleri ve §6 devir kilitleri aynen geçerlidir. Değişen tek 
 - Her yeni bitki için: tür-özel Köhler/PD referansının PD kapsamı teyit edilir (gap §2), T0 sınıfı doğrulanır (§7).
 - Modül sahne sayıları (§9.2) ürün sahibi teyidini bekler.
 - Üretim çıktıları onaya kadar çalışma klasöründe; repoya girmez.
+
+## 12.2 · Çalışma klasörü kuralı (2026-08-27 — Batch-1 veri kaybı dersi)
+- **Staging ASLA Temp'te tutulmaz.** Batch-1'in 12 çıktısı + metadata.json'ları
+  oturum scratchpad'inde (`%LOCALAPPDATA%\Temp\claude\...`) bekletildi; Windows
+  Temp temizliği dosyaları sildi ve Replicate tarafı da veriyi 1 saat sonra
+  kalıcı temizlediği için (`data_removed: true`) çıktılar geri getirilemedi.
+- Kanonik çalışma klasörü: `C:\Users\turka\OneDrive\Desktop\Yedekler\wellness-assets\`
+  — `staging/<herb_id>/` (üretim çıktıları + metadata.json) ve
+  `references/<herb_id>/` (PD referans plakaları). OneDrive senkronu ek yedek sağlar.
+- Üretim script'i çıktıyı DOĞRUDAN bu klasöre yazar; Temp yalnız anlık ara
+  dosyalar için kullanılabilir ve oturum sonunda staging'e kopyalanmış olmalıdır.
+- "Repoya girmez" kuralı (§11) değişmedi; kalıcılık repo DIŞI bu klasörle sağlanır.

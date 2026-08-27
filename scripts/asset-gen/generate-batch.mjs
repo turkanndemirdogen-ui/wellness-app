@@ -121,7 +121,8 @@ for (const herb of herbs) {
   }
 
   // Çıktıyı HEMEN indir (Replicate ~1 saatte siler — Batch-1 kaybının ikinci yarısı).
-  const outUrl = Array.isArray(pred.output) ? pred.output[0] : pred.output;
+  // edge_canny modunda output = [canny haritası, üretilen görsel] — SON öğe alınır.
+  const outUrl = Array.isArray(pred.output) ? pred.output[pred.output.length - 1] : pred.output;
   const img = await fetch(outUrl);
   if (!img.ok) { console.log(`  ✗ çıktı indirme ${img.status}`); fail++; continue; }
   const dir = join(STAGING, hid);

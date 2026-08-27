@@ -1,6 +1,7 @@
 {
   "_meta": {
-    "amac": "A0 Batch-1 (12 bitki) kart yüzü üretim reçetesi — REKONSTRÜKSİYON (2026-08-27). Orijinal üretim script'i + prompt'lar Temp scratchpad kaybında silindi; bu dosya A0 brief §1/§6/§8/§12 kilitleri + ASSET-LICENSES §4/§4b/§4c kayıtlarından yeniden kuruldu ve BUNDAN SONRA kanonik prompt kaydıdır.",
+    "amac": "A0 Batch-1 (12 bitki) kart yüzü üretim reçetesi — REKONSTRÜKSİYON (2026-08-27) + REV1 (aynı gün). Orijinal üretim script'i + prompt'lar Temp scratchpad kaybında silindi; bu dosya A0 brief §1/§6/§8/§12 kilitleri + ASSET-LICENSES §4/§4b/§4c kayıtlarından yeniden kuruldu ve BUNDAN SONRA kanonik prompt kaydıdır.",
+    "rev1_karari": "Ürün sahibi kararı (2026-08-27): tur-1'de mavi-gri alacakaranlık atmosferi özne rengine sızdı (kalibrasyon Tur-1 vakasının tekrarı). Düzeltme: (1) atmosfer bir kademe kısıldı — sıcak/nötr altın saat, soğuk-ton terimleri prompt'tan çıktı; (2) özne rengi KONU'nun İLK kelimelerinde ve KONU atmosferden ÖNCE (toplam prompt kısa, 77-token kesinti riski yok — papatya Tur-2 kalıbı); (3) tür-hedefli YANLIŞ-renk negatifleri; (4) 'a single plant centered' vurgusu (çayır kompozisyonuna karşı). biberiye + lavanta tur-1'de PASS — reçeteleri DEĞİŞMEDİ.",
     "kanon": "docs/design/asset-briefs/A0-papatya-brief.md (kilitler) · docs/legal/ASSET-LICENSES.md §4b (PD kaynaklar) · 10_ASSET_PIPELINE_AND_NAMING (naming/bütçe)",
     "platform": "Replicate fofr/sdxl-multi-controlnet-lora (sürüm üretim anında çözülür ve loglanır)",
     "sabitler": {
@@ -13,9 +14,10 @@
       "controlnet": "edge_canny",
       "apply_watermark": false
     },
-    "prompt_mimarisi": "CLIP ~77 token sınırı: atmosfer BAŞTA, tür kimliği KISA; §12.1b bitkilerinde yaprak morfolojisi KONU'nun ilk cümlesinde. Atmosfer asla uzun konu tanımının sonuna eklenmez (A0 §1.3).",
+    "prompt_mimarisi": "CLIP ~77 token sınırı (A0 §1.3). ORTA/KISIK atmosferde: atmosfer BAŞTA (kalıcı papatya kilidi §1.4). SICAK (rev1) atmosferde: KONU (özne rengi ilk kelimelerde) ÖNCE, kısa sıcak atmosfer SONDA — toplam kısa kaldığı için kesinti riski yok (papatya Tur-2 kalıbı).",
     "atmosfer_ORTA": "dreamy twilight mood, soft blue-grey evening glow and gentle haze filling the background, soft moonlit rim-light on the plant edges; ",
     "atmosfer_KISIK": "soft dusk mood, gentle haze in the background, faint moonlit rim-light; ",
+    "atmosfer_SICAK": "soft warm golden-hour light, gentle warm haze in the background",
     "negatif_kuyruk": "dried plant, withered, dead plant, pressed plant, dense nebula over the plant, cosmic overlay obscuring the plant, cartoon, kawaii, fairy, fairytale children's-book style, crystals, potion bottles, glitter, confetti, text, watermark, signature, logo, human hands, harsh geometry, stock-corporate look, low detail, plastic, 3d render",
     "calisma_klasoru": "C:/Users/turka/OneDrive/Desktop/Yedekler/wellness-assets",
     "calisma_klasoru_kurali": "A0 brief §13 — üretim çıktıları ve referanslar Temp'e YAZILMAZ, doğrudan bu klasöre yazılır"
@@ -29,11 +31,12 @@
       "assetId": "plant-foeniculum-vulgare-editorial-01",
       "cond": 0.25,
       "seed": 666,
-      "atmosfer": "ORTA",
+      "atmosfer": "SICAK",
       "ref": { "commonsFile": "Köhler Foeniculum.jpg", "not": "Köhler plakası, yüksek çözünürlük 2973x3706; adlandırılmış -148 sürümü 472x589 olduğu için tercih edilmedi (§12.3)" },
-      "konu": "a single fresh fennel plant (Foeniculum vulgare), fine feathery thread-like green leaves, tall slender stems, flat umbels of tiny golden-yellow flowers, sharp focus, vertical 4:5",
-      "negatif_ozel": "dill, anise plant, yellow daisy flowers, broad flat leaves, blue flowers, recoloured flowers",
-      "plantPartsShown": ["flower", "leaf", "stem"]
+      "konu": "flat umbels of tiny golden-yellow flowers and fine feathery thread-like green leaves, a single fennel plant (Foeniculum vulgare) centered, tall slender stems, sharp focus, vertical 4:5",
+      "negatif_ozel": "misty field, meadow, grass field, faded washed-out plant, blue-grey cast, blue color cast, cold grey tone, dill, anise plant, broad flat leaves, blue flowers, recoloured flowers",
+      "plantPartsShown": ["flower", "leaf", "stem"],
+      "serh": "REV1: tur-1'de özne silikti (sisli çayır); renk başa + centered + çayır negatifleri."
     },
     {
       "herb_id": "zencefil",
@@ -43,12 +46,12 @@
       "assetId": "plant-zingiber-officinale-editorial-01",
       "cond": 0.42,
       "seed": 333,
-      "atmosfer": "ORTA",
+      "atmosfer": "SICAK",
       "ref": { "commonsFile": "Koeh-146-no text.jpg", "kirpim": "üst bant — toprak üstü form; rizom, sol detay figürleri ve sağ alt tohum şemaları kadraj DIŞI (üründeki karar: A0 §12.1c, 2026-07-31)", "kirpim_box": [830, 0, 2731, 2376], "not": "Köhler 146/172 aynı plaka; 'no text' sürümü precheck (c) için güvenli. Seed 333 kilidi: 666'da çiçek başağı yok, 111 mısıra kaydı." },
-      "konu": "two ranks of long lanceolate green leaves on tall reed-like stems, a fresh ginger plant (Zingiber officinale), upright slender habit, sharp focus, vertical 4:5",
-      "negatif_ozel": "ginger rhizome, root close-up, corn, maize, millet, wheat, grain ear, bamboo, sugarcane, recoloured leaves",
+      "konu": "vivid green lanceolate leaves in two ranks on tall reed-like stems, a single ginger plant (Zingiber officinale) centered, upright slender habit, sharp focus, vertical 4:5",
+      "negatif_ozel": "blue-grey leaves, grey foliage, desaturated leaves, blue color cast, cold grey tone, ginger rhizome, root close-up, corn, maize, millet, wheat, grain ear, bamboo, sugarcane",
       "plantPartsShown": ["leaf", "stem"],
-      "serh": "Kayıtlı şerh (A0 §12.1c): çiçek başağı net değilse tomurcuk olarak okunabilir; tanınabilirlik yaprak dizilişi + habitusa dayanır. plantPartsShown rizom İÇERMEZ."
+      "serh": "Kayıtlı şerh (A0 §12.1c): tanınabilirlik yaprak dizilişi + habitusa dayanır; plantPartsShown rizom İÇERMEZ. REV1: tur-1'de yaprak mavi-griye soluklaştı; 'vivid green' başa + gri negatifleri."
     },
     {
       "herb_id": "karahindiba",
@@ -58,11 +61,12 @@
       "assetId": "plant-taraxacum-officinale-editorial-01",
       "cond": 0.25,
       "seed": 666,
-      "atmosfer": "ORTA",
+      "atmosfer": "SICAK",
       "ref": { "commonsFile": "Taraxacum officinale - Köhler–s Medizinal-Pflanzen-135.jpg", "kirpim": "çiçekli form merkezde; beyaz tohum topu, kök figürü (A) ve rakam etiketleri kadraj DIŞI; kadraj içinde kalan tek küçük figür (4: polen küresi) beyaz doldurulur", "kirpim_box": [630, 879, 2311, 2980], "beyaz_doldur": [[1960, 1580, 2240, 1870]], "not": "Köhler plaka 135, 2779x3823" },
-      "konu": "a single fresh dandelion (Taraxacum officinale), one golden-yellow densely rayed flower head, rosette of deeply toothed green leaves, smooth hollow stem, sharp focus, vertical 4:5",
-      "negatif_ozel": "sunflower, oxeye daisy, chamomile, white seed head, dandelion clock, orange flowers, recoloured flower",
-      "plantPartsShown": ["flower", "leaf", "stem"]
+      "konu": "one golden-yellow densely rayed dandelion flower head, a single dandelion plant (Taraxacum officinale) centered, rosette of deeply toothed green leaves, smooth hollow stem, sharp focus, vertical 4:5",
+      "negatif_ozel": "white seed head, blowball, dandelion clock, fluffy seed ball, white puffball, seed parachutes, sunflower, oxeye daisy, chamomile, orange flowers, blue color cast, cold grey tone",
+      "plantPartsShown": ["flower", "leaf", "stem"],
+      "serh": "REV1: tur-1'de negatife rağmen beyaz tohum topu çıktı; sarı çiçek başı KONU'nun ilk kelimeleri, tohum-topu negatifleri genişletildi."
     },
     {
       "herb_id": "nane",
@@ -72,11 +76,12 @@
       "assetId": "plant-mentha-piperita-editorial-01",
       "cond": 0.25,
       "seed": 666,
-      "atmosfer": "ORTA",
+      "atmosfer": "SICAK",
       "ref": { "commonsFile": "Köhler's Medizinal-Pflanzen in naturgetreuen Abbildungen mit kurz erläuterndem Texte (Plate 67) BHL303700.jpg", "kirpim": "merkez bitki; plaka yazıları (Labiatae, alt başlık, imza) ve dış figürler kadraj DIŞI; boyalı dissection figürleri Köhler normali olarak kalır (rezene kararıyla tutarlı), yalnız kadraj içindeki rakam etiketleri (3/7/9) kâğıt rengiyle doldurulur", "kirpim_box": [506, 337, 2252, 2519], "beyaz_doldur": [[704, 863, 784, 932], [1107, 585, 1170, 655], [2075, 1740, 2145, 1815]], "not": "BHL taraması 2797x3967, plaka alt yazısı 'Mentha piperita L.' ile tür teyitli (precheck a); adlandırılmış -095 sürümü 448x587 (zayıf, §12.3)" },
-      "konu": "a single fresh peppermint plant (Mentha piperita), opposite pairs of serrated ovate green leaves, square reddish stems, small pale lilac flower whorls, sharp focus, vertical 4:5",
-      "negatif_ozel": "basil, lemon balm, showy large flowers, lavender spikes, blue flowers, recoloured leaves",
-      "plantPartsShown": ["flower", "leaf", "stem"]
+      "konu": "fresh green serrated ovate leaves in opposite pairs, a single peppermint plant (Mentha piperita) centered, square reddish stems, small pale lilac flower whorls along the stem, sharp focus, vertical 4:5",
+      "negatif_ozel": "clover, clover flower heads, pink pom-pom flowers, fluffy round flower heads, basil, lemon balm, showy large flowers, lavender spikes, blue flowers, blue color cast, cold grey tone",
+      "plantPartsShown": ["flower", "leaf", "stem"],
+      "serh": "REV1: tur-1'de yonca benzeri pembe toplara kaydı; testere dişli yaprak başa, yonca negatifleri eklendi."
     },
     {
       "herb_id": "biberiye",
@@ -91,7 +96,7 @@
       "konu": "dense needle-like linear evergreen leaves, dark green above and silvery beneath, on upright woody rosemary sprigs (Rosmarinus officinalis), a few small pale blue two-lipped flowers, sharp focus, vertical 4:5",
       "negatif_ozel": "lavender, lavender flower spikes, sage, broad soft leaves, purple flower spikes, recoloured leaves",
       "plantPartsShown": ["flower", "leaf", "stem"],
-      "serh": "Batch-1 Yol A kazananı (A0 §12.1b): cond 0.42 · yaprak morfolojisi ilk cümlede · atmosfer bir kademe kısık."
+      "serh": "Batch-1 Yol A kazananı (A0 §12.1b): cond 0.42 · yaprak morfolojisi ilk cümlede · atmosfer bir kademe kısık. TUR-1 PASS (ürün sahibi, 2026-08-27) — DEĞİŞTİRME."
     },
     {
       "herb_id": "melisa",
@@ -101,12 +106,12 @@
       "assetId": "plant-melissa-officinalis-editorial-01",
       "cond": 0.38,
       "seed": 666,
-      "atmosfer": "ORTA",
-      "ref": { "commonsFile": "Melissa Köhler.jpg", "kirpim": "ana bitkinin üst-orta bölümü — cond 0.38 nedeniyle kenar figürleri kadraj DIŞI; kadraj içinde kalan iki figür (yeşil meyve + saplı tohum) kâğıt rengiyle doldurulur", "kirpim_box": [943, 187, 2632, 2298], "beyaz_doldur": [[2041, 663, 2373, 1109], [933, 787, 1337, 1233], [954, 409, 1260, 799], [2157, 388, 2632, 778], [1144, 1200, 1260, 1580]], "not": "Köhler, 3830x4146; plaka alt yazısı 'Melissa officinalis L.' ile tür teyitli" },
-      "konu": "bright vivid green crinkled heart-shaped serrated leaves in opposite pairs, a fresh lemon balm plant (Melissa officinalis), tiny inconspicuous pale flowers at the leaf axils, sharp focus, vertical 4:5",
-      "negatif_ozel": "showy large flowers, prominent flowers, mint, basil, grey leaves, grey-green dull foliage, desaturated leaves, recoloured leaves",
+      "atmosfer": "SICAK",
+      "ref": { "commonsFile": "Melissa Köhler.jpg", "kirpim": "ana bitkinin üst-orta bölümü — cond 0.38 nedeniyle kenar figürleri kadraj DIŞI; kadraja giren figürler kâğıt rengiyle doldurulur", "kirpim_box": [943, 187, 2632, 2298], "beyaz_doldur": [[2041, 663, 2373, 1109], [933, 787, 1337, 1233], [954, 409, 1260, 799], [2157, 388, 2632, 778], [1144, 1200, 1260, 1580]], "not": "Köhler, 3830x4146; plaka alt yazısı 'Melissa officinalis L.' ile tür teyitli" },
+      "konu": "bright vivid green crinkled heart-shaped serrated leaves in opposite pairs, a single lemon balm plant (Melissa officinalis) centered, tiny inconspicuous white flowers at the leaf axils, sharp focus, vertical 4:5",
+      "negatif_ozel": "blue flowers, purple flowers, violet flowers, catmint, Nepeta, showy large flowers, prominent flowers, mint, basil, grey leaves, grey-green dull foliage, desaturated leaves, blue color cast, cold grey tone",
       "plantPartsShown": ["flower", "leaf", "stem"],
-      "serh": "Kayıtlı sürüm cond 0.38 (A0 §12.1b A/B turu: 0.42/0.45 yolları renk kilidini ihlal etti — yaprak GRİLEŞEMEZ, canlı yeşil kalır; çiçekler küçük ve silik olmalı, K3 vakası: gösterişli büyümesin)."
+      "serh": "Kayıtlı cond 0.38 (A0 §12.1b: 0.42/0.45 renk kilidini ihlal etti — yaprak GRİLEŞEMEZ). REV1: tur-1'de çiçekler MAVİ çıktı (Nepeta kayması); mavi-çiçek negatifleri eklendi, beyaz çiçek KONU'da açık."
     },
     {
       "herb_id": "lavanta",
@@ -121,7 +126,7 @@
       "konu": "a single fresh lavender plant (Lavandula angustifolia), slender violet-purple flower spikes on long thin stems, narrow grey-green linear leaves, sharp focus, vertical 4:5",
       "negatif_ozel": "rosemary, sage, pink flowers, white flowers, washed-out pale spikes, recoloured flower spikes",
       "plantPartsShown": ["flower", "leaf", "stem"],
-      "serh": "Renk kilidi bu türde TERS yönde: mor-menekşe başaklar DOĞRU renktir, soldurulmaz; yaprak gri-yeşil doğaldır."
+      "serh": "Renk kilidi bu türde TERS yönde: mor-menekşe başaklar DOĞRU renktir. TUR-1 PASS (ürün sahibi, 2026-08-27) — DEĞİŞTİRME."
     },
     {
       "herb_id": "adacayi",
@@ -131,12 +136,12 @@
       "assetId": "plant-salvia-officinalis-editorial-01",
       "cond": 0.38,
       "seed": 666,
-      "atmosfer": "ORTA",
+      "atmosfer": "SICAK",
       "ref": { "commonsFile": "Köhler's Medizinal-Pflanzen in naturgetreuen Abbildungen mit kurz erläuterndem Texte (Plate 38) BHL303638.jpg", "kirpim": "pembe-leylak çiçek başağı + gri-yeşil yapraklı orta bölüm; yan figür kolonları ve yazılar kadraj DIŞI; üst sağdaki stamen figürü (4) kâğıt rengiyle doldurulur", "kirpim_box": [860, 98, 2305, 1905], "beyaz_doldur": [[1602, 254, 2305, 660], [1595, 655, 1750, 800]], "not": "BHL taraması 2737x3907; plaka alt yazısı 'Salvia officinalis L.' tür teyitli; plakadaki çiçek rengi PEMBE-LEYLAK — K4 kaydını doğrular (KONU'da violet-blue YAZILMAZ)" },
-      "konu": "soft grey-green woolly oval leaves with finely pebbled texture, a fresh sage plant (Salvia officinalis), whorls of pink-lilac two-lipped flowers on upright stems, sharp focus, vertical 4:5",
-      "negatif_ozel": "violet-blue flowers, deep blue flowers, lavender, lavender spikes, rosemary, glossy smooth leaves, recoloured flowers",
+      "konu": "soft grey-green woolly oval leaves with finely pebbled texture, a single sage plant (Salvia officinalis) centered, whorls of pink-lilac two-lipped flowers on upright stems, sharp focus, vertical 4:5",
+      "negatif_ozel": "washed-out faded colors, violet-blue flowers, deep blue flowers, lavender, lavender spikes, rosemary, glossy smooth leaves, recoloured flowers, blue color cast, cold grey tone",
       "plantPartsShown": ["flower", "leaf", "stem"],
-      "serh": "K4 vakası (A0 §12.1): KONU 'violet-blue' derse model lavantaya kayar — plakadaki renk PEMBE-LEYLAK, birebir bu yazılır."
+      "serh": "K4 vakası (A0 §12.1): plakadaki renk PEMBE-LEYLAK, birebir bu yazılır. REV1: tur-1 şerhli (hafif soluk); sıcak ışık + soluk-renk negatifi."
     },
     {
       "herb_id": "aynisefa",
@@ -146,12 +151,12 @@
       "assetId": "plant-calendula-officinalis-editorial-01",
       "cond": 0.40,
       "seed": 666,
-      "atmosfer": "ORTA",
+      "atmosfer": "SICAK",
       "ref": { "commonsFile": "Calendula officinalis - 001x.jpg", "kirpim": "üst-sağ bölge — açık turuncu baş + tomurcuk + küçük baş kadraj MERKEZİNDE (K1 düzeltmesi); sol figür kolonu ve yazılar kadraj DIŞI; kadraj içindeki petal figürü (3) ve yaprak figürü (2) kâğıt rengiyle doldurulur", "kirpim_box": [1167, 271, 2785, 2293], "beyaz_doldur": [[1438, 823, 1720, 1563], [1845, 750, 2001, 1188], [1440, 1560, 1660, 1840], [1680, 670, 1751, 1080], [1167, 2030, 1265, 2130]], "not": "Köhler cilt 3 plaka 61 yüksek çözünürlük 2785x4171 (ASSET-LICENSES §4b kaydı); alt yazı 'Calendula officinalis L.' tür teyitli" },
-      "konu": "a single fresh pot marigold (Calendula officinalis), dense many-petaled bright orange flower heads fully in frame, soft green oblong leaves, sharp focus, vertical 4:5",
-      "negatif_ozel": "sparse petals, few petals, daisy, gerbera, sunflower, chrysanthemum, yellow-only flowers, recoloured flowers",
+      "konu": "dense many-petalled bright orange flower heads fully in frame, a single pot marigold plant (Calendula officinalis) centered, soft green oblong leaves, sharp focus, vertical 4:5",
+      "negatif_ozel": "blue flowers, purple flowers, violet flowers, chicory, cosmos, cornflower, sparse petals, few petals, daisy, gerbera, sunflower, chrysanthemum, yellow-only flowers, blue color cast, cold grey tone",
       "plantPartsShown": ["flower", "leaf", "stem"],
-      "serh": "Batch-1 revize nedeni: seyrek petal → 'dense many-petaled' KONU'da zorunlu; cond 0.40 (K1+K3 düzeltmesi, ASSET-LICENSES §4 kaydı)."
+      "serh": "Batch-1 revize nedeni: seyrek petal → 'dense many-petalled' zorunlu; cond 0.40. REV1: tur-1'de mavi çiçekler (hindiba/cosmos) baskındı; turuncu baş KONU'nun ilk kelimeleri, mavi-çiçek negatifleri."
     },
     {
       "herb_id": "isirgan",
@@ -161,11 +166,12 @@
       "assetId": "plant-urtica-dioica-editorial-01",
       "cond": 0.25,
       "seed": 666,
-      "atmosfer": "ORTA",
+      "atmosfer": "SICAK",
       "ref": { "commonsFile": "Illustration Urtica dioica0.jpg", "kirpim": "merkez bitki — üst/alt plaka yazıları ve rakamlı detay figürleri (1-7, A) kadraj DIŞI", "kirpim_box": [389, 401, 1109, 1300], "not": "Thomé, Flora von Deutschland (ASSET-LICENSES §4b birebir kayıt)" },
-      "konu": "a single fresh stinging nettle plant (Urtica dioica), opposite pairs of coarsely serrated heart-shaped green leaves with fine hairs, drooping slender green flower strands, sharp focus, vertical 4:5",
-      "negatif_ozel": "mint, dead-nettle, white flowers, showy flowers, smooth glossy leaves, recoloured leaves",
-      "plantPartsShown": ["flower", "leaf", "stem"]
+      "konu": "fresh green coarsely serrated heart-shaped leaves with fine hairs, a single stinging nettle plant (Urtica dioica) centered, drooping slender green flower strands, sharp focus, vertical 4:5",
+      "negatif_ozel": "dark silhouette, backlit silhouette, underexposed, night scene, mint, dead-nettle, white flowers, showy flowers, smooth glossy leaves, blue color cast, cold grey tone",
+      "plantPartsShown": ["flower", "leaf", "stem"],
+      "serh": "REV1: tur-1'de karanlık silüet çıktı; 'fresh green' başa + silüet/karanlık negatifleri + centered."
     },
     {
       "herb_id": "atkuyrugu",
@@ -175,12 +181,12 @@
       "assetId": "plant-equisetum-arvense-editorial-01",
       "cond": 0.32,
       "seed": 666,
-      "atmosfer": "ORTA",
+      "atmosfer": "SICAK",
       "ref": { "commonsFile": "Equisetum arvense - Billeder af nordens flora (v2. 1917) (19750676683, clean).jpg", "kirpim": "sol yeşil STERİL gövde — iğnemsi halka dallar (revize nedeni) kadraj merkezinde; kahverengi fertil gövde, spor figürleri (4/5), kökler ve rakam etiketleri kadraj DIŞI", "kirpim_box": [0, 44, 936, 1214], "not": "Mentz & Ostenfeld 1917 'clean' sürüm 1768x2924 (ASSET-LICENSES §4b birebir; Lindman DESC şeması K2 nedeniyle BIRAKILDI — geri dönme)" },
-      "konu": "whorls of thin needle-like green branches ringing each stem joint, a fresh field horsetail plant (Equisetum arvense), upright segmented hollow stems, sharp focus, vertical 4:5",
-      "negatif_ozel": "pine seedling, fern, grass tuft, bamboo, asparagus, moss, recoloured stems",
+      "konu": "vivid green whorls of thin needle-like branches ringing each stem joint, a single field horsetail plant (Equisetum arvense) centered, upright segmented hollow stems, sharp focus, vertical 4:5",
+      "negatif_ozel": "blue-grey plant, grey stems, desaturated stems, blue color cast, cold grey tone, pine seedling, fern, grass tuft, bamboo, asparagus, moss",
       "plantPartsShown": ["stem", "leaf"],
-      "serh": "Batch-1 revize nedeni: iğnemsi halka dallar eksikti → KONU'nun İLK cümlesi halka dallar; cond 0.32 (ASSET-LICENSES §4 kaydı)."
+      "serh": "Batch-1 revize nedeni: halka dallar — tur-1'de GELDİ ✓ ama renk mavi-griydi. REV1: 'vivid green' başa + gri negatifleri; morfoloji kurgusu korundu."
     },
     {
       "herb_id": "sari_kantaron",
@@ -190,11 +196,12 @@
       "assetId": "plant-hypericum-perforatum-editorial-01",
       "cond": 0.25,
       "seed": 666,
-      "atmosfer": "ORTA",
-      "ref": { "commonsFile": "Hypericum perforatum-Medical Botany-1790-1-0068-10.png", "kirpim": "üst bölge tam genişlik — yıldız çiçekler + karşılıklı yapraklar kadrajda (plaka 4:5'ten uzun olduğu için alt gövde kadraj dışı)", "kirpim_box": [0, 0, 1341, 1676], "not": "Medical Botany 1790 (ASSET-LICENSES §4b birebir kayıt); monokrom gravür — canny çıpası için uygun, metin/etiket yok" },
-      "konu": "a single fresh St John's wort plant (Hypericum perforatum), five-petaled golden-yellow star flowers with long radiating stamens, small oval green leaves, red-tinged buds, sharp focus, vertical 4:5",
-      "negatif_ozel": "buttercup, forsythia, four petals, orange flowers, white flowers, recoloured flowers",
-      "plantPartsShown": ["flower", "leaf", "stem"]
+      "atmosfer": "SICAK",
+      "ref": { "commonsFile": "Hypericum perforatum-Medical Botany-1790-1-0068-10.png", "kirpim": "üst bölge tam genişlik — yıldız çiçekler + karşılıklı yapraklar kadrajda (plaka 4:5'ten uzun olduğu için alt gövde kadraj dışı)", "kirpim_box": [0, 0, 1341, 1676], "not": "Medical Botany 1790 (ASSET-LICENSES §4b birebir kayıt); monokrom gravür — canny çıpası için uygun, metin/etiket yok. Renk bilgisi KONU'dan gelir." },
+      "konu": "golden-yellow five-petalled star flowers with long radiating stamens, a single St John's wort plant (Hypericum perforatum) centered, small oval green leaves, red-tinged buds, sharp focus, vertical 4:5",
+      "negatif_ozel": "blue flowers, purple flowers, violet flowers, white flowers, flax, chicory, buttercup, forsythia, four petals, orange flowers, blue color cast, cold grey tone",
+      "plantPartsShown": ["flower", "leaf", "stem"],
+      "serh": "REV1: tur-1'de çiçekler MAVİ çıktı (§1.6 otomatik RED); altın sarısı KONU'nun ilk kelimeleri, mavi/mor negatifleri."
     }
   ]
 }

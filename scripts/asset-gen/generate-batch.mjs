@@ -86,9 +86,13 @@ for (const herb of herbs) {
   const ref = refFile(hid);
   if (!ref) { console.log(`✗ ${hid}: referans dosyası yok`); fail++; continue; }
 
-  const atmosfer = herb.atmosfer === 'KISIK' ? RECETE._meta.atmosfer_KISIK : RECETE._meta.atmosfer_ORTA;
+  // SICAK (rev1): KONU önce (özne rengi ilk kelimelerde), kısa sıcak atmosfer sonda.
+  // ORTA/KISIK: atmosfer başta (A0 §1.3 kalıcı kural — uzun KONU'da kesinti riski).
+  const prompt = herb.atmosfer === 'SICAK'
+    ? `${herb.konu}, ${RECETE._meta.atmosfer_SICAK}`
+    : (herb.atmosfer === 'KISIK' ? RECETE._meta.atmosfer_KISIK : RECETE._meta.atmosfer_ORTA) + herb.konu;
   const input = {
-    prompt: atmosfer + herb.konu,
+    prompt,
     negative_prompt: herb.negatif_ozel + ', ' + RECETE._meta.negatif_kuyruk,
     width: 1024,
     height: 1280,

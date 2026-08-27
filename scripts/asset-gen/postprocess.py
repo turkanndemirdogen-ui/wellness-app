@@ -30,14 +30,14 @@ for herb in herbs:
     with Image.open(raw) as im:
         im = im.convert("RGB").resize((800, 1000), Image.LANCZOS)
         q = 82
-        while q >= 50:
+        while q >= 18:  # yoğun dokulu kartlar (ör. ısırgan yaprağı) düşük q gerektirebilir
             im.save(out, "WEBP", quality=q, method=6)
             if out.stat().st_size <= BUDGET:
                 break
-            q -= 6
+            q -= 4
     size_kb = out.stat().st_size // 1024
     if out.stat().st_size > BUDGET:
-        print(f"HATA {hid}: q=50'de bile {size_kb} KB > 220 KB"); fail += 1; continue
+        print(f"HATA {hid}: q={q}'de bile {size_kb} KB > 220 KB"); fail += 1; continue
 
     run = json.loads((STAGING / hid / "run.json").read_text(encoding="utf-8"))
     meta = {

@@ -70,6 +70,11 @@ async function uploadRef(path) {
   return (await r.json()).urls.get;
 }
 
+// --seed=NNN: reçetedeki seed yerine aday seed; çıktılar raw-seed<NNN>.png /
+// run-seed<NNN>.json olarak yazılır (kayıtlı raw'ın üzerine YAZMAZ).
+const seedArg = process.argv.find((a) => a.startsWith('--seed='));
+const seedOverride = seedArg ? parseInt(seedArg.split('=')[1], 10) : null;
+
 const wanted = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const herbs = RECETE.bitkiler.filter((b) => !wanted.length || wanted.includes(b.herb_id));
 
@@ -100,7 +105,7 @@ for (const herb of herbs) {
     scheduler: 'KarrasDPM',
     num_inference_steps: RECETE._meta.sabitler.steps,
     guidance_scale: RECETE._meta.sabitler.cfg,
-    seed: herb.seed,
+    seed: seedOverride ?? herb.seed,
     apply_watermark: false,
     controlnet_1: 'edge_canny',
     controlnet_1_image: await uploadRef(ref),
@@ -131,9 +136,10 @@ for (const herb of herbs) {
   if (!img.ok) { console.log(`  ✗ çıktı indirme ${img.status}`); fail++; continue; }
   const dir = join(STAGING, hid);
   mkdirSync(dir, { recursive: true });
-  const raw = join(dir, 'raw-1024x1280.png');
+  const suffix = seedOverride != null ? `-seed${seedOverride}` : '';
+  const raw = join(dir, `raw${suffix ? suffix : '-1024x1280'}.png`);
   writeFileSync(raw, Buffer.from(await img.arrayBuffer()));
-  writeFileSync(join(dir, 'run.json'), JSON.stringify({
+  writeFileSync(join(dir, `run${suffix}.json`), JSON.stringify({
     predictionId: pred.id, model: MODEL, version: version.id,
     createdAt: pred.created_at, metrics: pred.metrics, input,
   }, null, 2));

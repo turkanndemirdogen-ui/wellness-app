@@ -59,14 +59,14 @@
       "scientificName": "Taraxacum officinale",
       "family": "Asteraceae",
       "assetId": "plant-taraxacum-officinale-editorial-01",
-      "cond": 0.25,
-      "seed": 666,
+      "cond": 0.34,
+      "seed": 222,
       "atmosfer": "SICAK",
-      "ref": { "commonsFile": "Taraxacum officinale - Köhler–s Medizinal-Pflanzen-135.jpg", "kirpim": "çiçekli form merkezde; beyaz tohum topu, kök figürü (A) ve rakam etiketleri kadraj DIŞI; kadraj içinde kalan tek küçük figür (4: polen küresi) beyaz doldurulur", "kirpim_box": [630, 879, 2311, 2980], "beyaz_doldur": [[1960, 1580, 2240, 1870]], "not": "Köhler plaka 135, 2779x3823" },
-      "konu": "one golden-yellow densely rayed dandelion flower head, a single dandelion plant (Taraxacum officinale) centered, rosette of deeply toothed green leaves, smooth hollow stem, sharp focus, vertical 4:5",
-      "negatif_ozel": "white seed head, blowball, dandelion clock, fluffy seed ball, white puffball, seed parachutes, sunflower, oxeye daisy, chamomile, orange flowers, blue color cast, cold grey tone",
+      "ref": { "commonsFile": "Taraxacum officinale - Köhler–s Medizinal-Pflanzen-135.jpg", "kirpim": "REV3: YAN PROFİL çiçek başı + dişli yaprak rozeti; tepeden-radyal baş kadraj DIŞI (canny'de radyal çizgiler blowball önyargısını tetikliyordu); '5' etiketi kâğıt rengiyle doldurulur", "kirpim_box": [287, 822, 1434, 2256], "beyaz_doldur": [[560, 1009, 654, 1093]], "not": "Köhler plaka 135, 2779x3823. Önceki kırpım (tepeden ışınlı baş) [630,879,2311,2980] üç turda blowball üretti — geri dönme." },
+      "konu": "bright golden-yellow dandelion blossom with dense flat overlapping petals, like a small sun, a single dandelion plant (Taraxacum officinale) centered, rosette of deeply toothed green leaves, smooth hollow stem, sharp focus, vertical 4:5",
+      "negatif_ozel": "green spiky ball, thistle, seed head, blowball, closed bud, white seed head, dandelion clock, fluffy seed ball, white puffball, seed parachutes, sunflower, oxeye daisy, chamomile, orange flowers, blue color cast, cold grey tone",
       "plantPartsShown": ["flower", "leaf", "stem"],
-      "serh": "REV1: tur-1'de negatife rağmen beyaz tohum topu çıktı; sarı çiçek başı KONU'nun ilk kelimeleri, tohum-topu negatifleri genişletildi."
+      "serh": "REV1: beyaz tohum topu → REV2 (3 seed, tepeden-radyal kırpım): yine blowball → REV3 (owner onayı): yan-profil kırpım + cond 0.34 + 'ray'siz KONU çözdü; KAZANAN seed 222 (666 seyrek dikensi petal, 111 iskelet-blowball). Şerh: yaprak rozeti zayıf, kimlik çiçekte."
     },
     {
       "herb_id": "nane",

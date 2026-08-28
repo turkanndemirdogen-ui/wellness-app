@@ -117,7 +117,11 @@
     fotoğraf) işlenmiş sürüm **onaylı** (3/4 açı kabul edilmiş sınır). Zencefil:
     CC0 yetişen-bitki fotoğrafı bulunamadı (Commons 2 tur + Commons-dışı 1 tur),
     Naturalis suluboya adayı seri diline uymadı → **yayında değil, 10 §11 yer
-    tutucu**. Batch-1 **11/12 kartla kapanır.**
+    tutucu**. Batch-1 **11/12 kartla KAPANDI (2026-08-28):** bucket `botanicals`
+    public, `herbs.image_path/image_version` 11 satır canlı, `npm run
+    db:check:images` GEÇTİ; ASSET-LICENSES §4 `approvedBy` mühürlü,
+    `content/bitki-gorselleri.json` 11 kayıt. Aşama 3 (`HerbImage` + dev-gallery
+    gerçek kartlar) mobil PR #7; kök script/doküman PR #1 — ikisi merge bekliyor.
     **AÇIK KALEM — zencefil görseli:** kalan 25 bitkiyle birlikte yeniden ele
     alınır; hedef CC0/PD fotoğraf (yeşil kamışsı sap + iki sıralı mızrak yaprak),
     doğrudan işleme hattından geçer. İşlenmiş suluboya adayı staging'de saklı.

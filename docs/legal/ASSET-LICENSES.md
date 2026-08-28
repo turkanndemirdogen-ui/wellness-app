@@ -148,7 +148,9 @@ tek yapraklı filiz (`Ginger-sprout.jpg`, CC0, teşhis değeri yok) çıktı. Bu
 değişir; §4d satırı güncellenir.
 
 **Değerlendirildi, KULLANILMADI:** `File:Taraxacum officinale, 2023-04-14, Beechview, 04.jpg`
-(Cbaile19, CC0) — tepeden kadraj, seri diline uymadı; hiçbir yayın kartında kullanılmadı.
+(Cbaile19, CC0) — tepeden kadraj, seri diline uymadı; hiçbir yayın kartında kullanılmadı. Aynı yazarın
+Commons'taki 13 karelik *Taraxacum* serisi (2014–2024, tümü CC0) 2026-08-28'de tarandı: rozet + açık
+çiçeği birlikte gösteren tek kare Beechview 02'dir; diğerleri çiçek yakın planı veya tohum topu.
 
 ## 5 · Moodboard referans görselleri (LİSANSSIZ — yalnız ilham)
 

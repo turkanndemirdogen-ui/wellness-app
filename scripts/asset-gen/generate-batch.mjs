@@ -74,6 +74,11 @@ async function uploadRef(path) {
 // run-seed<NNN>.json olarak yazılır (kayıtlı raw'ın üzerine YAZMAZ).
 const seedArg = process.argv.find((a) => a.startsWith('--seed='));
 const seedOverride = seedArg ? parseInt(seedArg.split('=')[1], 10) : null;
+// --cond=0.45: reçetedeki cond yerine aday cond (REV4, 2026-08-28); sonek -cNNN eklenir.
+const condArg = process.argv.find((a) => a.startsWith('--cond='));
+const condOverride = condArg ? parseFloat(condArg.split('=')[1]) : null;
+const suffix = (seedOverride != null ? `-seed${seedOverride}` : '')
+  + (condOverride != null ? `-c${condOverride.toFixed(2).replace('.', '')}` : '');
 
 const wanted = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const herbs = RECETE.bitkiler.filter((b) => !wanted.length || wanted.includes(b.herb_id));
@@ -109,10 +114,10 @@ for (const herb of herbs) {
     apply_watermark: false,
     controlnet_1: 'edge_canny',
     controlnet_1_image: await uploadRef(ref),
-    controlnet_1_conditioning_scale: herb.cond,
+    controlnet_1_conditioning_scale: condOverride ?? herb.cond,
   };
 
-  console.log(`→ ${hid}: cond ${herb.cond} · seed ${herb.seed} · ref ${ref.split('\\').pop()}`);
+  console.log(`→ ${hid}: cond ${input.controlnet_1_conditioning_scale} · seed ${input.seed} · ref ${ref.split('\\').pop()}`);
   const create = await fetch('https://api.replicate.com/v1/predictions', {
     method: 'POST',
     headers: { ...H, 'Content-Type': 'application/json' },
@@ -136,7 +141,6 @@ for (const herb of herbs) {
   if (!img.ok) { console.log(`  ✗ çıktı indirme ${img.status}`); fail++; continue; }
   const dir = join(STAGING, hid);
   mkdirSync(dir, { recursive: true });
-  const suffix = seedOverride != null ? `-seed${seedOverride}` : '';
   const raw = join(dir, `raw${suffix ? suffix : '-1024x1280'}.png`);
   writeFileSync(raw, Buffer.from(await img.arrayBuffer()));
   writeFileSync(join(dir, `run${suffix}.json`), JSON.stringify({

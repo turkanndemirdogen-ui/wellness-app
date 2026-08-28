@@ -45,7 +45,8 @@
         "flower",
         "leaf"
       ],
-      "not": "Doğrudan işleme (2026-08-28): Beechview 02 fotoğrafı, üç tam açık sarı çiçek + derin dişli rozet; 3/4 açı. Altın-saat uyumu: sıcaklık + parıltı sağ üst + odak dışı bulanıklık."
+      "not": "Doğrudan işleme (2026-08-28): Beechview 02 fotoğrafı, üç tam açık sarı çiçek + derin dişli rozet; 3/4 açı. Altın-saat uyumu: sıcaklık + parıltı sağ üst + odak dışı bulanıklık.",
+      "durum": "ONAYLI owner-signoff-2026-08-28 (v2 parametreleri)"
     },
     {
       "herb_id": "zencefil",
@@ -113,7 +114,8 @@
         "stem",
         "rhizome"
       ],
-      "not": "Doğrudan işleme (2026-08-28): Naturalis/Bernecker suluboya; kâğıt zemin korunur, yaprak mavi-yeşili seri canlı yeşiline ton kaydırmayla yaklaştırılır. Uygun CC0 fotoğraf bulunursa kaynak değişir."
+      "not": "Doğrudan işleme (2026-08-28): Naturalis/Bernecker suluboya; kâğıt zemin korunur, yaprak mavi-yeşili seri canlı yeşiline ton kaydırmayla yaklaştırılır. Uygun CC0 fotoğraf bulunursa kaynak değişir.",
+      "durum": "BEKLEMEDE (ürün sahibi kararı 2026-08-28, seçenek b): suluboya seri diline uymadı; CC0 fotoğraf bulunamadı (Commons 2 tur + Commons-dışı 1 tur). Kart yayına girmez, yer tutucu (10 §11). İşlenmiş aday staging'de card-01-BEKLEMEDE-direct-v3.webp."
     }
   ]
 }

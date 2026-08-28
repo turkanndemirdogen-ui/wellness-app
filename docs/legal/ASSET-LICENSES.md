@@ -139,13 +139,18 @@ yumuşatma, sıcak parıltı; üretken model **yok**). Metadata: `aiGenerated: f
 | Bitki | Tür | Kaynak | Yazar | Lisans | Kullanım |
 |---|---|---|---|---|---|
 | karahindiba | *Taraxacum officinale* | Commons `File:Taraxacum officinale, 2023-04-14, Beechview, 02.jpg` (fotoğraf, Pittsburgh 2023, 4296×3214); lisans `extmetadata` teyidi `references/karahindiba/license-beechview02.json` | Cbaile19 | **CC0 1.0** — atıf gerekmez (kayıt nezaketen tutulur) | Doğrudan kullanım (işlenmiş): kırpım [1000,380,3200,3130], seri renk uyumu |
-| zencefil | *Zingiber officinale* | Commons `File:Naturalis Biodiversity Center - L.0939338 - Bernecker, A. - zingiber officinale Roscoe - Artwork.jpeg` (suluboya, 1546×1920); lisans teyidi `references/zencefil/license.json` | A. Bernecker (Naturalis Biodiversity Center koleksiyonu) | **CC0 1.0** — atıf gerekmez | Doğrudan kullanım (işlenmiş): herbaryum etiketi/barkod kâğıt rengiyle dolduruldu, kırpım [100,60,1348,1620], yaprak yeşili seriye ton uyumu |
+| zencefil | *Zingiber officinale* | **BEKLEMEDE — yayında değil (2026-08-28, seçenek b).** Değerlendirilen kaynak: Commons `File:Naturalis Biodiversity Center - L.0939338 - Bernecker, A. - zingiber officinale Roscoe - Artwork.jpeg` (suluboya, CC0 1.0, lisans teyidi `references/zencefil/license.json`) — işlenmiş aday üretildi, kâğıt zeminli suluboya fotoğraf serisiyle uyuşmadığı için ürün sahibi yayına almadı. Kart yerine 10 §11 yer tutucu; kalan 25 bitkiyle birlikte yeniden ele alınır. | A. Bernecker (Naturalis) | CC0 1.0 | Kullanılmadı (aday staging'de) |
 
 **Aranıp bulunamayan:** Commons'ta CC0/PD lisanslı, **yetişen** zencefil bitkisi fotoğrafı
 (2026-08-28, 12 sorgu: "Zingiber officinale plant/leaves/garden/habit/cultivation", "ginger
 plant growing/farm/crop", "Ingwer Pflanze" …) — yalnız gravürler, market rizom yığınları ve
 tek yapraklı filiz (`Ginger-sprout.jpg`, CC0, teşhis değeri yok) çıktı. Bulunursa kaynak
 değişir; §4d satırı güncellenir.
+**Commons-dışı tek tur (2026-08-28, ürün sahibi talimatı):** Openverse API (CC0/PDM filtresi) → artık
+anahtar zorunlu (HTTP 401); rawpixel → 403; Flickr API anahtarsız kullanılamadı; USDA Flickr
+(`usdagov`, Public Domain Mark) "Mayim Farm" zencefil-zerdeçal çiftliği albümü (41 kare, 2018) kare kare
+incelendi — 33 karede insan/hoop house/moringa/çekirge/mantar, yetişen zencefil bitkisi yok; USDA ARS
+galerisi ve Smithsonian Open Access aramalarında fotoğraf çıkmadı. Sonuç: seçenek (b), yer tutucu.
 
 **Değerlendirildi, KULLANILMADI:** `File:Taraxacum officinale, 2023-04-14, Beechview, 04.jpg`
 (Cbaile19, CC0) — tepeden kadraj, seri diline uymadı; hiçbir yayın kartında kullanılmadı. Aynı yazarın

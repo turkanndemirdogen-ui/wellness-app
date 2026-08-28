@@ -111,10 +111,16 @@
     seri diline uygun kazanan vermedi — karar gerekçesi metadata `reviewNote`.
     Aşama 2 (bucket `botanicals` + `image_path/image_version`, migration 0007
     canlı) yükleme adımı ürün sahibinde; Aşama 3 `HerbImage` mobil PR #7.
-    **AÇIK KALEM — karahindiba tekil iyileştirme:** göz hizası + dişli rozet
-    içeren PD/CC0 referans bulunursa (Thomé, Flora Batava, Bilder ur Nordens
-    Flora veya CC0 fotoğraf) kart tekil olarak yenilenir; rozet zayıflığı kabul
-    edilmiş eksiktir, tür kimliği sarı ışınlı çiçekle korunur.
+    **Yöntem değişikliği (2026-08-28, ürün sahibi):** zencefil + karahindiba
+    için AI üretimi bırakıldı; CC0 kaynak doğrudan işlenir (`process-direct.py`,
+    ASSET-LICENSES §4d, `aiGenerated:false`). Karahindiba: Beechview 02 (CC0
+    fotoğraf) işlenmiş sürüm **onaylı** (3/4 açı kabul edilmiş sınır). Zencefil:
+    CC0 yetişen-bitki fotoğrafı bulunamadı (Commons 2 tur + Commons-dışı 1 tur),
+    Naturalis suluboya adayı seri diline uymadı → **yayında değil, 10 §11 yer
+    tutucu**. Batch-1 **11/12 kartla kapanır.**
+    **AÇIK KALEM — zencefil görseli:** kalan 25 bitkiyle birlikte yeniden ele
+    alınır; hedef CC0/PD fotoğraf (yeşil kamışsı sap + iki sıralı mızrak yaprak),
+    doğrudan işleme hattından geçer. İşlenmiş suluboya adayı staging'de saklı.
 7. **Adım 6/7 sırası KİLİTLİ:** önce astro-core+motor, golden fixture'lar
    yeşil, SONRA ACG (Adım 7 komutu acg-spec §8 sonunda).
 8. **MapTiler:** Free plan ticari kullanım için DEĞİL → lansman öncesi Flex

@@ -125,6 +125,31 @@ hiçbir üretilen asset'te kullanılmamıştır, telif yükümlülüğü doğurm
 - **Çıktı telifi:** Taban model lisansı + kaynak PD plaka durumuna tabidir → temiz. Görünmez watermark kapalı (`apply_watermark: false`).
 - **fal.ai:** hesap kilidi (bakiye) nedeniyle kullanılamadı; script'leri saklandı, kilit açılırsa geri dönülebilir. Reçete kilitleri (seed 666, DPM++ 2M Karras eşleniği KarrasDPM, 30 step, CFG 6.5, 1024×1280→800×1000) değişmedi.
 
+## 4d · Doğrudan kullanım (işlenmiş CC0 kaynak) — zencefil + karahindiba (2026-08-28)
+
+**Yöntem değişikliği (ürün sahibi kararı 2026-08-28):** Bu iki bitki için AI üretimi bırakıldı.
+Kart, CC0 lisanslı kaynak görselin **doğrudan** kırpılıp seri ışık/renk diline uyarlanmasıyla
+üretilir (800×1000 WebP; kırpma, Lanczos ölçekleme, sıcaklık/doygunluk/kontrast, odak dışı
+yumuşatma, sıcak parıltı; üretken model **yok**). Metadata: `aiGenerated: false`,
+`sourceStatus: public-domain`, `licenseReference: ASSET-LICENSES.md §4d`; işleme parametreleri
+`scripts/asset-gen/direct-recete.json` ve her kartın `metadata.json > processing` bloğunda.
+§4'teki Batch-1 AI satırları bu iki tür için **tarihsel kayıttır** (AI kartlar staging'de
+`card-01-ai-*.webp` olarak saklanır, yayına girmez).
+
+| Bitki | Tür | Kaynak | Yazar | Lisans | Kullanım |
+|---|---|---|---|---|---|
+| karahindiba | *Taraxacum officinale* | Commons `File:Taraxacum officinale, 2023-04-14, Beechview, 02.jpg` (fotoğraf, Pittsburgh 2023, 4296×3214); lisans `extmetadata` teyidi `references/karahindiba/license-beechview02.json` | Cbaile19 | **CC0 1.0** — atıf gerekmez (kayıt nezaketen tutulur) | Doğrudan kullanım (işlenmiş): kırpım [1000,380,3200,3130], seri renk uyumu |
+| zencefil | *Zingiber officinale* | Commons `File:Naturalis Biodiversity Center - L.0939338 - Bernecker, A. - zingiber officinale Roscoe - Artwork.jpeg` (suluboya, 1546×1920); lisans teyidi `references/zencefil/license.json` | A. Bernecker (Naturalis Biodiversity Center koleksiyonu) | **CC0 1.0** — atıf gerekmez | Doğrudan kullanım (işlenmiş): herbaryum etiketi/barkod kâğıt rengiyle dolduruldu, kırpım [100,60,1348,1620], yaprak yeşili seriye ton uyumu |
+
+**Aranıp bulunamayan:** Commons'ta CC0/PD lisanslı, **yetişen** zencefil bitkisi fotoğrafı
+(2026-08-28, 12 sorgu: "Zingiber officinale plant/leaves/garden/habit/cultivation", "ginger
+plant growing/farm/crop", "Ingwer Pflanze" …) — yalnız gravürler, market rizom yığınları ve
+tek yapraklı filiz (`Ginger-sprout.jpg`, CC0, teşhis değeri yok) çıktı. Bulunursa kaynak
+değişir; §4d satırı güncellenir.
+
+**Değerlendirildi, KULLANILMADI:** `File:Taraxacum officinale, 2023-04-14, Beechview, 04.jpg`
+(Cbaile19, CC0) — tepeden kadraj, seri diline uymadı; hiçbir yayın kartında kullanılmadı.
+
 ## 5 · Moodboard referans görselleri (LİSANSSIZ — yalnız ilham)
 
 - `docs/archive/design-tarihce/design-prova/wellness-appdesign-provamoodboard/` altındaki 27 görsel (Pinterest/Etsy vb. kaynaklı) yalnız iç ilham/moodboard amaçlıdır; **lisansları yoktur ve hiçbir üründe, pazarlamada veya dağıtımda KULLANILAMAZ.**

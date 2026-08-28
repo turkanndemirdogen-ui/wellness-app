@@ -103,14 +103,14 @@
     onayı + revize turu sonrası kalan 24 bitkiye geçilecek. Çıktılar çalışma
     klasöründe, repoya girmedi (A0 brief §10).
     **Güncelleme 2026-08-27/28 (rekonstrüksiyon):** Batch-1 çıktıları Temp
-    temizliğinde kaybolmuştu; kalıcı staging 
+    temizliğinde kaybolmuştu; kalıcı staging `Yedekler\wellness-assets\`
     (A0 §13) kurulup 12/12 yeniden üretildi ve ürün sahibi imzasıyla mühürlendi
-    (). Zencefil REV4: Naturalis/Bernecker CC0 suluboya referansı,
+    (`owner-signoff`). Zencefil REV4: Naturalis/Bernecker CC0 suluboya referansı,
     seed 333 · cond 0.45 (§12.1c rizom şerhi geçerli). Karahindiba: REV3 Köhler
     yan-profil kırpım seed 222 seçildi; REV4 CC0 fotoğraf denemesi (Beechview)
-    seri diline uygun kazanan vermedi — karar gerekçesi metadata .
-    Aşama 2 (bucket  + , migration 0007
-    canlı) yükleme adımı ürün sahibinde; Aşama 3  mobil PR #7.
+    seri diline uygun kazanan vermedi — karar gerekçesi metadata `reviewNote`.
+    Aşama 2 (bucket `botanicals` + `image_path/image_version`, migration 0007
+    canlı) yükleme adımı ürün sahibinde; Aşama 3 `HerbImage` mobil PR #7.
     **AÇIK KALEM — karahindiba tekil iyileştirme:** göz hizası + dişli rozet
     içeren PD/CC0 referans bulunursa (Thomé, Flora Batava, Bilder ur Nordens
     Flora veya CC0 fotoğraf) kart tekil olarak yenilenir; rozet zayıflığı kabul

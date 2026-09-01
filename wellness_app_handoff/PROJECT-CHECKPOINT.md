@@ -1,6 +1,22 @@
 # Wellness App — Project Checkpoint
 
-**Son güncelleme:** 2026-07-27
+**Son güncelleme:** 2026-09-01
+
+## Kalıcı çalışma ilkesi — "Görünür sonuç kuralı" (2026-09-01, ürün sahibi)
+Her iş bloğu telefonda görülebilir bir ekran/ekran parçasıyla biter; soyut ara
+çıktılar (token listesi, kontak sayfası, sözleşme dosyası) tek başına teslim
+sayılmaz. Sistem kurma işleri (altyapı, kanon, asset) mümkün olan en kısa yoldan
+ekrana bağlanır, ekranı bekletmez. Eksikler placeholder'la geçilir, sonra
+doldurulur. Mükemmel çıktı beklemek yerine erken göster, ürün sahibi yönlendirsin.
+**Gerekçe:** 2026 Temmuz–Ağustos'ta üç ay altyapı/asset fazında kalındı, ürün
+sahibi uygulamayı hiç göremedi; tek bir bitki görseli için 10 tura kadar çıkıldı.
+Bu sıralama tersine çevrildi. (CLAUDE.md'ye de işlendi.)
+
+## Öncelik değişikliği (2026-09-01, ürün sahibi)
+A0 asset üretimi DURDURULDU (kalan 25 bitki + zencefil açık kalem olarak duruyor).
+Aktif iş: **Phase 4 — Home retrofit**: gerçek Ana Sayfa ekranı yeni görsel
+kimlikle (B1–B6 davranış sözleşmesi korunarak) giydirilir; eksik asset'ler
+placeholder ile geçilir. PR #1 (kök) ve PR #7 (mobile) 2026-09-01'de merge edildi.
 
 ## Current repository state
 - Root repository: `wellness-app/` — tasarım arşiv temizliği `1a8a121` (superseded

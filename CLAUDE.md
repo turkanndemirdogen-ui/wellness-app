@@ -18,6 +18,19 @@ Her görevden önce:
 - Editorial: `docs/editorial/EDITORIAL_MASTER_SPEC.md`
 - Safety: `docs/safety/SAFETY_MASTER_SPEC.md`
 
+## Görünür sonuç kuralı (kalıcı çalışma ilkesi, 2026-09-01)
+
+- Her iş bloğu telefonda görülebilir bir ekran veya ekran parçasıyla biter.
+- Soyut ara çıktılar (token listesi, kontak sayfası, sözleşme dosyası) tek başına
+  teslim sayılmaz.
+- Sistem kurma işleri (altyapı, kanon, asset) mümkün olan en kısa yoldan ekrana
+  bağlanır; ekranı bekletmez.
+- Eksikler placeholder ile geçilir, sonra doldurulur.
+- Mükemmel çıktı beklemek yerine erken göster; ürün sahibi yönlendirsin.
+- Gerekçe: 2026 Temmuz–Ağustos'ta üç ay altyapı/asset fazında kalındı, ürün
+  sahibi uygulamayı hiç göremedi; tek bir bitki görseli için 10 tura kadar
+  çıkıldı. Bu sıralama tersine çevrildi.
+
 ## Temel sınırlar
 
 - `docs/archive/` aktif otorite değildir.

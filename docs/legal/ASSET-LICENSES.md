@@ -55,19 +55,22 @@
   - **Durum:** çıktı dosyası (`r3-medium.webp`) + `metadata.json` çalışma klasöründe; final imza sonrası `assets/botanicals/papatya/` altına alınır (repoya henüz girmedi).
   - **Kalan 36 bitki:** aynı reçeteyle üretildikçe her biri için bu bölüme satır + 10 §9 metadata eklenir; tür-özel PD referansının kamu malı durumu ve T0 sınıfı üretimden önce teyit edilir.
 
-### Batch-1 üretim satırları (12 asset, 2026-07-27/31)
+### Batch-1 üretim satırları (12 asset, 2026-07-27/31 · rekonstrüksiyon 2026-08-27/28)
 
 Tümü: taban SDXL Base 1.0 (Open RAIL++-M, §4) · platform Replicate (§4c) · ControlNet
 `edge_canny` · KarrasDPM · 30 step · CFG 6.5 · 1024×1280→800×1000 WebP · `aiGenerated: true` ·
 `sourceStatus: ai-generated` · `morphologyVerified: true` · `colorAccuracy: verified` ·
-`approvedBy: pending-final-signoff`. Referans plakalar §4b. Çıktı telifi taban model +
-kaynak PD durumuna tabidir → **temiz**.
+`approvedBy: owner-signoff-2026-08-27` (10 AI kart; ürün sahibi kontak-sayfası imzası). Referans plakalar §4b.
+Çıktı telifi taban model + kaynak PD durumuna tabidir → **temiz**. **Not (2026-08-28):** zencefil ve
+karahindiba için AI hattı kapatıldı → §4d (karahindiba doğrudan CC0 fotoğraf, onaylı; zencefil BEKLEMEDE).
+Batch-1 çıktıları 2026-08-27 Temp temizliğinde kaybolmuş, kalıcı klasörde (A0 brief §13) aynı reçeteyle
+yeniden üretilmiştir; aşağıdaki cond/seed değerleri **canlıdaki** kartlara aittir.
 
 | assetId | Tür | cond / seed |
 |---|---|---|
 | `plant-foeniculum-vulgare-editorial-01` | *Foeniculum vulgare* | 0.25 / 666 |
-| `plant-zingiber-officinale-editorial-01` | *Zingiber officinale* | 0.42 / 333 |
-| `plant-taraxacum-officinale-editorial-01` | *Taraxacum officinale* | 0.25 / 666 |
+| `plant-zingiber-officinale-editorial-01` | *Zingiber officinale* | — AI kart yayında değil; §4d BEKLEMEDE (yer tutucu) |
+| `plant-taraxacum-officinale-editorial-01` | *Taraxacum officinale* | — AI kart yayında değil; §4d doğrudan CC0 fotoğraf (onaylı 2026-08-28) |
 | `plant-mentha-piperita-editorial-01` | *Mentha piperita* | 0.25 / 666 |
 | `plant-rosmarinus-officinalis-editorial-01` | *Rosmarinus officinalis* | 0.42 / 666 |
 | `plant-melissa-officinalis-editorial-01` | *Melissa officinalis* | 0.38 / 666 |
@@ -78,12 +81,15 @@ kaynak PD durumuna tabidir → **temiz**.
 | `plant-equisetum-arvense-editorial-01` | *Equisetum arvense* | 0.32 / 666 |
 | `plant-hypericum-perforatum-editorial-01` | *Hypericum perforatum* | 0.25 / 666 |
 
-- **Prompt/revizyon arşivi (10 §12):** A0 brief §12 + üretim script'inin `OVERRIDES` bloğu.
-- **Durum:** dosyalar + `metadata.json`'lar çalışma klasöründe (`assets-staging/<herb_id>/`);
-  **repoya girmedi.** Ürün sahibi final imzası + Supabase Storage yüklemesi sonrası
-  `approvedBy` güncellenir.
-- **Zencefil şerhi:** kadraj ürün kararıyla toprak üstü forma çevrildi (A0 brief §12.1c);
-  `plantPartsShown` rizom içermez.
+- **Prompt/revizyon arşivi (10 §12):** `scripts/asset-gen/batch1-recete.json` (tam prompt/negatif/cond/seed +
+  revizyon şerhleri, REV1–REV4) ve her kartın `metadata.json > recipe` bloğu (prediction id dahil).
+- **Durum (2026-08-28, KAPANDI):** dosyalar + `metadata.json`'lar kalıcı klasörde
+  (`Yedekler\wellness-assets\staging\<herb_id>\`, A0 brief §13); görseller **repoya girmez.**
+  Ürün sahibi imzası: 10 AI kart `owner-signoff-2026-08-27`, karahindiba (§4d) `owner-signoff-2026-08-28`.
+  Supabase Storage `botanicals` (public) yüklemesi + `herbs.image_path/image_version` 11 satır **canlı**;
+  `npm run db:check:images` ile teyit edildi (2026-08-28). `content/bitki-gorselleri.json` 11 kayıt.
+- **PASS şerhleri (metadata `reviewNote`):** nane (kimlik yaprakta), aynısefa (küme kompozisyon kabul),
+  ısırgan (çiçek dizisi belirsiz, kimlik yaprakta).
 
 ### Üretim araçları (uygulamayla DAĞITILMAZ — yalnız lokal araç)
 - **ComfyUI** portable v0.28.0 (GPL-3.0 lisanslı araç) — lokalde kullanıldı, repoya ve uygulamaya girmedi.
@@ -124,6 +130,38 @@ hiçbir üretilen asset'te kullanılmamıştır, telif yükümlülüğü doğurm
 - **ControlNet ağırlığı:** `diffusers/controlnet-canny-sdxl-1.0` (fal'daki xinsir controlnet-union'ın yerine). Model kodu Apache-2.0/OpenRAIL türevi araç bileşenidir; **uygulamayla dağıtılmaz**, yalnız üretim anında bulutta çalışır.
 - **Çıktı telifi:** Taban model lisansı + kaynak PD plaka durumuna tabidir → temiz. Görünmez watermark kapalı (`apply_watermark: false`).
 - **fal.ai:** hesap kilidi (bakiye) nedeniyle kullanılamadı; script'leri saklandı, kilit açılırsa geri dönülebilir. Reçete kilitleri (seed 666, DPM++ 2M Karras eşleniği KarrasDPM, 30 step, CFG 6.5, 1024×1280→800×1000) değişmedi.
+
+## 4d · Doğrudan kullanım (işlenmiş CC0 kaynak) — zencefil + karahindiba (2026-08-28)
+
+**Yöntem değişikliği (ürün sahibi kararı 2026-08-28):** Bu iki bitki için AI üretimi bırakıldı.
+Kart, CC0 lisanslı kaynak görselin **doğrudan** kırpılıp seri ışık/renk diline uyarlanmasıyla
+üretilir (800×1000 WebP; kırpma, Lanczos ölçekleme, sıcaklık/doygunluk/kontrast, odak dışı
+yumuşatma, sıcak parıltı; üretken model **yok**). Metadata: `aiGenerated: false`,
+`sourceStatus: public-domain`, `licenseReference: ASSET-LICENSES.md §4d`; işleme parametreleri
+`scripts/asset-gen/direct-recete.json` ve her kartın `metadata.json > processing` bloğunda.
+§4'teki Batch-1 AI satırları bu iki tür için **tarihsel kayıttır** (AI kartlar staging'de
+`card-01-ai-*.webp` olarak saklanır, yayına girmez).
+
+| Bitki | Tür | Kaynak | Yazar | Lisans | Kullanım |
+|---|---|---|---|---|---|
+| karahindiba | *Taraxacum officinale* | Commons `File:Taraxacum officinale, 2023-04-14, Beechview, 02.jpg` (fotoğraf, Pittsburgh 2023, 4296×3214); lisans `extmetadata` teyidi `references/karahindiba/license-beechview02.json` | Cbaile19 | **CC0 1.0** — atıf gerekmez (kayıt nezaketen tutulur) | Doğrudan kullanım (işlenmiş): kırpım [1000,380,3200,3130], seri renk uyumu |
+| zencefil | *Zingiber officinale* | **BEKLEMEDE — yayında değil (2026-08-28, seçenek b).** Değerlendirilen kaynak: Commons `File:Naturalis Biodiversity Center - L.0939338 - Bernecker, A. - zingiber officinale Roscoe - Artwork.jpeg` (suluboya, CC0 1.0, lisans teyidi `references/zencefil/license.json`) — işlenmiş aday üretildi, kâğıt zeminli suluboya fotoğraf serisiyle uyuşmadığı için ürün sahibi yayına almadı. Kart yerine 10 §11 yer tutucu; kalan 25 bitkiyle birlikte yeniden ele alınır. | A. Bernecker (Naturalis) | CC0 1.0 | Kullanılmadı (aday staging'de) |
+
+**Aranıp bulunamayan:** Commons'ta CC0/PD lisanslı, **yetişen** zencefil bitkisi fotoğrafı
+(2026-08-28, 12 sorgu: "Zingiber officinale plant/leaves/garden/habit/cultivation", "ginger
+plant growing/farm/crop", "Ingwer Pflanze" …) — yalnız gravürler, market rizom yığınları ve
+tek yapraklı filiz (`Ginger-sprout.jpg`, CC0, teşhis değeri yok) çıktı. Bulunursa kaynak
+değişir; §4d satırı güncellenir.
+**Commons-dışı tek tur (2026-08-28, ürün sahibi talimatı):** Openverse API (CC0/PDM filtresi) → artık
+anahtar zorunlu (HTTP 401); rawpixel → 403; Flickr API anahtarsız kullanılamadı; USDA Flickr
+(`usdagov`, Public Domain Mark) "Mayim Farm" zencefil-zerdeçal çiftliği albümü (41 kare, 2018) kare kare
+incelendi — 33 karede insan/hoop house/moringa/çekirge/mantar, yetişen zencefil bitkisi yok; USDA ARS
+galerisi ve Smithsonian Open Access aramalarında fotoğraf çıkmadı. Sonuç: seçenek (b), yer tutucu.
+
+**Değerlendirildi, KULLANILMADI:** `File:Taraxacum officinale, 2023-04-14, Beechview, 04.jpg`
+(Cbaile19, CC0) — tepeden kadraj, seri diline uymadı; hiçbir yayın kartında kullanılmadı. Aynı yazarın
+Commons'taki 13 karelik *Taraxacum* serisi (2014–2024, tümü CC0) 2026-08-28'de tarandı: rozet + açık
+çiçeği birlikte gösteren tek kare Beechview 02'dir; diğerleri çiçek yakın planı veya tohum topu.
 
 ## 5 · Moodboard referans görselleri (LİSANSSIZ — yalnız ilham)
 

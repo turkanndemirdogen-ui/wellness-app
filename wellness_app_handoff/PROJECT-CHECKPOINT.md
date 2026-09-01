@@ -102,6 +102,29 @@
     atkuyruğu iğnemsi halka dallar eksik).** Kontak sayfası sunuldu; PASS
     onayı + revize turu sonrası kalan 24 bitkiye geçilecek. Çıktılar çalışma
     klasöründe, repoya girmedi (A0 brief §10).
+    **Güncelleme 2026-08-27/28 (rekonstrüksiyon):** Batch-1 çıktıları Temp
+    temizliğinde kaybolmuştu; kalıcı staging `Yedekler\wellness-assets\`
+    (A0 §13) kurulup 12/12 yeniden üretildi ve ürün sahibi imzasıyla mühürlendi
+    (`owner-signoff`). Zencefil REV4: Naturalis/Bernecker CC0 suluboya referansı,
+    seed 333 · cond 0.45 (§12.1c rizom şerhi geçerli). Karahindiba: REV3 Köhler
+    yan-profil kırpım seed 222 seçildi; REV4 CC0 fotoğraf denemesi (Beechview)
+    seri diline uygun kazanan vermedi — karar gerekçesi metadata `reviewNote`.
+    Aşama 2 (bucket `botanicals` + `image_path/image_version`, migration 0007
+    canlı) yükleme adımı ürün sahibinde; Aşama 3 `HerbImage` mobil PR #7.
+    **Yöntem değişikliği (2026-08-28, ürün sahibi):** zencefil + karahindiba
+    için AI üretimi bırakıldı; CC0 kaynak doğrudan işlenir (`process-direct.py`,
+    ASSET-LICENSES §4d, `aiGenerated:false`). Karahindiba: Beechview 02 (CC0
+    fotoğraf) işlenmiş sürüm **onaylı** (3/4 açı kabul edilmiş sınır). Zencefil:
+    CC0 yetişen-bitki fotoğrafı bulunamadı (Commons 2 tur + Commons-dışı 1 tur),
+    Naturalis suluboya adayı seri diline uymadı → **yayında değil, 10 §11 yer
+    tutucu**. Batch-1 **11/12 kartla KAPANDI (2026-08-28):** bucket `botanicals`
+    public, `herbs.image_path/image_version` 11 satır canlı, `npm run
+    db:check:images` GEÇTİ; ASSET-LICENSES §4 `approvedBy` mühürlü,
+    `content/bitki-gorselleri.json` 11 kayıt. Aşama 3 (`HerbImage` + dev-gallery
+    gerçek kartlar) mobil PR #7; kök script/doküman PR #1 — ikisi merge bekliyor.
+    **AÇIK KALEM — zencefil görseli:** kalan 25 bitkiyle birlikte yeniden ele
+    alınır; hedef CC0/PD fotoğraf (yeşil kamışsı sap + iki sıralı mızrak yaprak),
+    doğrudan işleme hattından geçer. İşlenmiş suluboya adayı staging'de saklı.
 7. **Adım 6/7 sırası KİLİTLİ:** önce astro-core+motor, golden fixture'lar
    yeşil, SONRA ACG (Adım 7 komutu acg-spec §8 sonunda).
 8. **MapTiler:** Free plan ticari kullanım için DEĞİL → lansman öncesi Flex

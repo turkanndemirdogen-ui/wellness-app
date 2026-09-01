@@ -13,7 +13,8 @@
     "db:upsert": "node scripts/apply-seed.mjs",
     "ingest:dry": "node scripts/ingest.mjs --dry --all",
     "ingest": "node scripts/ingest.mjs",
-    "push:chunks": "node scripts/push-chunks.mjs"
+    "push:chunks": "node scripts/push-chunks.mjs",
+    "db:check:images": "node scripts/check-herb-images.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.110.0"

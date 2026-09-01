@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "karar": "Ürün sahibi 2026-08-28: karahindiba + zencefil için AI üretimi bırakıldı; CC0 kaynak doğrudan işlenir (kırpma + renk/ışık uyumu). Seri hedefi (10 onaylı kartın ortalaması): HSV S≈152, V≈148, R-B≈63.",
+    "kural": "Kaynak piksel doğrudan kullanılır; lisans ASSET-LICENSES §4d; metadata aiGenerated:false, sourceStatus:public-domain. Koordinatlar: kirpim_box kaynak pikseli, odak_elips KIRPIM pikseli (cx, cy, rx, ry)."
+  },
+  "bitkiler": [
+    {
+      "herb_id": "karahindiba",
+      "kaynak_dosya": "ref-plate-beechview02.jpg",
+      "commonsTitle": "File:Taraxacum officinale, 2023-04-14, Beechview, 02.jpg",
+      "yazar": "Cbaile19 (Commons)",
+      "lisans": "CC0 1.0",
+      "kaynak_boyut": "4296x3214",
+      "kirpim_box": [
+        1000,
+        380,
+        3200,
+        3130
+      ],
+      "odak_elips": [
+        1080,
+        1650,
+        900,
+        1000
+      ],
+      "odak_yumusatma": 70,
+      "bulanik": 7,
+      "sicaklik": [
+        1.08,
+        1.02,
+        0.86
+      ],
+      "pus": 10,
+      "doygunluk": 1.15,
+      "kontrast": 1.04,
+      "parlaklik": 1.06,
+      "parilti": [
+        0.85,
+        0.08,
+        460,
+        0.6
+      ],
+      "vinyet": 0.12,
+      "plantPartsShown": [
+        "flower",
+        "leaf"
+      ],
+      "not": "Doğrudan işleme (2026-08-28): Beechview 02 fotoğrafı, üç tam açık sarı çiçek + derin dişli rozet; 3/4 açı. Altın-saat uyumu: sıcaklık + parıltı sağ üst + odak dışı bulanıklık.",
+      "durum": "ONAYLI owner-signoff-2026-08-28 (v2 parametreleri)"
+    },
+    {
+      "herb_id": "zencefil",
+      "kaynak_dosya": "ref-plate.jpeg",
+      "commonsTitle": "File:Naturalis Biodiversity Center - L.0939338 - Bernecker, A. - zingiber officinale Roscoe - Artwork.jpeg",
+      "yazar": "A. Bernecker (Naturalis Biodiversity Center, L.0939338)",
+      "lisans": "CC0 1.0",
+      "kaynak_boyut": "1546x1920",
+      "doldur": [
+        [
+          1050,
+          1575,
+          1348,
+          1620
+        ],
+        [
+          1285,
+          1515,
+          1348,
+          1580
+        ]
+      ],
+      "kirpim_box": [
+        100,
+        60,
+        1348,
+        1620
+      ],
+      "yesil_ton_kaydir": [
+        95,
+        150,
+        -24
+      ],
+      "yesil_doygunluk": [
+        60,
+        150,
+        2.1
+      ],
+      "odak_elips": [
+        560,
+        700,
+        520,
+        760
+      ],
+      "odak_yumusatma": 80,
+      "bulanik": 3,
+      "sicaklik": [
+        1.02,
+        1.0,
+        0.95
+      ],
+      "pus": 3,
+      "doygunluk": 1.12,
+      "kontrast": 1.08,
+      "parlaklik": 0.97,
+      "parilti": [
+        0.85,
+        0.08,
+        420,
+        0.5
+      ],
+      "vinyet": 0.18,
+      "plantPartsShown": [
+        "leaf",
+        "stem",
+        "rhizome"
+      ],
+      "not": "Doğrudan işleme (2026-08-28): Naturalis/Bernecker suluboya; kâğıt zemin korunur, yaprak mavi-yeşili seri canlı yeşiline ton kaydırmayla yaklaştırılır. Uygun CC0 fotoğraf bulunursa kaynak değişir.",
+      "durum": "BEKLEMEDE (ürün sahibi kararı 2026-08-28, seçenek b): suluboya seri diline uymadı; CC0 fotoğraf bulunamadı (Commons 2 tur + Commons-dışı 1 tur). Kart yayına girmez, yer tutucu (10 §11). İşlenmiş aday staging'de card-01-BEKLEMEDE-direct-v3.webp."
+    }
+  ]
+}

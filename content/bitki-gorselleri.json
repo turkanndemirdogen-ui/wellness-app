@@ -4,22 +4,77 @@
     "kanon": "10_ASSET_PIPELINE_AND_NAMING §10 — TAM URL YAZILMAZ; yalnız bucket-içi yol + sürüm. Public URL istemcide Storage SDK ile üretilir.",
     "bucket": "botanicals",
     "kural": "path biçimi '<herb_id>/<dosya>.webp'. Yeni sürüm yüklenince dosya adı ve version birlikte artar (card-02.webp -> 2); eski dosya silinmez, cache doğal geçer.",
-    "kapsam": "Batch-1: 12 bitki. Kalan 25 bitki görselsiz — kayıt eklenmez, istemci placeholder gösterir (10 §11).",
-    "uretim_kaydi": "docs/design/asset-briefs/A0-papatya-brief.md §12 + docs/legal/ASSET-LICENSES.md §4b/§4c",
-    "guncelleme": "2026-07-31"
+    "kapsam": "Batch-1: 11 bitki canlıda (2026-08-28). Zencefil BEKLEMEDE — kayıt yok, istemci placeholder gösterir (10 §11); kalan 25 bitkiyle yeniden ele alınır. Görselsiz bitkiler için kayıt eklenmez.",
+    "uretim_kaydi": "docs/design/asset-briefs/A0-papatya-brief.md §12 + docs/legal/ASSET-LICENSES.md §4/§4b/§4c (AI, 10 kart) ve §4d (doğrudan işlenmiş CC0: karahindiba) + scripts/asset-gen/batch1-recete.json, direct-recete.json",
+    "guncelleme": "2026-08-28",
+    "canli_teyit": "2026-08-28 — bucket botanicals public; herbs.image_path/version 11 satır; npm run db:check:images GEÇTİ"
   },
   "gorseller": [
-    { "herb_id": "rezene",        "path": "rezene/card-01.webp",        "version": 1, "assetId": "plant-foeniculum-vulgare-editorial-01" },
-    { "herb_id": "zencefil",      "path": "zencefil/card-01.webp",      "version": 1, "assetId": "plant-zingiber-officinale-editorial-01" },
-    { "herb_id": "karahindiba",   "path": "karahindiba/card-01.webp",   "version": 1, "assetId": "plant-taraxacum-officinale-editorial-01" },
-    { "herb_id": "nane",          "path": "nane/card-01.webp",          "version": 1, "assetId": "plant-mentha-piperita-editorial-01" },
-    { "herb_id": "biberiye",      "path": "biberiye/card-01.webp",      "version": 1, "assetId": "plant-rosmarinus-officinalis-editorial-01" },
-    { "herb_id": "melisa",        "path": "melisa/card-01.webp",        "version": 1, "assetId": "plant-melissa-officinalis-editorial-01" },
-    { "herb_id": "lavanta",       "path": "lavanta/card-01.webp",       "version": 1, "assetId": "plant-lavandula-angustifolia-editorial-01" },
-    { "herb_id": "adacayi",       "path": "adacayi/card-01.webp",       "version": 1, "assetId": "plant-salvia-officinalis-editorial-01" },
-    { "herb_id": "aynisefa",      "path": "aynisefa/card-01.webp",      "version": 1, "assetId": "plant-calendula-officinalis-editorial-01" },
-    { "herb_id": "isirgan",       "path": "isirgan/card-01.webp",       "version": 1, "assetId": "plant-urtica-dioica-editorial-01" },
-    { "herb_id": "atkuyrugu",     "path": "atkuyrugu/card-01.webp",     "version": 1, "assetId": "plant-equisetum-arvense-editorial-01" },
-    { "herb_id": "sari_kantaron", "path": "sari_kantaron/card-01.webp", "version": 1, "assetId": "plant-hypericum-perforatum-editorial-01" }
+    {
+      "herb_id": "rezene",
+      "path": "rezene/card-01.webp",
+      "version": 1,
+      "assetId": "plant-foeniculum-vulgare-editorial-01"
+    },
+    {
+      "herb_id": "karahindiba",
+      "path": "karahindiba/card-01.webp",
+      "version": 1,
+      "assetId": "plant-taraxacum-officinale-editorial-01"
+    },
+    {
+      "herb_id": "nane",
+      "path": "nane/card-01.webp",
+      "version": 1,
+      "assetId": "plant-mentha-piperita-editorial-01"
+    },
+    {
+      "herb_id": "biberiye",
+      "path": "biberiye/card-01.webp",
+      "version": 1,
+      "assetId": "plant-rosmarinus-officinalis-editorial-01"
+    },
+    {
+      "herb_id": "melisa",
+      "path": "melisa/card-01.webp",
+      "version": 1,
+      "assetId": "plant-melissa-officinalis-editorial-01"
+    },
+    {
+      "herb_id": "lavanta",
+      "path": "lavanta/card-01.webp",
+      "version": 1,
+      "assetId": "plant-lavandula-angustifolia-editorial-01"
+    },
+    {
+      "herb_id": "adacayi",
+      "path": "adacayi/card-01.webp",
+      "version": 1,
+      "assetId": "plant-salvia-officinalis-editorial-01"
+    },
+    {
+      "herb_id": "aynisefa",
+      "path": "aynisefa/card-01.webp",
+      "version": 1,
+      "assetId": "plant-calendula-officinalis-editorial-01"
+    },
+    {
+      "herb_id": "isirgan",
+      "path": "isirgan/card-01.webp",
+      "version": 1,
+      "assetId": "plant-urtica-dioica-editorial-01"
+    },
+    {
+      "herb_id": "atkuyrugu",
+      "path": "atkuyrugu/card-01.webp",
+      "version": 1,
+      "assetId": "plant-equisetum-arvense-editorial-01"
+    },
+    {
+      "herb_id": "sari_kantaron",
+      "path": "sari_kantaron/card-01.webp",
+      "version": 1,
+      "assetId": "plant-hypericum-perforatum-editorial-01"
+    }
   ]
 }

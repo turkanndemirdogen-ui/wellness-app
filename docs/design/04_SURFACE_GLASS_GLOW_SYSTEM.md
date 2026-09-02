@@ -1204,3 +1204,88 @@ V1 materyal sistemi:
 - performance fallback
 
 olarak kilitlenmiştir.
+
+---
+
+# UYGULAMA EKİ — 2026-09-02 · Materyal token'ları hayata geçirildi
+
+**Durum:** Bu ek kanonik gövdeyi DEĞİŞTİRMEZ; §5 (glass), §7 (border), §9
+(shadow), §10 (glow) ve §11 (inner highlight) sistemlerinin koda inen hâlini ve
+inerken alınan üç kararı kaydeder. Ürün sahibi talebi (Phase 4 Home retrofit,
+D2-D4 turu): "Phase 3'te 'token yok, ertelendi' denen glass/glow boşluğunu
+kapat, hero ve kartlarda derinlik için kullan."
+
+## 1. Nereye indi
+
+`mobile/src/design-system/tokens/tokens.json` → `material` grubu
+(`npm run tokens` ile `primitive.generated.ts`). Semantic karşılıkları
+`theme/semantic.ts` içinde: `surface.glassMist|glassFrost|glassDeep`,
+`border.hairline|soft|medium|glass|glassSoft`, `highlight.*`, `glow.*`.
+Gölge/glow → RN stili köprüsü `theme/elevation.ts` (token-gate'te denetimli
+istisna; bileşenler ham `shadowColor` yazmaz).
+
+Bütünlük testi: `__tests__/material-tokens.test.ts`.
+
+## 2. Karar 1 — Değerler 15 §4'e indirgendi
+
+`15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md` bu belgenin ÜSTÜNDEDİR (15 §1). Bu
+belgedeki ham HEX'ler 15 §4'ün kesin paletiyle çeliştiği yerde 15 uygulandı;
+materyal SİSTEMİ (seviyeler, oranlar, kurallar) bu belgeden alındı:
+
+| 04'teki değer | Uygulanan (15 §4 kaynaklı) | Kaynak token |
+|---|---|---|
+| cam tint `#FCFBF8` | `#FFFDFC` | `chrome.surface` |
+| deepFrost `#F8F5EF` | `#F6EEE4` | `chrome.parchment` |
+| kenar mürekkebi `rgba(46,43,41,α)` | `rgba(46,41,38,α)` | `chrome.textPrimary` |
+| gölge rengi `#2E2B29` | `#2E2926` | `chrome.textPrimary` |
+| glow `ambientCool #7FA6C1` | `#7C9DB3` | `celestial.sky` |
+| glow `botanical #7F9A76` | `#879A7A` | `botanical.sage` |
+| glow `selection #527C89` | `#78968B` | `botanical.eucalyptus` |
+| glow `celestial #7E6D9A` | `#827394` | `celestial.violet` |
+| glow `ceremonial #CBA75D` | `#C5A260` | `celestial.gold` |
+
+Alfa değerleri, blur değerleri, glow yarıçapları ve tüm kurallar (§5.1, §9.3,
+§10.3, §10.4, §11.2) BU BELGEDEN aynen alındı.
+
+Ayrıca §8.1 radius merdiveni (xs 6 · sm 10 · xl 20 · 2xl 24 · 3xl 28) 15 §6'nın
+merdiveniyle (`compactRadius` 12 · `cardRadius` 16 · `heroRadius` 24) çelişir.
+15 uygulandı; bu belgenin radius tablosu tarihsel referanstır.
+
+## 3. Karar 2 — Gerçek blur değil, ön-tonlanmış cam
+
+`blur` değerleri token'da kanonik olarak DURUYOR ama bugün TÜKETİLMİYOR.
+Gerçek blur `expo-blur` bağımlılığı ister; bağımlılık onayı alınmadı (Faz 1
+kuralı: onaysız paket eklenmez). Bunun yerine §6.3'ün Reduce-Transparency
+yolundaki **ön-tonlanmış yüzey** kullanılıyor: alfa'lı tint + 1px beyaz ışık
+kenarı + token gölgesi.
+
+Sonuç, §5.1'in "listelerde pre-tinted surface kullanılır" kuralıyla ve §20.2
+low-end fallback'iyle aynı yüzeydir; okunabilirlik açısından daha güvenlidir
+(gövde metni taşıyan camın opaklığı ≥ 0.78 sert sınırı testle bağlandı).
+`expo-blur` onaylanırsa YALNIZ `Surface` bileşeninin içi değişir — token'lar,
+semantic adlar ve çağıran kod aynı kalır.
+
+## 4. Karar 3 — Glow'un platform sınırı
+
+`glowStyle` (elevation.ts) glow'u RN gölge alanlarıyla kurar: iOS'ta gerçek
+renkli halo çıkar, Android'de `elevation: 0` olduğu için halo GÖRÜNMEZ.
+Bu yüzden ürün ekranında glow, gölge yerine **degrade katmanı** olarak
+kullanıldı (Ana Sayfa hero'sunun nefes alan ambient ışığı) — bu yol iki
+platformda da çalışır ve §10.1'in `ambient` sınıfına girer. Shadow tabanlı
+`glowStyle` şimdilik yalnız dev-gallery vitrininde ve iOS'ta anlamlıdır;
+Android'de halo gerektiğinde ayrı bir çözüm (blur ya da radial degrade
+katmanı) gerekir — açık kalem.
+
+## 5. Ana Sayfa'da kullanım (§13.1 eşlemesi)
+
+- hero → **image + scrim** yolu: full-bleed görsel · mürekkep scrim (02 §14) ·
+  üstünde **glass frost** plaka (§12.5 hero glass ruhu) · `shadow.card` ·
+  saç çizgisi kenar. Metin görselin üstünde serbest DURMAZ, kendi açık
+  yüzeyinde durur → kontrast görselden bağımsız.
+- daily plant → hero'nun kendisi (kart değil, panel).
+- insight (kozmik hava satırı) → **glass 1 / mist**, §13.1'in istediği gibi.
+- mood chips → quiet/tint (cam yok).
+- slot ladder → render edilmiyor (ayrı karar).
+
+Aynı viewport'ta en fazla iki cam yüzey ve tek ambient ışık kaynağı bulunur;
+nested glass yoktur (§5.1).

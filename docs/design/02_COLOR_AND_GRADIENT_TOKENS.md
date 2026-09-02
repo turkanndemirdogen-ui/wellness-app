@@ -652,3 +652,30 @@ Claude Code:
 Bu renk ve gradient sistemi **V1 için kilitlenmiştir**.
 
 Sonraki tüm belgeler bu tokenları referans alacaktır.
+
+---
+
+# UYGULAMA EKİ — 2026-09-02 · §14 scrim ölçeği hayata geçirildi
+
+**Durum:** Bu ek kanonik gövdeyi DEĞİŞTİRMEZ; §14'ün koda inen hâlini kaydeder.
+
+Ana Sayfa hero'su full-bleed bitki görseline geçince (Phase 4 D2) görselin
+üstündeki metin katmanı için scrim gerekti. Mevcut token seti yalnız
+`scrim.transparent` + `scrim.soft = rgba(0,0,0,0.35)` taşıyordu; saf siyah
+scrim botanik fotoğrafın yeşillerini griye çeviriyordu.
+
+§14'ün **dark scrim** ölçeği token'a alındı (mürekkep tonu, saf siyah değil):
+
+```ts
+scrim.inkSoft   = 'rgba(21,27,43,0.22)'
+scrim.inkMedium = 'rgba(21,27,43,0.42)'
+scrim.inkStrong = 'rgba(21,27,43,0.64)'
+```
+
+`scrim.soft` (siyah) VisualPanel'in mevcut kullanımı için yerinde bırakıldı —
+kaldırılmadı, yalnız hero görseli katmanında ink ölçeği kullanılıyor.
+
+Not: §17'nin TypeScript renk sözleşmesi (neutral/botanical/celestial ölçekleri)
+`15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md` §4 tarafından geçersiz kılınmıştır;
+uygulamadaki tek renk kaynağı 15 §4'tür. §13 gradient setleri ve §15 dinamik
+botanical accent çıkarımı henüz uygulanmadı — açık kalem.

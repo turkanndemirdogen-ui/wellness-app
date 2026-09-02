@@ -49,13 +49,21 @@ function hashDateKey(key) {
   return h >>> 0;
 }
 
-/** mobile/src/lib/home.ts pickDailyHerb ile BİREBİR aynı havuz + seçim. */
+const hasCardImage = (h) => Boolean(h.image_path) && (h.image_version ?? 0) >= 1;
+
+/**
+ * mobile/src/lib/home.ts pickDailyHerb ile BİREBİR aynı havuz + seçim.
+ * 2026-09-02: havuz önce GÖRSELİ OLANLARA daralır (katmansız hero); görselli
+ * bitki yoksa güvenli havuza geri düşer.
+ */
 function pickDailyHerb(herbs, dateKey) {
-  const pool = herbs
+  const safePool = herbs
     .filter((h) => h.app_safe === true && !h.data?.guvenlik?.uyari_chip)
     .sort((a, b) => a.herb_id.localeCompare(b.herb_id));
-  if (pool.length === 0) return { herb: null, pool };
-  return { herb: pool[hashDateKey(dateKey) % pool.length], pool };
+  if (safePool.length === 0) return { herb: null, pool: safePool, safePool };
+  const imaged = safePool.filter(hasCardImage);
+  const pool = imaged.length > 0 ? imaged : safePool;
+  return { herb: pool[hashDateKey(dateKey) % pool.length], pool, safePool };
 }
 
 const env = readEnv();
@@ -90,12 +98,18 @@ const days = Number(arg('days') ?? 1);
 console.log('\n== Ana Sayfa hero secimi (canli veri, anon key) ==\n');
 console.log(`  havuz: ${herbs.length} bitki okundu`);
 
-const { pool } = pickDailyHerb(herbs, todayKey(startDate));
-const withImage = pool.filter((h) => h.image_path);
-console.log(`  gunun karti havuzu (app_safe + uyari cipsiz): ${pool.length}`);
+const { pool, safePool } = pickDailyHerb(herbs, todayKey(startDate));
+const withImage = safePool.filter(hasCardImage);
+const narrowed = pool.length !== safePool.length;
+console.log(`  guvenli havuz (app_safe + uyari cipsiz): ${safePool.length}`);
 console.log(`  bunlardan gorseli olan: ${withImage.length}`);
 console.log(
-  `  gorselli cikma olasiligi: %${((withImage.length / pool.length) * 100).toFixed(0)}\n`,
+  `  ETKIN secim havuzu: ${pool.length}` +
+    (narrowed ? ' (gorsel kosuluyla daraltildi)' : ' (gorselli bitki yok -> guvenli havuza dusuldu)'),
+);
+console.log(
+  `  gorselli cikma olasiligi: %${((pool.filter(hasCardImage).length / pool.length) * 100).toFixed(0)}
+`,
 );
 
 let fail = 0;

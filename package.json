@@ -15,7 +15,8 @@
     "ingest": "node scripts/ingest.mjs",
     "push:chunks": "node scripts/push-chunks.mjs",
     "db:check:images": "node scripts/check-herb-images.mjs",
-    "check:hero-contrast": "python scripts/measure-hero-contrast.py"
+    "check:hero-contrast": "python scripts/measure-hero-contrast.py",
+    "db:check:hero": "node scripts/check-hero-pick.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.110.0"

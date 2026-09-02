@@ -75,6 +75,22 @@ small caps görünür. Telefonda görülüp onaylanmalı (15 EK-B §B.5).
 **Açık kalem — Android glow:** gölge tabanlı glow Android'de görünmüyor; ürün
 ekranında glow degrade katmanı olarak kullanıldı (hero ışık huzmesi).
 
+## Sıradaki iş — kalan 26 bitki görseli (ürün sahibi kararı, 2026-09-02)
+
+Hero katmansız hale gelince "büyülü his" TAMAMEN görselden geliyor; havuz da 9
+bitkiyle sınırlı, yani kullanıcı ~9 günde bir aynı hero'yu görüyor. Bu yüzden
+sıradaki oturum **kalan 26 bitki görseli** olacak — hem tekrarı kırar hem
+ekranın karakterini belirler.
+
+**Reçeteye eklenecek yeni kural (ürün sahibi):** mor-altın ışık · yumuşak odak ·
+özne üst-orta bölgede.
+
+**Sıra kararı:** bu iş Keşif · Bahçe · Sohbet tab'larından ÖNCE yapılır — o
+tab'lar tasarlanırken elde gerçek görsel dili olsun, tahmin değil.
+
+Not: A0 asset üretimi 2026-09-01'de durdurulmuştu; bu karar onu hero'ya bağlı
+ve sınırlı bir kapsamla yeniden açar (26 görsel + zencefil açık kalemi).
+
 ## Current repository state
 - Root repository: `wellness-app/` — tasarım arşiv temizliği `1a8a121` (superseded
   tasarım belgeleri + design-prova → `docs/archive/design-tarihce/`; kalıcı telif

@@ -1289,3 +1289,23 @@ katmanı) gerekir — açık kalem.
 
 Aynı viewport'ta en fazla iki cam yüzey ve tek ambient ışık kaynağı bulunur;
 nested glass yoktur (§5.1).
+
+## 6. Ek — "Büyülü" hero yönü (2026-09-02)
+
+Ürün sahibi kararıyla Ana Sayfa hero'su atmosferik scrim'e geçti. Bu belgenin
+§13.1'deki "hero → hero glass **veya** image + scrim" seçeneklerinden İKİNCİSİ
+uygulanıyor; cam plaka kaldırıldı, adlar doğrudan scrim üzerinde duruyor.
+
+Eklenen token grupları: `material.heroAtmosphere` (§17.2 "hero atmosphere"
+bandında, dört duraklı patlıcan→indigo→gece geçişi), `material.onPanel` (koyu
+panel üstü metin, 02 §12 dark setinden), `material.ambientTint` (zemin
+tonlaması), `material.texture` (§17.2 opaklıkları), `material.borderTone.gold`
+(§7.3 "decorative gold hairline: maximum 1px").
+
+Doku varlığı `src/assets/textures/grain.png` (128×128, deterministik üretim,
+tekrarlı döşenir). §17.3'ün "repeating pattern yok" yasağı motif/desen içindir;
+%2-3 bandındaki tanecik "visible film grain" sınırının altındadır.
+
+Kart yüzeyi değişikliği: standart kart artık `glass.mist` tint'i + altın saç
+çizgisi taşıyor (§12.1 standart kart reçetesinin "Büyülü" varyantı). Sessiz
+(quiet) yüzeyler mürekkep kenarında kaldı.

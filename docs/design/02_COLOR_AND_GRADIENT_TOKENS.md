@@ -679,3 +679,16 @@ Not: §17'nin TypeScript renk sözleşmesi (neutral/botanical/celestial ölçekl
 `15_PRODUCT_LOCKS_AND_VISUAL_OVERRIDES.md` §4 tarafından geçersiz kılınmıştır;
 uygulamadaki tek renk kaynağı 15 §4'tür. §13 gradient setleri ve §15 dinamik
 botanical accent çıkarımı henüz uygulanmadı — açık kalem.
+
+## Ek — "Büyülü" yönü (2026-09-02)
+
+§12 "Text colors — Dark" tablosu ilk kez uygulandı: Ana Sayfa hero'su metni
+koyu atmosferik scrim üzerinde taşıdığı için `text.primary.dark` (#F3F1EC) ve
+`text.secondary.dark` (#D4D6D4) token'a alındı (`material.onPanel`). Bilimsel ad
+için istenen "açık lila" tonu tabloda yoktu; `celestial.violet` (#827394)
+primary.dark'a doğru ~%55 açılarak `#CBBEDA` türetildi — gece scrim'i üstünde
+5.9:1 (AA). Türetme `__tests__/material-tokens.test.ts` ile kilitli.
+
+Ayrıca ekran zemini için çok hafif lila-krem dikey geçiş eklendi
+(`material.ambientTint`) — §13 atmosphere gradient setinden ayrı, 15 §7'nin
+`backgroundHex` değerinin ÜSTÜNE binen bir tonlama katmanıdır; koyulaşma değil.

@@ -552,3 +552,68 @@ Tasarım sistemi:
 - Free/Pro teaser desenleri
 
 ile kilitlenmiştir.
+
+---
+
+# EK-A — "BÜYÜLÜ" HERO YÖNÜ (2026-09-02, ürün sahibi kararı)
+
+**Durum:** Bu ek belgenin GÖVDESİNİ değiştirmez; §3-§7'nin Ana Sayfa hero
+katmanına uygulanışını genişletir ve genişlemenin sınırını çizer. Ürün sahibi
+"Büyülü" (C) yönünü onayladı: hero düz/açık dil yerine dreamy-sinematik olacak.
+
+## A.1 Düzeltme — koyu hero scrim zaten izinliydi
+
+Karar "koyuluk yalnız VisualPanel'de" kuralını genişletiyor gibi sunuldu; ancak
+**§3 zaten "hero görsel paneli"ni koyuluğa izinli yerler arasında sayıyor.**
+Atmosferik scrim taşıyan hero, mevcut kanona AYKIRI DEĞİLDİ. Bu ekin genişlettiği
+şey scrim'in kendisi değil, aşağıdaki beş maddedir.
+
+## A.2 Genişleyen beş madde
+
+1. **Koyu panel üstü metin renkleri.** §5 ve §10 yalnız açık krom üstü metni
+   tanımlıyordu. Hero artık metni doğrudan koyu scrim üzerinde taşıyor; bunun
+   için `material.onPanel` grubu eklendi: `primary` ve `secondary` 02 §12
+   "Text colors — Dark" tablosundan BİREBİR, `lilac` (#CBBEDA) bilimsel ad için
+   `celestial.violet`ten türetildi. Bu renkler KROMA sızamaz — yalnız hero
+   görsel katmanında geçerlidir.
+2. **Hero tam genişlik.** §6 `screenPadding: 20` ekran kolonunu tanımlar; hero
+   artık bu kolondan negatif marjla taşıp ekran kenarına dayanır. Köşe
+   yuvarlaması yalnız ALT iki köşededir (üst kenar ekranla birleşir).
+3. **Hero yüksekliği taban oldu.** §7 `heroHeight: 280` artık sabit değil
+   TABAN'dır: panel `max(280, ekran yüksekliği × 0.40)` kadar yer kaplar.
+   Spec token'ı değişmedi; ekran onu alt sınır olarak okur.
+4. **Ekran zemini düz renk değil.** §7 `backgroundHex: '#F8F2EC'` korunuyor ama
+   üzerine çok hafif lila-krem dikey geçiş (`material.ambientTint`) ve %2.5
+   tanecik dokusu (04 §17.2) biniyor. Bu bir TONLAMA'dır, koyulaşma değil:
+   krom açık kalır.
+5. **Standart kart yüzeyi yarı saydam.** §4 `chrome.surface (#FFFDFC)` artık
+   kartlarda 0.88 alfa ile (glass mist tint'i) ve ince altın saç çizgisiyle
+   kullanılıyor; zemin tonlaması kartın altından hafifçe okunur.
+
+Ayrıca Ana Sayfa sekmesinde navigasyon başlık çubuğu KAPATILDI: hero ekranın en
+üstünden başlar, başlığın taşıdığı bağlam (tarih + ay çipi) panelin içine indi.
+Diğer sekmeler başlıklı ve açık kalır.
+
+## A.3 Değişmeyen sınır
+
+Aşağıdakiler bu ekle **genişlemedi** ve genişletilemez:
+
+- Navigation (tab bar), form yüzeyleri, journal editörü, settings, legal ve
+  uzun okuma yüzeyleri **açık krem-pudra** kalır (§3).
+- `visualPanels` token'ları hâlâ screen background olamaz (§4); hero scrim'i
+  ayrı bir token grubudur (`material.heroAtmosphere`) ve yalnız hero görsel
+  katmanında tüketilir.
+- Dört sabit tab (§2), font rol sistemi (§5), motion sınırları (§9) ve
+  erişilebilirlik eşikleri (§10) aynen geçerlidir.
+- **§10 AA eşiği hero'da da geçerlidir:** scrim'in alt durağı 0.90 opaklıktadır;
+  adın oturduğu bantta kontrast alttaki görselden bağımsız hesaplanır ve
+  `__tests__/contrast-aa.test.ts` en kötü hâli (beyaz görsel) test eder.
+
+## A.4 Uygulandığı yer
+
+`mobile/src/domain-ui/daily-herb-hero.tsx` (panel) ·
+`mobile/src/design-system/tokens/tokens.json` → `material.heroAtmosphere`,
+`material.onPanel`, `material.ambientTint`, `material.texture`,
+`material.borderTone.gold` · `theme/semantic.ts` (semantic eşleme) ·
+`components/ambient-background.tsx` (zemin tonlaması + doku) ·
+`components/card.tsx` (yarı saydam yüzey + altın kenar + parşömen dokusu).

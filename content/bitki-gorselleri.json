@@ -14,67 +14,133 @@
       "herb_id": "rezene",
       "path": "rezene/card-01.webp",
       "version": 1,
-      "assetId": "plant-foeniculum-vulgare-editorial-01"
+      "assetId": "plant-foeniculum-vulgare-editorial-01",
+      "hero": {
+        "contrastPlain": 1.971,
+        "needsCloud": true,
+        "cloudAlpha": 0.647,
+        "contrast": 4.598
+      }
     },
     {
       "herb_id": "karahindiba",
       "path": "karahindiba/card-01.webp",
       "version": 1,
-      "assetId": "plant-taraxacum-officinale-editorial-01"
+      "assetId": "plant-taraxacum-officinale-editorial-01",
+      "hero": {
+        "contrastPlain": 1.625,
+        "needsCloud": true,
+        "cloudAlpha": 0.801,
+        "contrast": 4.598
+      }
     },
     {
       "herb_id": "nane",
       "path": "nane/card-01.webp",
       "version": 1,
-      "assetId": "plant-mentha-piperita-editorial-01"
+      "assetId": "plant-mentha-piperita-editorial-01",
+      "hero": {
+        "contrastPlain": 1.598,
+        "needsCloud": true,
+        "cloudAlpha": 0.675,
+        "contrast": 4.602
+      }
     },
     {
       "herb_id": "biberiye",
       "path": "biberiye/card-01.webp",
       "version": 1,
-      "assetId": "plant-rosmarinus-officinalis-editorial-01"
+      "assetId": "plant-rosmarinus-officinalis-editorial-01",
+      "hero": {
+        "contrastPlain": 3.252,
+        "needsCloud": true,
+        "cloudAlpha": 0.357,
+        "contrast": 4.602
+      }
     },
     {
       "herb_id": "melisa",
       "path": "melisa/card-01.webp",
       "version": 1,
-      "assetId": "plant-melissa-officinalis-editorial-01"
+      "assetId": "plant-melissa-officinalis-editorial-01",
+      "hero": {
+        "contrastPlain": 1.86,
+        "needsCloud": true,
+        "cloudAlpha": 0.684,
+        "contrast": 4.597
+      }
     },
     {
       "herb_id": "lavanta",
       "path": "lavanta/card-01.webp",
       "version": 1,
-      "assetId": "plant-lavandula-angustifolia-editorial-01"
+      "assetId": "plant-lavandula-angustifolia-editorial-01",
+      "hero": {
+        "contrastPlain": 2.622,
+        "needsCloud": true,
+        "cloudAlpha": 0.498,
+        "contrast": 4.6
+      }
     },
     {
       "herb_id": "adacayi",
       "path": "adacayi/card-01.webp",
       "version": 1,
-      "assetId": "plant-salvia-officinalis-editorial-01"
+      "assetId": "plant-salvia-officinalis-editorial-01",
+      "hero": {
+        "contrastPlain": 2.219,
+        "needsCloud": true,
+        "cloudAlpha": 0.526,
+        "contrast": 4.603
+      }
     },
     {
       "herb_id": "aynisefa",
       "path": "aynisefa/card-01.webp",
       "version": 1,
-      "assetId": "plant-calendula-officinalis-editorial-01"
+      "assetId": "plant-calendula-officinalis-editorial-01",
+      "hero": {
+        "contrastPlain": 2.908,
+        "needsCloud": true,
+        "cloudAlpha": 0.372,
+        "contrast": 4.598
+      }
     },
     {
       "herb_id": "isirgan",
       "path": "isirgan/card-01.webp",
       "version": 1,
-      "assetId": "plant-urtica-dioica-editorial-01"
+      "assetId": "plant-urtica-dioica-editorial-01",
+      "hero": {
+        "contrastPlain": 1.927,
+        "needsCloud": true,
+        "cloudAlpha": 0.567,
+        "contrast": 4.598
+      }
     },
     {
       "herb_id": "atkuyrugu",
       "path": "atkuyrugu/card-01.webp",
       "version": 1,
-      "assetId": "plant-equisetum-arvense-editorial-01"
+      "assetId": "plant-equisetum-arvense-editorial-01",
+      "hero": {
+        "contrastPlain": 1.869,
+        "needsCloud": true,
+        "cloudAlpha": 0.711,
+        "contrast": 4.603
+      }
     },
     {
       "herb_id": "sari_kantaron",
       "path": "sari_kantaron/card-01.webp",
       "version": 1,
-      "assetId": "plant-hypericum-perforatum-editorial-01"
+      "assetId": "plant-hypericum-perforatum-editorial-01",
+      "hero": {
+        "contrastPlain": 2.46,
+        "needsCloud": true,
+        "cloudAlpha": 0.426,
+        "contrast": 4.598
+      }
     }
   ]
 }

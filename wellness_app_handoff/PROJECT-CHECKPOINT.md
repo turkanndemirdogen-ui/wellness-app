@@ -45,6 +45,14 @@ tipografi değişimi uygulandı. **Hepsi lokal; push ve merge ürün sahibi onay
 uygulama eki (materyal token'ları + scrim ölçeği) · `4ed0aab` 15 EK-A (Büyülü
 hero yönü; §3'ün koyu hero scrim'ine zaten izin verdiği düzeltmesiyle birlikte).
 
+- **Hero scrim yönü — vinyet + lila** — tam boy dikey scrim kaldırıldı, bitki
+  görseli merkezde net kaldı; atmosfer kenarlardan (vinyet) + ince lila sisten
+  geliyor. Metin emniyeti ÖLÇÜME bağlandı: `npm run check:hero-contrast` gerçek
+  pikselleri okuyup görsel başına gereken bulut gücünü çözüyor, sonuç varlık
+  kaydına yazılıyor. 11 görselin hepsi + yer tutucu hâli 4.60:1. Kalıcı kapı:
+  `hero-text-contrast` testi (ölçülmemiş görsel eklenemez; token değişirse
+  ölçüm bayat sayılır). Bağlam çipi görselden bağımsız koyu-altın.
+
 **Açık kalem — Cinzel small caps:** Cinzel majüskül bir ailedir, küçük harfleri
 small caps görünür. Telefonda görülüp onaylanmalı (15 EK-B §B.5).
 

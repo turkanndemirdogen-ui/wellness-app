@@ -684,3 +684,67 @@ yasak" kuralına metin dönüşümüyle DEĞİL, fontun kendi karakteriyle yakla
 görünümdür — `textTransform` uygulanmıyor, metin olduğu gibi yazılıyor.
 Ürün sahibi telefonda görüp onaylamalı; istenmezse display ailesi minüskülü olan
 bir majüskül-alternatifiyle (ör. Cormorant, Spectral) değiştirilir.
+
+---
+
+# EK-C — HERO SCRIM YÖNÜ: VİNYET + LİLA (2026-09-02, ürün sahibi kararı)
+
+**Durum:** EK-A'nın hero katmanını değiştirir; EK-A'nın sınırları (krom açık
+kalır, `visualPanels` screen background olamaz, AA eşiği geçerli) aynen durur.
+
+## C.1 Neden değişti
+
+EK-A'nın tam boy dikey scrim'i bitki görselini üstten aşağı karartıyordu:
+atmosfer vardı ama **bitkinin kendisi görünmüyordu.** Ürün sahibi kararı:
+görsel merkezde tam netlikte kalsın, atmosfer kenarlardan gelsin.
+
+## C.2 Yeni katman düzeni
+
+1. **Vinyet** — elips radyal (merkez %50/%38, yarıçap %80): `%30 şeffaf →
+   %78 rgba(74,42,110,0.42) → %100 rgba(40,20,64,0.78)`. Koyulaşma yalnız
+   kenarlarda; görselin ortası dokunulmadan kalır.
+2. **Lila sis** — tüm hero üstünde düz katman `rgba(140,96,190,0.18)`.
+3. **Adaptif bulut** — yalnız metin bandı açık olan görsellerde (bkz. C.3).
+4. **Altın ışık huzmesi** — üst köşeden radyal, en üstteki katman; korundu.
+
+Tam boy dikey scrim (`heroAtmosphere.top/upper/mid/bottom`) KALDIRILDI.
+
+## C.3 Metin emniyeti — ölçüme bağlı, göz kararı değil
+
+Koyu taban kalkınca beyaz yazı açık zeminli görsellerde okunmaz hale geliyordu.
+İki katmanlı emniyet:
+
+1. **Metin gölgesi** — ad ve bilimsel adda `0 1px 10px rgba(30,12,45,0.55)`,
+   her zaman.
+2. **Adaptif bulut** — sol-alt merkezli, kenarları tamamen yumuşak koyu radyal.
+   **Gücü görsel başına ÇÖZÜLÜR:** `scripts/measure-hero-contrast.py` gerçek
+   WebP piksellerini okur, hero'nun cover kırpmasını modeller, metin
+   dikdörtgenindeki EN AÇIK pikseli bulur, katmanları bindirir ve eşiği geçen
+   en küçük bulut alfasını ikili aramayla bulur. Sonuç varlık kaydına
+   (`content/bitki-gorselleri.json`) ve üretilmiş haritaya
+   (`herb-hero-luma.generated.ts`) yazılır — **cihazda hesaplanmaz.**
+
+**Ölçüm sonucu (11 canlı görsel):** vinyet + sis tek başına hiçbir görselde
+yetmiyordu (1.60–3.25:1). Çözülen bulut alfalarıyla hepsi **4.60:1**. En zoru
+karahindiba (parlak sarı çiçek, α=0.80), en kolayı biberiye (α=0.36).
+Görseli olmayan bitkide yer tutucu yüzeyi de açık olduğu için o hâl de
+ölçülüyor (α=0.84 → 4.60:1).
+
+## C.4 Bağlam şeridi — görselden bağımsız
+
+Tarih ve ay çipi görsele göre DEĞİŞMEZ: sabit koyu-altın metin (`#7A5C1E`),
+aynı tonda %45 hairline. **Beyaz çip kullanılmaz.**
+
+Ölçülen sapma: koyu-altın metin doğrudan fotoğraf üstünde **2.63:1** veriyordu
+(AA fail). Bu yüzden çipe aynı altın ailesinin açık ucundan ince bir yüzey
+eklendi (`rgba(247,236,208,0.82)`) → **4.71:1**. Yüzey beyaz değildir; kural
+"beyaz çip kullanma" olduğu için altın ailesinde kalındı. Ürün sahibi isterse
+yüzey kaldırılır — o durumda çip AA'yı geçmez ve bu bilinçli bir kabul olur.
+
+## C.5 Kalıcı kapı
+
+`__tests__/hero-text-contrast.test.ts` üç şeyi bağlar: (1) varlık kaydındaki
+her görselin ölçümü var mı — **ölçülmemiş görsel eklenemez**; (2) ölçülen
+kontrastların hepsi ≥4.5:1 mi; (3) ölçümün yapıldığı katman değerleri bugünkü
+token'larla aynı mı — vinyet/sis/bulut değeri değişirse ölçüm bayatlar ve test
+kırmızıya döner. Yeniden ölçüm: `npm run check:hero-contrast`.

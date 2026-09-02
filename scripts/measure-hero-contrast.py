@@ -47,6 +47,25 @@ DEFAULT_IMAGES = os.path.join(
     'bucket-upload', 'botanicals',
 )
 
+DORMANT_NOTICE = '''
+[UYKUDA] Bu olcum hatti su an KULLANILMIYOR.
+
+Neden: 2026-09-02 urun sahibi karariyla hero KATMANSIZ hale geldi. Bitki adi ve
+bilimsel ad artik fotografin ustunde degil, gorselin ALTINDAKI opak krem
+seritte duruyor. Metin gorsel pikselleriyle hic karsilasmadigi icin
+"metin alanindaki en acik piksel" diye bir olcu kalmadi.
+
+Yerine gecen kapi: mobile/__tests__/hero-strip-contrast.test.ts
+(metin/zemin ciftleri token seviyesinde dogrulanir; zemin sabit oldugu icin
+piksel olcumu gerekmez).
+
+Script SILINMEDI: yerlesim ileride gorsel-ustu metne donerse oldugu gibi geri
+acilir. O zaman hem burayi hem hero-text-contrast testindeki describe.skip
+cagrilarini geri al.
+
+Yine de calistirmak icin: python scripts/measure-hero-contrast.py --force
+'''
+
 AA_NORMAL = 4.5
 # Çözümde küçük bir pay bırakılır: ölçüm ile cihaz render'ı birebir aynı değil
 # (ölçek, resampling). Eşiğin hemen üstünde durmak yerine 4.6'ya kilitlenir.
@@ -241,7 +260,13 @@ def solve_cloud_alpha(samples, atm, safety, target: float):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--images', default=DEFAULT_IMAGES)
+    ap.add_argument('--force', action='store_true',
+                    help='uyku kilidini gecerek olcumu yine de calistir')
     args = ap.parse_args()
+
+    if not args.force:
+        print(DORMANT_NOTICE)
+        return 0
 
     tokens = load_tokens()
     atm, safety = tokens['atm'], tokens['safety']

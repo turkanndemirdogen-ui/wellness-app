@@ -748,3 +748,59 @@ her görselin ölçümü var mı — **ölçülmemiş görsel eklenemez**; (2) �
 kontrastların hepsi ≥4.5:1 mi; (3) ölçümün yapıldığı katman değerleri bugünkü
 token'larla aynı mı — vinyet/sis/bulut değeri değişirse ölçüm bayatlar ve test
 kırmızıya döner. Yeniden ölçüm: `npm run check:hero-contrast`.
+
+---
+
+# EK-D — HERO KATMANSIZ; KOYU SCRIM MADDELERİ GEÇERSİZ (2026-09-02)
+
+**Durum:** Bu ek, **EK-A ve EK-C'deki koyu hero scrim maddelerini GEÇERSİZ
+kılar.** §3'ün "koyuluk yalnız VisualPanel'de" kuralı hero için de eski hâline
+döner: hero görsel katmanı artık hiçbir koyu değer taşımaz.
+
+## D.1 Karar
+
+Hero, bitki fotoğrafının kendisidir. Görselin üstünde **hiçbir katman yoktur**.
+Kaldırılanlar: vinyet radyali, lila sis, radyal altın ışık huzmesi, adaptif
+metin-arkası bulut, metin gölgeleri.
+
+## D.2 Yerleşim
+
+- Görsel tam genişlik, ekranın üst **~%30'u**, **köşe yuvarlaması yok**.
+  Durum çubuğunun altından başlar (üstünde scrim olmadığı için ikonların
+  fotoğrafa binmesi okunurluğu bozardı).
+- Görselin hemen **altında açık krem şerit** (`#F5EDE2`): tarih + ay çipi
+  (koyu-altın `#7A5C1E`, aynı tonda %45 hairline) · bitki adı Cinzel koyu
+  patlıcan (`#3A2154`) · bilimsel ad Jost italik açık mor (`#6E5590`).
+- Şeridin altı mevcut Ana Sayfa akışına bağlanır.
+
+## D.3 Kontrast — ölçüm yerine token
+
+Metin fotoğrafın üstünde olmadığı için "metin alanındaki en açık piksel"
+ölçüsü konusuzlaştı. Zemin artık sabit bir token olduğundan kontrast token
+seviyesinde kesin doğrulanıyor (`__tests__/hero-strip-contrast.test.ts`):
+bitki adı **11.8:1** · bilimsel ad **5.4:1** · çip metni **5.3:1** — hepsi AA.
+
+Piksel ölçümü hattı **silinmedi, uykuya alındı**:
+`__tests__/hero-text-contrast.test.ts` (`describe.skip` + gerekçe) ve
+`scripts/measure-hero-contrast.py` (`--force` olmadan uyku notu basıp çıkar).
+Yerleşim ileride görsel-üstü metne dönerse ikisi de olduğu gibi geri açılır.
+`material.heroAtmosphere` ve `material.heroTextSafety` token grupları da
+yerinde ama hiçbir bileşen okumuyor (`$description` içinde UYKUDA işaretli).
+
+## D.4 Bağlı ürün kararı — günün kartı havuzu
+
+Katmansız hero görselsiz bitkide ekranın üst üçte birini boş yer tutucuya
+çevirir. Teşhis (`npm run db:check:hero`): güvenli havuzdaki 35 bitkinin yalnız
+**9'unda** görsel var → günlerin **~%74'ünde** yer tutucu çıkıyordu.
+
+Ürün sahibi kararıyla `pickDailyHerb` havuzu **görseli olan bitkilerle
+sınırlandı**. Güvenlik filtresi GEVŞEMEDİ (app_safe + uyarı çipsiz koşulu
+aynen önce uygulanır); görsel koşulu onun üstüne biner. Görselli hiçbir bitki
+yoksa eski havuza düşer — ekran boş kalmaz. Görseller üretildikçe havuz
+kendiliğinden genişler.
+
+## D.5 Hareket
+
+Hero'da kalan tek hareket **paralaks**tır (görsel scroll'dan yavaş kayar) —
+ışık ya da karartma katmanı değil, uzamsal ilişki. Ambient katman + hero = 2
+animasyonlu öğe (§9 sınırında). Reduced-motion'da ikisi de durur.

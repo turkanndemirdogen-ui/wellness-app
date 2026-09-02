@@ -53,6 +53,19 @@ hero yönü; §3'ün koyu hero scrim'ine zaten izin verdiği düzeltmesiyle birl
   `hero-text-contrast` testi (ölçülmemiş görsel eklenemez; token değişirse
   ölçüm bayat sayılır). Bağlam çipi görselden bağımsız koyu-altın.
 
+- **Hero KATMANSIZ (son hâl)** — görselin üstündeki tüm ışık/karartma katmanları
+  kaldırıldı (vinyet, lila sis, altın huzme, adaptif bulut, metin gölgeleri).
+  Hero = bitki fotoğrafı (üst ~%30, köşesiz) + altında açık krem künye şeridi
+  (tarih/ay çipi koyu-altın · ad Cinzel koyu patlıcan · bilimsel ad Jost italik
+  açık mor). Kontrast artık token seviyesinde: 11.8 / 5.4 / 5.3:1.
+  15 EK-A ve EK-C'deki koyu scrim maddeleri EK-D ile geçersiz kılındı.
+  Piksel ölçüm hattı silinmedi, uykuya alındı (`--force` ile açılır).
+- **Günün kartı havuzu görselli bitkilerle sınırlandı** (ürün sahibi onayı).
+  Teşhis `npm run db:check:hero`: 35 güvenli bitkinin 9'unda görsel vardı →
+  günlerin ~%74'ü yer tutucuydu. Güvenlik filtresi gevşemedi; görselli bitki
+  yoksa eski havuza düşer. **Açık kalem:** hero artık 9 bitki arasında dönüyor
+  (~9 günde bir tekrar); kalan 26 görsel üretildikçe havuz genişler.
+
 **Açık kalem — Cinzel small caps:** Cinzel majüskül bir ailedir, küçük harfleri
 small caps görünür. Telefonda görülüp onaylanmalı (15 EK-B §B.5).
 

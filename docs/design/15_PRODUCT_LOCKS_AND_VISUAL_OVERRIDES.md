@@ -617,3 +617,70 @@ Aşağıdakiler bu ekle **genişlemedi** ve genişletilemez:
 `material.borderTone.gold` · `theme/semantic.ts` (semantic eşleme) ·
 `components/ambient-background.tsx` (zemin tonlaması + doku) ·
 `components/card.tsx` (yarı saydam yüzey + altın kenar + parşömen dokusu).
+
+---
+
+# EK-B — TİPOGRAFİ SİSTEMİ DEĞİŞİMİ (2026-09-02, ürün sahibi kararı)
+
+**Durum:** Bu ek §5'in **font ailesi tablosunu değiştirir**; §5'in kuralları
+(Türkçe karakter zorunluluğu, `tr-TR` locale dönüşümü, rol disiplini, Caveat'ın
+yalnız kısa sözde kullanımı) aynen geçerlidir. Çelişki halinde bu ek uygulanır.
+
+## B.1 Yeni rol tablosu
+
+```ts
+export const fontRoles = {
+  display: 'Cinzel',      // Cinzel 600
+  body:    'Jost',        // Jost 400
+  ui:      'Jost',        // Jost 500
+  sci:     'Jost Italic', // Jost 400 italic
+  quote:   'Caveat',      // Caveat 500 — korundu
+} as const
+```
+
+| Rol | Aile / kesim | Kural |
+|---|---|---|
+| `display` | Cinzel 600 | **YALNIZCA ≥20px**, en fazla **2 satır**, `letterSpacing 0.03em`. Kullanım: hero bitki adı, ekran başlıkları, bölüm başlıkları. Buton, form, kart altyazısı ve uzun metinde **KESİNLİKLE** kullanılmaz. |
+| `body` | Jost 400 | Minimum **15px**, `lineHeight 1.7`. Editoryal paragraf, bitki cümlesi, gövde metni. |
+| `ui` | Jost 500 | Tab bar, buton, çip, form etiketi. |
+| `sci` | Jost 400 italic | Bilimsel ad. **Hiçbir kart varyantında gizlenmez** (07 §6 kilidi sürüyor). |
+| `quote` | Caveat 500 | Yalnız kısa söz: maksimum 32 kelime, 2 satır (§5 kuralı korundu). |
+
+## B.2 Çıkarılanlar
+
+- **Fraunces** ve **Lora** token haritasından çıkarıldı; hiçbir variant'ta ve
+  hiçbir eski `Text role` alias'ında kalmadı (test: `typography-role-mapping`).
+- **Playfair Display** kaldırıldı: `ceremonial` variant'ı hiçbir yüzeyde
+  kullanılmıyordu, splash font bütçesini boşuna tüketiyordu. `ceremonial`
+  variant'ı korundu ama artık Cinzel 400'e bakar.
+- `Fraunces + Inter only` kararı zaten §5'te iptal edilmişti; Inter hâlâ yok.
+
+## B.3 Cinzel alt sınırı — bilinçli sapma
+
+Cinzel 20px altında oranlarını kaybediyor. Eski `Text role` alias'ındaki
+`heading.s` (16px) bu yüzden display ailesine **giremez** ve `ui` ailesine
+(Jost 500) düşürülür. Kural hem çalışma anında (`__DEV__` uyarısı) hem testte
+(`typography-role-mapping` → "display ailesi 20px altında kullanılamaz")
+bağlanmıştır.
+
+## B.4 Türkçe kapsam — kabul kriteri ve nasıl doğrulandığı
+
+Ürün sahibi kabul kriteri: *"Öksürük Otu Çiçeği" ve "Şeytan Pençesi" hem
+başlıkta hem gövdede doğru render olmalı; harfler sistem yedeğine düşerse
+fontun TTF'i genişletilmiş latin içermiyor demektir.*
+
+Doğrulama yapısal varsayımla değil, **yüklenen TTF dosyalarının cmap tablosu
+okunarak** yapılır (`__tests__/turkish-font-characters.test.ts`). Yüklenen beş
+kesimin (Cinzel 400/600, Jost 400/500/400-italic) ve Caveat 500'ün hepsinde
+`Ç ç Ğ ğ İ ı Ö ö Ş ş Ü ü` **tam** kapsanıyor; `Â â Î î Û û` de mevcut. Font
+paketi sürümü değişip kapsam daralırsa test kırmızıya döner.
+
+## B.5 Açık kalem — Cinzel'in küçük harf karakteri
+
+Cinzel, Roma yazıtlarından türemiş bir **majüskül** ailesidir: küçük harfleri
+gerçek minüskül değil, **küçük büyük harf (small caps)** biçimindedir. Yani
+"Papatya" ekranda büyük harf ritmiyle okunur. Bu, 03 §7.1'in "tamamı uppercase
+yasak" kuralına metin dönüşümüyle DEĞİL, fontun kendi karakteriyle yaklaşan bir
+görünümdür — `textTransform` uygulanmıyor, metin olduğu gibi yazılıyor.
+Ürün sahibi telefonda görüp onaylamalı; istenmezse display ailesi minüskülü olan
+bir majüskül-alternatifiyle (ör. Cormorant, Spectral) değiştirilir.

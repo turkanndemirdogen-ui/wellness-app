@@ -1,6 +1,6 @@
 # Wellness App — Project Checkpoint
 
-**Son güncelleme:** 2026-09-01
+**Son güncelleme:** 2026-09-02
 
 ## Kalıcı çalışma ilkesi — "Görünür sonuç kuralı" (2026-09-01, ürün sahibi)
 Her iş bloğu telefonda görülebilir bir ekran/ekran parçasıyla biter; soyut ara
@@ -17,6 +17,42 @@ A0 asset üretimi DURDURULDU (kalan 25 bitki + zencefil açık kalem olarak duru
 Aktif iş: **Phase 4 — Home retrofit**: gerçek Ana Sayfa ekranı yeni görsel
 kimlikle (B1–B6 davranış sözleşmesi korunarak) giydirilir; eksik asset'ler
 placeholder ile geçilir. PR #1 (kök) ve PR #7 (mobile) 2026-09-01'de merge edildi.
+
+## Phase 4 — Home retrofit (2026-09-02, devam eden)
+
+Ana Sayfa dört dilimde retrofit edildi, ardından ürün sahibi yön değişikliği ve
+tipografi değişimi uygulandı. **Hepsi lokal; push ve merge ürün sahibi onayıyla.**
+
+- **D1** `9a2db8d` — kanon kromu (semantic katman `color.light` → `color.chrome`,
+  15 §4), kanon blok sırası (hero ikinci sıraya), tek büyük serif hiyerarşisi,
+  AppText variant'larına geçiş. Yol üstünde iki kırık düzeltildi:
+  `home-render-contract` testi ilk günden kırmızıydı (Reanimated mock'unda
+  `FadeIn` yoktu), token-gate `filter-chip.tsx`'te kırmızıydı.
+- **D2-D4 + materyal** `6ec7e34` — full-bleed Storage görselli hero, kanon 04'ün
+  glass/glow/shadow/inner-highlight token boşluğu kapatıldı (`material` grubu;
+  sistem 04'ten, değerler 15 §4'ten), paralaks + ışık nefesi, Caveat söz,
+  parşömen editoryal kart.
+- **"Büyülü" yönü** `0cbc9b6` — hero tam genişlik ve ekranın üst ~%40'ı, cam
+  plaka kaldırıldı, atmosferik scrim (patlıcan→indigo→gece), radyal altın ışık
+  huzmesi, tarih + ay çipi panelin içinde, lila-krem zemin + tanecik dokusu,
+  yarı saydam kartlar + altın hairline. Ana Sayfa sekmesinde başlık çubuğu
+  kapatıldı.
+- **Tipografi değişimi** — Fraunces+Lora → **Cinzel + Jost** (Playfair
+  kaldırıldı, Caveat korundu). Kanon 15'e EK-B olarak yazıldı. Türkçe kapsam
+  TTF cmap'i okunarak doğrulandı (kabul kriteri geçti).
+
+**Kanon güncellemeleri (kök depo, ürün sahibi talebiyle):** `dae1692` 02/04
+uygulama eki (materyal token'ları + scrim ölçeği) · `4ed0aab` 15 EK-A (Büyülü
+hero yönü; §3'ün koyu hero scrim'ine zaten izin verdiği düzeltmesiyle birlikte).
+
+**Açık kalem — Cinzel small caps:** Cinzel majüskül bir ailedir, küçük harfleri
+small caps görünür. Telefonda görülüp onaylanmalı (15 EK-B §B.5).
+
+**Açık kalem — gerçek blur:** cam yüzeyler ön-tonlanmış (04 §6.3 yolu);
+`expo-blur` bağımlılık onayı beklemede. Onaylanırsa yalnız `Surface` içi değişir.
+
+**Açık kalem — Android glow:** gölge tabanlı glow Android'de görünmüyor; ürün
+ekranında glow degrade katmanı olarak kullanıldı (hero ışık huzmesi).
 
 ## Current repository state
 - Root repository: `wellness-app/` — tasarım arşiv temizliği `1a8a121` (superseded
